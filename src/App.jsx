@@ -8,13 +8,21 @@ import PaymentSearch from './pages/PaymentSearch'
 import PaymentRedirect from './pages/PaymentRedirect'
 import PaymentProcess from './pages/PaymentProcess'
 import './App.css'
+import Services from './pages/Services'
+import About from './pages/About'
+import ScrollToTop from './components/ScrollToTop'
+import Portfolio from './pages/Portfolio'
 
 function App() {
   return (
     <Router>
       <div className="App">
+        <ScrollToTop/>
         <Routes>
           <Route path="/" element={<Home />} />
+           <Route path="/about" element={<About/>}  />
+          <Route path="/services" element={<Services/>} />
+          <Route path="/portfolio" element={<Portfolio/>} />
           <Route path="/admin/login" element={<AdminLogin />} />
           <Route path="/admin/otp" element={<OTPVerification />} />
           <Route path="/admin/dashboard" element={<AdminDashboard />} />

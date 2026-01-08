@@ -1,17 +1,23 @@
 import React from 'react'
-import Header from '../components/Header'
-import Hero from '../components/Hero'
+import Header from '../components/Header/Header'
+import Hero from '../components/Welcome/Hero'
 import VideoWalkthrough from '../components/VideoWalkthrough'
-import AgencyHelps from '../components/AgencyHelps'
-import CallToAction from '../components/CallToAction'
-import SpecializedIndustries from '../components/SpecializedIndustries'
-import WhatWeDo from '../components/WhatWeDo'
+import AgencyHelps from '../components/Welcome/AgencyHelps'
+import CallToAction from '../components/Common/CallToAction'
+import SpecializedIndustries from '../components/Common/SpecializedIndustries'
+import WhatWeDo from '../components/Common/WhatWeDo'
 import SampleVideo from '../components/SampleVideo'
-import HowWeWork from '../components/HowWeWork'
-import ClientReviews from '../components/ClientReviews'
-import WhyChooseUs from '../components/WhyChooseUs'
-import PaymentSystem from '../components/PaymentSystem'
+import HowWeWork from '../components/Welcome/HowWeWork'
+import ClientReviews from '../components/Common/Reviews/ClientReviews'
+import WhyChooseUs from '../components/Welcome/WhyChooseUs'
+import PaymentSystem from '../components/Welcome/PaymentSystem'
 import BookingForm from '../components/BookingForm'
+import WorkingProcess from '../components/Common/WorkingProcess'
+import WhyChooseAdymire from '../components/WhyChooseAdymire'
+import Footer from '../components/Footer/Footer'
+import WhatClientSays from '../components/Common/Reviews/WhatClientSays'
+import SocialProof from '../components/Common/Reviews/SocialProof'
+import WhatClientSays2 from '../components/Common/Reviews/WhatClientSays2'
 
 const Home = () => {
   return (
@@ -19,16 +25,23 @@ const Home = () => {
       <Header />
       <Hero />
       <VideoWalkthrough />
+      <WhatWeDo />
       <AgencyHelps />
       <CallToAction />
       <SpecializedIndustries />
-      <WhatWeDo />
-      <SampleVideo />
+      {/* <SampleVideo /> */}
       <HowWeWork />
-      <ClientReviews />
+      <WorkingProcess/>
       <WhyChooseUs />
+      <WhatClientSays/>
+      <ClientReviews />
+      <SocialProof/>
+      <WhatClientSays2/>
+      <WhyChooseAdymire/>
+      <CallToAction />
       <PaymentSystem />
       <BookingForm />
+      <Footer/>
     </div>
   )
 }

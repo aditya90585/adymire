@@ -1,85 +1,93 @@
-.booking-form {
-  padding: 4rem 2rem;
-  background-color: #fff9e6;
-}
-
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-}
-
-.section-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: #333;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.form-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.5rem;
-}
-
-.form-group {
+.bf-section {
+  background: white;
+  padding: 4px 20px;
+  padding-bottom: 40px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
-.form-group-full {
-  grid-column: 1 / -1;
+.bf-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 50px;
 }
 
-.form-input {
-  padding: 1rem;
-  border: 2px solid #f0f0f0;
-  border-radius: 8px;
-  font-size: 1rem;
+.bf-img img {
+  width: 60%;
+}
+
+.bf-img-text {
+  background-color: rgb(255, 240, 196);
+  width: 45%;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 30px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  padding: 20px 0px;
+}
+
+.bf-form {
+  width: 100%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px 28px;
+}
+
+.bf-input {
+  height: 64px;
+  padding: 0 22px;
+  border-radius: 10px;
+  border: 2px solid #e5e5e5;
+  font-size: 16px;
   font-family: inherit;
-  transition: all 0.3s;
-  background-color: white;
+  background: #fff;
+  transition: border 0.25s ease;
 }
 
-.form-input:focus {
+.bf-input::placeholder {
+  color: #8f8f8f;
+  font-weight: 500;
+}
+
+.bf-input:focus {
   outline: none;
   border-color: #f4c430;
-  box-shadow: 0 0 0 3px rgba(244, 196, 48, 0.1);
 }
 
-.form-textarea {
-  resize: vertical;
-  min-height: 120px;
+.bf-select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='10' viewBox='0 0 20 20' width='10' xmlns='http://www.w3.org/2000/svg'><polygon points='0,0 20,0 10,10'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  background-size: 10px;
 }
 
-.form-input::placeholder {
-  color: #999;
-}
-
-.btn-submit {
-  background-color: #4caf50;
-  color: white;
+.bf-submit {
+  grid-column: 1 / -1;
+  height: 70px;
+  background: #e7cf94;
   border: none;
-  padding: 1.25rem 2rem;
-  border-radius: 8px;
-  font-size: 1.1rem;
-  font-weight: 600;
+  border-radius: 14px;
+  font-size: 22px;
+  font-weight: 700;
   cursor: pointer;
-  transition: background-color 0.3s;
-  margin-top: 1rem;
+  margin-top: 18px;
+  transition: background 0.25s ease;
 }
 
-.btn-submit:hover {
-  background-color: #45a049;
+.bf-submit:hover {
+  background: #e1c37a;
 }
 
 @media (max-width: 768px) {
-  .form-grid {
+  .bf-form {
     grid-template-columns: 1fr;
   }
-  
-  .form-group-full {
-    grid-column: 1;
-  }
 }
-

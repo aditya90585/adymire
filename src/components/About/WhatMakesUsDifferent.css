@@ -1,0 +1,191 @@
+.wmd-section {
+    width: 100%;
+    background-color: #fff8ec;
+    padding: 10px 80px;
+    font-family: "Inter", sans-serif;
+}
+
+.wmd-container {
+
+    margin: 0 auto;
+}
+
+
+.wmd-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    color: #111;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.wmd-title::after {
+    content: "";
+    width: 200px;
+    height: 4px;
+    background-color: #f6c445;
+    display: block;
+    margin: 4px auto 0;
+    border-radius: 4px;
+}
+
+.wmd-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 18px;
+    padding: 0px 40px;
+    margin-bottom: 28px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+.wmd-content h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.wmd-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 500;
+    margin-bottom: 14px;
+}
+
+/* ===== TAGS ===== */
+.wmd-tags {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.wmd-tag {
+    background: rgba(255, 255, 255, 0.75);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.wmd-image {
+
+    height: 280px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wmd-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.wmd-design {
+    background: linear-gradient(135deg,
+            #ffe9d6 0%,
+            #ffd3a8 50%,
+            #ffc68a 100%);
+}
+
+.wmd-design h3 {
+    color: #ff7a00;
+}
+
+/* ===== CARD 2 – OUR PROMISE ===== */
+.wmd-promise {
+    background: linear-gradient(135deg,
+            #ffd6f3 0%,
+            #f4b7e8 50%,
+            #eaa0df 100%);
+    color: #e044b5;
+
+}
+
+.wmd-promise h3 {
+    color: #e044b5;
+}
+
+/* ===== CARD 3 – PREMIUM FOCUS ===== */
+.wmd-premium {
+    background: linear-gradient(135deg,
+            #dff7e3 0%,
+            #c6f0cc 50%,
+            #b0e8b7 100%);
+    color: #2f9e44;
+}
+
+.wmd-premium h3 {
+    color: #2f9e44;
+}
+
+.wmd-support {
+    background: linear-gradient(135deg,
+            #e4e4ff 0%,
+            #cfd1ff 50%,
+            #b9bcff 100%);
+    color: #3f46e1;
+}
+
+.wmd-support h3 {
+    color: #3f46e1;
+}
+
+.wmd-support-btn {
+    background: white;
+    color: black;
+    border-radius: 10px;
+    padding: 6px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+.wmd-support-btn img{
+    height: 30px;
+}
+
+.wmd-support .wmd-content span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    font-size: 28px;
+    font-weight: 700;
+    background-color: rgb(244, 247, 250);
+    color: black;
+    margin-left: 40px;
+}
+
+@media (max-width: 900px) {
+    .wmd-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .wmd-content {
+        max-width: 100%;
+    }
+
+    .wmd-image {
+        width: 100%;
+        height: 160px;
+    }
+
+    .wmd-tags {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,32 @@
+.ps-section {
+  background: #fff8eb;
+  padding: 40px 20px 120px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.ps-header h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.ps-underline {
+  display: block;
+  width: 120px;
+  height: 4px;
+  background: #f5b400;
+  margin: 0 auto 16px;
+  border-radius: 2px;
+}
+
+.ps-payment-methods-img{
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ps-payment-methods-img img{
+  width: 60%;
+}

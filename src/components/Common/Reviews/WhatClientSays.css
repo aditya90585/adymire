@@ -1,0 +1,126 @@
+.ct-section {
+  padding: 80px 40px;
+  background: #fff9ee;
+}
+
+.ct-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+.ct-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111;
+  position: relative;
+  display: inline-block;
+}
+
+.ct-title-underline {
+  display: block;
+  width: 120px;
+  height: 4px;
+  background: #f7c600;
+  margin: 10px auto 0;
+  border-radius: 10px;
+}
+
+
+.ct-stars {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ct-star {
+  background: #fff1bf;
+  color: #111;
+  font-size: 18px;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  border-radius: 8px;
+}
+
+
+.ct-subtitle {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.ct-scroll-wrapper {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  scroll-snap-type: x mandatory;
+}
+
+.ct-scroll-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+
+.ct-scroll-wrapper::-webkit-scrollbar-thumb {
+  background:none;
+  height: 0px;
+}
+
+
+.ct-card {
+  min-width: 260px;
+  max-width: 260px;
+  scroll-snap-align: center;
+}
+
+.ct-media {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  border-radius: 22px;
+  border: 3px solid #f7c600;
+  overflow: hidden;
+  background: #eaeaea;
+}
+
+.ct-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.ct-play-btn {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 56px;
+  height: 56px;
+  background: #f7c600;
+  color: #111;
+  font-size: 22px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.ct-play-btn:hover {
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+  .ct-title {
+    font-size: 28px;
+  }
+
+  .ct-media {
+    height: 360px;
+  }
+}

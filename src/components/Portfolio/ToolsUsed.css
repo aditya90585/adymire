@@ -1,0 +1,150 @@
+.tools-used {
+  width: 100%;
+  padding: 10px 20px;
+  background: #fffaf2;
+}
+
+.tools-used__title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* ROW */
+.tools-used__row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  height: 360px;
+}
+
+/* FULL BOX */
+.tools-used__section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: #fcfbfb;
+  border-radius: 14px;
+  overflow: hidden;
+  height: 100%;
+  border: 2px solid rgb(206, 202, 202);
+}
+
+/* CATEGORY CARD */
+.tools-used__category {
+  min-width: 280px;
+  height: 100%;
+  background: #fadbb6;
+  border-radius: 12px;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.tools-used__category-img {
+  width: 60%;
+  aspect-ratio: 1/1;
+  background: #fbfbfc;
+  border-radius: 50%;
+  margin: 0 auto 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.tools-used__category h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.tools-used__category p {
+  font-size: 22px;
+  opacity: 0.9;
+}
+
+/* ARROWS */
+.tools-used__arrow {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  border: none;
+  background: #ffd36a;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 12px;
+}
+
+.tools-used__arrow:hover {
+  background: #ffbf3f;
+}
+
+.tools-used__tools {
+  display: flex;
+  height: 100%;
+  gap: 40px;
+  overflow-x: auto;
+  padding: 35px;
+  scroll-behavior: smooth;
+}
+
+.tools-used__tools::-webkit-scrollbar {
+  display: none;
+}
+
+.tools-used__tool-card {
+  min-width: 180px;
+  max-width: 180px;
+  height: 100%;
+  background: #f8f8f8;
+  border-radius: 160px;
+  padding: 16px 16px;
+  text-align: center;
+  flex-shrink: 0;
+  border: 2px solid rgb(231, 229, 229);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.tools-used__tool-img {
+  width: 100%;
+
+
+  background: #f7c0c0;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.tools-used__tool-img img {
+  background-color: white;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+
+
+}
+
+.tools-used__tool-name {
+  display: block;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.tools-used__tool-percent {
+  font-size: 18px;
+  font-weight: 600;
+  color: #181817;
+}

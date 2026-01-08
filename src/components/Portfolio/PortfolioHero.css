@@ -1,0 +1,109 @@
+.portfolio-hero {
+  padding: 0px 0px;
+  background: linear-gradient(
+    135deg,
+    #fff6e5 0%,
+    #f7d9e3 30%,
+    #d6d6f5 55%,
+    #ffe8c8 80%
+  );
+}
+
+.portfolio-hero-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.portfolio-hero-left {
+  width: 50%;
+
+  padding: 30px 80px 80px 80px;
+}
+
+.portfolio-hero-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.portfolio-hero-text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.portfolio-hero-steps {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.portfolio-step {
+  background-color: rgb(248, 240, 240);
+  border-radius: 16px;
+  padding: 30px;
+  width: 140px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-step img {
+  width: 60%;
+
+}
+
+.portfolio-step p {
+   font-size: 14px;
+   font-weight: 600;
+
+}
+
+.portfolio-step-arrow {
+  font-size: 26px;
+  transform: rotate(45deg);
+}
+
+.portfolio-hero-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolio-hero-right img {
+  width: 100%;
+  height: auto;
+}
+
+/* CTA CENTER */
+.portfolio-hero-cta-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  position:absolute;
+  left: 40%;
+  bottom: 5%;
+}
+
+.portfolio-hero-cta {
+  padding: 4px 20px;
+  border-radius: 12px;
+  border: 2px solid #575656;
+  background-color: #faddac;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.portfolio-hero-cta:hover{
+  background-color: rgb(248, 207, 72);
+}
+.portfolio-hero-cta img{
+  height: 50px;
+  margin-right: 5px;
+}

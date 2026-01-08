@@ -1,0 +1,141 @@
+.svz-section {
+    background: #fff9ee;
+    padding: 10px 20px;
+}
+
+.svz-container {
+    max-width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+
+.svz-heading {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 80px;
+}
+
+.svz-underline {
+    display: block;
+    width: 120px;
+    height: 4px;
+    background: #f7c600;
+    margin: 10px auto 0;
+    border-radius: 10px;
+}
+
+
+.svz-timeline {
+    position: relative;
+}
+
+.svz-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 3px;
+    background: #bdbdbd;
+    transform: translateX(-50%);
+    margin: 30px 0px;
+}
+
+.svz-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+
+.svz-left {
+    flex-direction: row;
+}
+
+.svz-right {
+    justify-content: end;
+}
+
+.svz-content {
+    width: 40%;
+}
+
+.svz-right .svz-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 0px 0px 0px 20px;
+}
+.svz-right .svz-content p{
+    text-align: start;
+}
+.svz-left .svz-content {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+     padding: 0px 20px 0px 0px;
+}
+
+.svz-content h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #111;
+}
+
+.svz-content p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+    max-width: 280px;
+    text-align: right;
+}
+
+.svz-btn {
+    padding: 8px 18px;
+    border-radius: 6px;
+    border: 1px solid #f7c600;
+    background: #fff2c2;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+
+.svz-icon {
+    width: 10%;
+    aspect-ratio: 1/1;
+    background: #fff2c2;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    z-index: 2;
+    border :12px solid  #fff9ee,
+}
+
+.svz-icon img {
+    width: 70%;
+    background: #ddd;
+    border-radius: 50%;
+}
+
+
+@media (max-width: 900px) {
+    .svz-line {
+        left: 20px;
+    }
+
+    .svz-item {
+        flex-direction: row !important;
+        padding-left: 60px;
+    }
+
+    .svz-content {
+        width: 100%;
+    }
+
+    .svz-icon {
+        position: absolute;
+        left: 0;
+    }
+}

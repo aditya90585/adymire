@@ -1,0 +1,85 @@
+.why {
+  background: #fff8ec;
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.why-title {
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 80px;
+}
+
+.why-title span {
+  position: absolute;
+  left: 50%;
+  bottom: -12px;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 4px;
+  background: #f5c32c;
+  border-radius: 4px;
+}
+
+.why-grid {
+  display: flex;
+  gap: 100px;
+  margin-top: 40px;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+}
+
+.why-card {
+  position: relative;
+  width: 250px;
+  height: 280px;
+  background: #fff;
+  border-radius: 40px;
+    border: 2px solid rgb(141, 140, 140) ;
+    border-top: none;
+}
+
+.blob {
+  position: absolute;
+  top: -60px;
+  left: -0px;
+  width: 100%;
+  height: auto;
+  fill: #fde8b5;
+
+}
+
+.why-content {
+  position: relative;
+  z-index: 2;
+  margin-top: 20px;
+}
+
+.why-content h3 {
+  font-size: 30px;
+  font-weight: 800;
+  margin-bottom: 2px;
+}
+
+.why-content p {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.icon-box {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.icon-box img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

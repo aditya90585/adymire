@@ -1,0 +1,160 @@
+.crv-section {
+  background: #fff9ee;
+  padding: 80px 40px;
+}
+
+.crv-container {
+  max-width: 1400px;
+  margin: auto;
+  text-align: center;
+}
+
+/* TITLE */
+
+.crv-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #111;
+}
+
+.crv-underline {
+  display: block;
+  width: 140px;
+  height: 4px;
+  background: #f7c600;
+  margin: 12px auto;
+  border-radius: 10px;
+}
+
+/* STARS */
+
+.crv-stars {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.crv-star {
+  width: 36px;
+  height: 36px;
+  background: #fff1bf;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  font-size: 18px;
+}
+
+/* SUBTITLE */
+
+.crv-subtitle {
+  font-size: 18px;
+  margin-bottom: 50px;
+  color: #333;
+}
+
+/* GRID */
+
+.crv-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* CARD */
+
+.crv-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 24px;
+  text-align: left;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* HEADER */
+
+.crv-card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.crv-user {
+  display: flex;
+  gap: 12px;
+}
+
+.crv-user img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #ddd;
+}
+
+.crv-user h4 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.crv-user p {
+  font-size: 13px;
+  color: #666;
+}
+
+.crv-google img {
+  width: 22px;
+  height: 22px;
+  background: #ddd;
+  border-radius: 50%;
+}
+
+/* RATING */
+
+.crv-rating {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  color: #f7a600;
+  margin: 10px 0;
+}
+
+.crv-date {
+  color: #666;
+}
+
+/* TEXT */
+
+.crv-text {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.crv-exp {
+  font-size: 13px;
+  margin: 15px 0;
+}
+
+
+.crv-reply {
+  background: #f6f6ef;
+  border-left: 4px solid #18a957;
+  padding: 12px;
+  border-radius: 12px;
+  font-size: 13px;
+}
+
+.crv-reply p {
+  margin: 8px 0;
+}
+
+.crv-thanks {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media (max-width: 992px) {
+  .crv-grid {
+    grid-template-columns: 1fr;
+  }
+}
