@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import Logo from '../components/Logo'
-import './AdminLogin.css'
+
 
 const AdminLogin = () => {
   const [loginType, setLoginType] = useState('admin')

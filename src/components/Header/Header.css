@@ -1,6 +1,6 @@
 .header {
   background-color: #fff;
-  padding: 1rem 2rem;
+  padding: 2px 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -76,6 +76,12 @@
   cursor: pointer;
   text-decoration: none;
   display: inline-block;
+  transition: all background-color ease-in 0.2s;
+}
+.btn-login:hover{
+  background-color: rgb(27, 27, 27);
+  color:white;
+ 
 }
 
 .btn-signup {

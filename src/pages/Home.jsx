@@ -18,6 +18,7 @@ import Footer from '../components/Footer/Footer'
 import WhatClientSays from '../components/Common/Reviews/WhatClientSays'
 import SocialProof from '../components/Common/Reviews/SocialProof'
 import WhatClientSays2 from '../components/Common/Reviews/WhatClientSays2'
+import SeeProjects from '../components/Common/SeeProjects'
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
       <Hero />
       <VideoWalkthrough />
       <WhatWeDo />
+      <SeeProjects/>
       <AgencyHelps />
       <CallToAction />
       <SpecializedIndustries />

@@ -12,6 +12,9 @@ import Services from './pages/Services'
 import About from './pages/About'
 import ScrollToTop from './components/ScrollToTop'
 import Portfolio from './pages/Portfolio'
+import Signup from './components/ClientArea/SignUp'
+import ClientLogin from './components/ClientArea/ClientLogin'
+import ClientOtpVerification from './components/ClientArea/ClientOtpVerification'
 
 function App() {
   return (
@@ -23,6 +26,9 @@ function App() {
            <Route path="/about" element={<About/>}  />
           <Route path="/services" element={<Services/>} />
           <Route path="/portfolio" element={<Portfolio/>} />
+          <Route path="/user/signup" element={<Signup />} />
+          <Route path="/client/login" element={<ClientLogin />} />
+          <Route path="/client/otp" element={<ClientOtpVerification/>}/>
           <Route path="/admin/login" element={<AdminLogin />} />
           <Route path="/admin/otp" element={<OTPVerification />} />
           <Route path="/admin/dashboard" element={<AdminDashboard />} />

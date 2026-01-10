@@ -1,17 +1,12 @@
 import React from 'react'
 import './Logo.css'
+import {AdymireLogo} from "@/assets"
 
 const Logo = ({ size = 'medium' }) => {
   return (
     <div className={`logo logo-${size}`}>
-      <div className="logo-icon">
-        <div className="logo-circle"></div>
-        <div className="logo-v">
-          <div className="logo-v-shape"></div>
-        </div>
-        <div className="logo-line"></div>
-      </div>
-      <span className="logo-text">Adymire</span>
+      <img className='h-18 ' src={AdymireLogo} alt="adymire-logo" />
+      <span className="text-black text-xl font-bold">Ady<span className='text-[#fab04f]'>mire</span></span>
     </div>
   )
 }

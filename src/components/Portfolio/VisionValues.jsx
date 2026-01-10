@@ -1,20 +1,26 @@
+import { Innovation ,Quality,Customer,Transparency} from "@/assets";
+
 const VisionValues = () => {
   const values = [
     {
       title: "Innovation",
       desc: "We design modern solutions that elevate everyday living with creativity.",
+      icon:Innovation
     },
     {
       title: "Quality",
       desc: "Premium materials and skilled craftsmanship ensure long-lasting, reliable results.",
+      icon:Quality,
     },
     {
       title: "Transparency",
       desc: "Clear communication and honest processes build trust throughout every project.",
+      icon:Transparency,
     },
     {
       title: "Customer-First",
       desc: "Your needs guide every decision to deliver spaces you truly love.",
+      icon:Customer,
     },
   ];
 
@@ -37,11 +43,11 @@ const VisionValues = () => {
             className="relative bg-white rounded-2xl border border-gray-200 pt-20 pb-10 px-6 text-center shadow-sm"
           >
             <div className="absolute -top-15 left-1/2 -translate-x-1/2">
-              <div className="w-30 h-30 rounded-full bg-[#fff0c2] flex items-center justify-center">
+              <div className="w-30 h-30 p-4 rounded-full bg-[#fff0c2] flex items-center justify-center">
                 <img
-                  src=""
+                  src={item.icon}
                   alt={item.title}
-                  className="w-10 h-10 object-contain"
+                  className="w-full aspect-square object-contain"
                 />
               </div>
             </div>

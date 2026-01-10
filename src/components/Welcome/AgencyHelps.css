@@ -35,9 +35,11 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  transition: all ease-in 0.1s;
 }
 .step-card:hover{
-  transform: scale(1.04);
+  transform: translateY(-5px);
+  box-shadow: 2px 5px 8px rgb(24, 23, 23);
 }
 
 .step-icon {

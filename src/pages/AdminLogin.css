@@ -2,7 +2,7 @@
   min-height: 100vh;
   background-color: #fff9e6;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .login-left {

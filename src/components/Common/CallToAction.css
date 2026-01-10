@@ -41,11 +41,12 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  transition: background-color 0.3s;
+  transition: all ease-in 0.1s;
 }
 
 .btn-call-action:hover {
-  background-color: rgb(248, 239, 236);
+  transform: translateY(-4px);
+  box-shadow: -2px 2px 4px rgb(71, 71, 71);
 }
 
 .btn-whatsapp-action {
@@ -60,12 +61,12 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  transition: background-color 0.3s;
+  transition: all ease-in 0.1s;
 }
 
 .btn-whatsapp-action:hover {
-  background-color: #dafadb;
-
+   transform: translateY(-4px);
+  box-shadow: 2px 2px 4px rgb(71, 71, 71);
 }
 
 

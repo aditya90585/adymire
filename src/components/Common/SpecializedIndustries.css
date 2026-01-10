@@ -32,10 +32,15 @@
   height: 140px;
   border-radius: 50%;
   background: #ffffff;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  box-shadow:  1px 1px 4px rgb(87, 86, 86);
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all ease-in 0.1s;
+}
+.center-circle:hover{
+  transform: translateY(-4px);
+  box-shadow: 2px 2px 4px rgb(87, 86, 86);
 }
 
 .center-inner {
@@ -54,12 +59,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition: box-shadow 0.2s ease-in, transform 0.3s ease;
   cursor: pointer;
 }
 
 .industry-card:hover {
-  scale: 1.02;
+  box-shadow: 3px 2px 6px rgb(61, 61, 61);
   z-index: 5;
 }
 
@@ -73,7 +78,8 @@
 }
 
 .industry-card:hover .card-inner {
-  transform: scale(1.06);
+  transform: translateY(-2px);
+
 }
 
 .industry-icon-box {

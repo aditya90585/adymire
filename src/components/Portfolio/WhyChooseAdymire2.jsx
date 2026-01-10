@@ -1,18 +1,23 @@
 import React from 'react'
+import { ExpertTeam, Quality2, OnTime, Budget } from '@/assets';
 
 const WhyChooseAdymire2 = () => {
     const values = [
         {
             title: "Expert Team",
+            icon: ExpertTeam,
         },
         {
             title: "Quality Assurance",
+            icon: Quality2
         },
         {
             title: "On-Time Delivery",
+            icon: OnTime
         },
         {
             title: "Budget Friendly",
+            icon: Budget
         },
     ];
 
@@ -35,11 +40,11 @@ const WhyChooseAdymire2 = () => {
                         className="flex justify-center items-center hover:shadow-xl py-10 px-20 text-center gap-y-10 flex-col bg-white rounded-2xl border border-gray-200 shadow-sm"
                     >
 
-                        <div className="w-30 h-30 rounded-full bg-[#fff0c2] flex items-center justify-center">
+                        <div className="w-30 h-30 p-4 rounded-full bg-[#fff0c2] flex items-center justify-center">
                             <img
-                                src=""
+                                src={item.icon}
                                 alt={item.title}
-                                className="w-10 h-10 object-contain"
+                                className="w-full aspect-square object-contain"
                             />
                         </div>
 

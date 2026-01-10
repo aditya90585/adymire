@@ -61,8 +61,8 @@ const Header = () => {
         <div className="header-actions">
           <button className="btn-icon-whatsapp"><img src={Whatsapp} alt="whatsapp" /> Chat on whatsapp</button>
           <button className="btn-icon-call"><img src={PhoneYellow} alt="call" /> Book Free Call</button>
-          <button className="btn-login">Login</button>
-          <button className="btn-signup">SignUP</button>
+          <NavLink to={"/client/login"} className="btn-login hover:bg-gray-800 text-white">Login</NavLink>
+          <NavLink to={"/user/signup"} className="btn-signup">SignUP</NavLink>
         </div>
       </div>
     </header>

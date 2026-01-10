@@ -136,3 +136,19 @@ export { default as WorkingProcessicons4 } from "./icons/WorkingProcessicons/Wor
 export { default as WorkingProcessicons5 } from "./icons/WorkingProcessicons/WorkingProcessicons5.svg";
 export { default as WorkingProcessicons6 } from "./icons/WorkingProcessicons/WorkingProcessicons6.svg";
 
+
+
+//logo
+
+export {default as AdymireLogo} from "./logo/AdymireLogo.png"
+
+//portfolio icons
+
+export {default as Budget} from "./icons/PortfolioIcons/Budget.svg"
+export {default as OnTime } from "./icons/PortfolioIcons/OnTime.svg"
+export {default as Quality} from "./icons/PortfolioIcons/Quality.svg"
+export {default as Quality2} from "./icons/PortfolioIcons/Quality2.svg"
+export {default as Innovation} from "./icons/PortfolioIcons/Innovation.svg"
+export {default as Transparency} from "./icons/PortfolioIcons/Transparency.svg"
+export {default as Customer} from "./icons/PortfolioIcons/Customer.svg"
+export {default as ExpertTeam} from "./icons/PortfolioIcons/ExpertTeam.svg"
