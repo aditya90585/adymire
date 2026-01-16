@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./WhyChooseAdymire.css";
-import {BusinessManGroup} from "@/assets"
+import {WhyChooseAdymireImage} from "@/assets"
 
 const faqData = [
   {
@@ -46,7 +46,7 @@ export default function WhyChooseAdymire() {
 
       <div className="adymire-why-content">
         <div className="adymire-why-image">
-          <img src={BusinessManGroup} alt="Why Choose Us" />
+          <img src={WhyChooseAdymireImage} alt="Why Choose Us" />
         </div>
 
         <div className="adymire-why-faq">

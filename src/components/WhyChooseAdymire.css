@@ -30,13 +30,9 @@
 }
 
 .adymire-why-image {
-  width: 360px;
-  height: 360px;
-  border-radius: 50%;
-  background: #e0e0e0;
-  overflow: hidden;
-  flex-shrink: 0;
-  align-self: flex-start;
+   width: 40%;
+   height: auto;
+  
 }
 
 .adymire-why-image img {
@@ -76,7 +72,6 @@
  font-size: 20px;
 }
 
-/* ANSWER */
 .adymire-faq-answer {
   max-height: 0;
   overflow: hidden;

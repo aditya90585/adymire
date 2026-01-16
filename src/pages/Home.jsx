@@ -19,6 +19,8 @@ import WhatClientSays from '../components/Common/Reviews/WhatClientSays'
 import SocialProof from '../components/Common/Reviews/SocialProof'
 import WhatClientSays2 from '../components/Common/Reviews/WhatClientSays2'
 import SeeProjects from '../components/Common/SeeProjects'
+import ContactEnquirySection from '../components/Footer/ContactEnquirySection'
+import ApplyContactForm from '../components/ContactUs/ApplyContactForm'
 
 const Home = () => {
   return (
@@ -42,7 +44,9 @@ const Home = () => {
       <WhyChooseAdymire/>
       <CallToAction />
       <PaymentSystem />
-      <BookingForm />
+      {/* <BookingForm /> */}
+      <ApplyContactForm/>
+      <ContactEnquirySection/>
       <Footer/>
     </div>
   )

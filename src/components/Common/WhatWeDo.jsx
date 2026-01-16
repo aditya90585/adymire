@@ -27,6 +27,7 @@ import {
 } from "@/assets";
 
 import './WhatWeDo.css'
+import { NavLink } from 'react-router-dom';
 
 
 const WhatWeDo = () => {
@@ -37,6 +38,7 @@ const WhatWeDo = () => {
       subtitle: "Design",
       icon: UIUXsvg,
       tools: [Figma, Xd, Sketch],
+      button_link:"/process/uiux",
       items: [
         "Modern UI design",
         "Fix site UX factors",
@@ -154,8 +156,7 @@ const WhatWeDo = () => {
 
               </div>
 
-              <button className="process-btn">What’s The Process</button>
-
+              <NavLink to={service.button_link} className="process-btn">What’s The Process</NavLink>
             </div>
           </div>
 

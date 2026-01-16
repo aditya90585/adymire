@@ -8,29 +8,6 @@
   flex-direction: column;
 }
 
-.bf-img {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-bottom: 50px;
-}
-
-.bf-img img {
-  width: 60%;
-}
-
-.bf-img-text {
-  background-color: rgb(255, 240, 196);
-  width: 45%;
-  font-weight: bolder;
-  text-align: center;
-  font-size: 30px;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-  padding: 20px 0px;
-}
 
 .bf-form {
   width: 100%;
@@ -72,18 +49,18 @@
 .bf-submit {
   grid-column: 1 / -1;
   height: 70px;
-  background: #e7cf94;
+  background-color: #e7cf94;
   border: none;
   border-radius: 14px;
   font-size: 22px;
   font-weight: 700;
   cursor: pointer;
   margin-top: 18px;
-  transition: background 0.25s ease;
+  transition: background-color 0.25s ease;
 }
 
 .bf-submit:hover {
-  background: #e1c37a;
+  background-color: #e1c37a;
 }
 
 @media (max-width: 768px) {

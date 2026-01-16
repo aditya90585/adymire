@@ -1,53 +1,5 @@
 import React, { useRef } from "react";
 import "./ToolsUsed.css";
-
-// import UIUXsvg from "../assets/icons/UIUX.svg"
-// import Developmentsvg from "../assets/icons/Development.svg"
-// import DigitalMarketingsvg from "../assets/icons/DigitalMarketing.svg"
-// import Aisvg from "../assets/icons/Ai.svg"
-
-
-// import Figma from "../assets/icons/UIUXToolsIcons/Figma.svg"
-// import Xd from "../assets/icons/UIUXToolsIcons/Xd.svg"
-// import Sketch from "../assets/icons/UIUXToolsIcons/Sketch.svg"
-// import UIUXToolsIcons4 from "../assets/icons/UIUXToolsIcons/UIUXToolsIcons4.svg"
-// import UIUXToolsIcons5 from "../assets/icons/UIUXToolsIcons/UIUXToolsIcons5.svg"
-// import UIUXToolsIcons6 from "../assets/icons/UIUXToolsIcons/UIUXToolsIcons6.svg"
-// import UIUXToolsIcons7 from "../assets/icons/UIUXToolsIcons/UIUXToolsIcons7.svg"
-
-// import Flutter from "../assets/icons/DevelopmentToolsIcons/Flutter.svg"
-// import Jetpack from "../assets/icons/DevelopmentToolsIcons/Jetpack.svg"
-// import Reactlogo from "../assets/icons/DevelopmentToolsIcons/Reactlogo.svg"
-// import Apple from "../assets/icons/DevelopmentToolsIcons/Apple.svg"
-// import Android from "../assets/icons/DevelopmentToolsIcons/Android.svg"
-// import Browser from "../assets/icons/DevelopmentToolsIcons/Browser.svg"
-
-// import Aitool1 from "../assets/icons/AutomationToolsIcons/Aitool1.svg"
-// import Aitool2 from "../assets/icons/AutomationToolsIcons/Aitool2.svg"
-// import Aitool4 from "../assets/icons/AutomationToolsIcons/Aitool4.svg"
-// import Aitool5 from "../assets/icons/AutomationToolsIcons/Aitool5.svg"
-// import Aitool6 from "../assets/icons/AutomationToolsIcons/Aitool6.svg"
-
-
-// import DigitalmarketingToolsIcons1 from "../assets/icons/DigitalmarketingToolsIcons/DigitalmarketingToolsIcons1.svg";
-// import DigitalmarketingToolsIcons2 from "../assets/icons/DigitalmarketingToolsIcons/DigitalmarketingToolsIcons2.svg";
-// import DigitalmarketingToolsIcons3 from "../assets/icons/DigitalmarketingToolsIcons/DigitalmarketingToolsIcons3.svg";
-// import DigitalmarketingToolsIcons4 from "../assets/icons/DigitalmarketingToolsIcons/DigitalmarketingToolsIcons4.svg";
-// import DigitalmarketingToolsIcons5 from "../assets/icons/DigitalmarketingToolsIcons/DigitalmarketingToolsIcons5.svg";
-// import DigitalmarketingToolsIcons6 from "../assets/icons/DigitalmarketingToolsIcons/DigitalmarketingToolsIcons6.svg";
-// import DigitalmarketingToolsIcons7 from "../assets/icons/DigitalmarketingToolsIcons/DigitalmarketingToolsIcons7.svg";
-// import DigitalmarketingToolsIcons8 from "../assets/icons/DigitalmarketingToolsIcons/DigitalmarketingToolsIcons8.svg";
-// import DigitalmarketingToolsIcons9 from "../assets/icons/DigitalmarketingToolsIcons/DigitalmarketingToolsIcons9.svg";
-// import DigitalmarketingToolsIcons10 from "../assets/icons/DigitalmarketingToolsIcons/DigitalmarketingToolsIcons10.svg";
-// import DigitalmarketingToolsIcons11 from "../assets/icons/DigitalmarketingToolsIcons/DigitalmarketingToolsIcons11.svg";
-// import DigitalmarketingToolsIcons12 from "../assets/icons/DigitalmarketingToolsIcons/DigitalmarketingToolsIcons12.svg";
-// import DigitalmarketingToolsIcons13 from "../assets/icons/DigitalmarketingToolsIcons/DigitalmarketingToolsIcons13.svg";
-// import DigitalmarketingToolsIcons14 from "../assets/icons/DigitalmarketingToolsIcons/DigitalmarketingToolsIcons14.svg";
-// import DigitalmarketingToolsIcons15 from "../assets/icons/DigitalmarketingToolsIcons/DigitalmarketingToolsIcons15.svg";
-// import DigitalmarketingToolsIcons16 from "../assets/icons/DigitalmarketingToolsIcons/DigitalmarketingToolsIcons16.svg";
-// import DigitalmarketingToolsIcons17 from "../assets/icons/DigitalmarketingToolsIcons/DigitalmarketingToolsIcons17.svg";
-// import DigitalmarketingToolsIcons18 from "../assets/icons/DigitalmarketingToolsIcons/DigitalmarketingToolsIcons18.svg";
-
 import {
   UIUXsvg,
   Developmentsvg,
@@ -94,6 +46,7 @@ import {
   DigitalmarketingToolsIcons17,
   DigitalmarketingToolsIcons18
 } from "@/assets";
+import ToolsUsedContainer from "../Common/ToolsUsedContainer";
 
 const toolsData = [
   {
@@ -163,70 +116,9 @@ const toolsData = [
 ];
 
 const ToolsUsed = () => {
-  const scrollRefs = useRef([]);
-
-  const scroll = (index, direction) => {
-    const container = scrollRefs.current[index];
-    if (!container) return;
-
-    container.scrollBy({
-      left: direction === "left" ? -260 : 260,
-      behavior: "smooth",
-    });
-  };
 
   return (
-    <section className="tools-used">
-      <h2 className="tools-used__title">Tools We Used</h2>
-
-      {toolsData.map((section, index) => (
-        <div className="tools-used__row" key={index}>
-          <button
-            className="tools-used__arrow rotate-180"
-            onClick={() => scroll(index, "left")}
-          >
-            ➔
-          </button>
-
-          <div className="tools-used__section">
-            <div className="tools-used__category">
-              <div className="tools-used__category-img">
-                <img src={section.icon} alt={section.title} />
-              </div>
-              <h3>{section.title}</h3>
-              <p>{section.subtitle}</p>
-            </div>
-
-            <div
-              className="tools-used__tools"
-              ref={(el) => (scrollRefs.current[index] = el)}
-            >
-              {section.tools.map((tool, i) => (
-                <div className="tools-used__tool-card" key={i}>
-                  <div className="tools-used__tool-img aspect-square">
-                    <img src={tool.icon} alt={tool.name} />
-                  </div>
-                  <span className="tools-used__tool-percent">
-                    {tool.percentage}
-                  </span>
-                  <span className="tools-used__tool-name">
-                    {tool.name}
-                  </span>
-
-                </div>
-              ))}
-            </div>
-          </div>
-
-          <button
-            className="tools-used__arrow"
-            onClick={() => scroll(index, "right")}
-          >
-            ➔
-          </button>
-        </div>
-      ))}
-    </section>
+    <ToolsUsedContainer title="Tools We Used" toolsData={toolsData}/>
   );
 };
 

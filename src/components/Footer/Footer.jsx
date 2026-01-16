@@ -11,6 +11,7 @@ import {
   Youtube3dLogo,
 } from "@/assets";
 import OurStartups from "./OurStartups";
+import { BoyWithLaptop } from "@/assets";
 
 
 const socialIcons = [
@@ -59,7 +60,11 @@ const serviceLinks = [
 const Footer = () => {
   return (
     <footer className="ad-footer">
+       <div className="bf-img">
+          <img src={BoyWithLaptop} alt="booking-form" />
+        </div>
       <div className="ad-footer-container">
+       
 
         <div className="ad-footer-brand">
           <div className="ad-footer-logo">

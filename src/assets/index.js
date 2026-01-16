@@ -152,3 +152,14 @@ export {default as Innovation} from "./icons/PortfolioIcons/Innovation.svg"
 export {default as Transparency} from "./icons/PortfolioIcons/Transparency.svg"
 export {default as Customer} from "./icons/PortfolioIcons/Customer.svg"
 export {default as ExpertTeam} from "./icons/PortfolioIcons/ExpertTeam.svg"
+
+export {default as UIUXFirst} from "./illustrations/UIUXprocessImages/UIUXFirst.svg"
+export {default as UIUXSecond} from "./illustrations/UIUXprocessImages/UIUXSecond.svg"
+
+
+export {default as CallContact} from "./largeicons/CantactEnquiryicons/CallContact.svg"
+export {default as EmailContact} from "./largeicons/CantactEnquiryicons/EmailContact.svg"
+
+export {default as WhyChooseAdymireImage} from "./illustrations/WhyChooseAdymireImage.svg"
+
+export {default as ContactFormHeaderImage} from "./largeicons/CantactEnquiryicons/ContactFormHeaderImage.svg"

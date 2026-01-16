@@ -8,18 +8,20 @@ import {
 import "./Hero.css";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import { staggerFadeIn } from "../../animations/stagger";
+import BookCallButton from "../UI/NavButtons/BookCallButton";
 
 
 const Hero = () => {
-  useGSAP(()=>{
-    gsap.from(".hero-left-ani",{
-     opacity:0,
-     y:40,
-     duration:0.8,
-     stagger:0.1,
-     delay:0.4
+  useGSAP(() => {
+    staggerFadeIn(".hero-left-ani", {
+      opacity: 0,
+      y: 40,
+      duration: 0.8,
+      stagger: 0.1,
+      delay: 0.4
     })
-},{})
+  }, {})
   return (
     <section className="hero">
       <div className="hero-container">
@@ -28,7 +30,7 @@ const Hero = () => {
           <h1 >
             <span className="hero-left-ani first" >Digital Agency</span> <br />
             <span className="hero-left-ani" >& Solutions</span>
-            <span  className="dot hero-left-ani">.</span>
+            <span className="dot hero-left-ani">.</span>
           </h1>
 
           <div className="hero-stats">
@@ -37,7 +39,7 @@ const Hero = () => {
               <p>Customer</p>
 
               <div className="avatars">
-               <img className="" height={40} src={FourCustomers} alt="" />
+                <img className="" height={40} src={FourCustomers} alt="" />
               </div>
             </div>
 
@@ -57,20 +59,21 @@ const Hero = () => {
             </div>
           </div>
 
-         
+
         </div>
 
         <div className="hero-right">
-            <img className="hero-image" src={SittingDarkMan} alt="hero-cover" />
+          <img className="hero-image" src={SittingDarkMan} alt="hero-cover" />
         </div>
-        
+
       </div>
-          <div className="hero-partners">
-          <img height={50} src={MetaShopifyGoogle} alt="Meta_Shopify_Google_partners" />
-          </div>
-          <button className="hero-btn">
-            <img src={PhoneYellow} alt="phone" /> Book a Strategy Call
-          </button>
+      <div className="hero-partners hero-left-ani">
+        <img height={50} src={MetaShopifyGoogle} alt="Meta_Shopify_Google_partners" />
+      </div>
+     
+      <div className="hero-btn">
+      <BookCallButton text="Book a Strategy Call" className="bg-white" backgroundnumber={2} height="60px" paddingX="5" paddingY="2" rounded="xl" textSize="xl" borderstate={true}/>
+      </div>
     </section>
   );
 };

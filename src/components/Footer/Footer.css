@@ -1,7 +1,6 @@
 .ad-footer {
   background: #ffffff;
-  padding: 40px 60px;
-  border-top: 1px solid #eee;
+  padding: 10px 60px;
 }
 
 .ad-footer-container {
@@ -102,6 +101,20 @@
   color: #000;
   text-decoration: underline;
 }
+
+.bf-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.bf-img img {
+  width: 65%;
+}
+
 
 @media (max-width: 1000px) {
   .ad-footer-container {

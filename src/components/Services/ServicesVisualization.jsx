@@ -53,7 +53,6 @@ const ServicesVisualization = () => {
                             key={index}
                             className={`svz-item svz-${step.align}`}
                         >
-                            {/* LEFT CONTENT */}
                             {step.align === "left" && (
                                 <div className="svz-content">
                                     <h3>{step.title}</h3>

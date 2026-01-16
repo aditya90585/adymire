@@ -2,11 +2,11 @@ import React from 'react'
 import './Logo.css'
 import {AdymireLogo} from "@/assets"
 
-const Logo = ({ size = 'medium' }) => {
+const Logo = ({ size = 'medium' ,className ,imgClass ,textSize="xl"}) => {
   return (
-    <div className={`logo logo-${size}`}>
-      <img className='h-18 ' src={AdymireLogo} alt="adymire-logo" />
-      <span className="text-black text-xl font-bold">Ady<span className='text-[#fab04f]'>mire</span></span>
+    <div className={` ${className} text-${textSize} font-bold logo `}>
+      <img className={`${imgClass} h-18 `} src={AdymireLogo} alt="adymire-logo" />
+      <span className="text-black ">Ady<span className='text-[#fab04f]'>mire</span></span>
     </div>
   )
 }

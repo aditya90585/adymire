@@ -89,36 +89,13 @@
 }
 
 .hero-btn {
-  background: #fff;
-  border: 2px solid #111;
-  border-radius: 14px;
-  padding: 2px 2px;
-  font-size: 16px;
-  font-weight: 700;
-  cursor: pointer;
-  padding: 4px 40px;
-  font-weight: 800;
-
-  display: flex;     
-  align-items: center;
-  gap: 10px;
-
-  margin: 0 auto;  
-  transition: all 0.3s ease;
-}
-.hero-btn img{
-    height: 50px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
 }
 
 
-.hero-btn:hover {
-  background: #ffb703;
-  border-color: #ffb703;
-}
 
-/* =====================
-   RIGHT IMAGE
-===================== */
 
 .hero-right {
   flex: 1;
@@ -131,10 +108,6 @@
   height: 520px;
   margin-left: 100px;
 }
-
-/* =====================
-   RESPONSIVE
-===================== */
 
 @media (max-width: 1024px) {
   .hero-container {

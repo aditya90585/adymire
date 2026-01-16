@@ -31,7 +31,6 @@ export default function WhyChooseUs() {
       <div className="why-grid">
         {cards.map((item, i) => (
           <div className="why-card" key={i}>
-            {/* SVG BLOB */}
             <svg
               className="blob"
               viewBox="0 0 360 387"

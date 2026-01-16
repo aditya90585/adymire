@@ -8,11 +8,12 @@ const Input =  forwardRef(({
     label,
     labelClass="",
     parentClass="",
+    element,
     ...props
 }, ref) => {
     const id = useId()
     return (
-        <div className={`${parentClass}`}>
+        <div className={`${parentClass} relative`}>
             {
                 label && <label
                     className={`inline-block  mb-2 ${labelClass}`}
@@ -20,14 +21,20 @@ const Input =  forwardRef(({
                     {label}
                 </label>
             }
-            <input className={`${className}`}
+  <div className='reletive'>
+
+            {element && <div>{element}</div>}
+
+            <input className={`${className} `}
                 type={type}
                 placeholder={placeholder}
                 ref={ref}
                 {...props}
                 id={id}
-
-            />
+                
+                />
+                </div>
+            
 
         </div>
     )

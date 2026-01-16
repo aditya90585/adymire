@@ -9,6 +9,7 @@ import {
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import BookCallButton from "../UI/NavButtons/BookCallButton";
 
 const PortfolioHero = () => {
     useGSAP(()=>{
@@ -56,9 +57,10 @@ const PortfolioHero = () => {
                         </div>
                     </div>
                     <div className="portfolio-hero-cta-wrapper">
-                        <button className="portfolio-hero-cta">
+                        {/* <button className="portfolio-hero-cta">
                          <img src={PhoneYellow} alt="call" />   Book a Strategy Call
-                        </button>
+                        </button> */}
+                        <BookCallButton text="Book a Strategy Call"  height="60px" textSize="base" rounded="xl" paddingX="5" className="bg-[#faddac]  font-semibold border-2 border-[#575656]"/>
                     </div>
                 </div>
 

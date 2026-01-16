@@ -26,11 +26,12 @@ const BookingForm = () => {
   };
 
   return (
-    <section className="bf-section">
-      <div className="bf-img">
+    <section id="booking-form-section" className="bf-section">
+      {/* <div className="bf-img">
         <img src={BoyWithLaptop} alt="booking-form" />
         <div className="bf-img-text">Book Free Call Now</div>
-      </div>
+      </div> */}
+      <h1 className="font-bold text-center text-2xl my-3">Contact Us</h1>
       <form className="bf-form" onSubmit={handleSubmit}>
         <input
           className="bf-input"

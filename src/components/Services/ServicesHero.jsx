@@ -4,6 +4,7 @@ import { GirlSittingWithLaptop, PhoneYellow } from "@/assets";
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import BookCallButton from "../UI/NavButtons/BookCallButton";
 
 const ServicesHero = () => {
     useGSAP(()=>{
@@ -32,13 +33,14 @@ const ServicesHero = () => {
           <p className="services-hero__subtitle services-hero-ani">
             Want to know how we can help?
           </p>
-
+{/* 
           <button className="services-hero__btn ">
             <span className="services-hero__btn-icon">
               <img src={PhoneYellow} alt="call" />
             </span>
             Book a Strategy Call
-          </button>
+          </button> */}
+          <BookCallButton text="Book a Strategy Call" className="border-black border-2 bg-[#f8f1d5]"  borderstate={true} backgroundnumber={2} textSize="xl" rounded="xl" height="60px" paddingY="1"/> 
         </div>
 
         <div className="services-hero__image-wrapper">

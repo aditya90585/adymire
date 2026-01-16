@@ -60,7 +60,7 @@ export default function WorkingProcess() {
     <section className="process-section">
       <h2 className="title">
         Working Process
-        <span className="underline"></span>
+        <span className="h-1 mx-auto w-40 bg-yellow-400 block rounded-full"></span>
       </h2>
 
       <div className="process-wrapper">

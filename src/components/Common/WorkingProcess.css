@@ -13,14 +13,6 @@
   position: relative;
 }
 
-.underline {
-  display: block;
-  width: 120px;
-  height: 4px;
-  background: #f4b400;
-  margin: 10px auto 0;
-  border-radius: 4px;
-}
 
 .process-wrapper {
   position: relative;
