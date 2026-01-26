@@ -40,7 +40,7 @@ const VisionValues = () => {
         {values.map((item, index) => (
           <div
             key={index}
-            className="relative bg-white rounded-2xl border border-gray-200 pt-20 pb-10 px-6 text-center shadow-sm"
+            className="relative mt-15 sm:mt-0 bg-white rounded-2xl border border-gray-200 pt-20 pb-10 px-6 text-center shadow-sm"
           >
             <div className="absolute -top-15 left-1/2 -translate-x-1/2">
               <div className="w-30 h-30 p-4 rounded-full bg-[#fff0c2] flex items-center justify-center">

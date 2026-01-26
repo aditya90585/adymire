@@ -38,7 +38,7 @@ const SOURCES = [
 
 
 
-const ApplyForm = () => {
+const ApplyContactForm = () => {
   const [COUNTRIES, setCOUNTRIES] = useState([])
   const [open, setOpen] = useState(false)
   const [selected, setSelected] = useState(null)
@@ -253,4 +253,4 @@ const ApplyForm = () => {
   );
 };
 
-export default ApplyForm;
+export default ApplyContactForm;

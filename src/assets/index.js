@@ -163,3 +163,27 @@ export {default as EmailContact} from "./largeicons/CantactEnquiryicons/EmailCon
 export {default as WhyChooseAdymireImage} from "./illustrations/WhyChooseAdymireImage.svg"
 
 export {default as ContactFormHeaderImage} from "./largeicons/CantactEnquiryicons/ContactFormHeaderImage.svg"
+
+
+//team members images
+
+export {default as abhisekhgiri} from "./illustrations/TeamMembersImages/abhisekhgiri.png"
+export {default as abhisekhmannu} from "./illustrations/TeamMembersImages/abhisekhmannu.png"
+export {default as aditya} from "./illustrations/TeamMembersImages/aditya.png"
+export {default as ashish} from "./illustrations/TeamMembersImages/ashish.png"
+export {default as neeraj} from "./illustrations/TeamMembersImages/neeraj.png"
+export {default as rakesh} from "./illustrations/TeamMembersImages/rakesh.png"
+export {default as rohan} from "./illustrations/TeamMembersImages/rohan.png"
+export {default as santosh} from "./illustrations/TeamMembersImages/santosh.png"
+export {default as YashveerGiri} from "./illustrations/TeamMembersImages/YashveerGiri.png"
+export {default as ritugupta} from "./illustrations/TeamMembersImages/ritugupta.png"
+export {default as ravikumar} from "./illustrations/TeamMembersImages/ravikumar.png"
+
+
+//project categories
+
+export {default as CategoryAiAutomation} from "./icons/ProjectsCategory/CategoryAiAutomation.json"
+export {default as CategoryWebDevelopment} from "./icons/ProjectsCategory/CategoryWebDevelopment.json"
+export {default as CategoryAppDevelopment} from "./icons/ProjectsCategory/CategoryAppDevelopment.json"
+export {default as CategoryDigitalMarketing} from "./icons/ProjectsCategory/CategoryDigitalMarketing.json"
+export {default as CategoryUIUX} from "./icons/ProjectsCategory/CategoryUIUX.json"

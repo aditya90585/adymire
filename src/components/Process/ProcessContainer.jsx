@@ -30,14 +30,14 @@ const ProcessContainer = ({ heading, subHeading, steps }) => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-7 gap-10 items-center">
-          <div className="flex col-start-1 col-span-2  justify-center">
+          <div className="lg:flex col-start-1 col-span-2 hidden  justify-center">
             <img
               src={UIUXSecond}
               alt="Illustration"
               className="w-full "
             />
           </div>
-          <div className="relative col-start-3 col-span-5">
+          <div className="relative lg:col-start-3 lg:col-span-5">
             <div
               ref={sliderRef}
               className="flex gap-6 pt-7 pl-7 overflow-y-visible overflow-x-auto  scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"

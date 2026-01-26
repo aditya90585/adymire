@@ -11,16 +11,11 @@ import HowWeWork from '../components/Welcome/HowWeWork'
 import ClientReviews from '../components/Common/Reviews/ClientReviews'
 import WhyChooseUs from '../components/Welcome/WhyChooseUs'
 import PaymentSystem from '../components/Welcome/PaymentSystem'
-import BookingForm from '../components/BookingForm'
 import WorkingProcess from '../components/Common/WorkingProcess'
-import WhyChooseAdymire from '../components/WhyChooseAdymire'
+import WhyChooseAdymire from '../components/Footer/WhyChooseAdymire'
 import Footer from '../components/Footer/Footer'
-import WhatClientSays from '../components/Common/Reviews/WhatClientSays'
-import SocialProof from '../components/Common/Reviews/SocialProof'
-import WhatClientSays2 from '../components/Common/Reviews/WhatClientSays2'
 import SeeProjects from '../components/Common/SeeProjects'
 import ContactEnquirySection from '../components/Footer/ContactEnquirySection'
-import ApplyContactForm from '../components/ContactUs/ApplyContactForm'
 
 const Home = () => {
   return (
@@ -28,7 +23,7 @@ const Home = () => {
       <Header />
       <Hero />
       <VideoWalkthrough />
-      <WhatWeDo />
+      <WhatWeDo contentState={true} />
       <SeeProjects/>
       <AgencyHelps />
       <CallToAction />
@@ -37,15 +32,10 @@ const Home = () => {
       <HowWeWork />
       <WorkingProcess/>
       <WhyChooseUs />
-      <WhatClientSays/>
-      <ClientReviews />
-      <SocialProof/>
-      <WhatClientSays2/>
+      <ClientReviews/>
       <WhyChooseAdymire/>
       <CallToAction />
       <PaymentSystem />
-      {/* <BookingForm /> */}
-      <ApplyContactForm/>
       <ContactEnquirySection/>
       <Footer/>
     </div>

@@ -16,6 +16,7 @@ import Signup from './components/ClientArea/SignUp'
 import ClientLogin from './components/ClientArea/ClientLogin'
 import ClientOtpVerification from './components/ClientArea/ClientOtpVerification'
 import UIUXProcess from './pages/ProcessPages/UIUXProcess'
+import ContactUs from './pages/ContactUs'
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/process/uiux" element={<UIUXProcess />} />
+          <Route path="/contact" element={<ContactUs />} />
           {/* <Route path="/user/signup" element={<Signup />} />
           <Route path="/client/login" element={<ClientLogin />} />
           <Route path="/client/otp" element={<ClientOtpVerification />} />

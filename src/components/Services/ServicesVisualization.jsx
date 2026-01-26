@@ -62,7 +62,7 @@ const ServicesVisualization = () => {
                             )}
 
                             {step.align == "left" && (
-                                <div className=" py-[1.5px] w-[5%] bg-[#bdbdbd]"></div>
+                                <div className=" py-[1.5px] w-[5%] bg-[#bdbdbd] sm:block hidden"></div>
                             )}
 
                             <div className="svz-icon">
@@ -70,7 +70,7 @@ const ServicesVisualization = () => {
                             </div>
 
                             {step.align == "right" && (
-                                <div className="py-[1.5px] w-[5%] bg-[#bdbdbd]"></div>
+                                <div className="py-[1.5px] w-[5%] bg-[#bdbdbd] sm:block hidden"></div>
                             )}
 
 

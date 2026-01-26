@@ -40,7 +40,7 @@ const ServicesHero = () => {
             </span>
             Book a Strategy Call
           </button> */}
-          <BookCallButton text="Book a Strategy Call" className="border-black border-2 bg-[#f8f1d5]"  borderstate={true} backgroundnumber={2} textSize="xl" rounded="xl" height="60px" paddingY="1"/> 
+          <BookCallButton text="Book a Strategy Call" className="border-black sm:border-2 border mx-auto sm:mx-0 bg-[#f8f1d5]"  borderstate={true} backgroundnumber={2} textSize="xl" rounded="xl" height="60px" paddingY="1"/> 
         </div>
 
         <div className="services-hero__image-wrapper">

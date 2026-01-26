@@ -111,8 +111,8 @@
 
 .tools-used__tool-img {
   width: 100%;
-
-
+  height: auto;
+  aspect-ratio: 1/1;
   background: #f7c0c0;
   border-radius: 50%;
   margin: 0 auto 10px;
@@ -144,3 +144,85 @@
   font-weight: 600;
   color: #181817;
 }
+
+@media (max-width: 1024px) {
+  .tools-used__row {
+    height: 320px;
+  }
+
+  .tools-used__category {
+    min-width: 240px;
+    padding: 40px 16px;
+  }
+
+  .tools-used__category h3 {
+    font-size: 24px;
+  }
+
+  .tools-used__category p {
+    font-size: 18px;
+  }
+
+  .tools-used__tool-card {
+    min-width: 160px;
+    max-width: 160px;
+  }
+
+  .tools-used__tools {
+    gap: 30px;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .tools-used__title {
+    font-size: 26px;
+  }
+
+  .tools-used__row {
+    height: 180px;
+  }
+
+  .tools-used__arrow {
+   display: none;
+  }
+
+  .tools-used__category {
+    min-width: 140px;
+    padding: 30px 14px;
+  }
+
+  .tools-used__category h3 {
+    font-size: 16px;
+  }
+
+  .tools-used__category p {
+    font-size: 14px;
+  }
+
+  .tools-used__tool-card {
+    min-width: 70px;
+    max-width: 70px;
+    padding: 6px;
+  }
+
+  .tools-used__tool-name {
+    font-size: 8px;
+  }
+
+  .tools-used__tool-percent {
+    font-size: 10px;
+  }
+
+  .tools-used__tools {
+    gap: 24px;
+    padding: 24px 18px;
+  }
+  .tools-used__tool-img  {
+   padding: 4px;
+  }
+  .tools-used__tool-name{
+    margin-bottom: 2px;
+  }
+}
+

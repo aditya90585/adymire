@@ -28,7 +28,7 @@ const Hero = () => {
 
         <div className="hero-left">
           <h1 >
-            <span className="hero-left-ani first" >Digital Agency</span> <br />
+            <div className="hero-left-ani first" >Digital Agency</div>
             <span className="hero-left-ani" >& Solutions</span>
             <span className="dot hero-left-ani">.</span>
           </h1>
@@ -39,7 +39,7 @@ const Hero = () => {
               <p>Customer</p>
 
               <div className="avatars">
-                <img className="" height={40} src={FourCustomers} alt="" />
+                <img className="" height={20} src={FourCustomers} alt="" />
               </div>
             </div>
 
@@ -72,7 +72,7 @@ const Hero = () => {
       </div>
      
       <div className="hero-btn">
-      <BookCallButton text="Book a Strategy Call" className="bg-white" backgroundnumber={2} height="60px" paddingX="5" paddingY="2" rounded="xl" textSize="xl" borderstate={true}/>
+      <BookCallButton text="Book a Strategy Call" className="bg-white h-15" backgroundnumber={2} paddingX="5" paddingY="2" rounded="xl" textSize="xl" borderstate={true}/>
       </div>
     </section>
   );

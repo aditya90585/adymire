@@ -5,10 +5,10 @@ import Header from '../components/Header/Header'
 import CallToAction from '../components/Common/CallToAction'
 import SpecializedIndustries from '../components/Common/SpecializedIndustries'
 import WorkingProcess from '../components/Common/WorkingProcess'
-import BookingForm from '../components/BookingForm'
 import Footer from '../components/Footer/Footer'
 import TrustedBy from '../components/Services/TrustedBy'
 import ServicesVisulization from '../components/Services/ServicesVisualization'
+import ContactEnquirySection from '../components/Footer/ContactEnquirySection'
 
 const Services = () => {
   return (
@@ -21,7 +21,7 @@ const Services = () => {
       <SpecializedIndustries/>
       <ServicesVisulization/>
       <WorkingProcess/>
-      <BookingForm/>
+      <ContactEnquirySection/>
       <Footer/>
     </div>
   )

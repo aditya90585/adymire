@@ -42,14 +42,14 @@ const PortfolioHero = () => {
                             <p>Design</p>
                         </div>
 
-                        <span className="portfolio-step-arrow portfolio-hero-ani">➶</span>
+                        <span className="portfolio-step-arrow">➶</span>
 
                         <div className="portfolio-step portfolio-hero-ani">
                             <img src={Development} alt="Development" />
                             <p>Development</p>
                         </div>
 
-                        <span className="portfolio-step-arrow portfolio-hero-ani">➶</span>
+                        <span className="portfolio-step-arrow ">➶</span>
 
                         <div className="portfolio-step portfolio-hero-ani">
                             <img src={DigitalMarketing} alt="Grow" />

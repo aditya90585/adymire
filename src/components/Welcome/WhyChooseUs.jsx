@@ -1,5 +1,8 @@
+import { useRef } from "react";
 import "./WhyChooseUs.css";
 import { Clock, Handshake, Shield } from "@/assets";
+import { staggerFadeInOnScroll } from "../../animations/stagger";
+import { useGSAP } from "@gsap/react";
 
 const cards = [
   {
@@ -21,8 +24,14 @@ const cards = [
 ];
 
 export default function WhyChooseUs() {
+   
+      const wcucontref = useRef()
+        useGSAP(() => {
+          staggerFadeInOnScroll(".wcu-trigger-ani",{trigger:wcucontref.current,stagger:0.4,delay:0.8,y:40})
+        },{scope:wcucontref})
+    
   return (
-    <section className="why">
+    <section ref={wcucontref} className="why">
       <h2 className="why-title">
         Why You Chose Us
         <span></span>
@@ -30,7 +39,7 @@ export default function WhyChooseUs() {
 
       <div className="why-grid">
         {cards.map((item, i) => (
-          <div className="why-card" key={i}>
+          <div className="why-card wcu-trigger-ani" key={i}>
             <svg
               className="blob"
               viewBox="0 0 360 387"

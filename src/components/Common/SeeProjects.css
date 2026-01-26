@@ -1,0 +1,35 @@
+.seeProjects-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seeProjects-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #ccc;
+    opacity: 1;
+    margin: 0 6px;
+    transition: all 0.3s ease;
+}
+
+.seeProjects-pagination .swiper-pagination-bullet-active {
+    width: 18px;
+    border-radius: 999px;
+    background: #FDC274;
+}
+.seeprojects-swiper{
+    padding: 0px 40px;
+}
+.seeprojects-swiper .swiper-slide-active{
+    background-color: #FFE7B3;
+    border: 2px solid rgb(252, 179, 44);
+}
+
+.seeprojects-swiper .swiper-slide-active .seeproject-button{
+background-color: #fdc700;
+}
+.seeprojects-swiper .swiper-slide-active .seeproject-projecttype{
+    background-color: white;
+}

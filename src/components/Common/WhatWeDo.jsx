@@ -1,36 +1,42 @@
 import React, { useState } from 'react'
 
-import { 
-  UIUXsvg, 
-  Developmentsvg, 
-  DigitalMarketingsvg, 
-  Aisvg, 
+
+import {
+  UIUXsvg,
+  Developmentsvg,
+  DigitalMarketingsvg,
+  Aisvg,
   Whiteboardsvg,
-  Figma, 
-  Xd, 
-  Sketch, 
-  Flutter, 
-  Jetpack, 
-  Reactlogo, 
-  Apple, 
-  Android, 
-  Browser, 
-  AToolIcon, 
-  FireBallToolIcon, 
-  BlueArrowIcon, 
-  Aitool1, 
-  Aitool2, 
-  Aitool3, 
-  WhiteboardTool1, 
-  WhiteboardTool2, 
-  WhiteboardTool3 
+  Figma,
+  Xd,
+  Sketch,
+  Flutter,
+  Jetpack,
+  Reactlogo,
+  Apple,
+  Android,
+  Browser,
+  AToolIcon,
+  FireBallToolIcon,
+  BlueArrowIcon,
+  Aitool1,
+  Aitool2,
+  Aitool3,
+  WhiteboardTool1,
+  WhiteboardTool2,
+  WhiteboardTool3
 } from "@/assets";
 
 import './WhatWeDo.css'
 import { NavLink } from 'react-router-dom';
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Pagination, Navigation } from "swiper/modules";
 
 
-const WhatWeDo = () => {
+const WhatWeDo = ({ contentState = false }) => {
 
   const services = [
     {
@@ -38,7 +44,7 @@ const WhatWeDo = () => {
       subtitle: "Design",
       icon: UIUXsvg,
       tools: [Figma, Xd, Sketch],
-      button_link:"/process/uiux",
+      button_link: "/process/uiux",
       items: [
         "Modern UI design",
         "Fix site UX factors",
@@ -100,23 +106,7 @@ const WhatWeDo = () => {
         "Marketing Funnels",
       ],
     },
-    {
-      title: "WhiteBoard",
-      subtitle: "Animation",
-      icon: Whiteboardsvg,
-      tools: [WhiteboardTool1, WhiteboardTool2, WhiteboardTool3],
-      items: [
-        "Modern UI design",
-        "Fix site UX factors",
-        "Prototyping",
-        "Wireframing",
-        "Visual Communication",
-        "Web Mockup",
-        "Visual test",
-        "Mobile App & Web Design",
-        "Neo & Glassmorphism UI",
-      ],
-    },
+
   ];
 
 
@@ -124,9 +114,35 @@ const WhatWeDo = () => {
     <section className="services-wrapper">
       <h2 className="section-title-WhatWeDo">Our Services</h2>
 
-      <div className="services-row">
+      <Swiper
+        slidesPerView={3}
+        centeredSlides
+        spaceBetween={50}
+        slideToClickedSlide
+        breakpoints={{
+          0: {
+            slidesPerView: 1.2,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        }}
+        pagination={{
+          el: ".services-pagination",
+          clickable: true,
+        }}
+        navigation={{
+          prevEl: ".services-prev",
+          nextEl: ".services-next",
+        }}
+        modules={[Pagination, Navigation]}
+        className="services-row mySwiper services-swiper"
+      >
         {services.map((service, index) => (
-          <div
+          <SwiperSlide
             key={index}
             className="service-card"
           >
@@ -140,16 +156,16 @@ const WhatWeDo = () => {
                 <h3>{service.title}</h3>
                 <p className="subtitle">{service.subtitle}</p>
               </div>
-
-              <ul>
+              {contentState && <ul>
                 {service.items.map((item, i) => (
                   <li key={i}>{item}</li>
                 ))}
-              </ul>
+              </ul>}
+
 
               <div className="tech-icons">
                 {
-                  service.tools?.map((icon,index) => (
+                  service.tools?.map((icon, index) => (
                     <img key={index} src={icon} alt="tools-icons" />
                   ))
                 }
@@ -158,9 +174,20 @@ const WhatWeDo = () => {
 
               <NavLink to={service.button_link} className="process-btn">What’s The Process</NavLink>
             </div>
-          </div>
+          </SwiperSlide>
 
         ))}
+      </Swiper>
+      <div className="services-controls">
+        <button className="services-prev rotate-180" aria-label="Previous">
+          ➔
+        </button>
+
+        <div className="services-pagination"></div>
+
+        <button className="services-next" aria-label="Next">
+          ➔
+        </button>
       </div>
 
     </section>

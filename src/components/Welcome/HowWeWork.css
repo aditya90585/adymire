@@ -39,26 +39,31 @@ svg{
 
 .steps-area {
   position: relative;
-  width: 620px;
-  height: 420px;
+  width: 720px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
+  margin-bottom: 70px;
 }
 
 .step {
-  position: absolute;
-  width: 190px;
-  height: 165px;
+  grid-column: auto;
+  /* position: absolute; */
+  /* width: 190px; */
+  height: 175px;
   background: #ffffff;
   border: 1.5px solid #b7a074; 
   display: flex;
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
+
 }
 
 .num {
   font-size: 60px;
-  font-weight: 300;
-  color: #b7a074;
+  font-weight: 600;
+  color: #947c4f;
   letter-spacing: 2px;
 }
 
@@ -87,8 +92,8 @@ svg{
 
 
 .step-4 {
-  width: 620px;
-  height: 155px;
+  width: 720px;
+  height: 170px;
   bottom: 0;
   left: 0;
   padding: 0 40px;
@@ -109,56 +114,23 @@ svg{
   width: 40%;
 }
 
-
-.step-1 {
-  top: 40px;
-  left: 0;
-}
-
-.step-2 {
-  top: 0;
-  left: 220px;
-}
-
-.step-3 {
-  top: 40px;
-  left: 440px;
-}
-
-.cta {
-  margin-left: auto;
-  background: #fff1c7;
-  border: 1px solid #b59a5b;
-  padding: 6px 30px;
-  border-radius: 30px;
-  font-weight: 800;
-  cursor: pointer;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.cta img{
-  height: 40px;
-  padding-right: 10px;
-}
-.cta:hover{
-  background-color:#f7d56f ;
-}
-
 .how-right {
-  /* width: 35%; */
-  /* height: 100%; */
+  width: 50%; 
+  height: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .img-box {
   height: 600px;
-  border-radius: 22px;
 }
 
 
-@media (max-width: 1024px) {
+ @media (max-width: 1024px) {
+  .how-section{
+    padding: 10px 10px;
+  }
   .how-wrapper {
     flex-direction: column;
   }
@@ -166,8 +138,38 @@ svg{
   .how-left {
     width: 100%;
   }
-
-  .how-right {
-    margin-top: 60px;
+  .how-title h2{
+  font-size: 25px;
   }
-}
+  .how-title svg{
+    height: 150px;
+ width: 100px;
+  }
+  .how-right{display: none;}
+  .steps-area{
+    width: 100%;
+  }
+  .step-4{
+    width: 100%;
+    padding: 10px 20px;
+  }
+  .step{
+    height: 100px;
+
+  }
+  .tag{
+     padding: 8px 20px;
+  }
+  .num{
+    font-weight: 400;
+    font-size: 40px;
+  }
+  .step-4 .num {
+    font-weight: 400;
+    font-size: 40px;
+  }
+  .step .tag.big{
+     padding: 10px 15px;
+     font-size: 20px;
+  }
+} 

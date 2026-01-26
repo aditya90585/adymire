@@ -9,14 +9,14 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.header-container {
+/* .header-container {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-}
+} */
 
 .payment-nav {
   display: flex;
@@ -38,12 +38,12 @@
   border-radius: 6px;
 }
 
-.header-actions {
+/* .header-actions {
   display: flex;
   gap: 0.75rem;
   align-items: center;
   flex-wrap: wrap;
-}
+} */
 
 .btn-whatsapp {
   background-color: #4caf50;
@@ -328,20 +328,20 @@
 }
 
 @media (max-width: 768px) {
-  .header-container {
+  /* .header-container {
     flex-direction: column;
     gap: 1rem;
   }
-  
+   */
   .payment-nav {
     flex-wrap: wrap;
     gap: 1rem;
   }
   
-  .header-actions {
+  /* .header-actions {
     width: 100%;
     justify-content: center;
-  }
+  } */
   
   .payment-info-grid {
     grid-template-columns: 1fr;

@@ -2,7 +2,9 @@
   background-color: #fff;
   padding: 2px 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  position: sticky;
+  position: fixed;
+  left:0;
+  right: 0;
   top: 0;
   z-index: 1000;
 }
@@ -23,7 +25,8 @@
 
 .nav {
   display: flex;
-  gap: 2rem;
+  gap: 20px;
+  font-weight: 400;
 }
 
 
@@ -99,3 +102,34 @@
   background-color: #e6b82e;
 }
 
+
+
+.header-social {
+    display: flex;
+    gap: 4px;
+    padding: 2px 4px;
+    border-radius: 8px;
+    width: fit-content;
+   
+}
+
+.header-social img {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+     background-color: #f5fcf5;
+}
+@media (max-width: 1024px) {
+  .nav{
+    display: none;
+  }
+  .header-actions{
+    display: none;
+  }
+  .header{
+    padding: 0px;
+  }
+  .header-container{
+    padding: 0px 10px;
+  }
+}

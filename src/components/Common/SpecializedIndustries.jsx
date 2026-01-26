@@ -39,19 +39,19 @@ const SpecializedIndustries = () => {
     gsap.to(".industries-wrapper", {
       rotate: 360,
       repeat: -1,
-      duration: 8,
+      duration: 12,
       ease: "none",
     })
      gsap.to(".industry-card", {
       rotate: -360,
       repeat: -1,
-      duration: 8,
+      duration: 12,
       ease: "none",
     })
      gsap.to(".center-circle", {
       rotate: -360,
       repeat: -1,
-      duration: 8,
+      duration: 12,
       ease: "none",
     })
 

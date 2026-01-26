@@ -1,4 +1,5 @@
 import { PhoneYellow } from "@/assets";
+import { useNavigate } from "react-router-dom";
 
 const BookCallButton = (
     {
@@ -13,8 +14,9 @@ const BookCallButton = (
 
     }
 ) => {
+    const navigate = useNavigate()
     const navigateToBookingForm = () => {
-     window.location.hash = "booking-form-section"
+     navigate("/contact")
     }
     return (
         <button onClick={navigateToBookingForm} className={`  ${className} bg-[#f5d29d] ${borderstate && `border border-gray-500`}  py-${paddingY}  px-${paddingX}  gap-x-2 h-[${height}] flex justify-center items-center rounded-${rounded} text-${textSize} font-semibold cursor-pointer hover:shadow-[0px_2px_4px_gray] hover:-translate-y-0.5 transition-transform ease-out`} >

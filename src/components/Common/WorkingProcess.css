@@ -14,28 +14,30 @@
 }
 
 
-.process-wrapper {
+.wpprocess-wrapper {
+  width: min(1000px, 100%);
+  padding: 0 16px;
   position: relative;
-  width: 1000px;
   height: 650px;
   margin: auto;
 }
 
-.center-box {
+
+.wpcenter-box {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.center-image {
+.wpcenter-image {
   width: 300px;
   height: 250px;
   display: grid;
   place-items: center;
   font-weight: bold;
 }
-.center-image img{
+.wpcenter-image img{
     object-fit: cover;
     height: 100%;
     width: 100%;
@@ -78,31 +80,31 @@
   line-height: 1.5;
 }
 
-.top-left {
+.wp-top-left {
   top: 40px;
   left: 40px;
 }
 
-.left {
+.wp-left {
   top: 50%;
   left: 0;
   transform: translateY(-50%);
 }
 
-.bottom-left {
+.wp-bottom-left {
   bottom: 40px;
   left: 40px;
 }
 
 
-.top-right {
+.wp-top-right {
   top: 40px;
   right: 40px;
   flex-direction: row-reverse;
   text-align: right;
 }
 
-.right {
+.wp-right {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
@@ -110,9 +112,99 @@
   text-align: right;
 }
 
-.bottom-right {
+.wp-bottom-right {
   bottom: 40px;
   right: 40px;
   flex-direction: row-reverse;
   text-align: right;
+}
+
+@media (max-width: 1024px) {
+  .wpprocess-wrapper {
+    height: 550px;
+  }
+
+  .wpcenter-image {
+    width: 240px;
+    height: 200px;
+  }
+
+  .process-item {
+    width: 260px;
+  }
+
+  .text h4 {
+    font-size: 16px;
+  }
+
+  .text p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .process-section {
+    padding: 40px 0;
+  }
+
+  .title {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+
+  .wpprocess-wrapper {
+    position: static;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .wpcenter-box {
+    position: static;
+    transform: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .wpcenter-image {
+    width: 220px;
+    height: auto;
+  }
+  .process-item {
+    position: relative;
+    width: 100%;
+    flex-direction: row;
+    text-align: left;
+    transform: none !important;
+    padding: 16px;
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  }
+
+  .wp-top-left,
+  .wp-top-right,
+  .wp-left,
+  .wp-right,
+  .wp-bottom-left,
+  .wp-bottom-right {
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
+  }
+
+  .icon-circle {
+    width: 56px;
+    height: 56px;
+  }
+
+  .text h4 {
+    font-size: 15px;
+  }
+
+  .text p {
+    font-size: 13px;
+  }
 }

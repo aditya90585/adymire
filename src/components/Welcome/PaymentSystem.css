@@ -1,7 +1,7 @@
 .ps-section {
   background: #fff8eb;
   padding: 40px 20px 120px;
-  padding-bottom: 0px;
+  padding-bottom: 40px;
   text-align: center;
 }
 
@@ -28,5 +28,5 @@
   align-items: center;
 }
 .ps-payment-methods-img img{
-  width: 60%;
+  width: 50%;
 }

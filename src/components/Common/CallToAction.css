@@ -83,4 +83,7 @@
   .cta-buttons {
     justify-content: center;
   }
+  .cta-title{
+    font-size: 20px;
+  }
 }

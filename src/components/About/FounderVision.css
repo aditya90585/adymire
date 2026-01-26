@@ -103,3 +103,15 @@
   margin-top: 20px;
   font-weight: 700;
 }
+
+@media (max-width:740px){
+  .fv-steps{
+    flex-direction: column;
+  }
+  .fv-arrow{
+    transform: rotate(135deg);
+  }
+  .fv-description-box p{
+    font-size: 15px;
+  }
+}

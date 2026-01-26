@@ -1,15 +1,24 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../Logo'
 import './Header.css'
-import { PhoneYellow, Whatsapp } from "@/assets";
-
 import { NavLink } from 'react-router-dom'
 import { useGSAP } from '@gsap/react'
-import gsap from 'gsap'
 import { staggerFadeIn } from '../../animations/stagger';
 import ChatOnWhatsappButton from '../UI/NavButtons/ChatOnWhatsappButton';
 import BookCallButton from '../UI/NavButtons/BookCallButton';
+import { MdMenu } from "react-icons/md";
+import {
+  Facebook3dLogo,
+  Instagram3dLogo,
+  Linkedin3dLogo,
+  X3dLogo,
+  Youtube3dLogo,
+} from "@/assets";
+import Sidebar from './Sidebar'
+import gsap from 'gsap'
+import { CgClose } from 'react-icons/cg'
+
 
 const Header = () => {
 
@@ -36,7 +45,20 @@ const Header = () => {
     }
   ]
 
-  useGSAP(() => {
+  const socialIcons = [
+    { img: Youtube3dLogo, alt: "Youtube" },
+    { img: Linkedin3dLogo, alt: "LinkedIn" },
+    { img: X3dLogo, alt: "X" },
+    { img: Instagram3dLogo, alt: "Instagram" },
+    { img: Facebook3dLogo, alt: "Facebook" },
+  ];
+  const headerRef = useRef()
+  const sidebarRef = useRef()
+  const [sidebarState, setSidebarState] = useState(false)
+  const tlRef = useRef()
+
+
+  const { contextSafe } = useGSAP(() => {
     staggerFadeIn(".header-text-ani", {
       opacity: 0,
       y: -20,
@@ -51,13 +73,36 @@ const Header = () => {
       duration: 0.8,
       delay: 0,
       ease: "slow(0.7,0.7,false)",
+
     })
-  }, {})
+
+    tlRef.current = gsap.timeline({ paused: true })
+    tlRef.current.to(sidebarRef.current, {
+      left: 0,
+      duration: 0.5,
+    })
+
+
+  }, { scope: headerRef })
+
+
+  const toggleSidebar = contextSafe(() => {
+    if (sidebarState == false) {
+      tlRef.current.play()
+      setSidebarState(true)
+    }
+    else {
+      tlRef.current.reverse()
+      setSidebarState(false)
+    }
+  })
+
+
   return (
-    <header className="header">
+    <header ref={headerRef} className="header">
       <div className="header-container">
-        <Link to="/" className="logo-link logo-ani">
-          <Logo />
+        <Link to="/" className="logo-link logo-ani" >
+          <Logo className="h-10 md:h-18" imgClass="h-full " />
         </Link>
         <nav className="nav">
           {links?.map((link) => (
@@ -65,17 +110,28 @@ const Header = () => {
           ))}
         </nav>
         <div className="header-actions">
-
-          {/* <button className="btn-icon-whatsapp"><img src={Whatsapp} alt="whatsapp" /> Chat on whatsapp</button> */}
-          {/* <button className="btn-icon-call"><img src={PhoneYellow} alt="call" /> Book Free Call</button> */}
           <ChatOnWhatsappButton className="h-10" />
-          <BookCallButton   className='h-10'/>
-          <NavLink to={"/client/login"} className="btn-login hover:bg-gray-800 text-white">Login</NavLink>
-          <NavLink to={"/user/signup"} className="btn-signup">SignUP</NavLink>
+          <BookCallButton className='h-10' />
+          {/* <NavLink to={"/client/login"} className="btn-login hover:bg-gray-800 text-white">Login</NavLink>
+          <NavLink to={"/user/signup"} className="btn-signup">SignUP</NavLink> */}
+          <div className="header-social">
+            {socialIcons.map((item, index) => (
+              <img key={index} src={item.img} alt={item.alt} />
+            ))}
+          </div>
         </div>
+        {sidebarState ? <CgClose onClick={toggleSidebar} className='block  lg:hidden' /> :
+          <MdMenu onClick={toggleSidebar} className='block  lg:hidden' />}
+
+
       </div>
-    </header>
+      <div ref={sidebarRef} className='w-full h-screen lg:hidden block absolute left-full '>
+        <Sidebar />
+      </div>
+    </header >
+
   )
+
 }
 
 export default Header

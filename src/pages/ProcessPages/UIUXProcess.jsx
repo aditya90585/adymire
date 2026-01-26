@@ -5,7 +5,7 @@ import Footer from '../../components/Footer/Footer'
 import UIUXProcesssection from '../../components/Process/UIUX/UIUXProcesssection'
 import UIUXToolsUsed from '../../components/Process/UIUX/UIUXToolsUsed'
 import UIUXProjectSection from '../../components/Process/UIUX/UIUXProjectSection'
-import BookingForm from '../../components/BookingForm'
+import ContactEnquirySection from '../../components/Footer/ContactEnquirySection'
 
 const UIUXProcess = () => {
   return (
@@ -15,7 +15,7 @@ const UIUXProcess = () => {
         <UIUXProcesssection/>
         <UIUXProjectSection/>
         <UIUXToolsUsed/>
-        <BookingForm/>
+        <ContactEnquirySection/>
         <Footer/>
     </div>
   )

@@ -1,13 +1,20 @@
 import "./WhatMakesUsDifferent.css";
-import { 
-  WhatMakesUsDifferentImages1, 
-  WhatMakesUsDifferentImages2, 
-  WhatMakesUsDifferentImages3,
-  WhatMakesUsDifferentImages4, 
-  Whatsapp 
+import {
+    WhatMakesUsDifferentImages1,
+    WhatMakesUsDifferentImages2,
+    WhatMakesUsDifferentImages3,
+    WhatMakesUsDifferentImages4,
+    Whatsapp,
+    CurveArrow
 } from "@/assets";
 
 const WhatMakesUsDifferent = () => {
+     const navigateToWhatsapp = () => {
+        const phoneNumber = "917302356804";
+        const message = "Hello, I want to know more about your services";
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.location.href = url;
+    }
     return (
         <section className="wmd-section">
             <div className="wmd-container">
@@ -15,11 +22,14 @@ const WhatMakesUsDifferent = () => {
                 <h2 className="wmd-title">What makes us different</h2>
                 <div className="wmd-card wmd-design">
                     <div className="wmd-content">
-                        <h3>End-to-end Design</h3>
+                        <h3>End-to-end: Design</h3>
 
                         <div className="wmd-tags">
+                            <img className="absolute w-15  -rotate-130  left-20 -top-10 md:block hidden" src={CurveArrow} alt="" />
+
+                            <img className="absolute w-15 -rotate-130 left-60 -top-10 md:block hidden" src={CurveArrow} alt="" />
                             <span className="wmd-tag">Dev</span>
-                            <span className="wmd-tag">Design</span>
+                            <span className="wmd-tag scale-120">Design</span>
                             <span className="wmd-tag">Ads</span>
                         </div>
                     </div>
@@ -33,8 +43,9 @@ const WhatMakesUsDifferent = () => {
                     <div className="wmd-content">
                         <h3>Our promise</h3>
                         <p>
-                            Clear scopes, regular demos, and a one-page SLA in every proposal.<br/>
-                            We aim for fast response and predictable delivery.
+                            Clear scopes, regular demos, and a one-page<br />
+                            SLA in every proposal.<br />
+                            <span className="text-xl">We aim for fast response and predictable delivery.</span>
                         </p>
                     </div>
 
@@ -47,8 +58,8 @@ const WhatMakesUsDifferent = () => {
                     <div className="wmd-content">
                         <h3>Premium focus</h3>
                         <p>
-                            We accept limited clients monthly to ensure executive attention.<br/>
-                            Only 10–20 clients are onboarded globally per month.
+                            We accept limited clients monthly to ensure executive attention.<br />
+                            <span className="text-xl">Only 10–20 clients are onboarded globally per month.</span>
                         </p>
                     </div>
 
@@ -60,13 +71,15 @@ const WhatMakesUsDifferent = () => {
                 <div className="wmd-card wmd-support">
                     <div className="wmd-content">
                         <h3>Team Support</h3>
-                    
-
-                        <div className="wmd-support-btn">
-                            Message Us On 
-                            <img src={Whatsapp} alt="whatsapp" />
+                        <div className="relative">
+                            <div onClick={navigateToWhatsapp} className="wmd-support-btn">
+                                Message Us on
+                                <img src={Whatsapp} alt="whatsapp" />
+                            </div>
+                              <img className="absolute w-20 -rotate-130 left-70 -top-10 md:block  hidden" src={CurveArrow} alt="" />
+                         
+                            <span >24×7</span>
                         </div>
-                        <span >24×7</span>
                     </div>
 
                     <div className="wmd-image">

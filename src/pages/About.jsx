@@ -1,9 +1,8 @@
 import React from 'react'
 import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
-import WhatClientSays from '../components/Common/Reviews/WhatClientSays'
 import ClientReviews from '../components/Common/Reviews/ClientReviews'
-import WhyChooseAdymire from '../components/WhyChooseAdymire'
+import WhyChooseAdymire from '../components/Footer/WhyChooseAdymire'
 import AboutHero from '../components/About/AboutHero'
 import AboutAdymire from '../components/About/AboutAdymire'
 import MyTeam from '../components/About/MyTeam'
@@ -21,7 +20,6 @@ const About = () => {
       <CallToAction />
       <WhatMakesUsDifferent />
       <MyTeam />
-      <WhatClientSays />
       <ClientReviews />
       <WhyChooseAdymire />
       <Footer />

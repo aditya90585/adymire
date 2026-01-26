@@ -1,5 +1,9 @@
 import React from "react";
 import "./ClientReviews.css";
+import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
+import { SwiperSlide, Swiper } from "swiper/react";
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
 
 const ClientReviews = () => {
   const reviews = [
@@ -37,7 +41,25 @@ const ClientReviews = () => {
       text: `Good value for money and a good foundation to build upon.`,
       reply: `Thanks for your review.`,
     },
+    {
+      name: "Mohit Saini",
+      location: "India",
+      date: "Aug 05, 2024",
+      rating: 5,
+      text: `Good value for money and a good foundation to build upon.`,
+      reply: `Thanks for your review.`,
+    },
+    {
+      name: "Mohit Saini",
+      location: "India",
+      date: "Aug 05, 2024",
+      rating: 5,
+      text: `Good value for money and a good foundation to build upon.`,
+      reply: `Thanks for your review.`,
+    },
   ];
+
+
 
   return (
     <section className="crv-section">
@@ -58,9 +80,42 @@ const ClientReviews = () => {
           See why thousands of business owners can’t stop talking about US
         </p>
 
-        <div className="crv-grid">
+        <Swiper
+          effect={'coverflow'}
+          centeredSlides={true}
+          slidesPerView={3}
+          spaceBetween={30}
+          slideToClickedSlide
+          coverflowEffect={{
+            rotate: 0,
+            stretch: 0,
+            depth: 0,
+            modifier: 1,
+            slideShadows: false,
+          }}
+          breakpoints={{
+            0: {
+              slidesPerView: 1.2,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
+          pagination={{
+            el: ".clientReview-pagination",
+            clickable: true,
+          }}
+          navigation={{
+            prevEl: ".clientReview-prev",
+            nextEl: ".clientReview-next",
+          }}
+          modules={[EffectCoverflow, Pagination, Navigation]}
+          className="crv-grid MySwiper">
           {reviews.map((review, index) => (
-            <div key={index} className="crv-card">
+            <SwiperSlide key={index} className="crv-card">
 
               <div className="crv-card-header">
                 <div className="crv-user">
@@ -93,9 +148,20 @@ const ClientReviews = () => {
                 <span className="crv-thanks">Thanks<br />YashBusinessman</span>
               </div>
 
-            </div>
+            </SwiperSlide>
           ))}
-        </div>
+        </Swiper>
+        <div className="clientReview-controls flex justify-center items-center gap-5 mt-10">
+                <button className="clientReview-prev rotate-180 bg-[#FDC274] h-11 w-11 text-2xl rounded-full cursor-pointer" aria-label="Previous">
+                    ➔
+                </button>
+
+                <div className="clientReview-pagination flex justify-center items-center"></div>
+
+                <button className="clientReview-next  bg-[#FDC274] h-11 w-11 text-2xl rounded-full cursor-pointer" aria-label="Next">
+                    ➔
+                </button>
+            </div>
 
       </div>
     </section>

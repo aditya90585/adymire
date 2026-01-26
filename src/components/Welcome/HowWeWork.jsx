@@ -4,6 +4,7 @@ import "./HowWeWork.css";
 import { ManWithPhone_inYellowJacket, PhoneYellow } from "@/assets";
 import { staggerFadeInOnScroll } from "../../animations/stagger";
 import { useRef } from "react";
+import BookCallButton from "../UI/NavButtons/BookCallButton";
 
 
 export default function HowWeWork() {
@@ -70,15 +71,16 @@ export default function HowWeWork() {
               <span className="tag">Develop</span>
             </div>
 
-            <div className="step step-4 hww-trigger-ani">
+
+          </div>
+                      <div className="step step-4 hww-trigger-ani">
               <span className="num">04</span>
               <span className="tag big">Marketing</span>
 
-              <button className="cta">
-                <img src={PhoneYellow} alt="call" /> Book Free Call
-              </button>
+              <div className="cta ml-auto">
+                <BookCallButton className="bg-[#fff1c9] text-sm md:text-base h-10 md:h-15 font-bold border border-gray-400"  textSize="base" paddingX="4" rounded="full"/>
+              </div>
             </div>
-          </div>
         </div>
 
         <div className="how-right hww-trigger-ani">

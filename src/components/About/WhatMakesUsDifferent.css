@@ -32,37 +32,42 @@
 
 .wmd-card {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+     align-items: center;
     border-radius: 18px;
     padding: 0px 40px;
     margin-bottom: 28px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+    border: 2px solid rgb(211, 209, 209);
+}
+.wmd-content{
+    display: flex;
+    flex-direction: column;
+   row-gap: 30px;
 }
 
-
 .wmd-content h3 {
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 34px;
+    font-weight: 800;
     margin-bottom: 12px;
 }
 
 .wmd-content p {
-    font-size: 18px;
+    font-size: 24px;
     line-height: 1.6;
-    font-weight: 500;
+    font-weight: 700;
     margin-bottom: 14px;
 }
 
-/* ===== TAGS ===== */
 .wmd-tags {
     display: flex;
-    gap: 12px;
+    gap: 40px;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .wmd-tag {
-    background: rgba(255, 255, 255, 0.75);
+    background: rgba(250, 240, 240, 0.75);
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -71,12 +76,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 1px 1px 6px rgb(230, 228, 228);
 }
 
 
 .wmd-image {
 
-    height: 280px;
+    height: 360px;
     border-radius: 14px;
     display: flex;
     align-items: center;
@@ -84,14 +90,15 @@
 }
 
 .wmd-image img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .wmd-design {
-    background: linear-gradient(135deg,
-            #ffe9d6 0%,
-            #ffd3a8 50%,
+    background: linear-gradient(120deg,
+            #fff6f3 0%,
+            #fcdbba 50%,
             #ffc68a 100%);
 }
 
@@ -99,11 +106,10 @@
     color: #ff7a00;
 }
 
-/* ===== CARD 2 – OUR PROMISE ===== */
 .wmd-promise {
-    background: linear-gradient(135deg,
-            #ffd6f3 0%,
-            #f4b7e8 50%,
+    background: linear-gradient(120deg,
+            #fcf8fb 0%,
+            #f8c6ed 50%,
             #eaa0df 100%);
     color: #e044b5;
 
@@ -113,12 +119,11 @@
     color: #e044b5;
 }
 
-/* ===== CARD 3 – PREMIUM FOCUS ===== */
 .wmd-premium {
-    background: linear-gradient(135deg,
-            #dff7e3 0%,
-            #c6f0cc 50%,
-            #b0e8b7 100%);
+    background: linear-gradient(120deg,
+            #f9fcf9 0%,
+            #b4e9bc 50%,
+            #93e99e 100%);
     color: #2f9e44;
 }
 
@@ -127,10 +132,10 @@
 }
 
 .wmd-support {
-    background: linear-gradient(135deg,
-            #e4e4ff 0%,
-            #cfd1ff 50%,
-            #b9bcff 100%);
+    background: linear-gradient(120deg,
+            #f9f9fd 0%,
+            #b7b8eb 50%,
+            #9297f5 100%);
     color: #3f46e1;
 }
 
@@ -139,20 +144,25 @@
 }
 
 .wmd-support-btn {
-    background: white;
-    color: black;
-    border-radius: 10px;
-    padding: 6px 18px;
-    font-size: 13px;
+    background: rgb(239, 238, 253);
+    color: rgb(53, 52, 52);
+    border-radius: 15px;
+    padding: 16px 28px;
+    font-size: 18px;
     font-weight: 600;
-    border: none;
     cursor: pointer;
     display: inline-flex;
     align-items: center;
-    gap: 8px;
+    gap: 50px;
+    border: 1px solid rgb(197, 195, 195);
+    transition: all ease-in 0.1s;
+}
+.wmd-support-btn:hover{
+    box-shadow: 2px 2px 4px rgb(133, 132, 132);
+    transform: translateY(-2px);
 }
 .wmd-support-btn img{
-    height: 30px;
+    height: 40px;
 }
 
 .wmd-support .wmd-content span {
@@ -160,13 +170,13 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    height: 80px;
-    width: 80px;
+    height: 120px;
+    width: 120px;
     font-size: 28px;
     font-weight: 700;
-    background-color: rgb(244, 247, 250);
-    color: black;
-    margin-left: 40px;
+    background-color: rgb(234, 242, 250);
+    color: rgb(37, 37, 37);
+    margin-left: 80px;
 }
 
 @media (max-width: 900px) {
@@ -174,6 +184,7 @@
         flex-direction: column;
         text-align: center;
         gap: 20px;
+        padding: 0px 4px;
     }
 
     .wmd-content {
@@ -182,10 +193,30 @@
 
     .wmd-image {
         width: 100%;
-        height: 160px;
+        height:auto
     }
 
     .wmd-tags {
         justify-content: center;
     }
+    .wmd-tag {
+        font-size: 14px;
+        height: 70px;
+        width: 70px;
+    }
+    .wmd-title{
+        font-size: 18px;
+    }
+    .wmd-section{
+        padding: 10px 6px;
+
+    }
+    .wmd-content p {
+        font-size: 22px;
+    }
+    .wmd-support .wmd-content span {
+        display: flex;
+        margin-top: 20px;
+    }
+
 }

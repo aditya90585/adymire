@@ -68,14 +68,16 @@
     align-items: start;
     padding: 0px 0px 0px 20px;
 }
-.svz-right .svz-content p{
+
+.svz-right .svz-content p {
     text-align: start;
 }
+
 .svz-left .svz-content {
     display: flex;
     flex-direction: column;
     align-items: end;
-     padding: 0px 20px 0px 0px;
+    padding: 0px 20px 0px 0px;
 }
 
 .svz-content h3 {
@@ -110,7 +112,7 @@
     display: grid;
     place-items: center;
     z-index: 2;
-    border :12px solid  #fff9ee,
+    border: 12px solid #fff9ee,
 }
 
 .svz-icon img {
@@ -122,7 +124,7 @@
 
 @media (max-width: 900px) {
     .svz-line {
-        left: 20px;
+        left: 15%;
     }
 
     .svz-item {
@@ -131,11 +133,38 @@
     }
 
     .svz-content {
-        width: 100%;
+        width: 85%;
+        margin-left: 80px;
+    }
+    .svz-content p {
+        text-align: start;
+    }
+
+    .svz-left {
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .svz-right {
+        justify-content: start;
+    }
+
+    .svz-left .svz-content {
+ padding: 0px;
+        align-items: start;
+    }
+
+    .svz-right .svz-content {
+        padding: 0px;
+    }
+
+    .svz-right .svz-content p {
+        text-align: left;
     }
 
     .svz-icon {
         position: absolute;
         left: 0;
+        width: 30%;
     }
 }

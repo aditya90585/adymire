@@ -1,5 +1,6 @@
 .services-hero {
   padding: 80px 40px;
+  padding-top: 130px;
   background: linear-gradient(
     135deg,
     #f7d9e6 0%,
@@ -111,6 +112,19 @@
 @media (max-width: 992px) {
   .services-hero__container {
     grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+  }
+  .services-hero__image-card {
+   width: 90%;
+   height: auto;
+   aspect-ratio: 1/1;
+  }
+  .services-hero__title{
+    font-size: 30px;
+    text-align: center;
+  }
+  .services-hero__subtitle{
     text-align: center;
   }
 

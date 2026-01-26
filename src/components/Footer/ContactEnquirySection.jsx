@@ -1,26 +1,46 @@
-import { CallContact,EmailContact } from "@/assets";
+import { CallContact, EmailContact } from "@/assets";
+import { useNavigate } from "react-router-dom";
 
 const ContactEnquirySection = () => {
+
+    const navigateToWhatsapp = () => {
+        const phoneNumber = "917302356804";
+        const message = "Hello, I want to know more about your services";
+        const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+        window.location.href = url;
+    }
+    const navigate = useNavigate()
+    const navigateToBookingForm = () => {
+        navigate("/contact")
+    }
+    const emaiMethod = ()=>{
+        console.log("working on it")
+    }
+
     const contactData = [
         {
             title: "Send a Email",
             subtitle: "hello@adylity.com",
             buttonText: "Send Email",
-            icon:EmailContact
+            icon: EmailContact,
+            method: emaiMethod
         },
         {
             title: "Call Back",
             subtitle: "+91 7302356804",
             buttonText: "Request Call Back",
-            icon:CallContact
+            icon: CallContact,
+            method: navigateToBookingForm
         },
         {
             title: "Chat on Whatsapp",
             subtitle: "hello@adylity.com",
             buttonText: "Chat Now",
-            icon:EmailContact
+            icon: EmailContact,
+            method: navigateToWhatsapp
         },
     ];
+
 
     return (
         <section className="bg-white py-4">
@@ -34,8 +54,9 @@ const ContactEnquirySection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                     {contactData.map((item, index) => (
                         <div
+                            onClick={item?.method}
                             key={index}
-                            className="group rounded-2xl border-2 border-gray-200 p-10 flex flex-col items-center text-center transition-all duration-300
+                            className="group  rounded-2xl border-2 border-gray-200 p-10 flex flex-col items-center text-center transition-all duration-300
                                     hover:bg-[#FFF1C6] hover:border-yellow-400 hover:scale-105 ">
 
                             <div className="w-20 h-20 mb-6 flex items-center justify-center">
@@ -50,7 +71,7 @@ const ContactEnquirySection = () => {
                             </p>
 
                             <button
-                                className="px-8 py-3 rounded-full font-semibold bg-[#FFF1C6] transition-all duration-300 group-hover:bg-yellow-400">
+                                className="px-8 py-3 cursor-pointer rounded-full font-semibold bg-[#FFF1C6] transition-all duration-300 group-hover:bg-yellow-400">
                                 {item.buttonText}
                             </button>
                         </div>
