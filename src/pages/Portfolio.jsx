@@ -1,8 +1,6 @@
 import React from 'react'
-import Header from '../components/Header/Header'
 import WhatWeDo from '../components/Common/WhatWeDo'
 import ClientReviews from '../components/Common/Reviews/ClientReviews'
-import Footer from '../components/Footer/Footer'
 import WhyChooseAdymire from '../components/Footer/WhyChooseAdymire'
 import PortfolioHero from '../components/Portfolio/PortfolioHero'
 import ToolsUsed from '../components/Portfolio/ToolsUsed'
@@ -15,7 +13,6 @@ import SeeProjects from '../components/Common/SeeProjects'
 const Portfolio = () => {
   return (
     <div>
-      <Header />
       <PortfolioHero />
       <SeeProjects/>
       <WhatWeDo />
@@ -26,7 +23,6 @@ const Portfolio = () => {
       <WhyChooseAdymire2 />
       <WhyChooseAdymire />
       <ContactEnquirySection />
-      <Footer />
     </div>
   )
 }

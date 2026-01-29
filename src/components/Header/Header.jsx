@@ -8,16 +8,10 @@ import { staggerFadeIn } from '../../animations/stagger';
 import ChatOnWhatsappButton from '../UI/NavButtons/ChatOnWhatsappButton';
 import BookCallButton from '../UI/NavButtons/BookCallButton';
 import { MdMenu } from "react-icons/md";
-import {
-  Facebook3dLogo,
-  Instagram3dLogo,
-  Linkedin3dLogo,
-  X3dLogo,
-  Youtube3dLogo,
-} from "@/assets";
 import Sidebar from './Sidebar'
 import gsap from 'gsap'
 import { CgClose } from 'react-icons/cg'
+import SocialIcons from '../Common/SocialIcons'
 
 
 const Header = () => {
@@ -45,13 +39,6 @@ const Header = () => {
     }
   ]
 
-  const socialIcons = [
-    { img: Youtube3dLogo, alt: "Youtube" },
-    { img: Linkedin3dLogo, alt: "LinkedIn" },
-    { img: X3dLogo, alt: "X" },
-    { img: Instagram3dLogo, alt: "Instagram" },
-    { img: Facebook3dLogo, alt: "Facebook" },
-  ];
   const headerRef = useRef()
   const sidebarRef = useRef()
   const [sidebarState, setSidebarState] = useState(false)
@@ -114,19 +101,16 @@ const Header = () => {
           <BookCallButton className='h-10' />
           {/* <NavLink to={"/client/login"} className="btn-login hover:bg-gray-800 text-white">Login</NavLink>
           <NavLink to={"/user/signup"} className="btn-signup">SignUP</NavLink> */}
-          <div className="header-social">
-            {socialIcons.map((item, index) => (
-              <img key={index} src={item.img} alt={item.alt} />
-            ))}
-          </div>
+          <SocialIcons className="grid grid-cols-5 gap-2 bg-gray-100 rounded-xl py-0.5 px-1" imgClass="h-[40px] w-[40px]"/>
         </div>
-        {sidebarState ? <CgClose onClick={toggleSidebar} className='block  lg:hidden' /> :
-          <MdMenu onClick={toggleSidebar} className='block  lg:hidden' />}
+
+        {sidebarState ? <CgClose onClick={toggleSidebar} className='slidebar-buttons hidden' /> :
+          <MdMenu onClick={toggleSidebar} className='slidebar-buttons hidden'  />}
 
 
       </div>
-      <div ref={sidebarRef} className='w-full h-screen lg:hidden block absolute left-full '>
-        <Sidebar />
+      <div ref={sidebarRef}  className='slidebar-cont w-full h-screen  hidden absolute left-full '>
+        <Sidebar toggleSidebar={toggleSidebar} />
       </div>
     </header >
 

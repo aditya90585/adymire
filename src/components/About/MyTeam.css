@@ -1,4 +1,4 @@
-.myteam {
+/* .myteam {
     background: #fff8ec;
     padding: 80px 60px;
     text-align: center;
@@ -70,4 +70,50 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+} */
+
+.myteam-slidecard-blob{
+    background-color:#F2F5F5 ;
+}
+.myTeam-swiper-inner .swiper .swiper-slide{
+    height: auto;
+}
+.myTeam-swiper .swiper {
+    overflow: visible;
+}
+.myTeam-swiper .Myswiper .swiper-slide{
+  transform: scale(0.8) !important;
+}
+.myTeam-swiper .Myswiper .swiper-slide-active{
+  transform: scale(1.2)!important;
+
+}
+.myTeam-swiper-inner .swiper-slide-active .myteam-slidecard-image{
+    transform: translateY(-24px);
+}
+
+.myTeam-swiper-inner .swiper-slide-active  .myteam-slidecard-blob{
+ background-color: #fde8b5;
+}
+
+.myTeam-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.myTeam-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #ccc;
+  opacity: 1;
+  margin: 0 6px;
+  transition: all 0.3s ease;
+}
+
+.myTeam-pagination .swiper-pagination-bullet-active {
+  width: 18px;
+  border-radius: 999px;
+  background: #FDC274;
 }

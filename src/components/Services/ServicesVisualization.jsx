@@ -1,8 +1,10 @@
-import React from "react";
+import React, { useRef } from "react";
 import { Trophy, Hand, Verified, Boost } from "@/assets";
 
 
 import "./ServicesVisualization.css";
+import { useGSAP } from "@gsap/react";
+import { staggerFadeInOnScroll } from "../../animations/stagger";
 
 const ServicesVisualization = () => {
     const steps = [
@@ -36,11 +38,18 @@ const ServicesVisualization = () => {
         },
     ];
 
+     const svcontref = useRef()
+          useGSAP(() => {
+            staggerFadeInOnScroll(".sv-trigger-ani",{trigger:svcontref.current,stagger:0.3,y:10,x:60})
+              staggerFadeInOnScroll(".sv-circle-trigger-ani",{trigger:svcontref.current,stagger:0.3,y:40,delay:0.6})
+          },{scope:svcontref})
+      
+
     return (
-        <section className="svz-section">
+        <section ref={svcontref} className="svz-section">
             <div className="svz-container">
 
-                <h2 className="svz-heading">
+                <h2 className="svz-heading sv-trigger-ani">
                     Visualization
                     <span className="svz-underline"></span>
                 </h2>
@@ -51,7 +60,7 @@ const ServicesVisualization = () => {
                     {steps.map((step, index) => (
                         <div
                             key={index}
-                            className={`svz-item svz-${step.align}`}
+                            className={`svz-item sv-trigger-ani svz-${step.align}`}
                         >
                             {step.align === "left" && (
                                 <div className="svz-content">
@@ -65,7 +74,7 @@ const ServicesVisualization = () => {
                                 <div className=" py-[1.5px] w-[5%] bg-[#bdbdbd] sm:block hidden"></div>
                             )}
 
-                            <div className="svz-icon">
+                            <div className="svz-icon sv-circle-trigger-ani">
                                 <img src={step.icon} alt={step.title} />
                             </div>
 

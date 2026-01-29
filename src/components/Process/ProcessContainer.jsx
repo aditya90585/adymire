@@ -1,51 +1,76 @@
 import { useRef } from "react";
 import { UIUXSecond } from "@/assets";
-
+import "./ProcessContainer.css"
 import { UIUXsvg } from "@/assets"
+import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
+import { SwiperSlide, Swiper } from "swiper/react";
+import { useParams } from "react-router-dom";
 
-const ProcessContainer = ({ heading, subHeading, steps }) => {
-  const sliderRef = useRef(null);
-
-  const scroll = (direction) => {
-    if (!sliderRef.current) return;
-    const scrollAmount = 320;
-
-    sliderRef.current.scrollBy({
-      left: direction === "left" ? -scrollAmount : scrollAmount,
-      behavior: "smooth",
-    });
-  };
-
+const ProcessContainer = ({processStepsData}) => {
   return (
     <section className="bg-[#FFF9EE] pt-20 pb-2 overflow-hidden">
       <div className="w-full mx-auto px-6">
 
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-black">
-            {heading}
+            {processStepsData?.heading}
           </h2>
-          {subHeading && (
-            <p className="text-gray-500 font-bold text-xl mt-4">{subHeading}</p>
+          {processStepsData?.subHeading && (
+            <p className="text-gray-500 font-bold text-xl mt-4">{processStepsData?.subHeading}</p>
           )}
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-7 gap-10 items-center">
-          <div className="lg:flex col-start-1 col-span-2 hidden  justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-7 gap-y-10 items-center">
+          <div className="flex col-start-1 col-span-2   justify-center">
             <img
               src={UIUXSecond}
               alt="Illustration"
               className="w-full "
             />
           </div>
-          <div className="relative lg:col-start-3 lg:col-span-5">
-            <div
-              ref={sliderRef}
-              className="flex gap-6 pt-7 pl-7 overflow-y-visible overflow-x-auto  scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+          <div className="process-cont relative lg:col-start-3 lg:col-span-5">
+            <Swiper
+              effect={'coverflow'}
+              centeredSlides={true}
+              initialSlide={1}
+              slidesPerView={3}
+              spaceBetween={30}
+              slideToClickedSlide
+              coverflowEffect={{
+                rotate: 0,
+                stretch: 0,
+                depth: 0,
+                modifier: 1,
+                slideShadows: false,
+              }}
+
+              breakpoints={{
+                0: {
+                  slidesPerView: 1.2,
+                },
+                768: {
+                  slidesPerView: 2,
+                },
+                1024: {
+                  slidesPerView: 3,
+                },
+              }}
+              pagination={{
+                el: ".process-pagination",
+                clickable: true,
+              }}
+              navigation={{
+                prevEl: ".process-prev",
+                nextEl: ".process-next",
+              }}
+              modules={[Pagination, Navigation, EffectCoverflow]}
+
+              className=" mySwiper flex gap-6 pt-7 pl-7 overflow-y-visible overflow-x-auto "
             >
-              {steps.map((item, index) => (
-                <div
+              {processStepsData?.steps.map((item, index) => (
+                <SwiperSlide
                   key={index}
-                  className="min-w-60 bg-[#edeef1] rounded-xl shadow-md p-2 relative"
+                  className="h-auto min-w-60 bg-[#edeef1] hover:bg-[#FFE7B3] rounded-xl shadow-md p-2 pb-4 relative"
                 >
                   <span className="absolute -top-6 -left-6 w-12 h-12 rounded-full bg-[#FFE4A3] flex items-center justify-center font-semibold">
                     {item.step}
@@ -66,20 +91,19 @@ const ProcessContainer = ({ heading, subHeading, steps }) => {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </SwiperSlide>
               ))}
-            </div>
+            </Swiper>
 
             <div className="flex justify-center gap-4 mt-6">
               <button
-                onClick={() => scroll("left")}
-                className="w-10 h-10 rounded-full rotate-180 bg-[#FFE4A3] flex items-center justify-center hover:bg-[#FFD36A]"
+                className="process-prev w-10 h-10 cursor-pointer rounded-full rotate-180 bg-[#FFE4A3] flex items-center justify-center hover:bg-[#FFD36A]"
               >
                 ➔
               </button>
+              <div className="process-pagination"></div>
               <button
-                onClick={() => scroll("right")}
-                className="w-10 h-10 rounded-full bg-[#FFE4A3] flex items-center justify-center hover:bg-[#FFD36A]"
+                className="process-next w-10 h-10 cursor-pointer rounded-full bg-[#FFE4A3] flex items-center justify-center hover:bg-[#FFD36A]"
               >
                 ➔
               </button>

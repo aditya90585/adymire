@@ -3,7 +3,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    
+
     padding-top: 40px;
 }
 
@@ -39,8 +39,8 @@
 
 .about-hero-social {
     position: absolute;
-   bottom: 20%;
-   left: 28%;
+    bottom: 20%;
+    left: 28%;
     display: flex;
     gap: 14px;
     background: #ffffff;
@@ -67,7 +67,7 @@
 
 .about-hero-follow {
     position: absolute;
-    left: -60px;
+    right: -40%;
     bottom: 20%;
     display: flex;
     align-items: center;
@@ -77,34 +77,47 @@
     color: #222;
     flex-direction: column;
 }
-.about-hero-arrow{
+
+.about-hero-arrow {
     width: 130px;
     height: 130px;
     object-position: center;
 
 }
-.about-hero-arrow img{
+
+.about-hero-arrow img {
     width: 100%;
     height: 100%;
+    background-color: rgba(0, 0, 0, 0);
 }
 
-
-@media (max-width: 900px) {
+@media (max-width: 1200px) {
     .about-hero-container {
         flex-direction: column;
         text-align: center;
         align-items: center;
     }
-    .about-hero-content{
+}
+
+@media (max-width: 1024px) {
+    .about-hero-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .about-hero-content {
         padding: 10px;
         padding-top: 60px;
         text-align: center;
         width: 100%;
     }
-    .about-hero-title{
+
+    .about-hero-title {
         font-size: 40px;
     }
-    .about-hero-image img{
+
+    .about-hero-image img {
         height: auto;
         width: 100%;
         object-fit: cover;
@@ -115,13 +128,16 @@
         margin-top: 20px;
         justify-content: center;
     }
-    .about-hero-arrow{
+
+    .about-hero-arrow {
         display: none;
     }
-    .about-hero-follow{
+
+    .about-hero-follow {
         display: none;
     }
-    .about-hero-social{
+
+    .about-hero-social {
         position: static;
     }
 }

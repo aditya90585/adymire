@@ -110,7 +110,7 @@
     padding: 2px 4px;
     border-radius: 8px;
     width: fit-content;
-   
+    
 }
 
 .header-social img {
@@ -131,5 +131,11 @@
   }
   .header-container{
     padding: 0px 10px;
+  }
+  .slidebar-buttons{
+    display:block
+  }
+  .slidebar-cont{
+    display: block;
   }
 }

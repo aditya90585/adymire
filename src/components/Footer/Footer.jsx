@@ -4,67 +4,143 @@ import {
   AppStore,
   GooglePlay,
   AdymireLogo2,
-  Facebook3dLogo,
-  Instagram3dLogo,
-  Linkedin3dLogo,
-  X3dLogo,
-  Youtube3dLogo,
 } from "@/assets";
 import OurStartups from "./OurStartups";
 import { BoyWithLaptop } from "@/assets";
-
-
-const socialIcons = [
-  { img: Youtube3dLogo, alt: "Youtube" },
-  { img: Linkedin3dLogo, alt: "LinkedIn" },
-  { img: X3dLogo, alt: "X" },
-  { img: Instagram3dLogo, alt: "Instagram" },
-  { img: Facebook3dLogo, alt: "Facebook" },
-];
+import SocialIcons from "../Common/SocialIcons";
+import { NavLink } from "react-router-dom";
 
 const followUsLinks = [
-  "Instagram",
-  "Facebook",
-  "LinkedIN",
-  "Twitter",
-  "Youtube",
-  "WhatsApp help",
-  "WhatsApp Channel",
-  "WhatsApp Group",
-  "Telegram Group",
-  "Telegram Channel",
+  {
+    name: "Instagram",
+    redirectUrl: "https://www.instagram.com/adymire_",
+  },
+  {
+    name: "Facebook",
+    redirectUrl: "https://www.facebook.com/adymiredigital",
+  },
+  {
+    name: "LinkedIn",
+    redirectUrl: "https://www.linkedin.com/company/adymire/",
+  },
+  {
+    name: "Twitter",
+    redirectUrl: "https://x.com/Adymire_",
+  },
+  {
+    name: "YouTube",
+    redirectUrl: "https://youtube.com/@adymire",
+  },
+  {
+    name: "Telegram",
+    redirectUrl: "https://t.me/adymiredigital",
+  },
+  {
+    name: "WhatsApp",
+    redirectUrl: "https://whatsapp.com/channel/0029VbCCQg0HFxP7cByy1a0m",
+  },
+  {
+    name: "Reddit Profile",
+    redirectUrl: "https://www.reddit.com/user/adymire",
+  },
+  {
+    name: "Pinterest",
+    redirectUrl: "https://pin.it/5ZJVkLibz",
+  },
+  {
+    name: "Quora Profile",
+    redirectUrl: "https://www.quora.com/profile/Adymire-Digital",
+  },
+  {
+    name: "Slack Community",
+    redirectUrl: "https://adymiredigital.slack.com/archives/C0A6BU77EDQ",
+  },
+  {
+    name: "Reddit Community",
+    redirectUrl: "https://www.reddit.com/r/Adymire/",
+  },
+  {
+    name: "Quora Community",
+    redirectUrl: "https://adymiredigital.quora.com/",
+  },
+  {
+    name: "Discord Community",
+    redirectUrl: "https://discord.gg/QHQCDPYVK",
+  },
 ];
 
+
 const companyLinks = [
-  "Our Team",
-  "About US",
-  "Contact US",
-  "Privacy Policy",
-  "Refund Policy",
-  "Cancelation Policy",
-  "Plans",
-  "Carriers& Jobs",
-  "Blogs",
-  "FAQ's",
+  {
+    name: "Our Team",
+    redirectUrl: "/about",
+  },
+  {
+    name: "About Us",
+    redirectUrl: "/about",
+  },
+  {
+    name: "Contact Us",
+    redirectUrl: "/contact",
+  },
+  {
+    name: "Privacy Policy",
+    redirectUrl: "/company/privacy-policy",
+  },
+  {
+    name: "Refund Policy",
+    redirectUrl: "/company/refund-policy",
+  },
+  {
+    name: "Cancellation Policy",
+    redirectUrl: "/company/cancellation-policy",
+  },
+  {
+    name: "Plans",
+    redirectUrl: "/plans",
+  },
+  {
+    name: "Careers & Jobs",
+    redirectUrl: "/company/careers",
+  },
+  {
+    name: "Blogs",
+    redirectUrl: "/blogs",
+  },
+  {
+    name: "FAQs",
+    redirectUrl: "/faqs",
+  },
 ];
 
 const serviceLinks = [
-  "Digital Marketing",
-  "App & Web Dev",
-  "UI UX Design ( App & Web)",
-  "AI Automation",
-  "White Board Animation",
+  {
+    name: "Digital Marketing",
+    redirectUrl: "/process/digitalmarketing",
+  },
+  {
+    name: "App & Web Dev",
+    redirectUrl: "/process/development",
+  },
+  {
+    name: "UI UX Design (App & Web)",
+    redirectUrl: "/process/uiux",
+  },
+  {
+    name: "AI Automation",
+    redirectUrl: "/process/aiautomation",
+  },
 ];
 
 
 const Footer = () => {
   return (
     <footer className="ad-footer">
-       <div className="bf-img">
-          <img src={BoyWithLaptop} alt="booking-form" />
-        </div>
+      <div className="bf-img">
+        <img src={BoyWithLaptop} alt="booking-form" />
+      </div>
       <div className="ad-footer-container">
-       
+
 
         <div className="ad-footer-brand">
           <div className="ad-footer-logo">
@@ -81,12 +157,7 @@ const Footer = () => {
           </div>
 
           <p className="ad-footer-follow-text">Follow us</p>
-
-          <div className="ad-footer-social">
-            {socialIcons.map((item, index) => (
-              <img key={index} src={item.img} alt={item.alt} />
-            ))}
-          </div>
+          <SocialIcons className="grid grid-cols-5 gap-2 w-fit  rounded-xl py-0.5 px-1" imgClass="h-[40px] w-[40px] bg-gray-200" />
 
           <div className="ad-footer-block">
             <h4>Address</h4>
@@ -107,7 +178,7 @@ const Footer = () => {
           <h3>Follow US</h3>
           <ul>
             {followUsLinks.map((item, index) => (
-              <li key={index}>{item}</li>
+              <a key={index} href={item?.redirectUrl}><li >{item?.name}</li></a>
             ))}
           </ul>
         </div>
@@ -116,7 +187,7 @@ const Footer = () => {
           <h3>Company</h3>
           <ul>
             {companyLinks.map((item, index) => (
-              <li key={index}>{item}</li>
+              <li key={index}><NavLink to={item?.redirectUrl}>{item?.name}</NavLink></li>
             ))}
           </ul>
         </div>
@@ -125,7 +196,7 @@ const Footer = () => {
           <h3>Services</h3>
           <ul>
             {serviceLinks.map((item, index) => (
-              <li key={index}>{item}</li>
+              <li key={index}><NavLink to={item?.redirectUrl} >{item?.name}</NavLink></li>
             ))}
           </ul>
         </div>

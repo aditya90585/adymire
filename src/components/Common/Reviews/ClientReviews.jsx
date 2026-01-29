@@ -84,6 +84,7 @@ const ClientReviews = () => {
           effect={'coverflow'}
           centeredSlides={true}
           slidesPerView={3}
+          initialSlide={1}
           spaceBetween={30}
           slideToClickedSlide
           coverflowEffect={{

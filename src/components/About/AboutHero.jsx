@@ -1,17 +1,18 @@
 import React from "react";
 import {
-  Founder1,
-  Facebook3dLogo,
-  Instagram3dLogo,
-  Linkedin3dLogo,
-  X3dLogo,
-  Youtube3dLogo,
-  CurveArrow,
+    Founder1,
+    Facebook3dLogo,
+    Instagram3dLogo,
+    Linkedin3dLogo,
+    X3dLogo,
+    Youtube3dLogo,
+    CurveArrow,
 } from "@/assets";
 
 import "./AboutHero.css";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import SocialIcons from "../Common/SocialIcons";
 
 const AboutHero = () => {
     useGSAP(() => {
@@ -40,24 +41,23 @@ const AboutHero = () => {
                     <h4 className="about-hero-small about-hero-ani">Hey! I'm</h4>
 
                     <h1 className="about-hero-title">
-                        <div className="about-hero-ani">Yash Goswami</div> 
+                        <div className="about-hero-ani">Yash Goswami</div>
                         <div className="about-hero-ani">From Ady<span>mire</span></div>
                     </h1>
 
 
                 </div>
                 <div className="about-hero-social">
-                    {socialIcons.map((item, index) => (
-                        <img key={index} src={item.img} alt={item.alt} />
-                    ))}
-                </div>
-
-                <div className="about-hero-image">
-                    <img src={Founder1} alt="founder" />
+                   <SocialIcons className="grid grid-cols-5 gap-2 " />
                     <div className="about-hero-follow">
                         <span>Follow Us</span>
                         <div className="about-hero-arrow"><img src={CurveArrow} alt="arrow" /></div>
                     </div>
+                </div>
+
+                <div className="about-hero-image">
+                    <img src={Founder1} alt="founder" />
+                    
                 </div>
             </div>
         </section>

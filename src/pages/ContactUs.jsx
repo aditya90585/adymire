@@ -8,10 +8,8 @@ import ContactEnquirySection from '../components/Footer/ContactEnquirySection'
 const ContactUs = () => {
   return (
     <div>
-        <Header/>
         <ApplyContactForm/>
         <ContactEnquirySection/>
-        <Footer/>
     </div>
   )
 }

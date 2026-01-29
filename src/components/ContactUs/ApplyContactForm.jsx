@@ -53,7 +53,7 @@ const ApplyContactForm = () => {
   }, [])
 
   return (
-    <section className="max-w-screen mx-auto py-14">
+    <section className="max-w-screen mx-auto py-14 px-4 md:px-0">
       <ContactHeader/>
       <h1 className="font-bold text-center text-4xl my-3">Contact Us</h1>
       <div className="w-full h-0.5 bg-gray-300 my-4"></div>

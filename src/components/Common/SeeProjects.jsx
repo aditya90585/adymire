@@ -18,30 +18,35 @@ const projects = [
     title: "Praktika app UI & UX Design",
     link: "praktika.com",
     type: "Mobile App",
+    detailuri:"firacard"
   },
   {
     id: 2,
     title: "Tavi app UI & UX Design",
     link: "tavitaxibooking.com",
     type: "Mobile App",
+     detailuri:"firacard"
   },
   {
     id: 3,
     title: "Praktika app UI & UX Design",
     link: "praktika.com",
     type: "Mobile App",
+     detailuri:"firacard"
   },
   {
     id: 4,
     title: "Praktika app UI & UX Design",
     link: "praktika.com",
     type: "Mobile App",
+     detailuri:"firacard"
   },
   {
     id: 5,
     title: "Praktika app UI & UX Design",
     link: "praktika.com",
     type: "Mobile App",
+     detailuri:"firacard"
   },
 ];
 

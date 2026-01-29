@@ -15,23 +15,28 @@ import Portfolio from './pages/Portfolio'
 import Signup from './components/ClientArea/SignUp'
 import ClientLogin from './components/ClientArea/ClientLogin'
 import ClientOtpVerification from './components/ClientArea/ClientOtpVerification'
-import UIUXProcess from './pages/ProcessPages/UIUXProcess'
+import UIUXProcess from './pages/ProcessPages/ProcessPage'
 import ContactUs from './pages/ContactUs'
+import Footer from './components/Footer/Footer'
+import Header from './components/Header/Header'
+import ProjectDetailsCard from './components/Common/Projects/ProjectDetailsCard'
 
 function App() {
 
 
   return (
     <Router>
-      <div  className="App">
+      <div className="App">
         <ScrollToTop />
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/process/uiux" element={<UIUXProcess />} />
+          <Route path="/process/:service" element={<UIUXProcess />} />
           <Route path="/contact" element={<ContactUs />} />
+          <Route path='/projectDetails/:projectname' element={<ProjectDetailsCard/>}/>
           {/* <Route path="/user/signup" element={<Signup />} />
           <Route path="/client/login" element={<ClientLogin />} />
           <Route path="/client/otp" element={<ClientOtpVerification />} />
@@ -42,6 +47,7 @@ function App() {
           <Route path="/payment/redirect" element={<PaymentRedirect />} />
           <Route path="/payment/process" element={<PaymentProcess />} /> */}
         </Routes>
+        <Footer />
       </div>
     </Router>
   )

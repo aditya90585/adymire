@@ -3,12 +3,15 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
+import { useNavigate } from 'react-router-dom';
 
 const SeeProjectsSlider = ({ projects }) => {
+    const navigate = useNavigate()
     return (
         <div><Swiper
             effect={'coverflow'}
             centeredSlides={true}
+            initialSlide={1}
             slidesPerView={3}
             spaceBetween={30}
             slideToClickedSlide
@@ -70,7 +73,7 @@ const SeeProjectsSlider = ({ projects }) => {
                         </div>
 
                         <button
-                            onClick={() => console.log(project.id)}
+                            onClick={() => navigate(`/projectDetails/${project?.detailuri}`)}
                             className={` seeproject-button w-full mt-1 py-2.5 bg-[#FFE7B3]   text-black rounded-lg font-medium transition cursor-pointer`}
                         >
                             See Project

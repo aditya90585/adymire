@@ -13,7 +13,6 @@ import CallToAction from "../components/Common/CallToAction"
 const About = () => {
   return (
     <div>
-      <Header />
       <AboutHero />
       <AboutAdymire />
       <FounderVision />
@@ -22,7 +21,6 @@ const About = () => {
       <MyTeam />
       <ClientReviews />
       <WhyChooseAdymire />
-      <Footer />
     </div>
   )
 }

@@ -20,7 +20,6 @@ import ContactEnquirySection from '../components/Footer/ContactEnquirySection'
 const Home = () => {
   return (
     <div className="Home">
-      <Header />
       <Hero />
       <VideoWalkthrough />
       <WhatWeDo contentState={true} />
@@ -37,7 +36,6 @@ const Home = () => {
       <CallToAction />
       <PaymentSystem />
       <ContactEnquirySection/>
-      <Footer/>
     </div>
   )
 }

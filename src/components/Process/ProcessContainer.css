@@ -1,0 +1,33 @@
+.process-cont .swiper .swiper-slide{
+    height: auto;
+}
+.process-cont .swiper {
+    overflow: visible;
+    overflow-y: visible;
+    overflow-x: hidden;
+    padding-top: 30px ;
+    padding-left: 30px;
+}
+
+
+.process-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.process-pagination .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #ccc;
+  opacity: 1;
+  margin: 0 6px;
+  transition: all 0.3s ease;
+}
+
+.process-pagination .swiper-pagination-bullet-active {
+  width: 18px;
+  border-radius: 999px;
+  background: #FDC274;
+}

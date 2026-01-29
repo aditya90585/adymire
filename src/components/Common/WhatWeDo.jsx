@@ -6,7 +6,6 @@ import {
   Developmentsvg,
   DigitalMarketingsvg,
   Aisvg,
-  Whiteboardsvg,
   Figma,
   Xd,
   Sketch,
@@ -22,9 +21,6 @@ import {
   Aitool1,
   Aitool2,
   Aitool3,
-  WhiteboardTool1,
-  WhiteboardTool2,
-  WhiteboardTool3
 } from "@/assets";
 
 import './WhatWeDo.css'
@@ -61,6 +57,7 @@ const WhatWeDo = ({ contentState = false }) => {
       title: "App & Web",
       subtitle: "Development",
       icon: Developmentsvg,
+      button_link: "/process/development",
       tools: [Flutter, Jetpack, Reactlogo, Android, Apple, Browser],
       items: [
         "Interface Design",
@@ -76,6 +73,7 @@ const WhatWeDo = ({ contentState = false }) => {
       title: "Digital",
       subtitle: "Marketing",
       icon: DigitalMarketingsvg,
+      button_link: "/process/digitalmarketing",
       tools: [AToolIcon, FireBallToolIcon, BlueArrowIcon],
       items: [
         "Meta, Google, LinkedIn",
@@ -93,6 +91,7 @@ const WhatWeDo = ({ contentState = false }) => {
       title: "AI Agents",
       subtitle: "Automation",
       icon: Aisvg,
+      button_link: "/process/aiautomation",
       tools: [Aitool1, Aitool2, Aitool3],
       items: [
         "Lead Capture",
@@ -117,6 +116,7 @@ const WhatWeDo = ({ contentState = false }) => {
       <Swiper
         slidesPerView={3}
         centeredSlides
+        initialSlide={1}
         spaceBetween={50}
         slideToClickedSlide
         breakpoints={{
