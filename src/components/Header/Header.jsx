@@ -33,10 +33,6 @@ const Header = () => {
       text: "Portfolio",
       routeLink: "/portfolio"
     },
-    {
-      text: "Pricing Plans",
-      routeLink: "/pricingplans"
-    }
   ]
 
   const headerRef = useRef()
@@ -93,7 +89,7 @@ const Header = () => {
         </Link>
         <nav className="nav">
           {links?.map((link) => (
-            <NavLink key={link.text} className={({ isActive }) => isActive ? `bg-[#ffe2bc] header-text-ani -translate-y-0.5 hover:text-white rounded py-1 px-3 text-sm` : "bg-none hover:scale-105 header-text-ani"} to={link.routeLink ? `${link.routeLink}` : "/"}>{link.text}</NavLink>
+            <NavLink key={link.text} className={({ isActive }) => isActive ? `bg-[#ffe2bc] header-text-ani -translate-y-0.5 hover:font-semibold rounded py-1 px-3 text-sm` : "hover:text-gray-700 hover:text-shadow-lg text-base hover:text-shadow-gray-300  header-text-ani"} to={link.routeLink ? `${link.routeLink}` : "/"}>{link.text}</NavLink>
           ))}
         </nav>
         <div className="header-actions">
@@ -101,7 +97,7 @@ const Header = () => {
           <BookCallButton className='h-10' />
           {/* <NavLink to={"/client/login"} className="btn-login hover:bg-gray-800 text-white">Login</NavLink>
           <NavLink to={"/user/signup"} className="btn-signup">SignUP</NavLink> */}
-          <SocialIcons className="grid grid-cols-5 gap-2 bg-gray-100 rounded-xl py-0.5 px-1" imgClass="h-[40px] w-[40px]"/>
+          <SocialIcons className="grid grid-cols-5 gap-2 bg-gray-100 rounded-xl py-0.5 px-1" imgClass="h-[40px] w-[40px] animate-pulse "/>
         </div>
 
         {sidebarState ? <CgClose onClick={toggleSidebar} className='slidebar-buttons hidden' /> :

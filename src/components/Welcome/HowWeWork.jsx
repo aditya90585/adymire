@@ -10,15 +10,15 @@ import BookCallButton from "../UI/NavButtons/BookCallButton";
 export default function HowWeWork() {
 
   const hwwcontref = useRef()
-    useGSAP(() => {
-      staggerFadeInOnScroll(".hww-trigger-ani",{trigger:hwwcontref.current,stagger:0.3})
-    },{scope:hwwcontref})
+  useGSAP(() => {
+    staggerFadeInOnScroll(".hww-trigger-ani", { trigger: hwwcontref.current, stagger: 0.3 })
+  }, { scope: hwwcontref })
 
 
   return (
     <section className="how-section">
 
-      <div className="how-title ">
+      <div className="how-title">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 320 120"
@@ -51,7 +51,7 @@ export default function HowWeWork() {
         <h2>How We Work</h2>
       </div>
 
-      <div ref={hwwcontref}  className="how-wrapper">
+      <div ref={hwwcontref} className="how-wrapper">
 
         <div className="how-left">
 
@@ -73,14 +73,14 @@ export default function HowWeWork() {
 
 
           </div>
-                      <div className="step step-4 hww-trigger-ani">
-              <span className="num">04</span>
-              <span className="tag big">Marketing</span>
+          <div className="step step-4 hww-trigger-ani">
+            <span className="num">04</span>
+            <span className="tag big">Marketing</span>
 
-              <div className="cta ml-auto">
-                <BookCallButton className="bg-[#fff1c9] text-sm md:text-base h-10 md:h-15 font-bold border border-gray-400"  textSize="base" paddingX="4" rounded="full"/>
-              </div>
+            <div className="cta ml-auto">
+              <BookCallButton className="bg-[#fff1c9] text-sm md:text-base h-10 md:h-15 font-bold border border-gray-400" textSize="base" paddingX="4" rounded="full" />
             </div>
+          </div>
         </div>
 
         <div className="how-right hww-trigger-ani">

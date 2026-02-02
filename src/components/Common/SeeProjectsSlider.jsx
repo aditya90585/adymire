@@ -10,9 +10,8 @@ const SeeProjectsSlider = ({ projects }) => {
     return (
         <div><Swiper
             effect={'coverflow'}
-            centeredSlides={true}
-            initialSlide={1}
-            slidesPerView={3}
+            watchOverflow={true}
+            centeredSlides={false}
             spaceBetween={30}
             slideToClickedSlide
             coverflowEffect={{
@@ -22,17 +21,21 @@ const SeeProjectsSlider = ({ projects }) => {
                 modifier: 1,
                 slideShadows: false,
             }}
-            breakpoints={{
-                0: {
-                    slidesPerView: 1.2,
-                },
-                768: {
-                    slidesPerView: 2,
-                },
-                1024: {
-                    slidesPerView: 3,
-                },
-            }}
+         breakpoints={{
+            0: {
+              slidesPerView: 1,
+              slidesPerGroup: 1,
+            },
+            768: {
+              slidesPerView: 2,
+              slidesPerGroup: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+              slidesPerGroup: 3,
+            },
+          }}
+         
             pagination={{
                 el: ".seeProjects-pagination",
                 clickable: true,
@@ -42,12 +45,12 @@ const SeeProjectsSlider = ({ projects }) => {
                 nextEl: ".seeProjects-next",
             }}
             modules={[EffectCoverflow, Pagination, Navigation]}
-            className="mt-14 mySwiper seeprojects-swiper">
+            className="mt-6 mySwiper seeprojects-swiper">
             {projects.map((project) => (
                 <SwiperSlide
                     style={{ width: '340px' }}
                     key={project.id}
-                    className={`rounded-2xl border  overflow-hidden p-2 transition-all ease-out duration-200 border-gray-200   bg-white z-10`}
+                    className={`rounded-2xl border-2  overflow-hidden p-2 transition-all ease-out duration-200 border-gray-200   bg-white z-10`}
                 >
                     <div className="h-60 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 text-sm">
                         Image Placeholder
@@ -74,7 +77,7 @@ const SeeProjectsSlider = ({ projects }) => {
 
                         <button
                             onClick={() => navigate(`/projectDetails/${project?.detailuri}`)}
-                            className={` seeproject-button w-full mt-1 py-2.5 bg-[#FFE7B3]   text-black rounded-lg font-medium transition cursor-pointer`}
+                            className={` seeproject-button w-full mt-1 py-2.5 bg-[#FFE7B3]   text-black rounded-lg font-semibold transition ease-in duration-200 cursor-pointer`}
                         >
                             See Project
                         </button>

@@ -1,4 +1,5 @@
-import { BusinessManGroup } from "@/assets";
+import {AdymireLogo2} from "@/assets";
+
 
 const OurStory = () => {
   return (
@@ -40,7 +41,7 @@ const OurStory = () => {
         <div className="hidden lg:flex justify-center lg:justify-end h-full aspect-square absolute right-10">
           <div className="h-full w-full rounded-full bg-[#fcfcfc] flex items-center justify-center">
             <img
-              src={BusinessManGroup}
+              src={AdymireLogo2}
               alt="Our Story"
               className="w-full h-full p-5 rounded-full object-cover"
             />

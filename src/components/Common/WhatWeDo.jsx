@@ -30,6 +30,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from "swiper/modules";
+import { FaLessThanEqual } from 'react-icons/fa6';
 
 
 const WhatWeDo = ({ contentState = false }) => {
@@ -114,22 +115,30 @@ const WhatWeDo = ({ contentState = false }) => {
       <h2 className="section-title-WhatWeDo">Our Services</h2>
 
       <Swiper
-        slidesPerView={3}
-        centeredSlides
-        initialSlide={1}
-        spaceBetween={50}
+        spaceBetween={60}
         slideToClickedSlide
+
         breakpoints={{
-          0: {
-            slidesPerView: 1.2,
-          },
-          768: {
-            slidesPerView: 2,
-          },
-          1024: {
-            slidesPerView: 3,
-          },
-        }}
+            0: {
+              slidesPerView: 1,
+              slidesPerGroup: 1,
+              centeredSlides:true,
+               watchOverflow:false
+            },
+            768: {
+              slidesPerView: 2,
+              slidesPerGroup: 2,
+              centeredSlides:false,
+               watchOverflow:false
+            },
+            1024: {
+              slidesPerView: 3,
+              slidesPerGroup: 3,
+              centeredSlides:false,
+               watchOverflow:false
+            },
+          }}
+         
         pagination={{
           el: ".services-pagination",
           clickable: true,

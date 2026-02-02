@@ -67,12 +67,12 @@ const Hero = () => {
         </div>
 
       </div>
-      <div className="hero-partners hero-left-ani">
-        <img height={50} src={MetaShopifyGoogle} alt="Meta_Shopify_Google_partners" />
+      {/* <div className="hero-partners hero-left-ani">
+        <img src={MetaShopifyGoogle} alt="Meta_Shopify_Google_partners" />
       </div>
-     
+      */}
       <div className="hero-btn">
-      <BookCallButton text="Book a Strategy Call" className="bg-white h-15" backgroundnumber={2} paddingX="5" paddingY="2" rounded="xl" textSize="xl" borderstate={true}/>
+      <BookCallButton text="Book a Strategy Call" className="border-black hover:bg-[#FFF1C6] sm:border-2 h-15 border mx-auto sm:mx-0 bg-[#fdfcf7]"  borderstate={true} backgroundnumber={2} textSize="xl" rounded="xl" height="45px" paddingY="1"/>
       </div>
     </section>
   );

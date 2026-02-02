@@ -8,54 +8,32 @@ import 'swiper/css/effect-coverflow';
 const ClientReviews = () => {
   const reviews = [
     {
-      name: "Mohit Saini",
-      location: "India",
-      date: "Aug 05, 2024",
+      name: "Amit Bharadwaj",
+      role: "Architect",
       rating: 4,
-      text: `YashBusinessman sir ka "Digital Marketing for Beginner" 
-      course is a solid starting point for newbies. Sir ne topics 
-      ko simple language mein explain kiya hai, which is great.
-      Basics jaise SEO, social media, aur content marketing cover karte hain.
-      Thoda aur in-depth case studies hote toh aur bhi mazaa aata.
-      Overall, agar aap digital marketing mein just start kar rahe ho 
-      aur confusion dur karna chahte ho, toh yeh course useful hai.`,
-      reply: `Hii Kunal Saini thanks sharing your review and support 
-      we are glad you purchased our course and more peaceful review 
-      you give thanks for comming and if like this course please share your thoughts`,
+      text: "Royaloak has a variety of recliner designs to fit any lifestyle and living room setup. Whether relaxing alone or on movie nights with the family, there is a recliner that will fit every requirement.",
+      avatar: "",
     },
     {
-      name: "Mohit Saini",
-      location: "India",
-      date: "Aug 05, 2024",
-      rating: 5,
-      text: `YashBusinessman sir ka "Digital Marketing for Beginner" 
-      course is a solid starting point for newbies. Sir ne topics 
-      ko simple language mein explain kiya hai, which is great.`,
-      reply: `Thanks for your valuable feedback and support.`,
+      name: "Amit Bharadwaj",
+      role: "Architect",
+      rating: 4,
+      text: "Royaloak has a variety of recliner designs to fit any lifestyle and living room setup. Whether relaxing alone or on movie nights with the family, there is a recliner that will fit every requirement.",
+      avatar: "",
     },
     {
-      name: "Mohit Saini",
-      location: "India",
-      date: "Aug 05, 2024",
-      rating: 5,
-      text: `Good value for money and a good foundation to build upon.`,
-      reply: `Thanks for your review.`,
+      name: "Amit Bharadwaj",
+      role: "Architect",
+      rating: 4,
+      text: "Royaloak has a variety of recliner designs to fit any lifestyle and living room setup. Whether relaxing alone or on movie nights with the family, there is a recliner that will fit every requirement.",
+      avatar: "",
     },
     {
-      name: "Mohit Saini",
-      location: "India",
-      date: "Aug 05, 2024",
-      rating: 5,
-      text: `Good value for money and a good foundation to build upon.`,
-      reply: `Thanks for your review.`,
-    },
-    {
-      name: "Mohit Saini",
-      location: "India",
-      date: "Aug 05, 2024",
-      rating: 5,
-      text: `Good value for money and a good foundation to build upon.`,
-      reply: `Thanks for your review.`,
+      name: "Amit Bharadwaj",
+      role: "Architect",
+      rating: 4,
+      text: "Royaloak has a variety of recliner designs to fit any lifestyle and living room setup. Whether relaxing alone or on movie nights with the family, there is a recliner that will fit every requirement.",
+      avatar: "",
     },
   ];
 
@@ -82,9 +60,9 @@ const ClientReviews = () => {
 
         <Swiper
           effect={'coverflow'}
-          centeredSlides={true}
+          watchOverflow={true}
+          centeredSlides={false}
           slidesPerView={3}
-          initialSlide={1}
           spaceBetween={30}
           slideToClickedSlide
           coverflowEffect={{
@@ -96,13 +74,16 @@ const ClientReviews = () => {
           }}
           breakpoints={{
             0: {
-              slidesPerView: 1.2,
+              slidesPerView: 1,
+              slidesPerGroup: 1,
             },
             768: {
               slidesPerView: 2,
+              slidesPerGroup: 2,
             },
             1024: {
               slidesPerView: 3,
+              slidesPerGroup: 3,
             },
           }}
           pagination={{
@@ -115,54 +96,54 @@ const ClientReviews = () => {
           }}
           modules={[EffectCoverflow, Pagination, Navigation]}
           className="crv-grid MySwiper">
-          {reviews.map((review, index) => (
+          {reviews.map((item, index) => (
             <SwiperSlide key={index} className="crv-card">
-
-              <div className="crv-card-header">
-                <div className="crv-user">
-                  <img src="" alt="user" />
-                  <div>
-                    <h4>{review.name}</h4>
-                    <p>5 (Star) • {review.location}</p>
+              <div
+                className=" rounded-xl p-6 relative"
+              >
+                <div className="flex items-center gap-4 mb-4 ">
+                  <div className="review-img-cont  absolute bg-amber-200  p-4 left-0 top-0 rounded-tl-2xl rounded-r-[90%]">
+                    <img
+                      src={item.avatar}
+                      alt={item.name}
+                      className="h-16 w-16 rounded-full bg-gray-300"
+                    />
+                  </div>
+                  <div className="pl-25" >
+                    <h4 className="font-semibold text-gray-900">
+                      {item.name}
+                    </h4>
+                    <p className="text-sm text-gray-600">{item.role}</p>
+                    <div className="flex text-yellow-500 text-sm">
+                      {"★".repeat(item.rating)}
+                      {"☆".repeat(5 - item.rating)}
+                    </div>
                   </div>
                 </div>
 
-                <div className="crv-google">
-                  <img src="" alt="google" />
-                </div>
-              </div>
+                <p className="text-gray-700 text-sm leading-relaxed">
+                  {item.text}
+                </p>
 
-              <div className="crv-rating">
-                {"★".repeat(review.rating)}
-                <span className="crv-date">{review.date}</span>
-              </div>
-
-              <p className="crv-text">{review.text}</p>
-
-              <p className="crv-exp">
-                <strong>Date of experience :</strong> {review.date}
-              </p>
-
-              <div className="crv-reply">
-                <strong>↳ Reply from YashBusinessman</strong>
-                <p>{review.reply}</p>
-                <span className="crv-thanks">Thanks<br />YashBusinessman</span>
+                <span className="absolute top-6 right-6 text-2xl text-gray-500">
+                  “
+                </span>
               </div>
 
             </SwiperSlide>
           ))}
         </Swiper>
         <div className="clientReview-controls flex justify-center items-center gap-5 mt-10">
-                <button className="clientReview-prev rotate-180 bg-[#FDC274] h-11 w-11 text-2xl rounded-full cursor-pointer" aria-label="Previous">
-                    ➔
-                </button>
+          <button className="clientReview-prev rotate-180 bg-[#FDC274] h-11 w-11 text-2xl rounded-full cursor-pointer" aria-label="Previous">
+            ➔
+          </button>
 
-                <div className="clientReview-pagination flex justify-center items-center"></div>
+          <div className="clientReview-pagination flex justify-center items-center"></div>
 
-                <button className="clientReview-next  bg-[#FDC274] h-11 w-11 text-2xl rounded-full cursor-pointer" aria-label="Next">
-                    ➔
-                </button>
-            </div>
+          <button className="clientReview-next  bg-[#FDC274] h-11 w-11 text-2xl rounded-full cursor-pointer" aria-label="Next">
+            ➔
+          </button>
+        </div>
 
       </div>
     </section>

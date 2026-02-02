@@ -6,7 +6,7 @@ import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 import { SwiperSlide, Swiper } from "swiper/react";
 import { useParams } from "react-router-dom";
 
-const ProcessContainer = ({processStepsData}) => {
+const ProcessContainer = ({ processStepsData }) => {
   return (
     <section className="bg-[#FFF9EE] pt-20 pb-2 overflow-hidden">
       <div className="w-full mx-auto px-6">
@@ -31,9 +31,9 @@ const ProcessContainer = ({processStepsData}) => {
           <div className="process-cont relative lg:col-start-3 lg:col-span-5">
             <Swiper
               effect={'coverflow'}
-              centeredSlides={true}
-              initialSlide={1}
               slidesPerView={3}
+              watchOverflow={true}
+              centeredSlides={false}
               spaceBetween={30}
               slideToClickedSlide
               coverflowEffect={{
@@ -43,18 +43,21 @@ const ProcessContainer = ({processStepsData}) => {
                 modifier: 1,
                 slideShadows: false,
               }}
-
               breakpoints={{
                 0: {
-                  slidesPerView: 1.2,
+                  slidesPerView: 1,
+                  slidesPerGroup: 1,
                 },
                 768: {
                   slidesPerView: 2,
+                  slidesPerGroup: 2,
                 },
                 1024: {
                   slidesPerView: 3,
+                  slidesPerGroup: 3,
                 },
               }}
+
               pagination={{
                 el: ".process-pagination",
                 clickable: true,

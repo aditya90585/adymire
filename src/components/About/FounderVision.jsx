@@ -19,7 +19,7 @@ const FounderVision = () => {
 
           <div className="fv-step-card">
             <div className="fv-icon">
-              <img src={UIUX} alt="Design" />
+              <img className="animate-pulse" src={UIUX} alt="Design" />
             </div>
             <p>Design</p>
           </div>
@@ -28,7 +28,7 @@ const FounderVision = () => {
 
           <div className="fv-step-card">
             <div className="fv-icon">
-              <img src={Development} alt="Development" />
+              <img className="animate-pulse" src={Development} alt="Development" />
             </div>
             <p>Development</p>
           </div>
@@ -37,7 +37,7 @@ const FounderVision = () => {
 
           <div className="fv-step-card">
             <div className="fv-icon">
-              <img src={DigitalMarketing} alt="Grow" />
+              <img className="animate-pulse" src={DigitalMarketing} alt="Grow" />
             </div>
             <p>Grow</p>
           </div>

@@ -54,7 +54,7 @@ export default function WhyChooseUs() {
             </div>
 
             <div className="icon-box">
-              <img src={item.icon} alt={item.title} />
+              <img className="animate-pulse" src={item.icon} alt={item.title} />
             </div>
           </div>
         ))}

@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 30px;
-  height: 360px;
+  height: 260px;
 }
 
 .tools-used__section {
@@ -30,7 +30,7 @@
 }
 
 .tools-used__category {
-  min-width: 280px;
+  min-width: 220px;
   height: 100%;
   background: #fadbb6;
   border-radius: 12px;
@@ -51,12 +51,12 @@
 
 
 .tools-used__category h3 {
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 700;
 }
 
 .tools-used__category p {
-  font-size: 22px;
+  font-size: 18px;
   opacity: 0.9;
 }
 
@@ -84,7 +84,7 @@
   height: 100%;
   gap: 40px;
   overflow-x: auto;
-  padding: 35px;
+  padding: 20px;
   scroll-behavior: smooth;
 }
 
@@ -93,12 +93,12 @@
 }
 
 .tools-used__tool-card {
-  min-width: 180px;
-  max-width: 180px;
+  min-width: 140px;
+  max-width: 140px;
   height: 100%;
   background: #f8f8f8;
   border-radius: 160px;
-  padding: 16px 16px;
+  padding: 10px 10px;
   text-align: center;
   flex-shrink: 0;
   border: 2px solid rgb(231, 229, 229);
@@ -115,16 +115,17 @@
   aspect-ratio: 1/1;
   background: #f7c0c0;
   border-radius: 50%;
-  margin: 0 auto 10px;
+  margin: 0 auto 6px;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  padding: 20px;
+  padding: 16px;
 }
 
 .tools-used__tool-img img {
   background-color: white;
+  object-fit: cover;
   border-radius: 50%;
   width: 100%;
   height: 100%;
@@ -134,13 +135,13 @@
 
 .tools-used__tool-name {
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   margin-bottom: 20px;
 }
 
 .tools-used__tool-percent {
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 600;
   color: #181817;
 }

@@ -18,7 +18,7 @@ const ContactHeader = () => {
           </div>
 
           <div className="flex-1 px-10">
-            <h1 className="text-5xl text-center md:text-start font-bold text-black">
+            <h1 className="text-5xl text-center md:text-start mt-4 md:mt-0 font-bold text-black">
               Contact US
             </h1>
 

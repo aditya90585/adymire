@@ -15,20 +15,20 @@ const AgencyHelps = () => {
   return (
     <section className="agency-helps">
       <div ref={contref} className="ah-container">
-        <h2 className="section-title trigger-ani">Adymire Agency helps you</h2>
+        <h2 className="ah-section-title trigger-ani">Adymire Agency helps you</h2>
         <div className="process-steps">
           <div className="step-card trigger-ani">
-            <div className="step-icon"><img src={UIUX} alt="design" /></div>
+            <div className="step-icon"><img className='animate-pulse' src={UIUX} alt="design" /></div>
             <h3 className="step-title">Design</h3>
           </div>
           <div className="step-connector trigger-ani">➶</div>
           <div className="step-card trigger-ani">
-            <div className="step-icon"><img src={Development} alt="development" /></div>
+            <div className="step-icon"><img className='animate-pulse'  src={Development} alt="development" /></div>
             <h3 className="step-title">Development</h3>
           </div>
           <div className="step-connector trigger-ani">➶</div>
           <div className="step-card trigger-ani">
-            <div className="step-icon"><img src={DigitalMarketing} alt="grow" /></div>
+            <div className="step-icon"><img className='animate-pulse'  src={DigitalMarketing} alt="grow" /></div>
             <h3 className="step-title">Grow</h3>
           </div>
         </div>

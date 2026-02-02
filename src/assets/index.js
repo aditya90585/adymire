@@ -187,3 +187,7 @@ export {default as CategoryWebDevelopment} from "./icons/ProjectsCategory/Catego
 export {default as CategoryAppDevelopment} from "./icons/ProjectsCategory/CategoryAppDevelopment.json"
 export {default as CategoryDigitalMarketing} from "./icons/ProjectsCategory/CategoryDigitalMarketing.json"
 export {default as CategoryUIUX} from "./icons/ProjectsCategory/CategoryUIUX.json"
+
+//thumbnail 
+
+export {default as AdymireThumbnailVideo} from "./illustrations/AdymireThumbnailVideo.png"

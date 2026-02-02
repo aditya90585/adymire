@@ -21,13 +21,22 @@
 }
 .seeprojects-swiper{
     padding: 0px 40px;
+   
 }
-.seeprojects-swiper .swiper-slide-active{
+.seeprojects-swiper .swiper-slide{
+   transition:
+    background-color 0.5s ease,
+    border 0.4s ease,
+    box-shadow 0.4s ease;
+    transform: scale(0.9);
+}
+.seeprojects-swiper .swiper-slide:hover {
     background-color: #FFE7B3;
     border: 2px solid rgb(252, 179, 44);
+    transform: scale(1.02);
 }
 
-.seeprojects-swiper .swiper-slide-active .seeproject-button{
+.seeprojects-swiper .swiper-slide:hover .seeproject-button{
 background-color: #fdc700;
 }
 .seeprojects-swiper .swiper-slide-active .seeproject-projecttype{

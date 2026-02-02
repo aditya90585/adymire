@@ -65,18 +65,20 @@
 
 .crv-card {
   background: #fff;
-  border-radius: 20px;
-  padding: 24px;
+  border-radius: 10px;
   text-align: left;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-  transition: all ease-in 0.4s;
-}
-.crv-card:hover{
-      background-color: #FFE7B3;
-    border: 2px solid rgb(252, 179, 44);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  transition: all ease 0.4s;
+  border: 2px solid rgb(250, 244, 244);
+
 }
 
-/* HEADER */
+.crv-card:hover {
+  background-color: #fee685;
+}
+.crv-card:hover .review-img-cont { 
+  background-color: white;
+}
 
 .crv-card-header {
   display: flex;
@@ -125,8 +127,6 @@
   color: #666;
 }
 
-/* TEXT */
-
 .crv-text {
   font-size: 14px;
   line-height: 1.6;
@@ -154,26 +154,27 @@
   font-size: 12px;
   font-weight: 600;
 }
+
 .clientReview-pagination {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .clientReview-pagination .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    background: #ccc;
-    opacity: 1;
-    margin: 0 6px;
-    transition: all 0.3s ease;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #ccc;
+  opacity: 1;
+  margin: 0 6px;
+  transition: all 0.3s ease;
 }
 
 .clientReview-pagination .swiper-pagination-bullet-active {
-    width: 18px;
-    border-radius: 999px;
-    background: #FDC274;
+  width: 18px;
+  border-radius: 999px;
+  background: #FDC274;
 }
 
 @media (max-width: 992px) {

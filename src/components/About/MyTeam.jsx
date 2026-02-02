@@ -25,33 +25,36 @@ const MyTeam = () => {
 
 
     return (
-        <section className="bg-[#fff8ec] py-16 px-6 relative">
-            <div className="mx-auto max-w-7xl relative  myTeam-swiper">
+        <section className="bg-[#fff8ec] py-16 md:px-18 px-4 relative">
+            <div className="mx-auto max-w-7xl relative  myTeam-swiper md:px-14 px-0 overflow-x-hidden">
                 <div className="mb-14 text-center">
                     <h2 className="text-3xl font-semibold text-black">My Team</h2>
                     <div className="mx-auto mt-3 h-1 w-36 rounded-full bg-yellow-400" />
                 </div>
 
                 <Swiper
-                    effect={'coverflow'}
-                    centeredSlides={true}
+                    watchOverflow={true}
+                    spaceBetween={60}
+                    slideToClickedSlide={true}
+                    centeredSlides
                     initialSlide={1}
-                    slidesPerView={3}
-                    spaceBetween={50}
-                    slideToClickedSlide
+
                     coverflowEffect={{
                         rotate: 0,
                         stretch: 0,
-                        depth: 0,
+                        depth: 150,
                         modifier: 1,
                         slideShadows: false,
                     }}
+
                     breakpoints={{
                         0: {
-                            slidesPerView: 1.2,
+                            slidesPerView: 1,
+                        
                         },
                         768: {
                             slidesPerView: 2,
+              
                         },
                         1024: {
                             slidesPerView: 3,
@@ -94,22 +97,22 @@ const MyTeam = () => {
                             </div>
                         </SwiperSlide>
                     ))}
-            </Swiper>
-            <div className="flex justify-center gap-4 mt-6">
-              <button
-                className="myTeam-prev w-12 h-12 text-xl cursor-pointer rounded-full rotate-180 bg-[#FFE4A3] flex items-center justify-center hover:bg-[#FFD36A]"
-              >
-                ➔
-              </button>
-              <div className="myTeam-pagination"></div>
-              <button
-                className="myTeam-next w-12 h-12 text-xl cursor-pointer rounded-full bg-[#FFE4A3] flex items-center justify-center hover:bg-[#FFD36A]"
-              >
-                ➔
-              </button>
-            </div>
+                </Swiper>
+                <div className="flex justify-center gap-4 mt-6">
+                    <button
+                        className="myTeam-prev w-12 h-12 text-xl cursor-pointer rounded-full rotate-180 bg-[#FFE4A3] flex items-center justify-center hover:bg-[#FFD36A]"
+                    >
+                        ➔
+                    </button>
+                    <div className="myTeam-pagination"></div>
+                    <button
+                        className="myTeam-next w-12 h-12 text-xl cursor-pointer rounded-full bg-[#FFE4A3] flex items-center justify-center hover:bg-[#FFD36A]"
+                    >
+                        ➔
+                    </button>
+                </div>
 
-        </div>
+            </div>
         </section >
     );
 };

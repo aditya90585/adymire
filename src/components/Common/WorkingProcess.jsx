@@ -82,7 +82,7 @@ export default function WorkingProcess() {
         {processData.map((item) => (
           <div key={item.id} className={`process-item wp-trigger-ani ${item.position}`}>
             <div className="icon-circle">
-                <img src={item.icon} alt={item.title} />
+                <img className="animate-pulse" src={item.icon} alt={item.title} />
             </div>
 
             <div className="text">

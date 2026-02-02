@@ -47,7 +47,7 @@ const VisionValues = () => {
                 <img
                   src={item.icon}
                   alt={item.title}
-                  className="w-full aspect-square object-contain"
+                  className="w-full aspect-square object-contain animate-pulse"
                 />
               </div>
             </div>

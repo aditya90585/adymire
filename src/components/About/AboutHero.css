@@ -28,9 +28,14 @@
 }
 
 .about-hero-title {
-    font-size: 54px;
+    font-size: 52px;
     line-height: 1.2;
     font-weight: 800;
+}
+.about-hero-title-1{
+ font-weight: 700;
+ font-size: 48px;
+ color:rgb(59, 59, 59);
 }
 
 .about-hero-title span {
@@ -40,7 +45,7 @@
 .about-hero-social {
     position: absolute;
     bottom: 20%;
-    left: 28%;
+    left: 35%;
     display: flex;
     gap: 14px;
     background: #ffffff;

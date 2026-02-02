@@ -75,7 +75,7 @@ const SpecializedIndustries = () => {
           className={`industry-card ${item.position}`}>
             <div className="card-inner">
 
-              <img className="industry-icon-box" src={item.icon} alt={item.title} />
+              <img className="industry-icon-box animate-pulse" src={item.icon} alt={item.title} />
 
               <h4>{item.title}</h4>
               <p>{item.subtitle}</p>

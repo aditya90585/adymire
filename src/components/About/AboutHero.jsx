@@ -41,7 +41,7 @@ const AboutHero = () => {
                     <h4 className="about-hero-small about-hero-ani">Hey! I'm</h4>
 
                     <h1 className="about-hero-title">
-                        <div className="about-hero-ani">Yash Goswami</div>
+                        <div className="about-hero-ani about-hero-title-1">Yash Goswami</div>
                         <div className="about-hero-ani">From Ady<span>mire</span></div>
                     </h1>
 
