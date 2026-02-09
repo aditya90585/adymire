@@ -1,0 +1,328 @@
+{
+  "key": "cancellation-policy",
+  "title": "Cancellation Policy",
+  "company": "Adymire Agency",
+  "lastUpdated": "February 4, 2026",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "1. Introduction",
+      "content": [
+        "This Cancellation Policy outlines the terms and conditions under which service agreements and projects can be cancelled by either Adymire Agency (\"the Company\") or the client.",
+        "This policy applies to all projects and services including UI/UX Design, Mobile App Development, Web Development, Digital Marketing, and AI Automation & AI-Based Solutions.",
+        "By entering into a service agreement with us, you acknowledge that you have read, understood, and agreed to the terms outlined in this Cancellation Policy."
+      ]
+    },
+    {
+      "id": "key-principle",
+      "heading": "2. Key principle: Cancellation rights",
+      "content": [
+        "IMPORTANT NOTICE:",
+        " The right to cancel a service agreement or project contract rests solely and exclusively with Adymire Agency (the Company).",
+        "While clients may request cancellation, the final decision to accept or reject such requests is at the Company's discretion based on the circumstances of each case, work completed, resources invested, and business considerations.",
+        "This policy is designed to protect both parties while acknowledging the unique nature of software development and creative services."
+      ]
+    },
+    {
+      "id": "company-initiated-cancellation",
+      "heading": "3. Company-initiated cancellation",
+      "content": [
+        "The Company reserves the right to cancel or terminate a project or service agreement under the following circumstances:"
+      ],
+      "subSections": [
+        {
+          "id": "policy-violations",
+          "heading": "3.1 Policy violations",
+          "bullets": [
+            "If the client violates any terms of the service agreement",
+            "If the client engages in abusive, threatening, or inappropriate behavior toward Company staff",
+            "If the client provides false or misleading information",
+            "If the client fails to comply with agreed-upon policies and procedures"
+          ]
+        },
+        {
+          "id": "payment-issues",
+          "heading": "3.2 Payment issues",
+          "bullets": [
+            "Non-payment or late payment of invoices beyond the agreed grace period",
+            "Chargebacks initiated without prior communication with the Company",
+            "Bounced checks or failed payment transactions",
+            "Refusal to pay for completed work or deliverables"
+          ]
+        },
+        {
+          "id": "scope-creep",
+          "heading": "3.3 Scope creep and unreasonable requests",
+          "bullets": [
+            "If the client repeatedly requests changes beyond the agreed scope without accepting additional charges",
+            "If project requirements change so significantly that the original agreement no longer applies",
+            "If the client makes unrealistic demands or sets impossible deadlines"
+          ]
+        },
+        {
+          "id": "client-unavailability",
+          "heading": "3.4 Client unavailability",
+          "bullets": [
+            "If the client fails to provide required information, assets, or feedback within reasonable timeframes",
+            "If the client is unresponsive to communication attempts for an extended period (typically 30+ days)",
+            "If lack of client cooperation prevents project progress"
+          ]
+        },
+        {
+          "id": "legal-ethical-concerns",
+          "heading": "3.5 Legal or ethical concerns",
+          "bullets": [
+            "If the project involves illegal activities or content",
+            "If the project conflicts with the Company's values or ethical standards",
+            "If the project poses legal risks to the Company"
+          ]
+        },
+        {
+          "id": "business-reasons",
+          "heading": "3.6 Business reasons",
+          "bullets": [
+            "If the Company is unable to deliver the service due to internal constraints",
+            "If the project is no longer commercially viable for the Company",
+            "If unforeseen circumstances make project completion impossible"
+          ]
+        },
+        {
+          "id": "company-cancellation",
+          "heading": "When the Company initiates cancellation:",
+          "bullets": [
+            "Written notice will be provided to the client",
+            "Payment will be settled based on work completed to date",
+            "Any deliverables completed will be provided to the client (if payments are settled)",
+            "Refund decisions will be made in accordance with the Refund Policy"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "client-requested-cancellation",
+      "heading": "4. Client-requested cancellation",
+      "content": [
+        "Clients may REQUEST cancellation of a project, but such requests are subject to Company approval.",
+        "The Company will evaluate each request based on:"
+      ],
+      "bullets": [
+        "Project stage and work completed",
+        "Resources and time already invested",
+        "Third-party costs incurred",
+        "Availability of alternative solutions"
+      ],
+      "subSections": [
+        {
+          "id": "request-process",
+          "heading": "4.1 Cancellation request process",
+          "content": [
+            "STEP 1: Submit a written cancellation request via email with:",
+            "• Project details and invoice number",
+            "• Reason for cancellation",
+            "• Preferred resolution (refund, service credit, etc.)",
+            "STEP 2: Company will review the request within 7-14 business days.",
+            "STEP 3: Company will provide a decision and settlement terms.",
+            "STEP 4: If approved, final payments and deliverables will be processed."
+          ]
+        },
+        {
+          "id": "cancellation-charges",
+          "heading": "4.2 Cancellation charges",
+          "content": [
+            "If a client-requested cancellation is approved, the following charges may apply:",
+            "BEFORE PROJECT COMMENCEMENT:",
+            "• If work has not started : Deposit may be partially or fully refunded at Company's discretion",
+            "• Administrative fees and third-party costs are non-refundable",
+            "DURING PROJECT EXECUTION:",
+            "• Client will be charged for all work completed up to the cancellation date",
+            "• Calculation will be based on deliverables completed, time invested, and resources used",
+            "• Minimum charges may apply even if deliverables are not complete",
+            "AFTER PROJECT COMPLETION:",
+            "• No cancellation is possible once the project is delivered and accepted",
+            "• Requests for cancellation after delivery will not be entertained"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "project-stages",
+      "heading": "5. Cancellation at different project stages",
+      "subSections": [
+        {
+          "id": "planning-phase",
+          "heading": "5.1 Discovery/planning phase (0-20% Complete)",
+          "bullets": [
+            "Cancellation may be approved with minimal charges",
+            "Deposit and discovery fees are typically non-refundable",
+            "Any research, planning documents, or wireframes created remain Company property unless purchased separately"
+          ]
+        },
+        {
+          "id": "development-phase",
+          "heading": "5.2 Design/development phase (20-80% Complete)",
+          "bullets": [
+            "Cancellation approval is subject to evaluation",
+            "Client will be charged for all completed work and work in progress",
+            "Partial deliverables may be provided upon full payment settlement",
+            "No refunds for work already completed"
+          ]
+        },
+        {
+          "id": "delivery-phase",
+          "heading": "5.3 Testing/delivery phase (80-100% Complete)",
+          "bullets": [
+            "Cancellation requests at this stage are rarely approved",
+            "If approved, full payment for the project is required",
+            "Deliverables will be provided as per agreement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mutual-cancellation",
+      "heading": "6. Mutual cancellation agreement",
+      "content": [
+        "In some cases, both parties may mutually agree to cancel a project. Terms will be documented in writing, work completed will be:"
+      ],
+      "bullets": [
+        "Documented in writing with clear settlement terms",
+        "Work completed will be paid for",
+        "Intellectual property rights will be clearly defined",
+        "Both parties release each other from further obligations"
+      ]
+    },
+    {
+      "id": "no-cancellation-scenarios",
+      "heading": "7. No-cancellation scenarios",
+      "content": [
+        "Cancellation is NOT permitted in the following cases:"
+      ],
+      "bullets": [
+        "After final deliverables have been provided and accepted",
+        "If the client has received substantial value from the work",
+        "If custom development or design work has been completed",
+        "If third-party costs have been incurred on the client's behalf",
+        "If the cancellation request is made in bad faith"
+      ]
+    },
+    {
+      "id": "consequences",
+      "heading": "8. Consequences of cancellation",
+      "content": [
+        "When a project is cancelled:"
+      ],
+      "subSections": [
+        {
+          "id": "payment-settlement",
+          "heading": "8.1 Payment settlement",
+          "bullets": [
+            "All outstanding invoices must be paid",
+            "Charges for completed work will be calculated and billed",
+            "Third-party costs will be passed to the client",
+            "Refunds (if any) will be processed as per the Refund Policy"
+          ]
+        },
+        {
+          "id": "intellectual-property",
+          "heading": "8.2 Intellectual property",
+          "bullets": [
+            "Work-in-progress materials remain the property of the Company unless purchased separately",
+            "Source code, design files, and proprietary materials will not be shared unless full payment is made"
+          ]
+        },
+        {
+          "id": "confidentiality",
+          "heading": "8.3 Confidentiality",
+          "bullets": [
+            "Both parties remain bound by confidentiality obligations",
+            "Project-related information must not be disclosed publicly"
+          ]
+        },
+        {
+          "id": "future-engagement",
+          "heading": "8.4 Future Engagement",
+          "bullets": [
+            "The Company reserves the right to decline future projects from clients with a history of cancellations",
+            "Blacklisting may occur in cases of severe policy violations"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "subscription-services",
+      "heading": "9. Subscription and recurring services",
+      "content": [
+        "For subscription-based or recurring services:"
+      ],
+      "bullets": [
+        "Cancellation requests must be submitted before the next billing cycle",
+        "No refunds for the current billing period",
+        "Services continue until the end of the paid period",
+        "Reactivation may require a new setup fee"
+      ]
+    },
+    {
+      "id": "force-majeure",
+      "heading": "10. Force majeure",
+      "content": [
+        "Cancellation or suspension of services may occur due to events beyond our control, including:",
+        "• Natural disasters",
+        "• Pandemics or health emergencies",
+        "• War, terrorism, or civil unrest",
+        "• Government actions or legal restrictions",
+        "• Technology failures or cyber attacks",
+        "In such cases:",
+        "• Both parties will be released from obligations temporarily or permanently",
+        "• Payments will be settled based on work completed",
+        "• Alternative arrangements may be negotiated"
+      ]
+    },
+    {
+      "id": "dispute-resolution",
+      "heading": "11. Dispute resolution",
+      "content": [
+        "If there is a dispute regarding cancellation:",
+        "STEP 1: Direct communication and negotiation between parties",
+        "STEP 2: Mediation through a neutral third party (if agreed)",
+        "STEP 3: Arbitration or legal proceedings as a last resort"
+      ],
+      "note": "The Company prefers to resolve disputes amicably and will make reasonable efforts to find mutually acceptable solutions."
+    },
+    {
+      "id": "notice-period",
+      "heading": "12. Notice period",
+      "bullets": [
+        "Client-requested cancellations: Minimum 14 days' written notice recommended",
+        "Company-initiated cancellations: Minimum 7 days' written notice (except for severe violations)"
+      ]
+    },
+    {
+      "id": "policy-changes",
+      "heading": "13. Changes to this policy",
+      "content": [
+        "We reserve the right to update or modify this Cancellation Policy at any time. Changes will be effective immediately upon posting on our website.",
+        "Your continued use of our services after changes are made constitutes acceptance of the updated policy."
+      ]
+    },
+    {
+      "id": "contact-information",
+      "heading": "14. Contact information",
+      "content": [
+        "For cancellation requests or questions about this policy, please contact us:",
+        "Adymire Agency",
+        "Email: [Your Official Email]",
+        "Phone: [Your Official Phone Number]",
+        "Website: [Your Website URL]",
+        "Address: [Your Registered Business Address]"
+      ]
+    },
+    {
+      "id": "acceptance",
+      "heading": "15. Acceptance of this policy",
+      "content": [
+        "By making a payment or engaging our services, you confirm that you have read, understood, and agreed to this Refund Policy.",
+        "If you do not agree with any part of this policy, please do not proceed with payment or service engagement."
+      ]
+    }
+  ]
+}

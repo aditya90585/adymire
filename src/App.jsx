@@ -1,5 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import {Whatsapp} from "@/assets"
 import Home from './pages/Home'
 import AdminLogin from './pages/AdminLogin'
 import OTPVerification from './pages/OTPVerification'
@@ -20,9 +21,16 @@ import ContactUs from './pages/ContactUs'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import ProjectDetailsCard from './components/Common/Projects/ProjectDetailsCard'
+import PoliciesPage from './components/Policies/PoliciesPage'
+import { BiBot } from 'react-icons/bi'
 
 function App() {
-
+ const navigateToWhatsapp = () => {
+    const phoneNumber = "917302356804";
+    const message = "Hello, I want to know more about your services";
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.location.href = url;
+  }
 
   return (
     <Router>
@@ -37,6 +45,8 @@ function App() {
           <Route path="/process/:service" element={<UIUXProcess />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route path='/projectDetails/:projectname' element={<ProjectDetailsCard/>}/>
+
+            <Route path="/policy/:policytype" element={<PoliciesPage />} />
           {/* <Route path="/user/signup" element={<Signup />} />
           <Route path="/client/login" element={<ClientLogin />} />
           <Route path="/client/otp" element={<ClientOtpVerification />} />
@@ -48,6 +58,12 @@ function App() {
           <Route path="/payment/process" element={<PaymentProcess />} /> */}
         </Routes>
         <Footer />
+        <div className="fixed max-w-10 right-8 bottom-10 z-100 flex flex-col items-center justify-center gap-y-2">
+        <div onClick={navigateToWhatsapp} className="bg-white p-2 rounded-full hover:shadow-md cursor-pointer">
+          <img src={Whatsapp} alt="whatsapp" />
+        </div>
+        <div className="w-full p-1 rounded-full hover:shadow-md cursor-pointer bg-white flex items-center justify-center aspect-square"><BiBot className="aspect-square w-full" /></div>
+      </div>
       </div>
     </Router>
   )

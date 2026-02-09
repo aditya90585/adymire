@@ -5,6 +5,8 @@ const Select = ({
     label,
     labelClass = "",
     className = "",
+    isRequired = false,
+    multiple = false,
     ...props
 }, ref) => {
     const id = useId()
@@ -15,7 +17,7 @@ const Select = ({
                 label && <label
                     className={`inline-block  mb-2 ${labelClass}`}
                     htmlFor={id}>
-                    {label}
+                    {label} {isRequired && <span className='text-red-700'>*</span>}
                 </label>
             }
             <div className='relative'>
@@ -23,6 +25,7 @@ const Select = ({
                     {...props}
                     id={id}
                     ref={ref}
+                    multiple={multiple}
                     className={`px-3 py-2 appearance-none rounded-lg bg-white text-black outline-none focus:bg-gray-50 duration-200 border border-gray-200 w-full ${className}`}
                 >
 

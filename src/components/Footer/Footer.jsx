@@ -85,15 +85,15 @@ const companyLinks = [
   },
   {
     name: "Privacy Policy",
-    redirectUrl: "/company/privacy-policy",
+    redirectUrl: "/policy/privacy-policy",
   },
   {
     name: "Refund Policy",
-    redirectUrl: "/company/refund-policy",
+    redirectUrl: "/policy/refund-policy",
   },
   {
     name: "Cancellation Policy",
-    redirectUrl: "/company/cancellation-policy",
+    redirectUrl: "/policy/cancellation-policy",
   },
   {
     name: "Plans",

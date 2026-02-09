@@ -1,0 +1,593 @@
+{
+  "key": "kyc-mandates",
+  "title": "KYC Mandates",
+  "company": "Adymire Agency",
+  "lastUpdated": "February 4, 2026",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "1. Introduction",
+      "content": [
+        "This document outlines the Know Your Customer (KYC) requirements and document verification mandates for clients engaging with Adymire Agency (\"the Company,\" \"We,\" or \"Us\").",
+        "KYC is a critical process that helps us:",
+        "• Verify the identity of our clients",
+        "• Prevent fraud and financial crimes",
+        "• Comply with legal and regulatory requirements",
+        "• Maintain secure business relationships",
+        "• Protect both parties' interests",
+        "By engaging our services, you agree to comply with these KYC requirements and provide requested documentation in a timely manner."
+      ]
+    },
+    {
+      "id": "purpose-legal-basis",
+      "heading": "2. Purpose And Legal Basis",
+      "subSections": [
+        {
+          "id": "why-kyc-required",
+          "heading": "2.1 Why Kyc Is Required",
+          "content": [
+            "IDENTITY VERIFICATION:",
+            "• Confirm you are who you claim to be",
+            "• Prevent identity theft and impersonation",
+            "• Ensure legitimate business dealings",
+            "COMPLIANCE:",
+            "• Meet legal obligations under Indian law",
+            "• Comply with tax regulations and reporting requirements",
+            "• Adhere to anti-money laundering (AML) standards",
+            "• Follow \"Prevention of Money Laundering Act, 2002\" (PMLA) guidelines",
+            "RISK MANAGEMENT:",
+            "• Assess business risk associated with client relationships",
+            "• Prevent fraudulent transactions",
+            "• Protect against payment defaults",
+            "BUSINESS DOCUMENTATION:",
+            "• Maintain proper records for accounting and auditing",
+            "• Support tax filings and regulatory reporting",
+            "• Create a clear audit trail"
+          ]
+        },
+        {
+          "id": "legal-framework",
+          "heading": "2.2 Legal Framework",
+          "content": [
+            "KYC requirements are based on:",
+            "• Prevention of Money Laundering Act (PMLA), 2002",
+            "• Income Tax Act, 1961",
+            "• Companies Act, 2013",
+            "• GST regulations",
+            "• RBI guidelines (for financial transactions)",
+            "• FEMA regulations (for foreign exchange transactions)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "applicability",
+      "heading": "3. Applicability",
+      "subSections": [
+        {
+          "id": "mandatory-kyc",
+          "heading": "3.1 Mandatory Kyc",
+          "content": [
+            "KYC is MANDATORY for:",
+            "• All new clients before project commencement",
+            "• Existing clients for projects exceeding specified value thresholds",
+            "• International clients for all transactions",
+            "• Clients requiring official invoices with GST",
+            "• Long-term service agreements",
+            "• Subscription-based services"
+          ]
+        },
+        {
+          "id": "threshold-values",
+          "heading": "3.2 Threshold Values",
+          "content": [
+            "Standard KYC is required when:",
+            "• Project value exceeds ₹50,000 (for Indian clients)",
+            "• Any amount for international clients",
+            "• Cumulative annual business exceeds ₹1,00,000",
+            "Enhanced KYC may be required when:",
+            "• Project value exceeds ₹5,00,000",
+            "• High-risk industries or jurisdictions",
+            "• Complex corporate structures",
+            "• Politically exposed persons (PEPs) are involved"
+          ]
+        },
+        {
+          "id": "exemptions",
+          "heading": "3.3 Exemptions",
+          "content": [
+            "Simplified KYC may be acceptable for:",
+            "• Repeat clients with previously verified documents (within 2 years)",
+            "• Projects below ₹50,000 (Company discretion)",
+            "• Referrals from verified existing clients (Company discretion)",
+            "Note: The Company reserves the right to request full KYC regardless of exemptions if deemed necessary."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kyc-documents-required",
+      "heading": "4. Kyc Documents Required",
+      "subSections": [
+        {
+          "id": "individual-clients-indian",
+          "heading": "4.1 For Individual Clients (Indian)",
+          "content": [
+            "PRIMARY IDENTITY PROOF (Any one):",
+            "• PAN Card (Permanent Account Number) - MANDATORY",
+            "• Aadhaar Card",
+            "• Passport",
+            "• Voter ID Card",
+            "• Driving License",
+            "ADDRESS PROOF (Any one):",
+            "• Aadhaar Card",
+            "• Passport",
+            "• Recent utility bill (electricity, water, gas) - not older than 3 months",
+            "• Bank statement - not older than 3 months",
+            "• Rent agreement (notarized)",
+            "ADDITIONAL DOCUMENTS:",
+            "• Cancelled cheque or bank account details",
+            "• Recent passport-size photograph (optional)",
+            "• Email confirmation and phone verification"
+          ]
+        },
+        {
+          "id": "sole-proprietors-indian",
+          "heading": "4.2 For Sole Proprietors (Indian)",
+          "content": [
+            "IDENTITY DOCUMENTS:",
+            "• PAN Card of proprietor - MANDATORY",
+            "• Aadhaar Card of proprietor",
+            "• Photograph of proprietor",
+            "BUSINESS DOCUMENTS:",
+            "• GST Registration Certificate (GSTIN) - if registered",
+            "• Shop and Establishment Certificate",
+            "• MSME/Udyam Registration (if applicable)",
+            "• Business address proof",
+            "• Cancelled cheque of business account",
+            "• Business card or letterhead"
+          ]
+        },
+        {
+          "id": "companies-firms-indian",
+          "heading": "4.3 For Companies And Firms (Indian)",
+          "content": [
+            "ENTITY DOCUMENTS:",
+            "• Certificate of Incorporation / Registration",
+            "• PAN Card of the entity - MANDATORY",
+            "• GST Registration Certificate (GSTIN) - if registered",
+            "• MOA and AOA (for companies)",
+            "• Partnership Deed (for partnerships)",
+            "• LLP Agreement (for LLPs)",
+            "AUTHORIZED SIGNATORY DOCUMENTS:",
+            "• Board resolution authorizing signatory",
+            "• Authorization letter on company letterhead",
+            "• PAN Card of authorized person",
+            "• Aadhaar Card of authorized person",
+            "BUSINESS PROOF:",
+            "• Registered office address proof",
+            "• Cancelled cheque or bank account details",
+            "• TAN (Tax Deduction Account Number) - if applicable",
+            "• Import Export Code (IEC) - if applicable"
+          ]
+        },
+        {
+          "id": "international-clients",
+          "heading": "4.4 For International Clients",
+          "content": [
+            "IDENTITY DOCUMENTS:",
+            "• Valid Passport or National ID",
+            "• Tax Identification Number (TIN) or equivalent",
+            "• Recent photograph",
+            "BUSINESS DOCUMENTS:",
+            "• Business Registration Certificate",
+            "• Tax Registration Document",
+            "• Certificate of Incorporation",
+            "• Articles of Association / Bylaws",
+            "• Proof of business address",
+            "ADDRESS PROOF:",
+            "• Utility bill or Bank statement (not older than 3 months)",
+            "• Government-issued address proof",
+            "PAYMENT DOCUMENTS:",
+            "• Bank account details for wire transfer",
+            "• PayPal account verification",
+            "• Payment gateway registration proof",
+            "Note: Documents must be in English or accompanied by certified translation."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "submission-process",
+      "heading": "5. Document Submission Process",
+      "subSections": [
+        {
+          "id": "how-to-submit",
+          "heading": "5.1 How To Submit Documents",
+          "content": [
+            "STEP 1: RECEIVE KYC REQUEST",
+            "• Company will send an email requesting specific documents",
+            "• Email will include a checklist and submission instructions",
+            "STEP 2: PREPARE DOCUMENTS",
+            "• Scan or photograph documents clearly",
+            "• Ensure all text is readable",
+            "• File formats: PDF, JPG, or PNG",
+            "• File size: Maximum 5MB per document",
+            "STEP 3: SUBMIT DOCUMENTS",
+            "• Email to: [Your KYC Email Address]",
+            "• Subject line: \"KYC Documents - [Your Name/Company Name]\"",
+            "• Attach all required documents",
+            "• Include a cover note listing submitted documents",
+            "ALTERNATIVE SUBMISSION:",
+            "• Upload via secure link (if provided)",
+            "• Submit through client portal (if available)",
+            "• In-person submission (by appointment)"
+          ]
+        },
+        {
+          "id": "quality-standards",
+          "heading": "5.2 Document Quality Standards",
+          "content": [
+            "Documents must be:",
+            "• Clear and legible (no blurry or dark images)",
+            "• Complete (all corners and edges visible)",
+            "• Colored scans preferred for government IDs",
+            "• Original documents (no photocopies of photocopies)",
+            "• Valid and not expired"
+          ]
+        },
+        {
+          "id": "verification-timeline",
+          "heading": "5.3 Verification Timeline",
+          "content": [
+            "• KYC verification typically takes 2-5 business days",
+            "• Incomplete or unclear documents will be returned for resubmission",
+            "• Project work will commence only after KYC approval",
+            "• Urgent processing may be available on request (subject to availability)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verification-process",
+      "heading": "6. Verification Process",
+      "subSections": [
+        {
+          "id": "internal-verification",
+          "heading": "6.1 Internal Verification",
+          "content": [
+            "Company will:",
+            "• Review all submitted documents for completeness and authenticity",
+            "• Cross-verify information across documents",
+            "• Check for consistency in name, address, and other details",
+            "• Validate PAN, GST, and other registration numbers (where applicable)"
+          ]
+        },
+        {
+          "id": "third-party-verification",
+          "heading": "6.2 Third-Party Verification",
+          "content": [
+            "Company may use:",
+            "• Government databases for PAN/GST verification",
+            "• Credit bureaus for business verification",
+            "• Public registries for corporate verification",
+            "• Video KYC for high-value projects (by appointment)"
+          ]
+        },
+        {
+          "id": "re-verification",
+          "heading": "6.3 Re-Verification",
+          "content": [
+            "KYC re-verification may be required:",
+            "• Every 2 years for ongoing client relationships",
+            "• When there are significant changes (address, ownership, etc.)",
+            "• For projects exceeding previously verified thresholds",
+            "• As per regulatory requirements"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "security-privacy",
+      "heading": "7. Data Security And Privacy",
+      "subSections": [
+        {
+          "id": "data-protection",
+          "heading": "7.1 Data Protection",
+          "content": [
+            "The Company ensures:",
+            "SECURE STORAGE:",
+            "• Documents stored in encrypted digital format",
+            "• Access restricted to authorized personnel only",
+            "• Regular security audits and updates",
+            "CONFIDENTIALITY:",
+            "• KYC information is kept strictly confidential",
+            "• Not shared with third parties except as required by law",
+            "• Used only for verification and compliance purposes"
+          ]
+        },
+        {
+          "id": "data-retention",
+          "heading": "7.2 Data Retention",
+          "content": [
+            "• KYC documents retained for 6 years from last transaction (as per PMLA)",
+            "• Secure deletion after retention period expires",
+            "• Clients can request document deletion subject to legal retention requirements"
+          ]
+        },
+        {
+          "id": "breach-protocol",
+          "heading": "7.3 Data Breach Protocol",
+          "content": [
+            "In case of any data breach:",
+            "• Affected clients will be notified immediately",
+            "• Steps will be taken to mitigate damage",
+            "• Incident will be reported to authorities as required"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "non-compliance",
+      "heading": "8. Consequences Of Non-Compliance",
+      "subSections": [
+        {
+          "id": "incomplete-kyc",
+          "heading": "8.1 Incomplete Kyc",
+          "content": [
+            "If KYC is incomplete or not submitted:",
+            "• Project work will NOT commence",
+            "• Payment processing may be delayed",
+            "• Service agreements may be put on hold",
+            "• Company may decline to provide services"
+          ]
+        },
+        {
+          "id": "fraudulent-documents",
+          "heading": "8.2 False Or Fraudulent Documents",
+          "content": [
+            "Submission of false or fraudulent documents will result in:",
+            "• Immediate termination of services",
+            "• Forfeiture of any advance payments",
+            "• Legal action including filing FIR for fraud",
+            "• Reporting to regulatory authorities",
+            "• Blacklisting from all future services"
+          ]
+        },
+        {
+          "id": "delayed-submission",
+          "heading": "8.3 Delayed Submission",
+          "content": [
+            "• Delays in KYC submission will delay project timelines",
+            "• Company is not responsible for project delays due to pending KYC",
+            "• Deadline extensions may not be granted"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "special-kyc-requirements",
+      "heading": "9. Special Kyc Requirements",
+      "subSections": [
+        {
+          "id": "high-value-projects",
+          "heading": "9.1 High-Value Projects (Above ₹5,00,000)",
+          "content": [
+            "Enhanced KYC includes:",
+            "• Source of funds declaration",
+            "• Business financial statements (if applicable)",
+            "• Additional identity verification (video call KYC)",
+            "• Reference checks",
+            "• Enhanced due diligence (EDD)"
+          ]
+        },
+        {
+          "id": "high-risk-categories",
+          "heading": "9.2 High-Risk Categories",
+          "content": [
+            "Additional scrutiny for:",
+            "• Cryptocurrency and fintech projects",
+            "• Adult content or gambling platforms",
+            "• Politically exposed persons (PEPs)",
+            "• Clients from high-risk jurisdictions",
+            "• Cash-intensive businesses"
+          ]
+        },
+        {
+          "id": "corporate-groups",
+          "heading": "9.3 Corporate Groups",
+          "content": [
+            "For large corporate clients:",
+            "• Ultimate Beneficial Owner (UBO) identification",
+            "• Corporate structure chart",
+            "• Parent company details",
+            "• Group tax residency information"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "video-kyc",
+      "heading": "10. Video Kyc",
+      "subSections": [
+        {
+          "id": "when-video-kyc-required",
+          "heading": "10.1 When Video Kyc Is Required",
+          "content": [
+            "Video KYC may be requested for:",
+            "• High-value projects",
+            "• International clients",
+            "• Unclear or questionable document submissions",
+            "• First-time clients in high-risk categories"
+          ]
+        },
+        {
+          "id": "video-kyc-process",
+          "heading": "10.2 Video Kyc Process",
+          "content": [
+            "STEP 1: Schedule appointment via email",
+            "STEP 2: Join video call at scheduled time (Zoom, Google Meet, etc.)",
+            "STEP 3: Present original documents to camera",
+            "STEP 4: Answer verification questions",
+            "STEP 5: Company captures screenshots and records session (with consent)",
+            "STEP 6: Verification completed within 24 hours"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kyc-subscription-services",
+      "heading": "11. Kyc For Subscription Services",
+      "content": [
+        "For recurring services:",
+        "INITIAL KYC:",
+        "• Complete KYC required before first subscription activation",
+        "ONGOING VERIFICATION:",
+        "• Annual declaration confirming no change in details",
+        "• Re-verification every 2 years",
+        "• Immediate update if business details change",
+        "AUTO-RENEWAL:",
+        "• KYC must be valid for auto-renewal to process",
+        "• Expired KYC will pause subscription until updated"
+      ]
+    },
+    {
+      "id": "updating-kyc-information",
+      "heading": "12. Updating Kyc Information",
+      "subSections": [
+        {
+          "id": "when-to-update",
+          "heading": "12.1 When To Update",
+          "content": [
+            "Clients must inform the Company and update KYC when:",
+            "• Business address changes",
+            "• Legal entity name changes",
+            "• Ownership or authorized signatories change",
+            "• GST or PAN details change",
+            "• Contact information changes"
+          ]
+        },
+        {
+          "id": "update-process",
+          "heading": "12.2 Update Process",
+          "content": [
+            "• Email updated documents to [KYC Email]",
+            "• Subject: \"KYC Update - [Your Name/Company Name]\"",
+            "• Mention what has changed",
+            "• Provide supporting documents for the change"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "refusal-of-services",
+      "heading": "13. Refusal Of Services",
+      "content": [
+        "The Company reserves the right to refuse services without providing reasons if:",
+        "• KYC verification fails",
+        "• Documents are deemed suspicious or fraudulent",
+        "• Client is unable or unwilling to provide required documents",
+        "• Client appears on sanctions lists or watchlists",
+        "• Regulatory restrictions apply"
+      ]
+    },
+    {
+      "id": "regulatory-reporting",
+      "heading": "14. Regulatory Reporting",
+      "subSections": [
+        {
+          "id": "reporting-obligations",
+          "heading": "14.1 Reporting Obligations",
+          "content": [
+            "The Company may be required to report to:",
+            "• Income Tax Department (for transactions above specified limits)",
+            "• Financial Intelligence Unit (FIU) for suspicious transactions",
+            "• GST authorities for tax compliance",
+            "• RBI for foreign exchange transactions"
+          ]
+        },
+        {
+          "id": "suspicious-transaction-reporting",
+          "heading": "14.2 Suspicious Transaction Reporting",
+          "content": [
+            "If a transaction appears suspicious:",
+            "• Company may file a Suspicious Transaction Report (STR)",
+            "• Client may not be informed to avoid tipping off",
+            "• Services may be suspended or terminated"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "client-rights",
+      "heading": "15. Client Rights",
+      "content": [
+        "Clients have the right to:",
+        "• Know what information is being collected and why",
+        "• Request copies of their submitted KYC documents",
+        "• Request correction of errors in KYC records",
+        "• Withdraw consent and discontinue services (subject to contractual obligations)",
+        "• File complaints regarding KYC process"
+      ]
+    },
+    {
+      "id": "faq",
+      "heading": "16. Frequently Asked Questions (Faq)",
+      "content": [
+        "Q1: Why is PAN Card mandatory?",
+        "A: PAN is required for tax compliance and is the primary tax identification in India.",
+        "Q2: Can I submit photocopies?",
+        "A: Clear scanned copies are acceptable. Original documents may be verified in person for high-value projects.",
+        "Q3: What if I don't have GST registration?",
+        "A: GST registration is required only if your turnover exceeds the threshold. Otherwise, you can declare that you are not GST registered.",
+        "Q4: Is Aadhaar mandatory?",
+        "A: Aadhaar is not mandatory but is preferred as address proof.",
+        "Q5: How long does KYC verification take?",
+        "A: Typically 2-5 business days. Urgent processing available on request.",
+        "Q6: Can someone else submit documents on my behalf?",
+        "A: For individuals, no. For businesses, authorized signatories can submit with proper authorization letter.",
+        "Q7: What if my documents are in a regional language?",
+        "A: Documents in Hindi are generally acceptable. Other regional languages may require certified translation."
+      ]
+    },
+    {
+      "id": "contact-information",
+      "heading": "17. Contact Information",
+      "content": [
+        "For KYC-related queries or assistance:",
+        "Adymire Agency",
+        "KYC & Compliance Department",
+        "• Email: [Your KYC Email Address]",
+        "• Phone: [Your Official Phone Number]",
+        "• Website: [Your Website URL]",
+        "• Address: [Your Registered Business Address]",
+        "Response time: 24-48 business hours for KYC queries"
+      ]
+    },
+    {
+      "id": "policy-changes",
+      "heading": "18. Changes To Kyc Policy",
+      "content": [
+        "The Company reserves the right to update KYC requirements based on:",
+        "• Changes in regulatory requirements",
+        "• Business policy updates",
+        "• Risk assessment changes",
+        "Updated policies will be posted on our website and communicated to affected clients."
+      ]
+    },
+    {
+      "id": "acknowledgment-consent",
+      "heading": "19. Acknowledgment And Consent",
+      "content": [
+        "By engaging our services and submitting KYC documents, you:",
+        "• Acknowledge that you have read and understood these KYC Mandates",
+        "• Consent to the collection, verification, and storage of your information",
+        "• Confirm that all submitted documents are genuine and accurate",
+        "• Understand the consequences of providing false information",
+        "• Agree to update information when changes occur",
+        "• Authorize the Company to conduct necessary verification checks",
+        "Failure to comply with KYC requirements may result in denial or termination of services."
+      ]
+    }
+  ]
+}

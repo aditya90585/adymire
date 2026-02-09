@@ -6,7 +6,10 @@ import CountriesSelector from "./CountriesSelector";
 import CountriesCodeSelector from "./CountriesCodeSelector";
 import ContactHeader from "./ContactHeader";
 import { RiLinkM } from "react-icons/ri";
-import { Controller, useForm } from "react-hook-form";
+import { Controller, useForm, useWatch } from "react-hook-form";
+import ServicesSelector from "./ServicesSelector";
+import SpecificServicesSelector from "./SpecificServicesSelector";
+import { Navigate, useNavigate } from "react-router-dom";
 
 
 const SERVICES = [
@@ -85,14 +88,27 @@ const SOURCES = [
   "YouTube",
   "Website",
   "Referral",
-  "Other",
+  "Instagram",
+  "Facebook",
+  "Twitter",
+  "Telegram",
+  "WhatsApp",
+  "Reddit",
+  "Pinterest",
+  "Quora",
+  "Slack",
+  "Discord",
+  "Others"
 ];
 
 
 
 const ApplyContactForm = () => {
+  const navigate = useNavigate()
   const [COUNTRIES, setCOUNTRIES] = useState([])
   const [open, setOpen] = useState(false)
+  const [serviceOpen, setServiceOpen] = useState(false)
+  const [specificserviceOpen, setSpecificServiceOpen] = useState(false)
   const [selected, setSelected] = useState(null)
   const [currentSelectedService, setCurrentSelectedService] = useState("UI UX Design")
 
@@ -115,9 +131,51 @@ const ApplyContactForm = () => {
     control,
     formState: { errors },
     setValue
-  } = useForm()
+  } = useForm({
+    defaultValues: {
+      service: [],
+      specificService: [],
+    }
+  })
+  const selectedServices = useWatch({ control, name: "service" });
+  const selectedSpecificServices = useWatch({
+    control,
+    name: "specificService",
+  });
+
+  const toggleService = service => {
+    setValue(
+      "service",
+      selectedServices.includes(service)
+        ? selectedServices.filter(s => s !== service)
+        : [...selectedServices, service]
+    );
+  };
+  const toggleSpecificService = specific_service => {
+    setValue(
+      "specificService",
+      selectedSpecificServices?.includes(specific_service)
+        ? selectedSpecificServices.filter(s => s !== specific_service)
+        : [...(selectedSpecificServices || []), specific_service]
+    );
+  };
+  useEffect(() => {
+    const allowedSpecifics = selectedServices?.flatMap(
+      service => SPECIFIC_SERVICES[service] || []
+    );
+
+    setValue(
+      "specificService",
+      (selectedSpecificServices || []).filter(item =>
+        allowedSpecifics.includes(item)
+      )
+    );
+  }, [selectedServices]);
+
+
 
   const decision = watch("decisionMaker");
+
 
   const submitContactForm = (async (data) => {
     const formData = await data
@@ -140,6 +198,7 @@ const ApplyContactForm = () => {
             <Input
               {...register("fullName", { required: true })}
               label="Full Name"
+              isRequired={true}
               placeholder="Johan Denial"
               labelClass="font-semibold text-xl mb-4"
               className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:shadow-[0px_1px_8px_gray]"
@@ -148,6 +207,7 @@ const ApplyContactForm = () => {
             <Input
               {...register("email", { required: true })}
               label="Email Address"
+              isRequired={true}
               type="email"
               placeholder="johndanial@gmail.com"
               labelClass="font-semibold text-xl mb-4"
@@ -169,11 +229,21 @@ const ApplyContactForm = () => {
 
               )}
             />
+            <Input
+              {...register("companyName", { required: true })}
+              label="Company / Brand Name"
+              isRequired={true}
+              placeholder="Ex- Microsoft Inc."
+              labelClass="font-semibold text-xl mb-4"
+              className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:shadow-[0px_1px_8px_gray]"
+
+            />
 
             <div>
               <Input
                 {...register("phoneNumber", { required: true })}
                 label="Phone / WhatsApp Number"
+                isRequired={true}
                 placeholder="7017475420"
                 type="number"
                 labelClass="font-semibold text-xl mb-4"
@@ -206,19 +276,13 @@ const ApplyContactForm = () => {
               </label>
             </div>
 
-            <Input
-              {...register("companyName", { required: true })}
-              label="Company / Brand Name"
-              placeholder="Ex- Microsoft Inc."
-              labelClass="font-semibold text-xl mb-4"
-              className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:shadow-[0px_1px_8px_gray]"
 
-            />
 
 
             <Select
               {...register("yourRole", { required: true })}
               label="Your Role"
+              isRequired={true}
               options={ROLES}
               labelClass="font-semibold text-xl mb-4"
               className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:shadow-[0px_1px_8px_gray]"
@@ -226,6 +290,7 @@ const ApplyContactForm = () => {
             <Select
               {...register("ContactMode", { required: true })}
               label="Preferred Contact Mode"
+              isRequired={true}
               options={CONTACT_MODES}
               labelClass="font-semibold text-xl mb-4"
               className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:shadow-[0px_1px_8px_gray]"
@@ -242,26 +307,31 @@ const ApplyContactForm = () => {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Select
-              {...register("service", { required: true })}
-              label="What service are you looking for?"
-              options={SERVICES}
-              value={currentSelectedService}
-              onChange={(e) => setCurrentSelectedService(e.target.value)}
-              labelClass="font-semibold text-xl mb-4"
-              className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:shadow-[0px_1px_8px_gray]"
+
+            <ServicesSelector serviceOpen={serviceOpen} setServiceOpen={setServiceOpen} SERVICES={SERVICES} toggleService={toggleService} selectedServices={selectedServices} />
+            <SpecificServicesSelector toggleSpecificService={toggleSpecificService} specificserviceOpen={specificserviceOpen} setSpecificServiceOpen={setSpecificServiceOpen} selectedSpecificServices={selectedSpecificServices} selectedServices={selectedServices} SPECIFIC_SERVICES={SPECIFIC_SERVICES} />
+            <input
+              type="hidden"
+              {...register("service", {
+                validate: value =>
+                  value?.length > 0 || "Please select at least one service",
+              })}
+            />
+
+            <input
+              type="hidden"
+              {...register("specificService", {
+                validate: value =>
+                  !selectedServices?.length ||
+                  value?.length > 0 ||
+                  "Please select at least one specific service",
+              })}
             />
 
             <Select
-              {...register("specificService", { required: true })}
-              label="Select Specific Service"
-              options={SPECIFIC_SERVICES[currentSelectedService]}
-              labelClass="font-semibold text-xl mb-4"
-              className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:shadow-[0px_1px_8px_gray]"
-            />
-            <Select
               {...register("estimatedBudget", { required: true })}
               label="Estimated Budget"
+              isRequired={true}
               options={Your_Budget}
               labelClass="font-semibold text-xl mb-4"
               className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:shadow-[0px_1px_8px_gray]"
@@ -269,6 +339,7 @@ const ApplyContactForm = () => {
             <Select
               {...register("projectTimeline", { required: true })}
               label="Project Timeline"
+              isRequired={true}
               options={TIMELINES}
               labelClass="font-semibold text-xl mb-4"
               className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:shadow-[0px_1px_8px_gray]"
@@ -276,6 +347,7 @@ const ApplyContactForm = () => {
             <Select
               {...register("findSource", { required: true })}
               label="How did you hear about us?"
+              isRequired={true}
               options={SOURCES}
               labelClass="font-semibold text-xl mb-4"
               className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:shadow-[0px_1px_8px_gray]"
@@ -283,7 +355,7 @@ const ApplyContactForm = () => {
 
             <div>
               <label className="inline-block mb-4 text-xl font-semibold">
-                Are you the decision maker?
+                Are you the decision maker? <span className='text-red-700'>*</span>
               </label>
 
               <div className="flex gap-4">
@@ -327,7 +399,7 @@ const ApplyContactForm = () => {
 
           </div>
 
-          <h2 className="text-2xl font-bold mt-14 mb-6">Project About</h2>
+          <h2 className="text-2xl font-bold mt-14 mb-6">Project About <span className='text-red-700'>*</span></h2>
 
           <textarea
             {...register("projectAbout", { required: true })}
@@ -348,7 +420,7 @@ const ApplyContactForm = () => {
               <input  {...register("acceptTerms", { required: true })} type="checkbox" className="accent-yellow-500 mt-1 h-5 w-5" />
               <span className="text-xl font-semibold text-gray-500" >
                 Accept our{" "}
-                <span className="text-blue-600 cursor-pointer">
+                <span onClick={()=> navigate("/policy/terms-and-conditions")} className="text-blue-600 cursor-pointer">
                   terms and conditions
                 </span>
               </span>

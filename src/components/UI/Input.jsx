@@ -9,6 +9,7 @@ const Input = forwardRef(({
     labelClass = "",
     parentClass = "",
     element,
+    isRequired = false,
     ...props
 }, ref) => {
     const id = useId()
@@ -18,7 +19,7 @@ const Input = forwardRef(({
                 label && <label
                     className={`inline-block  mb-2 ${labelClass}`}
                     htmlFor={id}>
-                    {label}
+                    {label} {isRequired && <span className='text-red-700'>*</span>}
                 </label>
             }
             <div className='reletive'>

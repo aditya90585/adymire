@@ -1,0 +1,815 @@
+{
+  "key": "terms-and-conditions",
+  "title": "Terms & Conditions",
+  "company": "Adymire Agency",
+  "lastUpdated": "February 4, 2026",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "1. Introduction",
+      "content": [
+        "These Terms & Conditions (\"Terms\") constitute a legally binding agreement between you (\"Client,\" \"User,\" or \"You\") and Adymire Agency (\"Company,\" \"We,\" \"Our,\" or \"Us\") governing your use of our website, services, and products.",
+        "By accessing our website, submitting any form, engaging our services, or entering into any agreement with us, you acknowledge that you have read, understood, and agreed to be bound by these Terms.",
+        "If you do not agree to these Terms, you must not use our website or services."
+      ]
+    },
+    {
+      "id": "company-information",
+      "heading": "2. Company information",
+      "content": [
+        "Adymire Agency is a software and technology services company specializing in:",
+        "• UI/UX Design",
+        "• Mobile App Development",
+        "• Web Development",
+        "• Digital Marketing",
+        "• AI Automation & AI-Based Solutions",
+        "Company Details:",
+        "Name: Adymire Agency",
+        "Registered Address: [Your Business Address]",
+        "Email: [Your Official Email]",
+        "Phone: [Your Official Phone Number]",
+        "Website: [Your Website URL]"
+      ]
+    },
+    {
+      "id": "definitions",
+      "heading": "3. Definitions",
+      "content": [
+        "For the purposes of these Terms:",
+        "\"Company\" refers to Adymire Agency and its subsidiaries, divisions, and affiliated entities.",
+        "\"User\" or \"Client\" refers to any individual, company, or organization that accesses our website or uses our services.",
+        "\"Services\" refers to all offerings provided by the Company including but not limited to design, development, marketing, automation, and consulting services.",
+        "\"Project\" refers to any specific work engagement or deliverable agreed upon between the Company and the Client.",
+        "\"Agreement\" refers to any contract, proposal, statement of work, or legally binding arrangement between the parties.",
+        "\"Website\" refers to our official website and any associated platforms or applications.",
+        "\"Deliverables\" refers to any outputs, products, or results produced by the Company for the Client.",
+        "\"Intellectual Property\" refers to copyrights, trademarks, patents, trade secrets, and other proprietary rights."
+      ]
+    },
+    {
+      "id": "acceptance-of-terms",
+      "heading": "4. Acceptance of terms",
+      "content": [
+        "By using our website or services, you automatically accept these Terms along with all other applicable policies including:",
+        "• Privacy Policy",
+        "• Refund Policy",
+        "• Cancellation Policy",
+        "• Company Rules & Guidelines",
+        "• Tax Information & Compliances",
+        "• KYC Mandates",
+        "These documents collectively form the complete agreement between you and the Company.",
+        "Users must explicitly agree to these Terms by:",
+        "• Checking the acceptance box on website forms",
+        "• Signing service agreements or proposals",
+        "• Making payments for services",
+        "• Continuing to use services after being notified of updates"
+      ]
+    },
+    {
+      "id": "scope-of-services",
+      "heading": "5. Scope of services",
+      "subSections": [
+        {
+          "id": "service-offerings",
+          "heading": "5.1 Service offerings",
+          "content": [
+            "The Company provides the following categories of services:",
+            "UI/UX DESIGN SERVICES:",
+            "• User interface design",
+            "• User experience design",
+            "• Wireframing and prototyping",
+            "• Design systems and style guides",
+            "• Usability testing and research",
+            "MOBILE APP DEVELOPMENT:",
+            "• iOS app development",
+            "• Android app development",
+            "• Cross-platform app development",
+            "• App maintenance and updates",
+            "• App store deployment",
+            "WEB DEVELOPMENT:",
+            "• Website design and development",
+            "• E-commerce solutions",
+            "• Web applications",
+            "• CMS implementation",
+            "• Website maintenance and hosting",
+            "DIGITAL MARKETING:",
+            "• Search engine optimization (SEO)",
+            "• Pay-per-click advertising (PPC)",
+            "• Social media marketing",
+            "• Content marketing",
+            "•Email marketing campaigns",
+            "• Marketing analytics and reporting",
+            "AI AUTOMATION & AI-BASED SOLUTIONS:",
+            "• AI chatbots and virtual assistants",
+            "• Workflow automation",
+            "• AI-powered tools and platforms",
+            "• Machine learning solutions",
+            "• Custom AI integrations"
+          ]
+        },
+        {
+          "id": "service-customization",
+          "heading": "5.2 Service customization",
+          "content": [
+            "All services are customized based on client requirements, project scope, and mutual agreements. The Company reserves the right to:"
+          ],
+          "bullets": [
+            "Determine the feasibility of requested services",
+            "Set timelines based on project complexity",
+            "Define scope boundaries and limitations",
+            "Recommend alternative solutions when appropriate"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "user-obligations",
+      "heading": "6. User obligations",
+      "content": [
+        "As a user of our services, you agree to:"
+      ],
+      "subSections": [
+        {
+          "id": "accurate-information",
+          "heading": "6.1 Provide accurate information",
+          "bullets": [
+            "Submit truthful and complete information in all forms and communications",
+            "Update information promptly if changes occur",
+            "Provide valid contact details for project communication"
+          ]
+        },
+        {
+          "id": "cooperate-execution",
+          "heading": "6.2 Cooperate in project execution",
+          "bullets": [
+            "Respond to requests for information, feedback, or approvals within reasonable timeframes",
+            "Provide necessary assets, content, or resources as agreed",
+            "Designate authorized representatives for decision-making",
+            "Attend scheduled meetings and calls"
+          ]
+        },
+        {
+          "id": "timely-payments",
+          "heading": "6.3 Make timely payments",
+          "bullets": [
+            "Pay invoices according to agreed payment terms",
+            "Notify the Company immediately of any payment issues",
+            "Maintain valid payment methods on file"
+          ]
+        },
+        {
+          "id": "respect-ip",
+          "heading": "6.4 Respect intellectual property",
+          "bullets": [
+            "Not claim ownership of Company's proprietary methods, tools, or processes",
+            "Not reverse-engineer, copy, or reproduce Company deliverables without authorization",
+            "Not share confidential information with third parties"
+          ]
+        },
+        {
+          "id": "comply-laws",
+          "heading": "6.5 Comply with laws",
+          "bullets": [
+            "Use services only for lawful purposes",
+            "Not request services that violate laws, regulations, or ethical standards",
+            "Ensure your business and content comply with applicable laws"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "company-rights-responsibilities",
+      "heading": "7. Company rights and responsibilities",
+      "subSections": [
+        {
+          "id": "company-rights",
+          "heading": "7.1 Company reserves the right to:",
+          "bullets": [
+            "Accept or decline any project or client at its discretion",
+            "Modify project scope, timelines, or pricing based on changing requirements",
+            "Subcontract or delegate work to qualified third parties",
+            "Terminate services for policy violations or non-payment",
+            "Update these Terms and policies at any time",
+            "Suspend or discontinue certain service offerings",
+            "Use completed projects in portfolio and marketing materials (with client consent)"
+          ]
+        },
+        {
+          "id": "company-responsibilities",
+          "heading": "7.2 Company is responsible for:",
+          "bullets": [
+            "Delivering services in a professional and timely manner",
+            "Maintaining confidentiality of client information",
+            "Providing clear communication and project updates",
+            "Honoring agreed-upon timelines and deliverables (subject to client cooperation)",
+            "Ensuring quality of work meets industry standards"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pricing-payments",
+      "heading": "8. Pricing, payments, and invoicing",
+      "subSections": [
+        {
+          "id": "pricing-structure",
+          "heading": "8.1 Pricing structure",
+          "bullets": [
+            "Pricing is determined based on project scope, complexity, timeline, and resources required.",
+            "All prices are quoted in the agreed currency (typically INR or USD).",
+            "Prices are subject to change based on scope modifications.",
+            "The Company's pricing decisions are final and non-negotiable unless mutually agreed otherwise."
+          ]
+        },
+        {
+          "id": "payment-terms",
+          "heading": "8.2 Payment terms",
+          "content": [
+            "PROJECT-BASED SERVICES:",
+            "• 50% advance payment before project commencement",
+            "• 50% upon completion and delivery",
+            "(Payment milestones may vary based on project size and agreement)",
+            "SUBSCRIPTION SERVICES:",
+            "• Monthly or annual billing in advance",
+            "• Auto-renewal unless cancelled before billing date",
+            "HOURLY SERVICES:",
+            "• Billed at the end of each month",
+            "• Payment due within 7-14 days of invoice"
+          ]
+        },
+        {
+          "id": "invoicing",
+          "heading": "8.3 Invoicing",
+          "bullets": [
+            "Invoices will be sent via email to the designated billing contact",
+            "Invoices include applicable taxes (GST, VAT, etc.)",
+            "Late payment may incur interest charges or service suspension",
+            "Payment gateway fees and transaction charges are borne by the client"
+          ]
+        },
+        {
+          "id": "late-payment",
+          "heading": "8.5 Late payment consequences",
+          "bullets": [
+            "Grace period: 7 days from due date",
+            "After grace period: Project suspension",
+            "After 30 days: Project cancellation and legal action",
+            "Late fees: Up to 2% per month on overdue amounts"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "project-scope-change",
+      "heading": "9. Project scope and change requests",
+      "subSections": [
+        {
+          "id": "scope-definition",
+          "heading": "9.1 Scope definition",
+          "bullets": [
+            "Project scope will be clearly defined in the agreement or proposal",
+            "Scope includes specific deliverables, timelines, and boundaries",
+            "The Company controls final decisions on scope interpretation"
+          ]
+        },
+        {
+          "id": "change-requests",
+          "heading": "9.2 Change requests",
+          "bullets": [
+            "Any changes to the agreed scope must be requested in writing",
+            "Change requests will be evaluated for feasibility and impact",
+            "Additional charges will apply for scope expansions",
+            "Timeline extensions may be necessary for significant changes",
+            "The Company reserves the right to decline change requests that significantly alter the project"
+          ]
+        },
+        {
+          "id": "revisions",
+          "heading": "9.3 Revisions",
+          "content": [
+            "Number of revisions will be specified in the agreement",
+            "Revisions must be based on the original scope",
+            "Additional revisions beyond agreed limits will incur extra charges"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "timelines-deliverables",
+      "heading": "10. Timelines and deliverables",
+      "subSections": [
+        {
+          "id": "project-timelines",
+          "heading": "10.1 Project timelines",
+          "content": [
+            "• Timelines are estimates based on the information available at project start",
+            "• Actual delivery may vary due to:",
+            " - Client delays in providing feedback or assets",
+            " - Scope changes or expansion",
+            " - Technical complexities discovered during execution",
+            " - Force majeure events"
+          ]
+        },
+        {
+          "id": "client-timeline-resp",
+          "heading": "10.2 Client responsibilities for timeline",
+          "content": [
+            "Timely project completion depends on client:"
+          ],
+          "bullets": [
+            "Providing required information and assets on time",
+            "Responding to queries and approval requests promptly",
+            "Being available for scheduled meetings and reviews",
+            "Minimizing scope changes during execution"
+          ]
+        },
+        {
+          "id": "delivery-process",
+          "heading": "10.3 Delivery process",
+          "bullets": [
+            "Deliverables will be provided through agreed channels (email, cloud storage, project management tools)",
+            "Client must review and provide feedback within the specified timeframe",
+            "Final delivery occurs upon client acceptance or after the review period expires"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "intellectual-property-rights",
+      "heading": "11. Intellectual property rights",
+      "subSections": [
+        {
+          "id": "client-provided-materials",
+          "heading": "11.1 Client-provided materials",
+          "bullets": [
+            "Client retains ownership of all materials provided to the Company (logos, content, images, etc.).",
+            "Client grants the Company a license to use these materials for project execution.",
+            "Client warrants that they have the right to use all provided materials."
+          ]
+        },
+        {
+          "id": "company-created-deliverables",
+          "heading": "11.2 Company-created deliverables",
+          "content": [
+            "Ownership of deliverables depends on the agreement:",
+            "DEFAULT ARRANGEMENT (unless otherwise specified):",
+            "• Upon full payment, client receives ownership of final deliverables",
+            "• Company retains ownership of underlying code, frameworks, tools, and methodologies",
+            "• Company may reuse generic components, templates, or code libraries in other projects",
+            "WORK-FOR-HIRE ARRANGEMENTS:",
+            "• If explicitly agreed and paid for, client receives full ownership including source materials",
+            "• Premium charges apply for complete intellectual property transfer"
+          ]
+        },
+        {
+          "id": "company-proprietary-assets",
+          "heading": "11.3 Company proprietary assets",
+          "content": [
+            "The Company retains full ownership of:"
+          ],
+          "bullets": [
+            "Proprietary tools, platforms, and software",
+            "Development methodologies and processes",
+            "Templates, frameworks, and code libraries",
+            "Internal documentation and systems"
+          ]
+        },
+        {
+          "id": "portfolio-marketing-rights",
+          "heading": "11.4 Portfolio and marketing rights",
+          "content": [
+            "Unless confidentiality is explicitly agreed:"
+          ],
+          "bullets": [
+            "The Company may showcase completed projects in its portfolio",
+            "The Company may use project details in case studies and marketing materials",
+            "Client logos and names may be displayed on the Company website",
+            "Clients may request to be excluded from public portfolio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "confidentiality",
+      "heading": "12. Confidentiality",
+      "subSections": [
+        {
+          "id": "company-obligations",
+          "heading": "12.1 Company obligations",
+          "content": [
+            "The Company agrees to:"
+          ],
+          "bullets": [
+            "Maintain confidentiality of client business information",
+            "Not disclose proprietary information to third parties",
+            "Implement reasonable security measures to protect client data",
+            "Limit access to client information to authorized personnel only"
+          ]
+        },
+        {
+          "id": "client-obligations",
+          "heading": "12.2 Client obligations",
+          "content": [
+            "The Client agrees to:"
+          ],
+          "bullets": [
+            "Maintain confidentiality of Company's proprietary methods and tools",
+            "Not share access credentials or sensitive project materials",
+            "Not disclose pricing or confidential agreements"
+          ]
+        },
+        {
+          "id": "exceptions",
+          "heading": "12.3 Exceptions",
+          "content": [
+            "Confidentiality obligations do not apply to:"
+          ],
+          "bullets": [
+            "Information already in the public domain",
+            "Information independently developed by either party",
+            "Information required to be disclosed by law or court order"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "warranties-disclaimers",
+      "heading": "13. Warranties and disclaimers",
+      "subSections": [
+        {
+          "id": "company-warranties",
+          "heading": "13.1 Company warranties",
+          "content": [
+            "The Company warrants that:"
+          ],
+          "bullets": [
+            "Services will be performed with reasonable skill and care",
+            "Deliverables will substantially conform to agreed specifications",
+            "Company has the right to provide the contracted services"
+          ]
+        },
+        {
+          "id": "disclaimer-warranties",
+          "heading": "13.2 Disclaimer of warranties",
+          "content": [
+            "TO THE MAXIMUM EXTENT PERMITTED BY LAW:"
+          ],
+          "bullets": [
+            "Services are provided \"AS IS\" without warranties of any kind",
+            "The Company does not guarantee specific business results or outcomes",
+            "The Company is not responsible for third-party tools, platforms, or services",
+            "The Company does not warrant that services will be uninterrupted or error-free"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "limitation-liability",
+      "heading": "14. Limitation of liability",
+      "subSections": [
+        {
+          "id": "direct-damages",
+          "heading": "14.1 Direct damages",
+          "content": [
+            "The Company's total liability for any claims arising from services will not exceed the total amount paid by the Client for the specific project or service."
+          ]
+        },
+        {
+          "id": "indirect-damages",
+          "heading": "14.2 Indirect damages",
+          "content": [
+            "TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE COMPANY SHALL NOT BE LIABLE FOR:"
+          ],
+          "bullets": [
+            "Loss of profits, revenue, or business opportunities",
+            "Loss of data or information",
+            "Business interruption or downtime",
+            "Consequential, indirect, or special damages",
+            "Damages arising from third-party actions or tools"
+          ]
+        },
+        {
+          "id": "liability-exceptions",
+          "heading": "14.3 Exceptions",
+          "content": [
+            "Limitation of liability does not apply to:"
+          ],
+          "bullets": [
+            "Gross negligence or willful misconduct by the Company",
+            "Breach of confidentiality obligations",
+            "Intellectual property infringement by the Company",
+            "Damages that cannot be limited by law"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "indemnification",
+      "heading": "15. Indemnification",
+      "subSections": [
+        {
+          "id": "client-indemnification",
+          "heading": "15.1 Client indemnification",
+          "content": [
+            "The Client agrees to indemnify and hold harmless the Company from any claims, damages, or expenses arising from: "
+          ],
+          "bullets": [
+            "Client's use of deliverables or services",
+            "Content, materials, or instructions provided by the Client",
+            "Violation of third-party rights by Client-provided materials",
+            "Client's breach of these Terms or applicable laws"
+          ]
+        },
+        {
+          "id": "company-indemnification",
+          "heading": "15.2 Company indemnification",
+          "content": [
+            "The Company agrees to indemnify the Client from claims that Company-created deliverables infringe on third-party intellectual property rights, provided:",
+            "• Client promptly notifies the Company of the claim",
+            "• Client provides reasonable cooperation in defense",
+            "• Company has sole control of defense and settlement"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "third-party-services",
+      "heading": "16. Third-party services and integrations",
+      "subSections": [
+        {
+          "id": "third-party-tools",
+          "heading": "16.1 Use of third-party tools",
+          "content": [
+            "Services may depend on or integrate with third-party platforms including:"
+          ],
+          "bullets": [
+            "Hosting providers (AWS, Google Cloud, etc.)",
+            "Content delivery networks",
+            "Payment gateways",
+            "Advertising platforms (Google Ads, Facebook Ads)",
+            "Analytics tools",
+            "API services",
+            "AI and automation platforms"
+          ]
+        },
+        {
+          "id": "third-party-limitations",
+          "heading": "16.2 Third-party limitations",
+          "content": [
+            "The Company is not responsible for:"
+          ],
+          "bullets": [
+            "Third-party service outages or disruptions",
+            "Changes to third-party APIs or pricing",
+            "Third-party terms of service or policies",
+            "Data handling by third-party services"
+          ],
+          "note": "Clients are responsible for obtaining necessary accounts and accepting third-party terms."
+        }
+      ]
+    },
+    {
+      "id": "data-protection-privacy",
+      "heading": "17. Data protection and privacy",
+      "bullets": [
+        "Collection and use of personal data is governed by our Privacy Policy.",
+        "Clients consent to data processing as described in the Privacy Policy.",
+        "The Company implements reasonable security measures to protect data.",
+        "Clients are responsible for complying with data protection laws for their own users."
+      ]
+    },
+    {
+      "id": "force-majeure",
+      "heading": "18. Force majeure",
+      "content": [
+        "Neither party shall be liable for failure to perform obligations due to events beyond reasonable control, including:"
+      ],
+      "bullets": [
+        "Natural disasters (earthquakes, floods, pandemics)",
+        "War, terrorism, civil unrest",
+        "Government actions, strikes, or labor disputes",
+        "Internet or utility failures",
+        "Acts of God"
+      ],
+      "note": "Affected party must notify the other party promptly and make reasonable efforts to resume performance."
+    },
+    {
+      "id": "termination",
+      "heading": "19. Termination",
+      "subSections": [
+        {
+          "id": "termination-by-company",
+          "heading": "19.1 Termination by company",
+          "content": [
+            "The Company may terminate services immediately if:"
+          ],
+          "bullets": [
+            "Client breaches these Terms or other policies",
+            "Client fails to make payments",
+            "Client engages in illegal or unethical conduct",
+            "Continuation of service is not feasible"
+          ]
+        },
+        {
+          "id": "termination-by-client",
+          "heading": "19.2 Termination by client",
+          "bullets": [
+            "Clients may request termination subject to the Cancellation Policy",
+            "Final decision on termination requests rests with the Company"
+          ]
+        },
+        {
+          "id": "effects-of-termination",
+          "heading": "19.3 Effects of termination",
+          "content": [
+            "Upon termination:"
+          ],
+          "bullets": [
+            "Client must pay for all work completed",
+            "Company may retain ownership of incomplete deliverables",
+            "Both parties remain bound by confidentiality obligations",
+            "Intellectual property provisions remain in effect"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dispute-resolution",
+      "heading": "20. Dispute resolution",
+      "subSections": [
+        {
+          "id": "informal-resolution",
+          "heading": "20.1 Informal resolution",
+          "content": [
+            "Parties agree to first attempt to resolve disputes through:",
+            "• Direct communication and negotiation",
+            "• Good faith discussions to reach a mutual resolution"
+          ]
+        },
+        {
+          "id": "mediation",
+          "heading": "20.2 Mediation",
+          "content": [
+            "If informal resolution fails, parties may agree to:",
+            "• Engage a neutral third-party mediator",
+            "• Share mediation costs equally"
+          ]
+        },
+        {
+          "id": "arbitration-legal",
+          "heading": "20.3 Arbitration / legal proceedings",
+          "content": [
+            "If mediation is unsuccessful:",
+            "• Disputes will be resolved through arbitration or court proceedings",
+            "• Jurisdiction and governing law as specified in Section 21"
+          ]
+        },
+        {
+          "id": "legal-fees",
+          "heading": "20.4 Legal fees",
+          "content": [
+            "The prevailing party in any legal dispute may be entitled to recover reasonable legal fees and costs."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "governing-law-jurisdiction",
+      "heading": "21. Governing law and jurisdiction",
+      "subSections": [
+        {
+          "id": "governing-law",
+          "heading": "21.1 Governing law",
+          "content": [
+            "These Terms are governed by the laws of India and the state/region where the Company is registered."
+          ]
+        },
+        {
+          "id": "jurisdiction",
+          "heading": "21.2 Jurisdiction",
+          "content": [
+            "Any legal proceedings shall be brought exclusively in the courts of [Your City/State], India."
+          ]
+        },
+        {
+          "id": "international-clients",
+          "heading": "21.3 International clients",
+          "content": [
+            "For international clients:",
+            "• Governing law remains as specified above",
+            "• Clients consent to jurisdiction of Indian courts",
+            "• Alternative dispute resolution may be negotiated"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "modifications-to-terms",
+      "heading": "22. Modifications to terms",
+      "subSections": [
+        {
+          "id": "right-to-modify",
+          "heading": "22.1 Right to modify",
+          "content": [
+            "The Company reserves the right to update, modify, or replace these Terms at any time for reasons including:",
+            "• Changes in business practices",
+            "• Legal or regulatory requirements",
+            "• Service improvements or expansions",
+            "• Clarification of existing terms"
+          ]
+        },
+        {
+          "id": "notification",
+          "heading": "22.2 Notification",
+          "bullets": [
+            "Updated Terms will be posted on our website with a new \"Last Updated\" date",
+            "Significant changes may be communicated via email",
+            "Continued use of services constitutes acceptance of updated Terms"
+          ]
+        },
+        {
+          "id": "client-rights-mod",
+          "heading": "22.3 Client rights",
+          "bullets": [
+            "Clients who do not agree with updated Terms may discontinue services",
+            "Existing signed agreements remain governed by the terms in effect at signing unless otherwise specified"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "severability",
+      "heading": "23. Severability",
+      "content": [
+        "If any provision of these Terms is found to be invalid, illegal, or unenforceable:",
+        "• The remaining provisions shall continue in full force and effect",
+        "• The invalid provision shall be modified to achieve the intended purpose to the maximum extent possible"
+      ]
+    },
+    {
+      "id": "entire-agreement",
+      "heading": "24. Entire agreement",
+      "content": [
+        "These Terms, together with all referenced policies and any signed agreements, constitute the entire agreement between the parties and supersede all prior:",
+        "• Discussions or negotiations",
+        "• Representations or understandings",
+        "• Written or oral agreements",
+        "No modification is valid unless made in writing and signed by both parties."
+      ]
+    },
+    {
+      "id": "waiver",
+      "heading": "25. Waiver",
+      "bullets": [
+        "Failure to enforce any provision does not constitute a waiver",
+        "Waiver of any breach does not waive subsequent breaches",
+        "All rights and remedies are cumulative"
+      ]
+    },
+    {
+      "id": "assignment",
+      "heading": "26. Assignment",
+      "bullets": [
+        "Clients may not assign or transfer rights or obligations without Company consent",
+        "The Company may assign these Terms to affiliates or successors",
+        "Assignment does not affect confidentiality or payment obligations"
+      ]
+    },
+    {
+      "id": "notices",
+      "heading": "27. Notices",
+      "content": [
+        "All notices must be sent in writing to:",
+        "FOR COMPANY: Adymire Agency, Email: [Your Official Email], Address: [Your Business Address]",
+        "FOR CLIENT: To the email address or contact information provided in the service agreement.",
+        "Notices are deemed received:",
+        "• Immediately if sent via email",
+        "• 5 business days if sent via postal mail"
+      ]
+    },
+    {
+      "id": "contact-information",
+      "heading": "28. Contact information",
+      "content": [
+        "For questions about these Terms & Conditions, please contact us:",
+        "Adymire Agency",
+        "Email: [Your Official Email]",
+        "Phone: [Your Official Phone Number]",
+        "Website: [Your Website URL]",
+        "Address: [Your Registered Business Address]"
+      ]
+    },
+    {
+      "id": "acknowledgment-acceptance",
+      "heading": "29. Acknowledgment and acceptance",
+      "content": [
+        "By using our website, submitting forms, or engaging our services, you acknowledge that you have:",
+        "• Read and understood these Terms & Conditions in their entirety",
+        "• Reviewed all referenced policies",
+        "• Agreed to be legally bound by these Terms",
+        "• Authority to enter into this agreement on behalf of your organization (if applicable)",
+        "IF YOU DO NOT AGREE TO THESE TERMS, YOU MUST NOT USE OUR SERVICES."
+      ]
+    }
+  ]
+}

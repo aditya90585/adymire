@@ -1,0 +1,560 @@
+{
+  "key": "tax-information-compliances",
+  "title": "Tax Information & Compliances",
+  "company": "Adymire Agency",
+  "lastUpdated": "February 4, 2026",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "1. Introduction",
+      "content": [
+        "This document outlines the tax policies, compliance requirements, and financial regulations applicable to services provided by Adymire Agency (\"the Company,\" \"We,\" or \"Us\").",
+        "This information is designed to help clients understand:",
+        "• Applicable taxes on services",
+        "• Tax compliance obligations",
+        "• Invoicing and documentation requirements",
+        "• International tax considerations",
+        "• Regulatory compliance",
+        "By engaging our services, you acknowledge and accept these tax policies and agree to comply with all applicable tax laws and regulations."
+      ]
+    },
+    {
+      "id": "company-tax-information",
+      "heading": "2. Company Tax Information",
+      "subSections": [
+        {
+          "id": "registration-details",
+          "heading": "2.1 Company Registration Details",
+          "content": [
+            "• Legal Name: Adymire Agency",
+            "• Registered Address: [Your Business Address]",
+            "• Business Type: [Sole Proprietorship / Partnership / Private Limited / LLP]"
+          ]
+        },
+        {
+          "id": "tax-registrations",
+          "heading": "2.2 Tax Registrations",
+          "content": [
+            "GOODS AND SERVICES TAX (GST):",
+            "• GST Registration Number (GSTIN): [Your GSTIN]",
+            "• State of Registration: [Your State]",
+            "• GST Status: Regular / Composite (as applicable)",
+            "PAN (PERMANENT ACCOUNT NUMBER):",
+            "• PAN: [Your PAN]",
+            "OTHER REGISTRATIONS:",
+            "• TAN (Tax Deduction Account Number): [Your TAN]",
+            "• Import Export Code (IEC): [If applicable]",
+            "• MSME Registration: [If applicable]"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "applicable-taxes",
+      "heading": "3. Applicable Taxes",
+      "subSections": [
+        {
+          "id": "gst-india",
+          "heading": "3.1 Goods And Services Tax (Gst) - India",
+          "content": [
+            "For clients located in India:",
+            "CGST + SGST (Intra-State Supply):",
+            "• Condition: When Company and Client are in the same state",
+            "• CGST (Central GST): [Current rate - typically 9%]",
+            "• SGST (State GST): [Current rate - typically 9%]",
+            "• Total: 18% (or as per current GST rates)",
+            "IGST (Inter-State Supply):",
+            "• Condition: When Company and Client are in different states",
+            "• IGST (Integrated GST): 18% (or as per current GST rates)",
+            "GST RATES BY SERVICE (HSN/SAC):",
+            "• Software Development: SAC 998314 - 18% GST",
+            "• Digital Marketing: SAC 998399 - 18% GST",
+            "• Design Services: SAC 998399 - 18% GST",
+            "• Consulting Services: SAC 998212 - 18% GST",
+            "• Web Hosting: SAC 997212 - 18% GST",
+            "Note: GST rates are subject to change based on government notifications."
+          ]
+        },
+        {
+          "id": "tds-sections",
+          "heading": "3.2 Tax Deducted At Source (Tds)",
+          "content": [
+            "Certain clients may be required to deduct TDS on payments under the following sections:",
+            "Section 194J (Professional or Technical Services):",
+            "• TDS Rate: 10% (for companies) or 10% (for individuals/HUF)",
+            "• Threshold: Applicable when payment exceeds ₹30,000 in a financial year",
+            "Section 194C (Contractor Payments):",
+            "• TDS Rate: 1-2% (depending on payer category)",
+            "WHO MUST DEDUCT:",
+            "• Companies, firms, and businesses making specified payments",
+            "• Individual professionals with turnover above specified limits",
+            "• Government entities",
+            "COMPLIANCE REQUIREMENTS:",
+            "• Inform Company in advance of deduction",
+            "• Provide TDS certificate (Form 16A) within prescribed timeline",
+            "• Ensure TDS reflects in Company's Form 26AS"
+          ]
+        },
+        {
+          "id": "export-services",
+          "heading": "3.3 International Clients (Export Of Services)",
+          "content": [
+            "ZERO-RATED SUPPLY:",
+            "• Services exported are generally 0% GST",
+            "• Conditions: Payment in convertible foreign exchange; Recipient outside India; Meets export criteria",
+            "DOCUMENTATION REQUIRED:",
+            "• Valid international address",
+            "• Payment via wire transfer, PayPal, etc.",
+            "• Export invoice with specific declaration",
+            "WITHHOLDING TAX:",
+            "• Clients responsible for local tax law compliance",
+            "• Tax treaties (DTAA) between India and client's country may apply"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "invoicing-documentation",
+      "heading": "4. Invoicing And Documentation",
+      "subSections": [
+        {
+          "id": "invoice-components",
+          "heading": "4.1 Invoice Components",
+          "content": [
+            "All invoices issued by the Company will include the following mandatory and specific details:",
+            "MANDATORY DETAILS:",
+            "• Invoice number (unique sequential number)",
+            "• Invoice date",
+            "• Company name, address, and GSTIN",
+            "• Client name, address, and GSTIN (if applicable)",
+            "• Description of services rendered",
+            "• Quantity and rate of service",
+            "• Taxable value (base amount before tax)",
+            "• GST rate and amount (split as CGST/SGST or IGST)",
+            "• Total invoice value (including taxes)",
+            "• Payment terms and due date",
+            "• Bank details for payment remittance",
+            "FOR INTERNATIONAL CLIENTS:",
+            "• Mandatory mention: 'Export of Services - Zero Rated Supply'",
+            "• Transaction Currency (typically USD, EUR, or as agreed)",
+            "• Conversion rate applied (if applicable)"
+          ]
+        },
+        {
+          "id": "tax-invoice-vs-bill-of-supply",
+          "heading": "4.2 Tax Invoice Vs. Bill Of Supply",
+          "content": [
+            "The type of document issued depends on the taxability of the transaction:",
+            "TAX INVOICE:",
+            "• Issued when GST is applicable (Domestic supplies)",
+            "• Contains full breakdown of GST components",
+            "BILL OF SUPPLY:",
+            "• Issued for zero-rated exports",
+            "• Does not contain GST charge details"
+          ]
+        },
+        {
+          "id": "credit-notes-debit-notes",
+          "heading": "4.3 Credit Notes And Debit Notes",
+          "content": [
+            "In case of value adjustments post-invoicing:",
+            "CREDIT NOTE:",
+            "• Issued when invoice amount needs to be reduced (e.g., refunds, cancellations, or discounts)",
+            "• Effectively reverses the original GST charged",
+            "DEBIT NOTE:",
+            "• Issued when invoice amount needs to be increased (e.g., additional charges or scope changes)",
+            "• Adds to the original GST liability"
+          ]
+        },
+        {
+          "id": "invoice-delivery",
+          "heading": "4.4 Invoice Delivery",
+          "content": [
+            "• Invoices will be sent via email to the designated billing contact provided by the client",
+            "• Digital invoices are legally valid documents under GST law",
+            "• Physical copies can be provided upon specific request"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "client-tax-obligations",
+      "heading": "5. Client Tax Obligations",
+      "subSections": [
+        {
+          "id": "providing-tax-information",
+          "heading": "5.1 Providing Tax Information",
+          "content": [
+            "Clients must provide accurate data to ensure legal compliance:",
+            "FOR INDIAN CLIENTS:",
+            "• Legal business name as per registration",
+            "• Complete billing address including PIN code",
+            "• GSTIN (if registered under GST)",
+            "• PAN (if applicable)",
+            "• Nature of business",
+            "FOR INTERNATIONAL CLIENTS:",
+            "• Legal business name",
+            "• Complete address with country name",
+            "• Local Tax identification number (if applicable)",
+            "• Preferred currency for invoicing"
+          ]
+        },
+        {
+          "id": "gst-registration-thresholds",
+          "heading": "5.2 Gst Registration",
+          "content": [
+            "• If your business turnover exceeds ₹20 lakhs (₹10 lakhs for special category states), you must register for GST",
+            "• Voluntary GST registration is also permitted",
+            "• Note: Unregistered businesses will still be charged GST but will be unable to claim input tax credit"
+          ]
+        },
+        {
+          "id": "input-tax-credit-itc",
+          "heading": "5.3 Input Tax Credit (Itc)",
+          "content": [
+            "For GST-registered businesses wishing to claim credit:",
+            "• You can claim input tax credit on GST paid to the Company",
+            "• Requirement: Ensure the invoice is in your business name with the correct GSTIN",
+            "• Compliance: File your returns timely to claim ITC",
+            "• Verification: The Company will upload invoices to GSTN; ensure they reflect in your GSTR-2A/2B"
+          ]
+        },
+        {
+          "id": "client-record-keeping",
+          "heading": "5.4 Record Keeping",
+          "content": [
+            "Clients should maintain documentation as follows:",
+            "• Maintain copies of all invoices and payment receipts",
+            "• Keep records for at least 6 years as per tax regulations",
+            "• Ensure accurate accounting for future tax filing or audits"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "payment-tax-adjustments",
+      "heading": "6. Payment And Tax Adjustments",
+      "subSections": [
+        {
+          "id": "payment-inclusive-exclusive",
+          "heading": "6.1 Payment Inclusive Of Tax",
+          "content": [
+            "• All quoted prices are exclusive of taxes unless explicitly stated otherwise in the contract",
+            "• GST will be added as a separate line item to the base service charge",
+            "• For international clients: Prices are typically exclusive of any local taxes or withholding requirements in your country"
+          ]
+        },
+        {
+          "id": "tds-deductions-procedure",
+          "heading": "6.2 Tds Deductions",
+          "content": [
+            "If you are legally required to deduct TDS:",
+            "• Inform the Company before making the actual payment",
+            "• Deduct the applicable TDS amount and deposit it with the government",
+            "• Provide the TDS certificate (Form 16A) within 15 days of filing your TDS return",
+            "• Pay the net balance amount to the Company after the TDS deduction",
+            "EXAMPLE:",
+            "• Invoice Base Amount: ₹100,000",
+            "• Add: GST @ 18%: ₹18,000",
+            "• Total Invoice Value: ₹118,000",
+            "• Less: TDS @ 10% (on base ₹100,000): ₹10,000",
+            "• Final Amount Payable to Company: ₹108,000"
+          ]
+        },
+        {
+          "id": "tax-compliance-failures",
+          "heading": "6.3 Tax Compliance Failures",
+          "content": [
+            "If the client fails to deduct TDS, provide certificates, or provide correct tax info:",
+            "THE COMPANY MAY:",
+            "• Adjust future invoices to account for outstanding tax liabilities",
+            "• Suspend ongoing services until full compliance is achieved",
+            "• Report non-compliance to tax authorities if legally required by statute"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "international-transactions",
+      "heading": "7. International Transactions",
+      "subSections": [
+        {
+          "id": "export-services-criteria",
+          "heading": "7.1 Export Of Services Criteria",
+          "content": [
+            "For services to qualify as export:",
+            "PLACE OF SUPPLY:",
+            "• Recipient must be located outside India",
+            "• Services must be consumed/utilized outside India",
+            "PAYMENT:",
+            "• Must be received in convertible foreign exchange",
+            "• Or in Indian Rupees if permitted by RBI",
+            "DOCUMENTATION:",
+            "• Export invoice mentioning zero-rated supply",
+            "• Payment confirmation showing foreign exchange receipt",
+            "• Service delivery evidence (if required)"
+          ]
+        },
+        {
+          "id": "foreign-exchange-compliance",
+          "heading": "7.2 Foreign Exchange Compliance",
+          "content": [
+            "Payments from international clients must comply with FEMA (Foreign Exchange Management Act) regulations:"
+          ],
+          "bullets": [
+            "Payments from international clients must comply with FEMA (Foreign Exchange Management Act) regulations",
+            "Company is required to report foreign exchange receipts to banks and authorities",
+            "Delayed or non-receipt of foreign exchange may attract regulatory scrutiny"
+          ]
+        },
+        {
+          "id": "transfer-pricing-2026",
+          "heading": "7.3 Transfer Pricing",
+          "content": [
+            "For related party transactions or significant international dealings:",
+            "• Transfer pricing regulations may apply",
+            "• Arm's length pricing principles must be followed",
+            "• Company may be required to maintain transfer pricing documentation"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "compliance-obligations",
+      "heading": "8. Compliance Obligations",
+      "subSections": [
+        {
+          "id": "company-compliance-obligations",
+          "heading": "8.1 Company Obligations",
+          "content": [
+            "The Company is responsible for:",
+            "GST COMPLIANCE:",
+            "• File monthly/quarterly GST returns (GSTR-1, GSTR-3B)",
+            "• Pay GST to the government",
+            "• Upload supplier invoices to GSTN",
+            "• Maintain proper books of accounts",
+            "INCOME TAX COMPLIANCE:",
+            "• File annual income tax returns",
+            "• Pay advance tax and final tax liabilities",
+            "• Maintain financial statements",
+            "TDS COMPLIANCE (IF APPLICABLE):",
+            "• Deduct TDS on specified payments",
+            "• Deposit TDS with the government",
+            "• Issue TDS certificates",
+            "• File TDS returns"
+          ]
+        },
+        {
+          "id": "client-compliance-responsibilities",
+          "heading": "8.2 Client Obligations",
+          "content": [
+            "Clients are responsible for:",
+            "• Providing accurate tax information",
+            "• Deducting TDS when applicable and providing certificates",
+            "• Complying with their own tax filing requirements",
+            "• Claiming input tax credit appropriately",
+            "• Maintaining records as per law"
+          ]
+        },
+        {
+          "id": "regulatory-reporting-standards",
+          "heading": "8.3 Regulatory Reporting",
+          "content": [
+            "The Company may be required to report certain transactions to:",
+            "• GST authorities",
+            "• Income Tax Department",
+            "• RBI (for foreign exchange transactions)",
+            "• Other regulatory bodies",
+            "Client information will be shared only as required by law."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tax-disputes-audits",
+      "heading": "9. Tax Disputes And Audits",
+      "subSections": [
+        {
+          "id": "company-tax-audits",
+          "heading": "9.1 Company Tax Audits",
+          "content": [
+            "If the Company undergoes tax audits",
+            "• Client information may be requested by authorities",
+            "• Company will maintain confidentiality to the extent legally possible",
+            "• Clients may be contacted by authorities for verification (rare)"
+          ]
+        },
+        {
+          "id": "client-tax-audits",
+          "heading": "9.2 Client Tax Audits",
+          "content": [
+            "If clients undergo tax audits",
+            "• Company will provide necessary invoices and documentation",
+            "• Company will cooperate with reasonable information requests",
+            "• Client is responsible for their own tax position and representation"
+          ]
+        },
+        {
+          "id": "tax-disputes-resolution",
+          "heading": "9.3 Tax Disputes",
+          "content": [
+            "• In case of tax disputes related to services",
+            "• Both parties will cooperate in good faith",
+            "• Company will provide necessary documentation",
+            "• Each party is responsible for their own tax liabilities"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "special-cases-exceptions",
+      "heading": "10. Special Cases And Exceptions",
+      "subSections": [
+        {
+          "id": "rcm",
+          "heading": "10.1 Reverse Charge Mechanism (Rcm)",
+          "content": [
+            "In certain cases, GST is payable by the recipient (reverse charge):",
+            "• Typically does not apply to our services",
+            "• If applicable, will be mentioned on the invoice",
+            "• Client will be responsible for paying GST directly to the government"
+          ]
+        },
+        {
+          "id": "e-commerce-operators",
+          "heading": "10.2 E-Commerce Operators",
+          "content": [
+            "If services are booked through an e-commerce platform:",
+            "• The platform may be required to collect and pay GST (TCS - Tax Collected at Source)",
+            "• This is separate from the service GST",
+            "• Applicable if platform turnover exceeds specified limits"
+          ]
+        },
+        {
+          "id": "govt-psu-clients",
+          "heading": "10.3 Government And Psu Clients",
+          "content": [
+            "• May have different TDS rates or exemptions",
+            "• Required documentation may vary",
+            "• Payment processes may be subject to government procedures"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "changes-in-tax-laws",
+      "heading": "11. Changes In Tax Laws",
+      "subSections": [
+        {
+          "id": "adaptability",
+          "heading": "11.1 Adaptability",
+          "content": [
+            "• Tax rates, regulations, and compliance requirements may change",
+            "• The Company will adapt invoicing and compliance as per updated laws",
+            "• Clients will be notified of significant changes affecting them"
+          ]
+        },
+        {
+          "id": "retroactive-changes",
+          "heading": "11.2 Retroactive Changes",
+          "content": [
+            "• In rare cases, tax laws may be applied retroactively",
+            "• Both parties will cooperate to adjust for such changes",
+            "• Historical invoices may need to be revised if legally required"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "disclaimers",
+      "heading": "12. Disclaimers",
+      "subSections": [
+        {
+          "id": "not-tax-advisor",
+          "heading": "12.1 Company Is Not A Tax Advisor",
+          "content": [
+            "• This document provides general tax information",
+            "• It is not a substitute for professional tax advice",
+            "• Clients should consult their own tax advisors for specific situations"
+          ]
+        },
+        {
+          "id": "no-liability",
+          "heading": "12.2 No Liability For Client's Tax Obligations",
+          "content": [
+            "The Company is not liable for:",
+            "• Client's failure to comply with tax laws",
+            "• Incorrect tax information provided by the client",
+            "• Client's inability to claim input tax credit",
+            "• Penalties or interest arising from client's tax non-compliance"
+          ]
+        },
+        {
+          "id": "accuracy-info",
+          "heading": "12.3 Accuracy Of Information",
+          "content": [
+            "• Information is provided in good faith based on current knowledge",
+            "• Company is not liable for errors or omissions in tax information",
+            "• Clients should verify tax details independently"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "amendments-policies",
+      "heading": "13. Amendments To Tax Policies",
+      "content": [
+        "The Company reserves the right to update this document based on:",
+        "• Changes in tax laws and regulations",
+        "• Business requirement changes",
+        "• Regulatory guidance and clarifications",
+        "Updated versions will be posted on our website. Continued use of services constitutes acceptance of updated policies."
+      ]
+    },
+    {
+      "id": "record-retention",
+      "heading": "14. Record Retention",
+      "content": [
+        "As per tax laws:",
+        "COMPANY WILL RETAIN:",
+        "• Invoices and financial records for at least 6 years",
+        "• Tax returns and supporting documents as per law",
+        "• Payment and transaction records",
+        "CLIENTS SHOULD RETAIN:",
+        "• All invoices and receipts",
+        "• Payment confirmations",
+        "• TDS certificates",
+        "• Correspondence related to tax matters"
+      ]
+    },
+    {
+      "id": "contact-tax-queries",
+      "heading": "15. Contact For Tax Queries",
+      "content": [
+        "For questions related to tax matters, invoicing, or compliance:",
+        "Adymire Agency",
+        "Accounts Department",
+        "• Email: [Your Accounts Email]",
+        "• Phone: [Your Official Phone Number]",
+        "• Address: [Your Registered Business Address]",
+        "For tax-specific documentation requests:",
+        "• Email with clear details of requirement",
+        "• Allow 5-7 business days for processing",
+        "• Urgent requests may be accommodated subject to availability"
+      ]
+    },
+    {
+      "id": "acceptance-acknowledgment",
+      "heading": "16. Acceptance And Acknowledgment",
+      "content": [
+        "By engaging our services, you acknowledge that:",
+        "• You have read and understood this Tax Information & Compliances document",
+        "• You agree to comply with all applicable tax laws and regulations",
+        "• You will provide accurate tax information as required",
+        "• You understand your tax obligations related to our services",
+        "• You will cooperate with reasonable tax compliance requests",
+        "If you have any questions or concerns about tax matters, please contact us before proceeding with service engagement."
+      ]
+    }
+  ]
+}

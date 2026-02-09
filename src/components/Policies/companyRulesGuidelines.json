@@ -1,0 +1,605 @@
+{
+  "key": "company-rules-guidelines",
+  "title": "Company Rules & Guidelines",
+  "company": "Adymire Agency",
+  "lastUpdated": "February 4, 2026",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "1. Introduction",
+      "content": [
+        "This document outlines the rules, guidelines, and behavioral expectations for all individuals and organizations that interact with Adymire Agency (\"the Company,\" \"We,\" or \"Us\").",
+        "These rules apply to:",
+        "• Current and prospective clients",
+        "• Website visitors and users",
+        "• Service recipients",
+        "• Project collaborators",
+        "• Any party engaging with the Company in any capacity",
+        "By interacting with the Company, you agree to abide by these Rules & Guidelines. Violation of these rules may result in termination of services, project cancellation, or legal action."
+      ]
+    },
+    {
+      "id": "purpose",
+      "heading": "2. Purpose of these guidelines",
+      "content": [
+        "These rules exist to:"
+      ],
+      "bullets": [
+        "Establish clear behavioral expectations",
+        "Maintain a professional and respectful working environment",
+        "Protect the rights and interests of both the Company and clients",
+        "Ensure smooth project execution and collaboration",
+        "Define acceptable and unacceptable conduct",
+        "Provide a framework for conflict resolution"
+      ]
+    },
+    {
+      "id": "core-principles",
+      "heading": "3. Core principles",
+      "content": [
+        "All interactions with Adymire Agency must be guided by these core principles:"
+      ],
+      "subSections": [
+        {
+          "id": "professionalism",
+          "heading": "3.1 Professionalism",
+          "bullets": [
+            "Maintain courteous and professional communication at all times",
+            "Respect the expertise and time of Company staff",
+            "Conduct business in a transparent and ethical manner"
+          ]
+        },
+        {
+          "id": "integrity",
+          "heading": "3.2 Honesty and integrity",
+          "bullets": [
+            "Provide truthful information in all communications",
+            "Disclose relevant facts that may impact project execution",
+            "Do not engage in fraudulent or deceptive practices"
+          ]
+        },
+        {
+          "id": "respect",
+          "heading": "3.3 Respect and courtesy",
+          "bullets": [
+            "Treat all Company personnel with dignity and respect",
+            "Avoid abusive, threatening, or discriminatory language",
+            "Recognize that staff are professionals deserving of courteous treatment"
+          ]
+        },
+        {
+          "id": "collaboration-accountability",
+          "heading": "3.4 Collaboration & 3.5 Accountability",
+          "bullets": [
+            "Work cooperatively with the Company team",
+            "Provide timely feedback and approvals",
+            "Honor commitments and take responsibility for your role in project success"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "official-channels",
+      "heading": "4.1 Official communication channels",
+      "content": [
+        "Approved communication methods:",
+        "• Email (primary official channel)",
+        "• Phone calls (for urgent matters or scheduled discussions)",
+        "• WhatsApp (for quick updates, subject to Company approval)",
+        "• Project management tools (for project-specific communication)",
+        "• Video conferencing (for meetings and presentations)",
+        "Prohibited communication methods:",
+        "• Personal social media accounts of staff members",
+        "• Unsolicited visits to office premises",
+        "• Contact outside of business hours unless emergency"
+      ]
+    },
+    {
+      "id": "communication-etiquette",
+      "heading": "4.2 Communication etiquette",
+      "content": [
+        "DO:",
+        "• Use clear and concise language",
+        "• Include relevant context and details",
+        "• Respond to Company communications within reasonable timeframes (24-48 hours for standard queries)",
+        "• Use professional subject lines and greetings",
+        "• Keep conversations focused on the project or topic",
+        "• Acknowledge receipt of important communications",
+        "DON'T:",
+        "• Send excessive or redundant messages",
+        "• Use offensive, abusive, or threatening language",
+        "• Make unreasonable demands or ultimatums",
+        "• Contact staff during holidays or outside business hours for non-urgent matters",
+        "• Share confidential project information publicly",
+        "• Use all-caps or aggressive formatting"
+      ]
+    },
+    {
+      "id": "response-times",
+      "heading": "4.3 Response time expectations",
+      "bullets": [
+        "Standard inquiries: 24-48 business hours",
+        "Urgent matters: Same business day (if communicated during business hours)",
+        "Complex questions requiring research: 3-5 business days",
+        "Weekends and holidays: Next business day"
+      ]
+    },
+    {
+      "id": "meeting-protocol",
+      "heading": "4.4 Meeting protocol",
+      "bullets": [
+        "Meetings must be scheduled in advance",
+        "Be punctual for all scheduled meetings",
+        "Come prepared with relevant information and questions",
+        "Designate appropriate decision-makers to attend",
+        "If unable to attend, provide at least 24 hours' notice",
+        "Respect the scheduled duration"
+      ]
+    },
+    {
+      "id": "project-execution-guidelines",
+      "heading": "5. Project execution guidelines",
+      "subSections": [
+        {
+          "id": "client-responsibilities",
+          "heading": "5.1 Client responsibilities",
+          "content": [
+            "INFORMATION PROVISION:",
+            "• Provide complete and accurate project requirements at the outset",
+            "• Submit all required assets, content, and resources on time",
+            "• Notify the Company immediately if requirements change",
+            "FEEDBACK AND APPROVALS:",
+            "• Review deliverables within the agreed timeframe (typically 3-7 business days)",
+            "• Provide specific, actionable feedback",
+            "• Avoid vague comments like 'make it better' or 'I don't like it'",
+            "• Consolidate feedback from multiple stakeholders before submitting",
+            "• Understand that excessive or contradictory feedback may delay projects",
+            "AVAILABILITY:",
+            "• Designate a primary point of contact with decision-making authority",
+            "• Be available for scheduled calls, meetings, and reviews",
+            "• Respond to queries and approval requests promptly",
+            "• Inform the Company of planned absences or unavailability",
+            "SCOPE ADHERENCE:",
+            "• Respect the agreed project scope",
+            "• Understand that changes outside the original scope require additional time and budget",
+            "• Submit change requests formally and in writing",
+            "• Accept that the Company has final say on feasibility of changes"
+          ]
+        },
+        {
+          "id": "revision-policy",
+          "heading": "5.2 Revision policy",
+          "bullets": [
+            "Number of revisions specified in agreement",
+            "Revisions must be based on original approved scope",
+            "New requirements do not constitute revisions",
+            "Additional revisions beyond limit incur extra charges",
+            "Revisions must be requested within specified timeframe"
+          ]
+        },
+        {
+          "id": "approval-signoff",
+          "heading": "5.3 Approval and sign-off",
+          "bullets": [
+            "Clients must formally approve phases before moving forward",
+            "Silence/non-response within the approval period (typically 7 days) is considered acceptance",
+            "Once approved, changes require additional charges"
+          ]
+        },
+        {
+          "id": "testing-qa",
+          "heading": "5.4 Testing and quality assurance",
+          "content": [
+            "• Company conducts internal testing before delivery",
+            "• Clients are responsible for user acceptance testing",
+            "• Bug reports must be submitted in a structured format with:",
+            " - Clear description of the issue",
+            " - Steps to reproduce",
+            " - Expected vs. actual behavior",
+            " - Screenshots or recordings if applicable",
+            "• Bugs arising from client-requested changes or customizations may be billed separately"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "payment-and-financial-conduct",
+      "heading": "6. Payment and financial conduct",
+      "subSections": [
+        {
+          "id": "payment-obligations",
+          "heading": "6.1 Payment obligations",
+          "bullets": [
+            "Invoices must be paid according to agreed terms",
+            "Late payments may incur interest charges and service suspension",
+            "Clients must notify the Company immediately of any payment issues",
+            "Disputes regarding invoices must be raised within 7 days of receipt"
+          ]
+        },
+        {
+          "id": "prohibited-financial-conduct",
+          "heading": "6.2 Prohibited financial conduct",
+          "content": [
+            "DO NOT:"
+          ],
+          "bullets": [
+            "Request work to commence without making required advance payments",
+            "Delay payments with the intention of leveraging completed work",
+            "Initiate chargebacks without first attempting to resolve issues with the Company",
+            "Provide false information to avoid payment obligations",
+            "Request refunds based on false or exaggerated claims"
+          ]
+        },
+        {
+          "id": "pricing-discussions",
+          "heading": "6.3 Pricing discussions",
+          "bullets": [
+            "Pricing is determined by the Company based on project complexity and scope",
+            "Attempting to negotiate pricing through aggressive or manipulative tactics is not acceptable",
+            "The Company's pricing decisions are final unless mutually agreed changes occur",
+            "Comparing pricing with competitors or making unrealistic demands is discouraged"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "intellectual-property-respect",
+      "heading": "7. Intellectual property respect",
+      "subSections": [
+        {
+          "id": "client-ip-obligations",
+          "heading": "7.1 Client obligations",
+          "content": [
+            "DO NOT:"
+          ],
+          "bullets": [
+            "Claim ownership of the Company's proprietary tools, methods, or processes",
+            "Reverse-engineer Company software or platforms",
+            "Copy or reproduce Company materials without authorization",
+            "Share source code or proprietary information with third parties",
+            "Use Company branding, logos, or identity without permission"
+          ]
+        },
+        {
+          "id": "proper-attribution",
+          "heading": "7.2 Proper attribution",
+          "bullets": [
+            "When showcasing work created by the Company, provide appropriate credit",
+            "Do not present Company work as solely your own creation",
+            "Respect confidentiality agreements regarding Company methods"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "confidentiality-security",
+      "heading": "8. Confidentiality and data security",
+      "subSections": [
+        {
+          "id": "client-confidentiality-obligations",
+          "heading": "8.1 Client obligations",
+          "bullets": [
+            "Protect access credentials and login information",
+            "Do not share project files or Company deliverables with unauthorized parties",
+            "Maintain confidentiality of Company pricing, methods, and business practices",
+            "Report any security breaches or data leaks immediately"
+          ]
+        },
+        {
+          "id": "company-confidentiality-obligations",
+          "heading": "8.2 Company obligations",
+          "bullets": [
+            "Protect client confidential information",
+            "Limit access to client data to authorized personnel only",
+            "Implement reasonable security measures",
+            "Notify clients promptly of any security incidents"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "prohibited-conduct",
+      "heading": "9. Prohibited conduct",
+      "subSections": [
+        {
+          "id": "abusive-behavior",
+          "heading": "9.1 Abusive behavior",
+          "bullets": [
+            "Verbal abuse, threats, or harassment toward Company staff",
+            "Use of profanity, derogatory language, or personal attacks",
+            "Intimidation tactics or threatening legal action without cause",
+            "Discrimination based on race, gender, religion, nationality, or other protected characteristics"
+          ]
+        },
+        {
+          "id": "dishonest-practices",
+          "heading": "9.2 Dishonest practices",
+          "bullets": [
+            "Providing false information or fraudulent documents",
+            "Misrepresenting qualifications, budget, or project requirements",
+            "Attempting to manipulate or deceive Company staff",
+            "Identity fraud or impersonation"
+          ]
+        },
+        {
+          "id": "misuse-of-services",
+          "heading": "9.3 Misuse of services",
+          "bullets": [
+            "Using Company services for illegal activities",
+            "Requesting creation of content that violates laws or ethical standards",
+            "Distributing malware, viruses, or harmful code",
+            "Attempting to hack, disrupt, or compromise Company systems"
+          ]
+        },
+        {
+          "id": "unfair-business-practices",
+          "heading": "9.4 Unfair business practices",
+          "bullets": [
+            "Attempting to hire Company staff directly during or immediately after a project (poaching)",
+            "Soliciting Company subcontractors or partners without consent",
+            "Publicly defaming or disparaging the Company based on false information",
+            "Manipulation tactics such as threatening negative reviews to obtain refunds or free work"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "social-media-public-conduct",
+      "heading": "10. Social media and public conduct",
+      "subSections": [
+        {
+          "id": "testimonials-reviews",
+          "heading": "10.1 Testimonials and reviews",
+          "content": [
+            "ENCOURAGED:",
+            "• Honest testimonials and reviews based on actual experience",
+            "• Constructive feedback provided directly to the Company",
+            "• Sharing positive experiences on social media or review platforms",
+            "PROHIBITED:",
+            "• False or misleading reviews",
+            "• Posting reviews for projects that were never completed or paid for",
+            "• Threatening negative reviews as leverage for refunds or additional work",
+            "• Posting confidential project information or Company business practices"
+          ]
+        },
+        {
+          "id": "public-dispute-resolution",
+          "heading": "10.2 Dispute resolution",
+          "bullets": [
+            "Disputes should first be addressed privately with the Company",
+            "Public complaints should only be made if internal resolution fails",
+            "Defamatory or libelous statements may result in legal action"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "third-party-interactions",
+      "heading": "11. Third-party interactions",
+      "subSections": [
+        {
+          "id": "external-vendors",
+          "heading": "11.1 External vendors",
+          "bullets": [
+            "Clients are responsible for obtaining necessary accounts and permissions",
+            "Clients must comply with third-party terms of service",
+            "The Company is not liable for third-party service failures or policy changes"
+          ]
+        },
+        {
+          "id": "subcontractors",
+          "heading": "11.2 Subcontractors",
+          "bullets": [
+            "The Company may use subcontractors or partners for specialized services",
+            "Clients may not directly solicit or hire Company subcontractors",
+            "All communication should go through the Company unless otherwise agreed"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "content-materials-guidelines",
+      "heading": "12. Content and materials guidelines",
+      "subSections": [
+        {
+          "id": "client-provided-content",
+          "heading": "12.1 Client-provided content",
+          "bullets": [
+            "Be legally owned or properly licensed by the client",
+            "Not infringe on third-party copyrights, trademarks, or intellectual property",
+            "Not contain illegal, offensive, or unethical material",
+            "Be appropriate for the intended purpose and audience"
+          ]
+        },
+        {
+          "id": "content-review",
+          "heading": "12.2 Content review",
+          "bullets": [
+            "The Company reserves the right to refuse work with inappropriate content",
+            "Clients warrant that all provided materials are legal and properly licensed",
+            "Clients indemnify the Company from any claims arising from client-provided materials"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "project-delays-management",
+      "heading": "13. Project delays and timeline management",
+      "subSections": [
+        {
+          "id": "acceptable-reasons",
+          "heading": "13.1 Acceptable reasons for delays",
+          "content": [
+            "The Company understands that delays may occur due to:"
+          ],
+          "bullets": [
+            "Unforeseen technical complexities",
+            "Client unavailability or delayed feedback",
+            "Third-party service disruptions",
+            "Scope changes or expansions",
+            "Force majeure events"
+          ]
+        },
+        {
+          "id": "managing-delays",
+          "heading": "13.2 Managing delays",
+          "bullets": [
+            "The Company will communicate proactively",
+            "Revised timelines will be provided",
+            "Clients should be understanding and flexible",
+            "Additional charges may apply if delays are client-caused"
+          ]
+        },
+        {
+          "id": "unreasonable-expectations",
+          "heading": "13.3 Unreasonable expectations",
+          "content": [
+            "Clients should not:"
+          ],
+          "bullets": [
+            "Demand impossible deadlines",
+            "Expect work to be completed during holidays or weekends without prior arrangement",
+            "Blame the Company for delays caused by client inaction",
+            "Refuse to accept reasonable timeline extensions"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quality-expectations",
+      "heading": "14. Quality expectations and standards",
+      "subSections": [
+        {
+          "id": "company-commitment",
+          "heading": "14.1 Company commitment",
+          "bullets": [
+            "Deliver work that meets industry standards",
+            "Use best practices in design and development",
+            "Conduct quality assurance before delivery",
+            "Address genuine errors or bugs in delivered work"
+          ]
+        },
+        {
+          "id": "subjective-preferences",
+          "heading": "14.2 Subjective preferences",
+          "content": [
+            "Clients must understand:"
+          ],
+          "bullets": [
+            "\"Quality\" includes both objective standards and subjective preferences",
+            "The Company cannot guarantee you will \"love\" every design choice",
+            "Aesthetic preferences vary and are not grounds for refunds",
+            "Professional recommendations should be given due consideration"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "termination-of-engagement",
+      "heading": "15. Termination of engagement",
+      "content": [
+        "The Company reserves the right to terminate engagement with clients who:"
+      ],
+      "bullets": [
+        "Repeatedly violate these Rules & Guidelines",
+        "Engage in abusive or threatening behavior",
+        "Fail to make timely payments",
+        "Provide false information or engage in fraud",
+        "Request services for illegal or unethical purposes",
+        "Create an unreasonable or hostile working environment"
+      ],
+      "note": "Upon termination: Client must pay for all completed work; Company may withhold deliverables until payment is received; Both parties are released from future obligations; Confidentiality and intellectual property provisions remain in effect."
+    },
+    {
+      "id": "amendments",
+      "heading": "16. Amendments to these rules",
+      "content": [
+        "The Company reserves the right to update these Rules & Guidelines at any time. Updates will be effective immediately upon posting on our website.",
+        "Significant changes may be communicated via email. Continued use of services constitutes acceptance of updated rules."
+      ]
+    },
+    {
+      "id": "enforcement-and-consequences",
+      "heading": "17. Enforcement and consequences",
+      "subSections": [
+        {
+          "id": "violation-process",
+          "heading": "17.1 Violation process",
+          "content": [
+            "When rules are violated:",
+            "FIRST OFFENSE (Minor):",
+            "• Verbal or written warning",
+            "• Request for corrective action",
+            "SECOND OFFENSE:",
+            "• Formal written warning",
+            "• Possible project suspension",
+            "• Review of client relationship",
+            "THIRD OFFENSE OR SEVERE VIOLATION:",
+            "• Immediate termination of services",
+            "• Payment collection for completed work",
+            "• Possible legal action",
+            "• Blacklisting from future services"
+          ]
+        },
+        {
+          "id": "severe-violations",
+          "heading": "17.2 Severe violations",
+          "content": [
+            "The following may result in immediate termination without warning:",
+            "• Threats, harassment, or abusive behavior",
+            "• Fraud or intentional dishonesty",
+            "• Illegal activity or requests",
+            "• Chargebacks initiated in bad faith"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "client-rights",
+      "heading": "18. Client rights",
+      "content": [
+        "While these rules establish expectations, clients also have rights:"
+      ],
+      "bullets": [
+        "Right to quality service delivery",
+        "Right to clear communication and transparency",
+        "Right to raise concerns and complaints",
+        "Right to request clarification of policies",
+        "Right to terminate engagement (subject to Cancellation Policy)",
+        "Right to privacy and confidentiality"
+      ]
+    },
+    {
+      "id": "dispute-resolution",
+      "heading": "19. Dispute resolution process",
+      "content": [
+        "If you have concerns about Company conduct or wish to dispute a decision:",
+        "STEP 1: Contact your project manager or primary Company contact",
+        "STEP 2: Escalate to Company management if unresolved",
+        "STEP 3: Request formal mediation if needed",
+        "STEP 4: Legal proceedings as a last resort",
+        "The Company encourages open communication and good-faith resolution of all disputes."
+      ]
+    },
+    {
+      "id": "contact-information",
+      "heading": "20. Contact information",
+      "content": [
+        "For questions about these Rules & Guidelines or to report violations:",
+        "Adymire Agency",
+        "Email: [Your Official Email]",
+        "Phone: [Your Official Phone Number]",
+        "Website: [Your Website URL]",
+        "Address: [Your Registered Business Address]"
+      ]
+    },
+    {
+      "id": "acknowledgment",
+      "heading": "21. Acknowledgment",
+      "content": [
+        "By using our services or engaging with the Company, you acknowledge that you have read, understood, and agreed to abide by these Company Rules & Guidelines.",
+        "Violation of these rules may result in termination of services and legal consequences."
+      ]
+    }
+  ]
+}

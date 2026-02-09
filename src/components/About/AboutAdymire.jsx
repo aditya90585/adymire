@@ -1,5 +1,5 @@
 import React from "react";
-import Founder2 from "@/assets/illustrations/Founder2.svg"
+import {Founder2} from "@/assets"
 
 const AboutAdymire = () => {
   return (

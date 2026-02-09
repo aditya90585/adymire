@@ -28,5 +28,11 @@
   align-items: center;
 }
 .ps-payment-methods-img img{
+  width: 50%;
+}
+ 
+@media (max-width: 1024px) {
+  .ps-payment-methods-img img{
   width: 70%;
+}
 }

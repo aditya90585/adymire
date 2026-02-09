@@ -16,7 +16,7 @@ const CountriesSelector = forwardRef(({ open, setOpen, selected, COUNTRIES, setS
   }, [search, COUNTRIES]);
   return (
     <div className="relative">
-      <div className="font-semibold text-xl mb-4">Country</div>
+      <div className="font-semibold text-xl mb-4">Country <span className='text-red-700'>*</span> </div>
       <button
         type="button"
         onClick={() => setOpen(o => !o)}

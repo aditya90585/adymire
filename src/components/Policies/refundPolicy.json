@@ -1,0 +1,315 @@
+{
+  "key": "refund-policy",
+  "title": "Refund Policy",
+  "company": "Adymire Agency",
+  "lastUpdated": "February 4, 2026",
+  "sections": [
+    {
+      "id": "introduction",
+      "heading": "1. Introduction",
+      "content": [
+        "This Refund Policy outlines the terms and conditions under which Adymire Agency (\"we,\" \"our,\" or \"the Company\") processes refund requests for services rendered or payments made.",
+        "This policy applies to all clients who have engaged our services including UI/UX Design, Mobile App Development, Web Development, Digital Marketing, and AI Automation & AI-Based Solutions.",
+        "By making a payment or entering into a service agreement with us, you acknowledge that you have read, understood, and agreed to the terms outlined in this Refund Policy."
+      ]
+    },
+    {
+      "id": "general-refund-policy",
+      "heading": "2. General refund policy",
+      "content": [
+        "Due to the nature of software development, design, and digital marketing services, refunds are evaluated on a case-by-case basis. The following principles govern our refund policy:"
+      ],
+      "bullets": [
+        "Refunds are NOT automatic and are subject to company evaluation",
+        "All refund requests must be submitted in writing via email",
+        "The Company reserves the right to approve or deny refund requests based on the circumstances of each case",
+        "Final decision regarding refunds rests solely with the Company"
+      ]
+    },
+    {
+      "id": "non-refundable-items",
+      "heading": "3. Non-refundable items",
+      "content": [
+        "The following items and scenarios are strictly NON-REFUNDABLE:"
+      ],
+      "subSections": [
+        {
+          "id": "deposits-advance-payments",
+          "heading": "3.1 Initial deposits and advance payments",
+          "bullets": [
+            "Any deposit or advance payment made to initiate a project is non-refundable",
+            "This includes initial consultation fees, discovery fees, or booking amounts"
+          ]
+        },
+        {
+          "id": "completed-work",
+          "heading": "3.2 Completed work",
+          "content": [
+            "If any deliverable has been completed and provided to the client, the payment for that deliverable is non-refundable. Completed work includes but is not limited to:",
+            "• Design mockups, wireframes, or prototypes",
+            "• Developed features or modules",
+            "• Delivered marketing campaigns or content",
+            "• Research, analysis, or strategy documents"
+          ]
+        },
+        {
+          "id": "work-in-progress",
+          "heading": "3.3 Work in progress",
+          "bullets": [
+            "If work has been initiated and is in progress, the Company will assess the work completed to date",
+            "Refunds, if approved, will be calculated based on work remaining, not work completed",
+            "The Company may retain payment for all work completed up to the refund request date"
+          ]
+        },
+        {
+          "id": "third-party-costs",
+          "heading": "3.4 Third-party costs",
+          "content": [
+            "Any expenses incurred on behalf of the client are non-refundable, including:",
+            "• Domain registrations",
+            "• Hosting fees",
+            "• Third-party software licenses",
+            "• Stock assets (images, fonts, templates)",
+            "• Advertising spend (Google Ads, Facebook Ads, etc.)",
+            "• API subscriptions or integrations",
+            "• Payment gateway fees"
+          ]
+        },
+        {
+          "id": "custom-development-design",
+          "heading": "3.5 Custom development and design",
+          "bullets": [
+            "Custom-developed software, applications, or designs are non-refundable once delivered",
+            "This includes source code, design files, or any intellectual property created specifically for the client"
+          ]
+        },
+        {
+          "id": "change-of-mind",
+          "heading": "3.6 Change of mind",
+          "bullets": [
+            "Refunds will not be provided if the client changes their mind about the project after work has commenced",
+            "Clients are advised to carefully review proposals and agreements before making payments"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "refund-eligibility",
+      "heading": "4. Refund eligibility",
+      "content": [
+        "Refunds may be considered under the following specific circumstances:"
+      ],
+      "subSections": [
+        {
+          "id": "non-delivery",
+          "heading": "4.1 Non-delivery of services",
+          "bullets": [
+            "If the Company fails to deliver agreed-upon services within the mutually agreed timeline without valid reasons",
+            "The client must provide written notice and allow the Company a reasonable opportunity to remedy the situation"
+          ]
+        },
+        {
+          "id": "duplicate-payment",
+          "heading": "4.2 Duplicate payment",
+          "bullets": [
+            "If a client has accidentally made a duplicate payment, the excess amount will be refunded after verification"
+          ]
+        },
+        {
+          "id": "service-not-as-described",
+          "heading": "4.3 Service not as described",
+          "bullets": [
+            "If the delivered service significantly deviates from the agreed scope and the Company is unable to rectify the issue",
+            "The client must provide clear evidence of the deviation"
+          ]
+        },
+        {
+          "id": "company-initiated-cancellation",
+          "heading": "4.4 Company-initiated cancellation",
+          "bullets": [
+            "If the Company is unable to fulfill the service agreement due to internal reasons, a refund will be processed",
+            "This does not apply if the cancellation is due to client-side issues"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "refund-request-process",
+      "heading": "5. Refund request process",
+      "content": [
+        "To request a refund, clients must follow this process:"
+      ],
+      "subSections": [
+        {
+          "id": "step-1",
+          "heading": "Step 1: Submit a written request",
+          "content": [
+            "Send an email to our official email address with the subject line: \"Refund Request - [Your Project Name/ID]\"",
+            "Include the following details:",
+            "• Your full name and contact information",
+            "• Project details and invoice number",
+            "• Reason for the refund request",
+            "• Any supporting documentation or evidence"
+          ]
+        },
+        {
+          "id": "step-2",
+          "heading": "Step 2: Company review",
+          "content": [
+            "Our team will review your request within 7-14 business days",
+            "We may request additional information or clarification during this period"
+          ]
+        },
+        {
+          "id": "step-3",
+          "heading": "Step 3: Decision notification",
+          "content": [
+            "You will be notified of the decision via email",
+            "If approved, we will provide details on the refund amount and processing timeline",
+            "If denied, we will provide a clear explanation for the decision"
+          ]
+        },
+        {
+          "id": "step-4",
+          "heading": "Step 4: Refund processing (if approved)",
+          "content": [
+            "Approved refunds will be processed within 15-30 business days from the approval date",
+            "Refunds will be issued to the original payment method",
+            "Bank transfer refunds may take additional time depending on the bank's processing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "partial-refunds",
+      "heading": "6. Partial refunds",
+      "content": [
+        "In certain cases, the Company may offer a partial refund based on:",
+        "• The percentage of work completed",
+        "• Resources and time already invested",
+        "• Third-party costs incurred",
+        "• Revisions and iterations provided",
+        "The calculation of partial refunds is at the sole discretion of the Company."
+      ]
+    },
+    {
+      "id": "processing-time",
+      "heading": "7. Refund processing time",
+      "bullets": [
+        "Approved refunds will be initiated within 15-30 business days",
+        "The actual credit to your account may take additional time depending on your bank or payment provider",
+        "For international clients, currency conversion and international transfer fees may apply"
+      ]
+    },
+    {
+      "id": "chargebacks-disputes",
+      "heading": "8. Chargebacks and disputes",
+      "bullets": [
+        "Clients are required to contact the Company directly for refund requests before initiating chargebacks",
+        "Unauthorized chargebacks may result in:",
+        "-Suspension of services",
+        "-Legal action to recover costs",
+        "-Blacklisting from future services",
+        "If you have initiated a dispute with your payment provider, please inform us immediately"
+      ]
+    },
+    {
+      "id": "special-cases",
+      "heading": "9. Special cases",
+      "subSections": [
+        {
+          "id": "subscriptions",
+          "heading": "9.1 Subscription-based services",
+          "content":["• For recurring services or subscriptions:"],
+          "bullets": [
+            "Refunds are not provided for the current billing period",
+            "Cancellations must be made before the next billing cycle",
+            "Prorated refunds are not offered"
+          ]
+        },
+        {
+          "id": "revisions",
+          "heading": "9.2 Revisions and modifications",
+          "bullets": [
+            "Requests for revisions beyond the agreed number are not grounds for refunds",
+            "Additional revisions may be charged separately"
+          ]
+        },
+        {
+          "id": "client-delays",
+          "heading": "9.3 Client-side delays",
+          "content": [
+            "Refunds will not be provided if project delays are caused by:",
+            "• Late provision of required information or assets",
+            "• Lack of client availability for feedback or approvals",
+            "• Changing requirements or scope creep"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "refusal-rights",
+      "heading": "10. Company's right to refuse refunds",
+      "content": [
+        "The Company reserves the right to refuse refunds if:"
+      ],
+      "bullets": [
+        "The refund request is made after the agreed project completion date",
+        "The client has violated the Terms & Conditions or other policies",
+        "The request is deemed unreasonable or made in bad faith",
+        "The work has been delivered and accepted by the client"
+      ]
+    },
+    {
+      "id": "alternatives",
+      "heading": "11. Alternatives to refunds",
+      "content": [
+        "Instead of refunds, the Company may offer:"
+      ],
+      "bullets": [
+        "Service credits for future projects",
+        "Modifications or corrections to the delivered work",
+        "Extended support or additional features",
+        "Transfer of unused portion to another service"
+      ],
+      "note":"These alternatives are offered at the Company's discretion."
+    },
+    {
+      "id": "taxes-fees",
+      "heading": "12. Taxes and fees",
+      "bullets": [
+        "Refund amounts will be calculated based on the net amount paid (excluding taxes and processing fees)",
+        "Applicable taxes (GST, VAT, etc.) will be adjusted according to local tax regulations",
+        "Payment gateway fees are non-refundable"
+      ]
+    },
+    {
+      "id": "policy-changes",
+      "heading": "13. Changes to this policy",
+      "content": [
+        "We reserve the right to update or modify this Refund Policy at any time. Changes will be effective immediately upon posting on our website.",
+        "Your continued use of our services after changes are made constitutes acceptance of the updated policy."
+      ]
+    },
+    {
+      "id": "contact-information",
+      "heading": "14. Contact information",
+      "content": [
+        "For refund requests or questions about this policy, please contact us:",
+        "Adymire Agency",
+        "Email: [Your Official Email]",
+        "Phone: [Your Official Phone Number]",
+        "Website: [Your Website URL]",
+        "Address: [Your Registered Business Address]"
+      ]
+    },
+    {
+      "id": "acceptance",
+      "heading": "15. Acceptance of this policy",
+      "content": [
+        "By making a payment or engaging our services, you confirm that you have read, understood, and agreed to this Refund Policy.",
+        "If you do not agree with any part of this policy, please do not proceed with payment or service engagement."
+      ]
+    }
+  ]
+}

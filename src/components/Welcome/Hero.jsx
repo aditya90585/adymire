@@ -3,6 +3,7 @@ import {
   FourCustomers,
   MetaShopifyGoogle,
   PhoneYellow,
+  Whatsapp
 } from "@/assets";
 
 import "./Hero.css";
@@ -10,6 +11,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { staggerFadeIn } from "../../animations/stagger";
 import BookCallButton from "../UI/NavButtons/BookCallButton";
+import { BiBot } from "react-icons/bi";
 
 
 const Hero = () => {
@@ -22,6 +24,7 @@ const Hero = () => {
       delay: 0.4
     })
   }, {})
+ 
   return (
     <section className="hero">
       <div className="hero-container">
@@ -39,7 +42,7 @@ const Hero = () => {
               <p>Customer</p>
 
               <div className="avatars">
-                <img className="" height={20} src={FourCustomers} alt="" />
+                <img className="w-[70%] mx-auto my-2" src={FourCustomers} alt="" />
               </div>
             </div>
 
@@ -72,8 +75,9 @@ const Hero = () => {
       </div>
       */}
       <div className="hero-btn">
-      <BookCallButton text="Book a Strategy Call" className="border-black hover:bg-[#FFF1C6] sm:border-2 h-15 border mx-auto sm:mx-0 bg-[#fdfcf7]"  borderstate={true} backgroundnumber={2} textSize="xl" rounded="xl" height="45px" paddingY="1"/>
+        <BookCallButton text="Book a Strategy Call" className="border-black hover:bg-[#FFF1C6] sm:border-2 h-15 border mx-auto sm:mx-0 bg-[#fdfcf7]" borderstate={true} backgroundnumber={2} textSize="xl" rounded="xl" height="45px" paddingY="1" />
       </div>
+      
     </section>
   );
 };

@@ -1,4 +1,3 @@
-
 .adymire-why-section {
   background: #fff8ed;
   padding: 80px 40px;
@@ -9,8 +8,7 @@
   text-align: center;
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 60px;
-  position: relative;
+  margin-bottom: 10px;
 }
 
 .adymire-why-underline {
@@ -24,15 +22,16 @@
 
 .adymire-why-content {
   display: flex;
-  justify-content: center;
-  gap: 80px;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
+  gap: 0px;
+  overflow-y: scroll;
+  padding: 0px 60px;
 }
 
 .adymire-why-image {
-   width: 40%;
-   height: auto;
-  
+  width: 40%;
+  height: auto;
 }
 
 .adymire-why-image img {
@@ -42,7 +41,7 @@
 }
 
 .adymire-why-faq {
-  width: 480px;
+  width: 100%;
 }
 
 .adymire-faq-item {
@@ -69,7 +68,7 @@
 .adymire-faq-arrow {
   transition: transform 0.3s ease;
   font-weight: bolder;
- font-size: 20px;
+  font-size: 20px;
 }
 
 .adymire-faq-answer {
@@ -99,12 +98,14 @@
     flex-direction: column;
     align-items: center;
     gap: 0px;
+    padding: 0px 0px;
   }
 
   .adymire-why-faq {
     width: 100%;
   }
-  .adymire-why-image{
+
+  .adymire-why-image {
     width: 100%;
   }
 }

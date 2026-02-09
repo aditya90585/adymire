@@ -18,7 +18,8 @@ export { default as SpaceIcon } from "./icons/StartupsIcons/SpaceIcon.svg";
 export { default as PhoneYellow } from "./icons/PhoneYellow.svg";
 export { default as Whatsapp } from "./icons/Whatsapp.svg";
 
-export { default as Founder1 } from "./illustrations/Founder1.svg";
+export { default as Founder1 } from "./illustrations/Founder1.png";
+export { default as Founder2 } from "./illustrations/Founder2.png";
 export { default as CurveArrow } from "./icons/CurveArrow.svg";
 
 // Service Icons
@@ -28,7 +29,7 @@ export { default as DigitalMarketing } from "./icons/DigitalMarketing.svg";
 
 // Illustrations
 export { default as BoyWithLaptop } from "./illustrations/BoyWithLaptop.svg";
-export { default as SittingDarkMan } from "./illustrations/SittingDarkMan.svg";
+export { default as SittingDarkMan } from "./illustrations/SittingDarkMan.png";
 export { default as ManWithPhone_inYellowJacket } from "./illustrations/ManWithPhone_inYellowJacket.svg";
 export { default as BusinessManGroup } from "./illustrations/BusinessManGroup.svg";
 export { default as PaymentMethods } from "./illustrations/PaymentMethods.svg";
