@@ -20,7 +20,7 @@ const CountriesSelector = forwardRef(({ open, setOpen, selected, COUNTRIES, setS
       <button
         type="button"
         onClick={() => setOpen(o => !o)}
-        className="flex relative w-full  border-2 border-gray-300 rounded-lg py-3 px-2 font-semibold focus:shadow-[0px_1px_8px_gray]"
+        className="flex relative w-full  border-2 border-gray-300 rounded-lg py-3 px-2 font-semibold focus:outline-none focus:border-amber-300 focus:shadow-[0px_1px_8px_yellow]"
       >
         <div className="flex items-center gap-4 h-8 ">
           {selected && !open && (

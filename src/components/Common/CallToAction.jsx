@@ -25,8 +25,8 @@ const CallToAction = () => {
                 <span className="btn-icon"><img src={Whatsapp} alt="Whatsapp" /></span>
                 Chat on Whatsapp
               </button> */}
-              <BookCallButton text='Book Concultation Call' className='bg-[#faecba]' backgroundnumber={2} textSize='base' height='50px' rounded="md" paddingX='2' />
-              <ChatOnWhatsappButton textSize='base' height='50px' rounded="md" paddingX='5' />
+              <BookCallButton text='Book Concultation Call' className='bg-[#faecba] h-[50px]' backgroundnumber={2} textSize='base' height='50px' rounded="md" paddingX='2' />
+              <ChatOnWhatsappButton className='h-[50px]' textSize='base' height='50px' rounded="md" paddingX='5' />
             </div>
         </div>
       </div>

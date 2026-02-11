@@ -1,11 +1,12 @@
-import { Whatsapp } from "@/assets";
+import { WhatsappIcon } from "@/assets";
+import Lottie from "lottie-react";
 
 const ChatOnWhatsappButton = ({
     height = "40px",
-    textSize="sm",
-    rounded="md",
-    paddingX="2",
-    className=""
+    textSize = "sm",
+    rounded = "md",
+    paddingX = "2",
+    className = ""
 
 }) => {
     const navigateToWhatsapp = () => {
@@ -17,7 +18,7 @@ const ChatOnWhatsappButton = ({
     return (
         <button onClick={navigateToWhatsapp} className={` ${className} bg-[#dafcdb] px-${paddingX}  gap-x-2 h-[${height}] flex justify-center items-center rounded-${rounded} text-${textSize} font-semibold cursor-pointer hover:shadow-[0px_2px_4px_#65bc67] hover:-translate-y-0.5 transition-transform ease-out`} >
             <span className="h-[70%]">
-                <img className=" h-full" src={Whatsapp} alt="whatsapp" />
+                <Lottie animationData={WhatsappIcon} className="h-full" />
             </span>
             Chat on Whatsapp
         </button>

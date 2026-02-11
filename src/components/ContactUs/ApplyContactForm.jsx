@@ -10,6 +10,7 @@ import { Controller, useForm, useWatch } from "react-hook-form";
 import ServicesSelector from "./ServicesSelector";
 import SpecificServicesSelector from "./SpecificServicesSelector";
 import { Navigate, useNavigate } from "react-router-dom";
+import ThankYou from "./ThankYou";
 
 
 const SERVICES = [
@@ -104,24 +105,34 @@ const SOURCES = [
 
 
 const ApplyContactForm = () => {
+
+  const ADYMIRE_STORAGE_KEY = "adymire_contact_form";
+
+
   const navigate = useNavigate()
   const [COUNTRIES, setCOUNTRIES] = useState([])
   const [open, setOpen] = useState(false)
   const [serviceOpen, setServiceOpen] = useState(false)
   const [specificserviceOpen, setSpecificServiceOpen] = useState(false)
   const [selected, setSelected] = useState(null)
-  const [currentSelectedService, setCurrentSelectedService] = useState("UI UX Design")
+
+  const [submitState, setSubmitState] = useState(false)
 
   const [openPhone, setOpenPhone] = useState(false)
   const wrapperRef = useRef(null)
 
-  useEffect(() => {
-    const CountriesData = getCountriesData().then((countrydata) => {
-      setCOUNTRIES(countrydata)
-      setSelected(countrydata.find(c => c.code === "IN"))
-      setValue("country", countrydata.find(c => c.code === "IN"));
-    })
-  }, [])
+
+  const [isLoaded, setIsLoaded] = useState(false);
+
+
+  // useEffect(() => {
+  //   const CountriesData = getCountriesData().then((countrydata) => {
+  //     setCOUNTRIES(countrydata)
+  //     // setSelected(countrydata.find(c => c.code === "IN"))
+  //     // setValue("country", countrydata.find(c => c.code === "IN"));
+  //   })
+  // }, [])
+
 
 
   const {
@@ -130,35 +141,54 @@ const ApplyContactForm = () => {
     watch,
     control,
     formState: { errors },
-    setValue
+    setValue,
+    reset
   } = useForm({
     defaultValues: {
       service: [],
       specificService: [],
     }
   })
+
+
+  useEffect(() => {
+    const loadCountries = async () => {
+      const countrydata = await getCountriesData();
+      setCOUNTRIES(countrydata);
+
+      const savedData = localStorage.getItem("adymire_contact_form");
+
+      if (savedData) {
+        const parsed = JSON.parse(savedData);
+
+        const matchedCountry = countrydata.find(
+          c => c.code === parsed?.country?.code
+        );
+
+        reset({
+          ...parsed,
+          country: matchedCountry || null,
+        });
+
+        setSelected(matchedCountry || null);
+      } else {
+        const india = countrydata.find(c => c.code === "IN");
+        setSelected(india);
+        setValue("country", india);
+      }
+      setIsLoaded(true);
+    };
+
+    loadCountries();
+  }, [reset, setValue]);
+
   const selectedServices = useWatch({ control, name: "service" });
   const selectedSpecificServices = useWatch({
     control,
     name: "specificService",
   });
 
-  const toggleService = service => {
-    setValue(
-      "service",
-      selectedServices.includes(service)
-        ? selectedServices.filter(s => s !== service)
-        : [...selectedServices, service]
-    );
-  };
-  const toggleSpecificService = specific_service => {
-    setValue(
-      "specificService",
-      selectedSpecificServices?.includes(specific_service)
-        ? selectedSpecificServices.filter(s => s !== specific_service)
-        : [...(selectedSpecificServices || []), specific_service]
-    );
-  };
+
   useEffect(() => {
     const allowedSpecifics = selectedServices?.flatMap(
       service => SPECIFIC_SERVICES[service] || []
@@ -171,6 +201,13 @@ const ApplyContactForm = () => {
       )
     );
   }, [selectedServices]);
+  const formValues = watch();
+
+
+  useEffect(() => {
+    if (!isLoaded) return;
+    localStorage.setItem(ADYMIRE_STORAGE_KEY, JSON.stringify(formValues));
+  }, [formValues]);
 
 
 
@@ -180,6 +217,10 @@ const ApplyContactForm = () => {
   const submitContactForm = (async (data) => {
     const formData = await data
     console.log(formData)
+    if (formData) {
+      setSubmitState(true)
+      localStorage.removeItem(ADYMIRE_STORAGE_KEY);
+    }
   })
   return (
     <section className="max-w-screen mx-auto py-14 px-4 md:px-0">
@@ -194,60 +235,77 @@ const ApplyContactForm = () => {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
 
-            <Input
-              {...register("fullName", { required: true })}
-              label="Full Name"
-              isRequired={true}
-              placeholder="Johan Denial"
-              labelClass="font-semibold text-xl mb-4"
-              className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:shadow-[0px_1px_8px_gray]"
-            />
+              <Input
+                {...register("fullName", { required: "Fullname must be required" })}
+                label="Full Name"
+                isRequired={true}
+                placeholder="Johan Denial"
+                labelClass="font-semibold text-xl mb-4"
+                className="w-full border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:outline-none focus:border-amber-300 focus:shadow-[0px_1px_8px_yellow]"
+              />
+              {errors.fullName && <div className="text-xs pl-1 pt-1 text-red-600">{errors?.fullName?.message}</div>}
+            </div>
+            <div>
 
-            <Input
-              {...register("email", { required: true })}
-              label="Email Address"
-              isRequired={true}
-              type="email"
-              placeholder="johndanial@gmail.com"
-              labelClass="font-semibold text-xl mb-4"
-              className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:shadow-[0px_1px_8px_gray]"
+              <Input
+                {...register("email", { required: "email must be required" })}
+                label="Email Address"
+                isRequired={true}
+                type="email"
+                placeholder="johndanial@gmail.com"
+                labelClass="font-semibold text-xl mb-4"
+                className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:outline-none focus:border-amber-300 focus:shadow-[0px_1px_8px_yellow]"
 
-            />
-            <Controller
-              name="country"
-              control={control}
-              rules={{ required: true }}
-              render={({ field }) => (
-                <CountriesSelector
-                  {...field}
-                  open={open}
-                  setOpen={setOpen}
-                  COUNTRIES={COUNTRIES}
-                  selected={selected}
-                  setSelected={setSelected} />
+              />
+              {errors.email && <div className="text-xs pl-1 pt-1 text-red-600">{errors?.email?.message}</div>}
 
-              )}
-            />
-            <Input
-              {...register("companyName", { required: true })}
-              label="Company / Brand Name"
-              isRequired={true}
-              placeholder="Ex- Microsoft Inc."
-              labelClass="font-semibold text-xl mb-4"
-              className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:shadow-[0px_1px_8px_gray]"
+            </div>
+            <div>
 
-            />
+              <Controller
+                name="country"
+                control={control}
+                rules={{ required: "country must be required" }}
+                render={({ field }) => (
+                  <CountriesSelector
+                    {...field}
+                    open={open}
+                    setOpen={setOpen}
+                    COUNTRIES={COUNTRIES}
+                    selected={selected}
+                    setSelected={setSelected} />
+
+                )}
+              />
+              {errors.country && <div className="text-xs pl-1 pt-1 text-red-600">{errors?.country?.message}</div>}
+
+            </div>
+            <div>
+
+              <Input
+                {...register("companyName", { required: "Brand name or company name must be required" })}
+                label="Company / Brand Name"
+                isRequired={true}
+                placeholder="Ex- Microsoft Inc."
+                labelClass="font-semibold text-xl mb-4"
+                className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:outline-none focus:border-amber-300 focus:shadow-[0px_1px_8px_yellow]"
+
+              />
+              {errors.companyName && <div className="text-xs pl-1 pt-1 text-red-600">{errors?.companyName?.message}</div>}
+
+            </div>
 
             <div>
               <Input
-                {...register("phoneNumber", { required: true })}
+                {...register("phoneNumber", { required: "phone number must be required" })}
                 label="Phone / WhatsApp Number"
                 isRequired={true}
                 placeholder="7017475420"
                 type="number"
                 labelClass="font-semibold text-xl mb-4"
-                className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 pl-40 font-semibold focus:shadow-[0px_1px_8px_gray]"
+                className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 pl-40 font-semibold focus:outline-none focus:border-amber-300 focus:shadow-[0px_1px_8px_yellow]"
                 element={<CountriesCodeSelector setValue={setValue} open={openPhone} setOpen={setOpenPhone} COUNTRIES={COUNTRIES} selected={selected} setSelected={setSelected} />}
 
               />
@@ -257,6 +315,8 @@ const ApplyContactForm = () => {
                   This is my WhatsApp no
                 </span>
               </label>
+              {errors.phoneNumber && <div className="text-xs pl-1 pt-1 text-red-600">{errors?.phoneNumber?.message}</div>}
+
             </div>
 
             <div>
@@ -265,7 +325,7 @@ const ApplyContactForm = () => {
                 label="Website / App URL"
                 placeholder="paste link here"
                 labelClass="font-semibold text-xl mb-4"
-                className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 pl-15 font-semibold focus:shadow-[0px_1px_8px_gray]"
+                className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 pl-15 font-semibold focus:outline-none focus:border-amber-300 focus:shadow-[0px_1px_8px_yellow]"
                 element={<div className="absolute h-fit py-2 px-2"> <RiLinkM className="relative bg-[#f8eac2] p-2 rounded-lg w-auto  h-10" /> </div>}
               />
               <label className=" gap-3 flex  items-center mt-2">
@@ -275,25 +335,25 @@ const ApplyContactForm = () => {
                 </span>
               </label>
             </div>
+            <div>
+              <Select
+                {...register("yourRole", { required: "this field must be required" })}
+                label="Your Role"
+                isRequired={true}
+                options={ROLES}
+                labelClass="font-semibold text-xl mb-4"
+                className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:outline-none focus:border-amber-300 focus:shadow-[0px_1px_8px_yellow]"
+              />
+              {errors.yourRole && <div className="text-xs pl-1 pt-1 text-red-600">{errors?.yourRole?.message}</div>}
 
-
-
-
-            <Select
-              {...register("yourRole", { required: true })}
-              label="Your Role"
-              isRequired={true}
-              options={ROLES}
-              labelClass="font-semibold text-xl mb-4"
-              className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:shadow-[0px_1px_8px_gray]"
-            />
+            </div>
             <Select
               {...register("ContactMode", { required: true })}
               label="Preferred Contact Mode"
               isRequired={true}
               options={CONTACT_MODES}
               labelClass="font-semibold text-xl mb-4"
-              className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:shadow-[0px_1px_8px_gray]"
+              className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:outline-none focus:border-amber-300 focus:shadow-[0px_1px_8px_yellow]"
             />
           </div>
         </div>
@@ -307,26 +367,45 @@ const ApplyContactForm = () => {
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <Controller
+                name="service"
+                control={control}
+                rules={{ validate: value => value?.length > 0 || "Please select at least one service" }}
+                render={({ field }) => (
+                  <ServicesSelector
+                    {...field}
+                    serviceOpen={serviceOpen}
+                    setServiceOpen={setServiceOpen}
+                    SERVICES={SERVICES}
+                  />
 
-            <ServicesSelector serviceOpen={serviceOpen} setServiceOpen={setServiceOpen} SERVICES={SERVICES} toggleService={toggleService} selectedServices={selectedServices} />
-            <SpecificServicesSelector toggleSpecificService={toggleSpecificService} specificserviceOpen={specificserviceOpen} setSpecificServiceOpen={setSpecificServiceOpen} selectedSpecificServices={selectedSpecificServices} selectedServices={selectedServices} SPECIFIC_SERVICES={SPECIFIC_SERVICES} />
-            <input
-              type="hidden"
-              {...register("service", {
-                validate: value =>
-                  value?.length > 0 || "Please select at least one service",
-              })}
-            />
+                )}
+              />
+              {errors.service && <div className="text-xs pl-1 pt-1 text-red-600">{errors?.service?.message}</div>}
+            </div>
+            <div>
+              <Controller
+                name="specificService"
+                control={control}
+                rules={{
+                  validate: value =>
+                    value?.length > 0 ||
+                    "Please select at least one specific service"
+                }}
+                render={({ field }) => (
+                  <SpecificServicesSelector
+                    {...field}
+                    specificserviceOpen={specificserviceOpen}
+                    setSpecificServiceOpen={setSpecificServiceOpen}
+                    selectedServices={selectedServices}
+                    SPECIFIC_SERVICES={SPECIFIC_SERVICES}
+                  />
+                )}
 
-            <input
-              type="hidden"
-              {...register("specificService", {
-                validate: value =>
-                  !selectedServices?.length ||
-                  value?.length > 0 ||
-                  "Please select at least one specific service",
-              })}
-            />
+              />
+              {errors.specificService && <div className="text-xs pl-1 pt-1 text-red-600">{errors?.specificService?.message}</div>}
+            </div>
 
             <Select
               {...register("estimatedBudget", { required: true })}
@@ -334,7 +413,7 @@ const ApplyContactForm = () => {
               isRequired={true}
               options={Your_Budget}
               labelClass="font-semibold text-xl mb-4"
-              className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:shadow-[0px_1px_8px_gray]"
+              className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:outline-none focus:border-amber-300 focus:shadow-[0px_1px_8px_yellow]"
             />
             <Select
               {...register("projectTimeline", { required: true })}
@@ -342,7 +421,7 @@ const ApplyContactForm = () => {
               isRequired={true}
               options={TIMELINES}
               labelClass="font-semibold text-xl mb-4"
-              className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:shadow-[0px_1px_8px_gray]"
+              className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:outline-none focus:border-amber-300 focus:shadow-[0px_1px_8px_yellow]"
             />
             <Select
               {...register("findSource", { required: true })}
@@ -350,7 +429,7 @@ const ApplyContactForm = () => {
               isRequired={true}
               options={SOURCES}
               labelClass="font-semibold text-xl mb-4"
-              className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:shadow-[0px_1px_8px_gray]"
+              className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:outline-none focus:border-amber-300 focus:shadow-[0px_1px_8px_yellow]"
             />
 
             <div>
@@ -400,12 +479,16 @@ const ApplyContactForm = () => {
           </div>
 
           <h2 className="text-2xl font-bold mt-14 mb-6">Project About <span className='text-red-700'>*</span></h2>
+          <div>
 
-          <textarea
-            {...register("projectAbout", { required: true })}
-            placeholder="Describe Your project About"
-            className="w-full min-h-45 border-2 border-gray-300 rounded-lg py-4 px-4 text-base font-semibold shadow-[1px_1px_8px_#d3cdcd] focus:shadow-[0px_1px_8px_gray]"
-          />
+            <textarea
+              {...register("projectAbout", { required: "this field is required" })}
+              placeholder="Describe Your project About"
+              className="w-full min-h-45 border-2 border-gray-300 rounded-lg py-4 px-4 text-base font-semibold shadow-[1px_1px_8px_#d3cdcd] focus:outline-none focus:border-amber-300 focus:shadow-[0px_1px_8px_yellow]"
+            />
+            {errors.projectAbout && <div className="text-xs pl-1 pt-1 text-red-600">{errors?.projectAbout?.message}</div>}
+
+          </div>
 
           <div className="mt-8 space-y-4 ">
             <label className=" gap-3 flex  items-center">
@@ -414,31 +497,40 @@ const ApplyContactForm = () => {
                 "I confirm that all information provided is accurate and I agree to
                 Adymire’s hiring terms."
               </span>
-            </label>
+              {errors.aggrements && <span className="text-xl  text-red-600">*</span>}
 
-            <label className=" gap-3 flex  items-center">
-              <input  {...register("acceptTerms", { required: true })} type="checkbox" className="accent-yellow-500 mt-1 h-5 w-5" />
-              <span className="text-xl font-semibold text-gray-500" >
-                Accept our{" "}
-                <span onClick={()=> navigate("/policy/terms-and-conditions")} className="text-blue-600 cursor-pointer">
-                  terms and conditions
-                </span>
-              </span>
             </label>
+            <div>
 
-            <label className=" gap-3 flex  items-center">
-              <input  {...register("dataPrivacy", { required: true })} type="checkbox" className="accent-yellow-500 mt-1  h-5 w-5" />
-              <span className="text-xl font-semibold text-gray-500">
-                Accept our{" "}
-                <span className="text-blue-600 cursor-pointer">
-                  Data Privacy Consent
+              <label className=" gap-3 flex  items-center">
+                <input  {...register("acceptTerms", { required: true })} type="checkbox" className="accent-yellow-500 mt-1 h-5 w-5" />
+                <span className="text-xl font-semibold text-gray-500" >
+                  Accept our{" "}
+                  <span onClick={() => navigate("/policy/terms-and-conditions")} className="text-blue-600 cursor-pointer">
+                    terms and conditions
+                  </span>
                 </span>
-              </span>
-            </label>
+                {errors.acceptTerms && <span className="text-xl  text-red-600">*</span>}
+              </label>
+            </div>
+            <div>
+
+              <label className=" gap-3 flex  items-center">
+                <input  {...register("dataPrivacy", { required: true })} type="checkbox" className="accent-yellow-500 mt-1  h-5 w-5" />
+                <span className="text-xl font-semibold text-gray-500">
+                  Accept our{" "}
+                  <span className="text-blue-600 cursor-pointer">
+                    Data Privacy Consent
+                  </span>
+                </span>
+                {errors.dataPrivacy && <span className="text-xl  text-red-600">*</span>}
+              </label>
+            </div>
           </div>
           <button className="w-full mt-10 py-4 rounded-xl bg-yellow-100 border border-yellow-400 font-semibold text-lg hover:bg-yellow-200 transition">
             Submit
           </button>
+          <ThankYou submitState={submitState} setSubmitState={setSubmitState} />
         </div>
       </form>
     </section >

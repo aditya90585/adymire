@@ -9,6 +9,7 @@ import MyTeam from '../components/About/MyTeam'
 import WhatMakesUsDifferent from '../components/About/WhatMakesUsDifferent'
 import FounderVision from '../components/About/FounderVision'
 import CallToAction from "../components/Common/CallToAction"
+import ContactEnquirySection from '../components/Footer/ContactEnquirySection'
 
 const About = () => {
   return (
@@ -21,6 +22,7 @@ const About = () => {
       <MyTeam />
       <ClientReviews />
       <WhyChooseAdymire />
+      <ContactEnquirySection/>
     </div>
   )
 }

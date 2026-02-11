@@ -1,6 +1,10 @@
 import PolicySection from "./PolicySection";
 
-const PolicyContent = ({ sections, activePolicytitle, lastUpdateDate, company }) => {
+const PolicyContent = ({ sections, activePolicytitle, lastUpdateDate, company,
+  setActiveSection,
+  setActiveSubSection,
+  scrollRoot
+}) => {
   return (
     <main className="col-span-12 lg:col-span-9 h-full pr-20 pl-8">
       <div className="border-gray-600 border-y-2 border-dashed mb-10">
@@ -13,7 +17,11 @@ const PolicyContent = ({ sections, activePolicytitle, lastUpdateDate, company })
         Last Updated : {lastUpdateDate}
       </div>
       {sections?.map((section) => (
-        <PolicySection key={section?.id} section={section} />
+        <PolicySection key={section?.id}
+          section={section}
+          setActiveSection={setActiveSection}
+          setActiveSubSection={setActiveSubSection}
+          scrollRoot={scrollRoot} />
       ))}
       <div className="border-gray-600 border-y-2 border-dashed my-10">
         <div className="text-2xl text-center font-semibold text-gray-900  py-3 my-1 border-gray-600 border-y-2 border-dashed">

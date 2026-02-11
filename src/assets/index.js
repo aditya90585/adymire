@@ -192,3 +192,9 @@ export {default as CategoryUIUX} from "./icons/ProjectsCategory/CategoryUIUX.jso
 //thumbnail 
 
 export {default as AdymireThumbnailVideo} from "./illustrations/AdymireThumbnailVideo.png"
+
+//animated icons 
+
+export {default as Phonecall} from "./icons/Phonecall.json"
+export {default as WhatsappIcon} from "./icons/WhatsappIcon.json"
+export {default as EmailAniIcon} from "./icons/EmailAniIcon.json"

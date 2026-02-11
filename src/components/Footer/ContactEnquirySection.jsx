@@ -1,4 +1,5 @@
-import { CallContact, EmailContact } from "@/assets";
+import { WhatsappIcon,Phonecall, EmailAniIcon } from "@/assets";
+import Lottie from "lottie-react";
 import { useNavigate } from "react-router-dom";
 
 const ContactEnquirySection = () => {
@@ -14,29 +15,39 @@ const ContactEnquirySection = () => {
         navigate("/contact")
     }
     const emaiMethod = ()=>{
-        console.log("working on it")
-    }
+  const email = "helo@adymir.com";
+  const subject = encodeURIComponent("Hello Adymire");
+  const body = encodeURIComponent("Hello, I want to know more about your services");
+
+  const gmailAppURL = `googlegmail://co?to=${email}&subject=${subject}&body=${body}`;
+  const gmailWebURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
+
+  window.location.href = gmailAppURL;
+  setTimeout(() => {
+    window.location.href = gmailWebURL;
+  }, 1500);
+}
 
     const contactData = [
         {
             title: "Send a Email",
             subtitle: "hello@adylity.com",
             buttonText: "Send Email",
-            icon: EmailContact,
+            icon: EmailAniIcon,
             method: emaiMethod
         },
         {
             title: "Call Back",
             subtitle: "+91 7302356804",
             buttonText: "Request Call Back",
-            icon: CallContact,
+            icon: Phonecall,
             method: navigateToBookingForm
         },
         {
             title: "Chat on Whatsapp",
             subtitle: "hello@adylity.com",
             buttonText: "Chat Now",
-            icon: EmailContact,
+            icon: WhatsappIcon,
             method: navigateToWhatsapp
         },
     ];
@@ -56,11 +67,11 @@ const ContactEnquirySection = () => {
                         <div
                             onClick={item?.method}
                             key={index}
-                            className="group  rounded-2xl border-2 border-gray-200 p-10 flex flex-col items-center text-center transition-all duration-300
+                            className="group  rounded-2xl border-2 border-gray-200 p-8 flex flex-col items-center text-center transition-all duration-300
                                     hover:bg-[#FFF1C6] hover:border-yellow-400 hover:scale-105 ">
 
-                            <div className="w-20 h-20 mb-6 flex items-center justify-center">
-                                <img src={item.icon} alt={item.title} className="" />
+                            <div className="w-25 h-25 mb-6 flex items-center justify-center">
+                                <Lottie animationData={item.icon}  className="" />
                             </div>
 
                             <h4 className="font-bold text-lg uppercase mb-3">
