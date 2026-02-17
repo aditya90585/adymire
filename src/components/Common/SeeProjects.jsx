@@ -3,6 +3,9 @@ import "./SeeProjects.css"
 import SeeProjectsSlider from "./SeeProjectsSlider";
 import { CategoryAiAutomation, CategoryWebDevelopment, CategoryAppDevelopment, CategoryDigitalMarketing, CategoryUIUX } from "@/assets";
 import Lottie from "lottie-react";
+import { AllProjectsData } from "./Projects/AllProjectsData";
+import { useEffect } from "react";
+
 
 const categories = [
   { name: "UI & UX", icon: CategoryUIUX },
@@ -12,47 +15,18 @@ const categories = [
   { name: "AI Automation", icon: CategoryAiAutomation },
 ];
 
-const projects = [
-  {
-    id: 1,
-    title: "Praktika app UI & UX Design",
-    link: "praktika.com",
-    type: "Mobile App",
-    detailuri: "firacard"
-  },
-  {
-    id: 2,
-    title: "Tavi app UI & UX Design",
-    link: "tavitaxibooking.com",
-    type: "Mobile App",
-    detailuri: "firacard"
-  },
-  {
-    id: 3,
-    title: "Praktika app UI & UX Design",
-    link: "praktika.com",
-    type: "Mobile App",
-    detailuri: "firacard"
-  },
-  {
-    id: 4,
-    title: "Praktika app UI & UX Design",
-    link: "praktika.com",
-    type: "Mobile App",
-    detailuri: "firacard"
-  },
-  {
-    id: 5,
-    title: "Praktika app UI & UX Design",
-    link: "praktika.com",
-    type: "Mobile App",
-    detailuri: "firacard"
-  },
-];
+
 
 const SeeProjects = () => {
   const [activeCategory, setActiveCategory] = useState("UI & UX");
   const [dropdownisOpen, setDropdownisOpen] = useState(false);
+  const [projects, setProjects] = useState([])
+
+  useEffect(() => {
+  const filterProjects =   AllProjectsData.filter((projects)=> projects.type == activeCategory)
+  setProjects(filterProjects)
+}, [activeCategory])
+
 
   return (
     <section className="bg-[#FFF9EE] py-4">
@@ -109,7 +83,7 @@ const SeeProjects = () => {
             <button
               key={category.name}
               onClick={() => setActiveCategory(category.name)}
-              className={`flex items-center justify-center px-4 py-2 cursor-pointer rounded-lg text-sm font-medium transition
+              className={`flex items-center justify-center px-4 py-1.5 cursor-pointer rounded-lg text-sm font-medium transition
                 ${activeCategory === category.name
                   ? "bg-[#FFE7B3] text-black"
                   : "text-gray-600 hover:bg-gray-100"

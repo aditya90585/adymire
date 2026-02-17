@@ -38,7 +38,9 @@
 
 .seeprojects-swiper .swiper-slide:hover .seeproject-button{
 background-color: #fdc700;
+border: 2px solid black;
 }
-.seeprojects-swiper .swiper-slide-active .seeproject-projecttype{
+
+.seeprojects-swiper .swiper-slide:hover .seeproject-projecttype{
     background-color: white;
 }
