@@ -1,0 +1,96 @@
+import { useState } from "react";
+import { Figma, Xd, Founder3, AdymireLogo2, dribbble } from "../../../assets";
+
+export default function UIUXLastSlide({ className }) {
+
+
+    return (
+        <div className={`${className} flex items-center justify-center  font-sans`}>
+            <div className="relative h-full w-full flex flex-col">
+
+                <div
+                    className="px-6 sm:px-8 py-8 text-center  w-full
+                 bg-[url('/src/assets/illustrations/uiuxLastslideBg.jpeg')] 
+                 bg-center bg-cover bg-no-repeat"
+                >
+
+                    <div className="flex justify-center mb-4">
+                        <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 
+                        overflow-hidden rounded-full shadow-lg 
+                        shadow-green-400/30 flex items-center justify-center">
+                            <img src={Founder3} alt="founder" className="w-full h-full" />
+                        </div>
+                    </div>
+
+
+                    <h1 className="text-xl sm:text-2xl md:text-3xl font-black text-gray-900 tracking-tight">
+                        Yashveer Giri
+                    </h1>
+
+                    <p className="text-sm sm:text-base font-medium text-gray-800 mt-2">
+                        UI & UX Designer
+                    </p>
+
+                    <div className="flex justify-center gap-4 mt-4">
+                        <img src={Figma} alt="figma" className="h-8 sm:h-10 md:h-12" />
+                        <img src={Xd} alt="xd" className="h-8 sm:h-10 md:h-12" />
+                    </div>
+                </div>
+
+
+                <div className="h-px bg-gray-200" />
+
+
+                <div className="px-6 sm:px-8 py-4 flex items-center gap-3">
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full shrink-0 
+                      shadow-md shadow-yellow-400/30 flex items-center justify-center">
+                        <img src={AdymireLogo2} alt="logo" className="w-full h-full object-contain" />
+                    </div>
+
+                    <p className="font-bold text-sm sm:text-base text-gray-800">
+                        Adymire Technologies Pvt. Ltd.
+                    </p>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2  gap-4 p-4">
+
+
+                    <button
+                        onClick={() => window.open("https://www.behance.net/yashveergiri", "_blank")}
+                        className="flex items-center gap-3 md:rounded-xl rounded px-4 py-1
+                   transition-all duration-200 cursor-pointer 
+                   hover:bg-[#edf3fc] hover:-translate-y-1 
+                   hover:shadow-md hover:shadow-blue-200/50
+                   bg-[#dce9fd]"
+                    >
+                        <div className="w-8 h-8 rounded-full bg-blue-600 
+                        flex items-center justify-center text-white font-bold">
+                            Bē
+                        </div>
+                        <span className="text-sm sm:text-base font-semibold text-gray-900">
+                            See Behance
+                        </span>
+                    </button>
+
+                    <button
+                        onClick={() => window.open("https://dribbble.com/yashveergiri", "_blank")}
+                        className="flex items-center gap-3 md:rounded-xl rounded px-4 py-1
+                   transition-all duration-200 cursor-pointer 
+                   hover:bg-pink-100 hover:-translate-y-1 
+                   hover:shadow-md hover:shadow-pink-200/50
+                   bg-pink-200"
+                    >
+                        <div className="w-8 h-8 rounded-full overflow-hidden bg-pink-500 
+                        flex items-center justify-center text-white font-bold">
+                            <img className="h-full w-full" src={dribbble} alt="dribble" />
+                        </div>
+                        <span className="text-sm sm:text-base font-semibold text-gray-800">
+                            See Dribbble
+                        </span>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    );
+}

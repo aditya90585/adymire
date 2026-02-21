@@ -43,7 +43,7 @@ const Sidebar = ({ toggleSidebar }) => {
                 </div>
                 <div className='grid grid-cols-2 items-center justify-center gap-5 mt-10'>
                     <ChatOnWhatsappButton className="h-8 font-bold" textSize='xs' />
-                    <BookCallButton className='h-8 font-bold font-sans' textSize='xs' paddingX='5' />
+                    <BookCallButton className='h-8 w-full font-bold font-sans' textSize='xs' paddingX='5' />
                 </div>
              <SocialIcons className="grid grid-cols-5 gap-6 w-full mt-10" imgClass="bg-gray-200"/>
             </div>

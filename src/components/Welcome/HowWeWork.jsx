@@ -78,7 +78,7 @@ export default function HowWeWork() {
             <span className="tag big">Marketing</span>
 
             <div className="cta ml-auto">
-              <BookCallButton className="bg-[#fff1c9] text-sm md:text-base h-10 md:h-15 font-bold border border-gray-400" textSize="base" paddingX="4" rounded="full" />
+              <BookCallButton className=" text-sm md:text-base h-10 md:h-15 font-bold  rounded-xl" textSize="base" paddingX="4" rounded="xl" />
             </div>
           </div>
         </div>

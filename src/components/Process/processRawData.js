@@ -45,7 +45,8 @@ import {
     DigitalmarketingToolsIcons18
 } from "@/assets";
 export const processRawData = {
-    uiux: {
+    "uiux": {
+        projectheading:"UI & UX Projects",
         heroData: {
             heading: "UX & UI",
             headingNext: "Design Process",
@@ -137,6 +138,7 @@ export const processRawData = {
         }
     },
     development: {
+        projectheading:"Development Projects",
         heroData: {
             heading: "Development",
             headingNext: "Services",
@@ -226,6 +228,7 @@ export const processRawData = {
         }
     },
     digitalmarketing: {
+        projectheading:"Digital Marketing Projects",
         heroData: {
             heading: "Digital Marketing",
             headingNext: "",
@@ -327,6 +330,7 @@ export const processRawData = {
         }
     },
     aiautomation: {
+        projectheading:"AI Automation Projects",
         heroData: {
             heading: "AI Agents",
             headingNext: "Automation",

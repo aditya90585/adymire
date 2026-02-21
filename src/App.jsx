@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import {WhatsappIcon} from "@/assets"
+import { WhatsappIcon } from "@/assets"
 import Home from './pages/Home'
 import AdminLogin from './pages/AdminLogin'
 import OTPVerification from './pages/OTPVerification'
@@ -24,9 +24,10 @@ import ProjectDetailsCard from './components/Common/Projects/ProjectDetailsCard'
 import PoliciesPage from './components/Policies/PoliciesPage'
 import { BiBot } from 'react-icons/bi'
 import Lottie from 'lottie-react'
+import ScrollToHash from './components/Common/ScrollToHash'
 
 function App() {
- const navigateToWhatsapp = () => {
+  const navigateToWhatsapp = () => {
     const phoneNumber = "917302356804";
     const message = "Hello, I want to know more about your services";
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
@@ -37,6 +38,7 @@ function App() {
     <Router>
       <div className="App">
         <ScrollToTop />
+        <ScrollToHash />
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -45,9 +47,9 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/process/:service" element={<UIUXProcess />} />
           <Route path="/contact" element={<ContactUs />} />
-          <Route path='/projectDetails/:projectname' element={<ProjectDetailsCard/>}/>
+          <Route path='/projectDetails/:projectname' element={<ProjectDetailsCard />} />
 
-            <Route path="/policy/:policytype" element={<PoliciesPage />} />
+          <Route path="/policy/:policytype" element={<PoliciesPage />} />
           {/* <Route path="/user/signup" element={<Signup />} />
           <Route path="/client/login" element={<ClientLogin />} />
           <Route path="/client/otp" element={<ClientOtpVerification />} />
@@ -60,11 +62,11 @@ function App() {
         </Routes>
         <Footer />
         <div className="fixed max-w-10 right-8 bottom-10 z-100 flex flex-col items-center justify-center gap-y-2">
-        <div onClick={navigateToWhatsapp} className="bg-white p-2 shadow-sm rounded-full hover:shadow-md cursor-pointer">
-          <Lottie animationData={WhatsappIcon} alt="whatsapp" />
+          <div onClick={navigateToWhatsapp} className="bg-white p-2 shadow-sm rounded-full hover:shadow-md cursor-pointer">
+            <Lottie animationData={WhatsappIcon} alt="whatsapp" />
+          </div>
+          <div className="w-full p-1 rounded-full hover:shadow-md shadow-sm cursor-pointer bg-white flex items-center justify-center aspect-square"><BiBot className="aspect-square w-full" /></div>
         </div>
-        <div className="w-full p-1 rounded-full hover:shadow-md shadow-sm cursor-pointer bg-white flex items-center justify-center aspect-square"><BiBot className="aspect-square w-full" /></div>
-      </div>
       </div>
     </Router>
   )

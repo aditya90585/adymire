@@ -362,7 +362,7 @@ export default function WhyChooseAdymire() {
   };
 
   return (
-    <section className="adymire-why-section">
+    <section id="faqs" className="adymire-why-section">
       <h2 className="adymire-why-title">
         Why Choose Adymire
         <span className="adymire-why-underline"></span>

@@ -1,0 +1,48 @@
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+@keyframes rotateGradient {
+  0% {
+    --angle: 0deg;
+  }
+  100% {
+    --angle: 360deg;
+  }
+}
+
+.gradient-spin {
+  animation: rotateGradient 3s linear infinite;
+}
+.attention-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.attention-ring {
+  position: absolute;
+  inset: -15px;
+  border-radius: 20px;
+  background: rgba(245, 180, 116, 0.4);
+  animation: pulseRing 1.8s ease-out infinite;
+  z-index: 0;
+}
+.call-button-wrapper:hover .attention-ring{
+    background: rgba(255, 255, 255, 0);
+}
+
+@keyframes pulseRing {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.7;
+  }
+  70% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}

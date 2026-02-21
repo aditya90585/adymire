@@ -73,7 +73,7 @@ const followUsLinks = [
 const companyLinks = [
   {
     name: "Our Team",
-    redirectUrl: "/about",
+    redirectUrl: "/about#my-team",
   },
   {
     name: "About Us",
@@ -109,7 +109,7 @@ const companyLinks = [
   },
   {
     name: "FAQs",
-    redirectUrl: "/faqs",
+    redirectUrl: "/#faqs",
   },
 ];
 
@@ -178,7 +178,7 @@ const Footer = () => {
           <h3>Follow US</h3>
           <ul>
             {followUsLinks.map((item, index) => (
-              <a key={index} href={item?.redirectUrl}><li >{item?.name}</li></a>
+              <a target="_blank" rel="noopener noreferrer" key={index} href={item?.redirectUrl}><li >{item?.name}</li></a>
             ))}
           </ul>
         </div>
@@ -187,7 +187,7 @@ const Footer = () => {
           <h3>Company</h3>
           <ul>
             {companyLinks.map((item, index) => (
-              <li key={index}><NavLink to={item?.redirectUrl}>{item?.name}</NavLink></li>
+              <li key={index}><NavLink  to={item?.redirectUrl}>{item?.name}</NavLink></li>
             ))}
           </ul>
         </div>

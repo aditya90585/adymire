@@ -18,7 +18,7 @@ const SocialIcons = ({className,imgClass}) => {
   return (
    <div className={`${className}`} >
                     {socialIcons.map((item, index) => (
-                       <a key={index} href={item.redirectUrl}><img className={`${imgClass} rounded-xl`}   src={item.img} alt={item.alt} /></a>
+                       <a target="_blank" rel="noopener noreferrer" key={index} href={item.redirectUrl}><img className={`${imgClass} rounded-xl`}   src={item.img} alt={item.alt} /></a>
                     ))}
                 </div>
   )

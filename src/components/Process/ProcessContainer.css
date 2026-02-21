@@ -31,3 +31,28 @@
   border-radius: 999px;
   background: #FDC274;
 }
+
+
+
+
+.project-showcase-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-showcase-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #ccc;
+    opacity: 1;
+    margin: 0 4px;
+    transition: all 0.3s ease;
+}
+
+.project-showcase-pagination .swiper-pagination-bullet-active {
+    width: 18px;
+    border-radius: 999px;
+    background: #FDC274;
+}

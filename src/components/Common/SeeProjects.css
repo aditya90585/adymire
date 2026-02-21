@@ -21,8 +21,8 @@
 }
 .seeprojects-swiper{
     padding: 0px 40px;
-   
 }
+
 .seeprojects-swiper .swiper-slide{
    transition:
     background-color 0.5s ease,
@@ -43,4 +43,36 @@ border: 2px solid black;
 
 .seeprojects-swiper .swiper-slide:hover .seeproject-projecttype{
     background-color: white;
+}
+
+
+.seeprojects-swiper .swiper-wrapper {
+  align-items: flex-start !important;
+}
+
+.seeprojects-swiper .swiper-slide {
+  height: auto !important;
+}
+
+
+.project-details-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-details-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #ccc;
+    opacity: 1;
+    margin: 0 4px;
+    transition: all 0.3s ease;
+}
+
+.project-details-pagination .swiper-pagination-bullet-active {
+    width: 18px;
+    border-radius: 999px;
+    background: #FDC274;
 }

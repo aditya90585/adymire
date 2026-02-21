@@ -9,7 +9,7 @@ const VideoWalkthrough = () => {
       <div className="container">
         <div className='relative w-fit mx-auto'>
           <h2 className="section-title">Video Walkthrough</h2>
-          <div className='absolute top-0 -rotate-80 -right-40 z-40 hidden lg:block'><img src={CurveArrow} alt="arrow" /></div>
+          <div className='absolute top-5 w-25 -rotate-80 -right-25 z-40 hidden lg:block '><img className='' src={CurveArrow} alt="arrow" /></div>
         </div>
         <p className="section-subtitle">See Our Work in just 90 Seconds</p>
         <div className="video-player-container">

@@ -75,7 +75,7 @@ const Hero = () => {
       </div>
       */}
       <div className="hero-btn">
-        <BookCallButton text="Book a Strategy Call" className="border-black hover:bg-[#FFF1C6] sm:border-2 h-15 border mx-auto sm:mx-0 bg-[#fdfcf7]" borderstate={true} backgroundnumber={2} textSize="xl" rounded="xl" height="45px" paddingY="1" />
+        <BookCallButton attention={true} text="Book a Strategy Call" className=" hover:bg-[#FFF1C6] h-15 mx-auto sm:mx-0" borderstate={true} backgroundnumber={2} textSize="xl" rounded="xl" height="45px" paddingY="1" />
       </div>
       
     </section>

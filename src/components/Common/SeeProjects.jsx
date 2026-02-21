@@ -8,17 +8,17 @@ import { useEffect } from "react";
 
 
 const categories = [
-  { name: "UI & UX", icon: CategoryUIUX },
-  { name: "Marketing", icon: CategoryDigitalMarketing },
-  { name: "Web Development", icon: CategoryWebDevelopment },
-  { name: "App Development", icon: CategoryAppDevelopment },
-  { name: "AI Automation", icon: CategoryAiAutomation },
+  { name: "UI & UX",type:"uiux", icon: CategoryUIUX },
+  { name: "Marketing",type:"marketing", icon: CategoryDigitalMarketing },
+  { name: "Web Development",type:"webdevelopment", icon: CategoryWebDevelopment },
+  { name: "App Development",type:"appdevelopmemt", icon: CategoryAppDevelopment },
+  { name: "AI Automation", type:"aiautomation",icon: CategoryAiAutomation },
 ];
 
 
 
 const SeeProjects = () => {
-  const [activeCategory, setActiveCategory] = useState("UI & UX");
+  const [activeCategory, setActiveCategory] = useState("uiux");
   const [dropdownisOpen, setDropdownisOpen] = useState(false);
   const [projects, setProjects] = useState([])
 
@@ -46,10 +46,10 @@ const SeeProjects = () => {
               <Lottie
                 className="h-8"
                 animationData={
-                  categories.find(c => c.name === activeCategory)?.icon
+                  categories.find(c => c.type === activeCategory)?.icon
                 }
               />
-              <span className="font-medium">{activeCategory}</span>
+              <span className="font-medium">{categories.find(c => c.type === activeCategory)?.name}</span>
             </div>
             <span className="text-gray-600">▼</span>
           </button>
@@ -60,11 +60,11 @@ const SeeProjects = () => {
                 <button
                   key={category.name}
                   onClick={() => {
-                    setActiveCategory(category.name);
+                    setActiveCategory(category.type);
                     setDropdownisOpen(false);
                   }}
                   className={`w-full flex items-center gap-3 px-4 py-3  text-left
-                      ${activeCategory === category.name
+                      ${activeCategory === category.type
                       ? "bg-[#FFE7B3] text-black"
                       : "text-gray-600 hover:bg-gray-100"
                     }
@@ -82,9 +82,9 @@ const SeeProjects = () => {
           {categories.map((category) => (
             <button
               key={category.name}
-              onClick={() => setActiveCategory(category.name)}
+              onClick={() => setActiveCategory(category.type)}
               className={`flex items-center justify-center px-4 py-1.5 cursor-pointer rounded-lg text-sm font-medium transition
-                ${activeCategory === category.name
+                ${activeCategory === category.type
                   ? "bg-[#FFE7B3] text-black"
                   : "text-gray-600 hover:bg-gray-100"
                 }
@@ -96,7 +96,7 @@ const SeeProjects = () => {
           ))}
         </div>
       </div>
-      <SeeProjectsSlider projects={projects} />
+      <SeeProjectsSlider projects={projects} activeCategory={activeCategory} />
     </section>
   );
 };

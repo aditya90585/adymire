@@ -1,46 +1,41 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom';
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Pagination, Navigation } from "swiper/modules";
+import UIUXLastSlide from '../Common/Projects/UIUXLastSlide';
+
+
 
 const ProjectShowcaseCard = ({ project }) => {
+    const navigate = useNavigate()
 
-    const [activeImg, setActiveImg] = useState(0)
-    const handleSlide = (dir) => {
-        setActiveImg((prev) => {
-            let copy = prev;
-            let total = project.images.length;
 
-            copy = dir === "left" ?
-                copy === 0
-                    ? total - 1
-                    : copy - 1
-                : copy === total - 1
-                    ? 0
-                    : copy + 1;
-
-            return copy;
-        });
-    };
     return (
         <div
             className="bg-white rounded-2xl border shadow-sm p-10 grid grid-cols-1 lg:grid-cols-2 gap-10"
         >
             <div>
-                <h2 className="text-5xl font-bold mb-1">
+                <h2 className="text-2xl font-bold mb-1">
                     {project.title}
                 </h2>
 
                 <a
-                    href="#"
+                    href={project.link}
                     className="text-blue-600 text-xl my-2 block underline"
                 >
-                    {project.website}
+                    {project.linkText}
                 </a>
+                {project.description &&
+                    <h3 className="font-semibold text-xl mt-6 mb-2">
+                        Details:
+                    </h3>}
 
-                <h3 className="font-semibold text-3xl mt-6 mb-2">
-                    Details:
-                </h3>
 
                 <p className="text-gray-500 text-base font-semibold  pr-15">
-                    {project.description}
+                    {project?.description}
                 </p>
 
                 <h3 className="font-bold text-3xl text-gray-800 mt-6 mb-6">
@@ -51,7 +46,7 @@ const ProjectShowcaseCard = ({ project }) => {
                     {project.technologies.map((tech, i) => (
                         <div
                             key={i}
-                            className="w-14 h-14  flex items-center justify-center bg-gray-50"
+                            className="md:w-14 md:h-14 w-6 h-6  flex items-center justify-center bg-gray-50"
                         >
                             <img
                                 src={tech}
@@ -63,47 +58,66 @@ const ProjectShowcaseCard = ({ project }) => {
                 </div>
             </div>
 
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col justify-between items-center">
 
-                <div className="relative w-full h-80 rounded-xl border-2 border-yellow-400 overflow-hidden mb-6">
-                    <img
-                        src={project.images[activeImg]}
-                        alt=""
-                        className="w-full h-full object-cover"
-                    />
-                </div>
+                <Swiper
+                    slidesPerView={1}
+                    slidesPerGroup={1}
+                    centeredSlides={true}
+                    watchOverflow={false}
+
+                    pagination={{
+                        el: `.project-showcase-pagination-${project?.slug}`,
+                        clickable: true,
+                    }}
+                    navigation={{
+                        prevEl: `.project-showcase-prev-${project?.slug}`,
+                        nextEl: `.project-showcase-next-${project?.slug}`,
+                    }}
+                    modules={[Pagination, Navigation]}
+                    className="relative mySwiper w-full md:h-90 h-60 rounded-xl border-2 bg-gray-800 border-yellow-400 overflow-hidden mb-6">
+                    {project?.images?.map((image, i) => {
+                        return <SwiperSlide key={i}>
+                            <img
+                                src={image}
+                                alt=""
+                                className="w-full h-full object-contain"
+                            />
+                        </SwiperSlide>
+                    })}
+                    {project?.type == "uiux" &&
+                        <SwiperSlide className='bg-white' >
+                            <UIUXLastSlide className="w-full md:h-90 h-60 overflow-y-scroll" />
+                        </SwiperSlide>
+                    }
+
+                </Swiper>
 
                 <div className="flex items-center gap-4 mb-8">
                     <button
-                        onClick={() => handleSlide("left")}
-                        className="w-12 h-12 rotate-180 rounded-full bg-[#FFE4A3] flex items-center justify-center hover:bg-[#FFD36A]"
+                        className={`project-showcase-prev-${project?.slug} w-12 h-12 rotate-180 rounded-full bg-[#FFE4A3] flex items-center justify-center hover:bg-[#FFD36A]`}
                     >
                         ➔
                     </button>
 
-                    <div className="flex gap-2">
-                        {project.images.map((_, i) => (
-                            <span
-                                key={i}
-                                className={`w-2.5 h-2.5 rounded-full ${i === activeImg
-                                    ? "bg-yellow-500"
-                                    : "bg-gray-300"
-                                    }`}
-                            />
-                        ))}
-                    </div>
+                    <div className={`project-showcase-pagination project-showcase-pagination-${project?.slug}`}></div>
 
                     <button
-                        onClick={() => handleSlide("right")}
-                        className="w-12 h-12 rounded-full bg-[#FFE4A3] flex items-center justify-center hover:bg-[#FFD36A]"
+                        className={`project-showcase-next-${project?.slug} w-12 h-12 rounded-full bg-[#FFE4A3] flex items-center justify-center hover:bg-[#FFD36A]`}
                     >
                         ➔
                     </button>
                 </div>
+                {project?.type == "uiux" &&
+                    <button onClick={() => navigate(`/projectDetails/${project?.slug}`)} className="w-full cursor-pointer py-4 bg-[#FFE4A3] rounded-xl font-semibold hover:bg-[#FFD36A]">
+                        See Project
+                    </button>}
+                {((project?.type == "appdevelopment") || project?.type == "webdevelopment") &&
+                    <button onClick={() => window.open(`${project?.link}`, "_blank")} className="w-full cursor-pointer py-4 bg-[#FFE4A3] rounded-xl font-semibold hover:bg-[#FFD36A]">
+                        See Project
+                    </button>}
 
-                <button className="w-full py-4 bg-[#FFE4A3] rounded-xl font-semibold hover:bg-[#FFD36A]">
-                    See Project
-                </button>
+
             </div>
         </div>
     )

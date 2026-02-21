@@ -198,3 +198,8 @@ export {default as AdymireThumbnailVideo} from "./illustrations/AdymireThumbnail
 export {default as Phonecall} from "./icons/Phonecall.json"
 export {default as WhatsappIcon} from "./icons/WhatsappIcon.json"
 export {default as EmailAniIcon} from "./icons/EmailAniIcon.json"
+
+
+export {default as uiuxLastslideBg} from "./illustrations/uiuxLastslideBg.jpeg"
+export {default as Founder3} from "./illustrations/Founder3.png"
+export {default as dribbble } from "./icons/dribbble.png"

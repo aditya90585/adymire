@@ -11,6 +11,7 @@ const ProjectShowcaseTemplate = ({ projects, heading }) => {
         </div>
 
         <div className="flex flex-col gap-5">
+          {projects?.length == 0 &&<div className="text-xl font-semibold text-center">currently no project in this category</div>}
           {projects.map((project, index) => (
             <ProjectShowcaseCard key={index} project={project}/>
           ))}

@@ -2,12 +2,16 @@ import PolicyTabs from "./PolicyTabs";
 import PolicySidebar from "./PolicySidebar";
 import PolicyContent from "./PolicyContent";
 import PolicyHeader from "./PolicyHeader";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const PolicyLayout = ({ policies, activePolicy }) => {
   const [activeSection, setActiveSection] = useState(null);
   const [activeSubSection, setActiveSubSection] = useState(null);
+
+  
   const scrollRef = useRef(null);
+
+  if(!activePolicy?.sections) return <div className="font-semibold text-xl text-center my-20">no policy found of this type</div>
   return (
     <div ref={scrollRef} className=" mx-auto pt-20 h-screen overflow-y-scroll  overflow-x-hidden [&::-webkit-scrollbar]:hidden">
       <PolicyHeader activePolicytitle={activePolicy?.title} lastUpdateDate={activePolicy?.lastUpdated} />

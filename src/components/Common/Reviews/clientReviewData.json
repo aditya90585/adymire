@@ -1,0 +1,272 @@
+[
+  {
+    "id": 1,
+    "clientName": "James Whitfield",
+    "country": "United States",
+    "countryFlag": "🇺🇸",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511546/1_uplop2.jpg",
+    "rating": 5.0,
+    "review": "I was honestly skeptical at first — I'd worked with three agencies before Adymire and none of them delivered what they promised. But from the very first discovery call, I knew this was different. The team at Adymire Agency understood exactly what my SaaS product needed — a complete UI/UX overhaul that actually converts. They rebuilt our entire dashboard experience from scratch, and the result was stunning. Our user drop-off rate dropped by 38% within the first month. The project manager kept me updated every single day, and not once did I feel left in the dark. Adymire's attention to detail is something I've rarely seen at this level. Every screen, every button, every micro-interaction was thought through. What impressed me most was how they merged design with strategy — they didn't just make it pretty, they made it work. I've already referred two founders in my network. If you're serious about your digital product, Adymire Agency is where you go. Period."
+  },
+  {
+    "id": 2,
+    "clientName": "Sophie Marchetti",
+    "country": "Italy",
+    "countryFlag": "🇮🇹",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511546/2_zk9dkz.jpg",
+    "rating": 5.0,
+    "review": "Working with Adymire Agency was one of the best business decisions I made this year. I came to them for website redesign and digital marketing support, and they truly exceeded every expectation. From the very beginning, their team was professional, warm, and incredibly detailed. The UX design they created for my fashion brand felt like it was made by someone who truly understood the European market. On the marketing side, their Meta ad campaigns generated a 4x ROAS in just six weeks — something my previous agency couldn't achieve in six months. My account manager at Adymire was always available and gave honest feedback without sugarcoating things. I especially loved how Adymire blended creativity with data — every decision had a reason behind it. My website traffic tripled, and more importantly, conversions went up significantly. I've now signed a long-term contract with Adymire Agency for ongoing growth strategy. Grazie mille, team!"
+  },
+  {
+    "id": 3,
+    "clientName": "Rajat Mehrotra",
+    "country": "India",
+    "countryFlag": "🇮🇳",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511546/3_bvnw2o.jpg",
+    "rating": 4.5,
+    "review": "Adymire Agency ne meri poori digital presence transform kar di. Main ek D2C brand run karta hoon aur humein ek strong funnel aur social media strategy ki zarurat thi. Adymire ki team ne na sirf strategy banayi, balki usse execute bhi kiya perfectly. UI/UX se lekar Meta Ads tak, sab kuch ek hi jagah handle hua. The project manager was super responsive — kabhi bhi message karo, reply milta tha within hours. In just 45 days, our monthly revenue grew by 60%. Adymire really understands the Indian digital ecosystem and they gave us content that truly resonated with our audience. Their AI automation setup for our customer support was a cherry on top. I've recommended Adymire Agency to at least five of my founder friends already. Agar aap growth chahte ho, Adymire is the real deal. Thank you, team!"
+  },
+  {
+    "id": 4,
+    "clientName": "Marcus Osei",
+    "country": "Ghana",
+    "countryFlag": "🇬🇭",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511547/4_w8atye.jpg",
+    "rating": 5.0,
+    "review": "I reached out to Adymire Agency after seeing some of their UI/UX case studies online and I'm so glad I did. We needed a complete app redesign for our fintech product and the results were beyond what I imagined. The design team at Adymire spent two full weeks doing user research before touching a single screen — that kind of thoroughness is rare. The final product felt intuitive, clean, and incredibly user-friendly. Even our beta testers commented on how smooth the experience felt. The communication with Adymire's management team was excellent throughout the project. My dedicated project lead sent detailed reports every Friday, and there was never a delay in delivery. We also got digital marketing consultation as part of our package, and the growth framework they created for us is now our go-to playbook. Adymire Agency is world-class — and I'm speaking as someone who has worked with agencies in London and Dubai."
+  },
+  {
+    "id": 5,
+    "clientName": "Emma Larsson",
+    "country": "Sweden",
+    "countryFlag": "🇸🇪",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511547/5_khwnob.jpg",
+    "rating": 4.5,
+    "review": "Honestly, I wasn't sure a remote agency could handle the level of quality my startup needed — but Adymire Agency proved me completely wrong. We hired them for web development and AI automation, and the experience was seamless from start to finish. The web platform they built for us was fast, responsive, and beautifully structured. Their developer team understood our product vision and even suggested improvements we hadn't thought of. The AI automation workflows they set up saved our team over 20 hours a week — that alone paid for the project in month one. The project manager at Adymire was exceptional — always clear, always organized, always one step ahead. I've now engaged Adymire for a second phase of product development. They're not just a vendor — they're a genuine growth partner. If you're a founder in Europe looking for quality execution, look no further than Adymire Agency."
+  },
+  {
+    "id": 6,
+    "clientName": "Carlos Herrera",
+    "country": "Mexico",
+    "countryFlag": "🇲🇽",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511547/6_tlvlsi.jpg",
+    "rating": 4.5,
+    "review": "From the moment I jumped on an intro call with the Adymire team, I knew they were serious professionals. I needed a complete digital marketing strategy for my e-commerce business and Adymire Agency delivered at every level. They ran our Google and Meta ads with a level of precision I hadn't seen before — detailed audience segmentation, creative testing, constant optimization. Our cost per acquisition dropped by nearly 45% in two months. On top of that, they revamped our landing pages with conversion-focused UI/UX design that made an immediate impact. My account manager at Adymire was proactive — they didn't wait for me to ask questions, they brought insights to every call. The entire team feels like they genuinely care about your business growth, not just completing a task. I've renewed my contract with Adymire Agency for the next six months and I'm already seeing compounding results. Muy recomendado!"
+  },
+  {
+    "id": 7,
+    "clientName": "Priya Nambiar",
+    "country": "India",
+    "countryFlag": "🇮🇳",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511547/7_yiq1gn.jpg",
+    "rating": 5.0,
+    "review": "I came to Adymire Agency for UI/UX design for my EdTech app and left with a complete product strategy I didn't even know I needed. The design work was stunning — clean, accessible, and perfectly suited for a student-first experience. What set Adymire apart was how they asked deep questions before designing anything. They wanted to understand our users, not just our brief. The team held weekly check-ins and the feedback loop was smooth and fast. After the design handoff, I also took their digital marketing package and it brought us over 2,000 sign-ups in our first campaign. Adymire's team genuinely feels like they're part of your company — not outsiders. The project manager was warm, organized, and handled all revisions with grace. Honestly, Adymire Agency has set a new standard for what agency work should look like. I'll be back for the app development phase very soon!"
+  },
+  {
+    "id": 8,
+    "clientName": "Noah Bennett",
+    "country": "Canada",
+    "countryFlag": "🇨🇦",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511547/8_fweqwz.jpg",
+    "rating": 4.5,
+    "review": "We had a very complex project — a full-stack web application with integrated AI features — and I was nervous about handing it off to an agency. But Adymire Agency handled it like seasoned pros. Their app development team was technically sharp, communicative, and delivered on time without any shortcuts in quality. The UI/UX they layered onto our product made it genuinely enjoyable to use — not just functional. What I appreciated most was their project management style. Weekly standups, a live task board, and a dedicated PM who was always one message away. Adymire's AI automation work also helped us set up smart onboarding workflows that reduced our manual work drastically. The entire engagement felt like working with a senior in-house team. The value they delivered relative to cost was exceptional. Adymire Agency is now our long-term tech and growth partner. I can't imagine building product without them."
+  },
+  {
+    "id": 9,
+    "clientName": "Aisha Mwangi",
+    "country": "Kenya",
+    "countryFlag": "🇰🇪",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511547/9_a8o99i.jpg",
+    "rating": 5.0,
+    "review": "As a first-time founder, I was overwhelmed with where to start. A friend referred me to Adymire Agency and it was one of the best things that happened to my business journey. They helped me build my brand identity, design my website, and set up my first digital marketing campaign. Everything was explained clearly and done with patience. The Adymire team never made me feel like I was asking too many questions. They guided me from zero to a fully live, converting website in just three weeks. The UI/UX design for my service platform was elegant, mobile-friendly, and loved by every client who visited. I also set up some basic AI automation for client onboarding with their help — which felt like magic for a non-technical person like me. Adymire Agency feels like a mentor and an agency rolled into one. Highly recommended for any African founder looking to go global!"
+  },
+  {
+    "id": 10,
+    "clientName": "Lena Hoffmann",
+    "country": "Germany",
+    "countryFlag": "🇩🇪",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511548/10_jempcq.jpg",
+    "rating": 4.5,
+    "review": "German standards are high — and Adymire Agency met them. We engaged them for a full website redesign and performance marketing campaign for our B2B SaaS platform. The design was clean, structured, and conversion-optimized — exactly what the European market expects. The development team built the site with speed and responsiveness in mind, and our PageSpeed score jumped from 58 to 91 after their work. On the marketing side, the LinkedIn and Google campaigns they ran generated quality leads — not just clicks. The project management at Adymire was precise and professional, with clear timelines and zero missed deadlines. My assigned account manager took time to understand our product deeply before making a single recommendation. I've worked with agencies in Berlin and Amsterdam — Adymire Agency stands alongside the best of them. We're now planning to bring them in for our app development phase. Absolute recommendation."
+  },
+  {
+    "id": 11,
+    "clientName": "Daniel Acheampong",
+    "country": "Nigeria",
+    "countryFlag": "🇳🇬",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511548/11_mbf2cp.jpg",
+    "rating": 5.0,
+    "review": "I've been burned by agencies before — paid a lot, got little. So when I approached Adymire Agency, I was cautious. But within the first week, I realized this was a completely different experience. They took on our social media management and digital marketing with a strategy-first approach. Before running a single ad, they spent time understanding our brand, audience, and goals. The results spoke for themselves — our Instagram engagement grew by 300% in 60 days and our ad campaigns brought genuine leads. The UI/UX consultation they gave us for our website landing pages also drastically improved our bounce rate. The team at Adymire communicates clearly and honestly — if something isn't working, they say so and pivot fast. My project manager was brilliant — proactive, sharp, and always thinking ahead. Adymire Agency restored my faith in outsourcing. They're not just a service provider — they're a real growth partner."
+  },
+  {
+    "id": 12,
+    "clientName": "Yuki Tanaka",
+    "country": "Japan",
+    "countryFlag": "🇯🇵",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511566/12_aypap5.jpg",
+    "rating": 3.0,
+    "review": "In Japan, we value precision, reliability, and quality above all. Adymire Agency delivered all three. We hired them for app development and AI automation integration for our logistics startup. The development process was smooth — detailed documentation, proper testing phases, and clean code handoff. The AI automation they built for our inventory and customer notification systems saved us enormous operational time. The UX of our app was refined beautifully — simple, functional, and fast. What surprised me most was the level of cultural awareness the Adymire team showed. They understood that our users needed clarity over complexity. The project manager held structured bi-weekly reviews and maintained detailed logs throughout. I would absolutely engage Adymire Agency for future development cycles. Their global capability combined with genuine professionalism is rare. Highly recommended from Tokyo."
+  },
+  {
+    "id": 13,
+    "clientName": "Isabella Ferreira",
+    "country": "Brazil",
+    "countryFlag": "🇧🇷",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511566/13_jryfbq.jpg",
+    "rating": 4.0,
+    "review": "I was looking for an agency that could handle both the creative and technical side of my digital business — and Adymire Agency was exactly that. They redesigned my entire website with a beautiful, modern UI/UX, then ran our digital marketing campaigns on Meta and Google. The campaign performance was incredible — our ROAS hit 5x in just the second month. But what I loved most was how collaborative the Adymire team was. Every decision involved me, every revision was fast, and every suggestion was backed by data. My account manager was warm, professional, and genuinely invested in our growth. Adymire also set up some CRM automation for our lead management that now saves us hours every week. The entire team is sharp, creative, and hardworking. I recommend Adymire Agency to every Brazilian entrepreneur I know who wants global-quality execution at a fair price. They are the real thing."
+  },
+  {
+    "id": 14,
+    "clientName": "Thomas Müller",
+    "country": "Austria",
+    "countryFlag": "🇦🇹",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511566/14_ps07d1.jpg",
+    "rating": 4.0,
+    "review": "We needed a UI/UX design overhaul and a serious web development partner for our B2B platform, and Adymire Agency delivered beyond our expectations. The design work was exceptional — clean interface, smooth user flows, and a look that immediately communicated professionalism to our enterprise clients. The development team was technically excellent, building the platform with scalability in mind. They used modern frameworks and kept the code well-documented. Our platform launch was on time, which in my experience is practically a miracle. The project management at Adymire was outstanding — weekly syncs, transparent timelines, and a PM who proactively caught issues before they became problems. I also appreciated Adymire's honest approach — they told us when our original ideas weren't optimal and offered better alternatives. That kind of integrity is rare. We are now in discussions with Adymire Agency for a mobile app development engagement. Strongly recommended."
+  },
+  {
+    "id": 15,
+    "clientName": "Mei Lin",
+    "country": "Singapore",
+    "countryFlag": "🇸🇬",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511567/15_h60vyx.jpg",
+    "rating": 3.5,
+    "review": "Singapore is a competitive market and you need every edge you can get. Adymire Agency gave us that edge. We engaged them for digital marketing, UI/UX design, and AI automation for our HR tech startup. The design system they created for our product was world-class — consistent, accessible, and beautifully crafted. The marketing campaigns they ran for us on LinkedIn brought in high-quality leads from across Southeast Asia. The AI automation workflows streamlined our onboarding process and reduced manual tasks by 40%. Throughout the engagement, my project lead at Adymire was sharp, proactive, and highly organized. The team clearly understands the nuances of the APAC market. What impressed me most was how Adymire integrated all three services seamlessly — the design, marketing, and automation all worked together as one cohesive growth system. Adymire Agency is now our go-to partner for all product and growth work. Highly recommend."
+  },
+  {
+    "id": 16,
+    "clientName": "Fatima Al-Rashidi",
+    "country": "UAE",
+    "countryFlag": "🇦🇪",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511543/16_rzrp6a.jpg",
+    "rating": 4.0,
+    "review": "I was introduced to Adymire Agency through a mutual contact in the Dubai startup ecosystem and I can confidently say it was one of my best referrals. We engaged them for a complete brand identity refresh, UI/UX for our mobile app, and a performance marketing strategy. The brand work was exquisite — premium, modern, and perfectly positioned for our luxury clientele. The app design was intuitive and visually stunning, earning instant compliments from our early users. The digital marketing campaigns on Meta delivered a ROAS that our in-house team had never achieved before. The Adymire project manager was exceptional — always two steps ahead, managing timelines with precision and keeping the communication fluid. In the GCC market, professionalism and trust matter most — and Adymire Agency delivered both. I've already extended our engagement for Phase 2. If you're a founder in the Middle East, Adymire should be your first call."
+  },
+  {
+    "id": 17,
+    "clientName": "Kevin O'Sullivan",
+    "country": "Ireland",
+    "countryFlag": "🇮🇪",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511544/17_e9emcs.jpg",
+    "rating": 3.5,
+    "review": "I've worked with agencies across Europe and North America — and I can honestly say that Adymire Agency ranks among the very best. We brought them in to develop our web platform and set up AI automation for our operations. The development quality was impressive — clean architecture, responsive design, and fast load times. They built in automation workflows that integrated beautifully with our existing tools, saving our team hours of manual work each week. The UX design built into the platform felt natural and well-thought-out. What really made the difference was Adymire's communication style. The team was always honest, always organized, and always brought solutions — not just problems. My project manager held structured weekly reviews and kept every stakeholder informed. There were no surprises — just steady, high-quality delivery. Adymire Agency has earned a long-term partnership with us. I recommend them without hesitation to any European tech founder."
+  },
+  {
+    "id": 18,
+    "clientName": "Chinonso Eze",
+    "country": "Nigeria",
+    "countryFlag": "🇳🇬",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511543/18_d0kzon.jpg",
+    "rating": 4.0,
+    "review": "Starting a tech business in Nigeria means you have to fight hard for every inch of growth. Adymire Agency became our secret weapon. They took on our social media management, content strategy, and UI/UX design — and transformed our brand from something amateur into something genuinely professional. The content they created resonated deeply with our audience and our follower growth was consistent every single week. The UI/UX work on our website was clean, fast, and conversion-focused — our inquiry rate doubled within a month of the redesign going live. The team at Adymire always kept us in the loop with detailed reports and clear explanations. My account manager was thoughtful and patient, especially when we had revisions or direction changes. Adymire Agency brought a global quality standard to our brand and helped us punch well above our weight. If you're building in Africa and want to compete globally, Adymire is your agency."
+  },
+  {
+    "id": 19,
+    "clientName": "Anastasia Petrova",
+    "country": "Ukraine",
+    "countryFlag": "🇺🇦",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511544/19_jqqcvm.jpg",
+    "rating": 4.5,
+    "review": "Finding a reliable agency partner while navigating business challenges in our region was not easy, but Adymire Agency came highly recommended and they did not disappoint. We needed web development, UI/UX design, and digital marketing all at once — essentially a full digital launch — and Adymire handled it with remarkable professionalism. The website they built was fast, modern, and structured perfectly for SEO. The UI/UX design felt custom-made for our users, not generic. Our first Meta ad campaign brought us over 800 qualified leads in the first month. The Adymire team was patient, empathetic, and deeply organized throughout the entire process. The project manager was responsive even across time zones and made every interaction feel personal. I felt genuinely supported at every stage. Adymire Agency delivered a global-quality product and strategy — and for a business like ours, that opened new doors. Deeply grateful and fully recommend."
+  },
+  {
+    "id": 20,
+    "clientName": "Ravi Krishnamurthy",
+    "country": "India",
+    "countryFlag": "🇮🇳",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511544/20_bpb8x7.jpg",
+    "rating": 4.5,
+    "review": "Adymire Agency ne meri B2B SaaS company ke liye poori digital marketing aur UI/UX strategy design ki — and results ne sach mein expectations ko cross kar diya. Team ne pehle poora competitor analysis kiya, phir ek tailored growth strategy banai jo actually kaam ki. Our Google Ads campaigns had a 6x ROAS by month three. The website redesign they did converted cold visitors into warm leads — something we struggled with for years. Adymire's project management system was really impressive — ek dedicated PM tha jo har week debrief deta tha aur har kaam track karta tha. Revision bhi fast tha, bina kisi argument ke. Honestly, Adymire Agency feels like a senior co-founder who handles everything digital for you. Unki team mein passion aur professionalism ka combination rare hai. Main unhe apni puri startup community mein recommend karta rahta hoon. Bohot bohot shukriya, Adymire team!"
+  },
+  {
+    "id": 21,
+    "clientName": "Charlotte Dubois",
+    "country": "France",
+    "countryFlag": "🇫🇷",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511545/21_d3mh01.jpg",
+    "rating": 4.5,
+    "review": "I approached Adymire Agency with a very clear brief — redesign our digital experience and make our brand feel premium across all touchpoints. They delivered exactly that, and more. The UI/UX design they created for our brand was sophisticated, elegant, and completely aligned with the French aesthetic sensibility. Every screen was crafted with care. The web development team brought the design to life flawlessly — fast, responsive, and pixel-perfect. On the marketing side, Adymire ran our campaigns with a precision I appreciated — A/B testing creatives, optimizing targeting weekly, and sharing clear performance breakdowns. My project lead at Adymire was organized, communicative, and a true pleasure to work with. They understood that we value quality above speed — and they delivered both. I've been in marketing long enough to know great agency work when I see it. Adymire Agency is genuinely great. We will be continuing our engagement for the next financial year."
+  },
+  {
+    "id": 22,
+    "clientName": "Samuel Kipchoge",
+    "country": "Tanzania",
+    "countryFlag": "🇹🇿",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511545/22_e7zcrs.jpg",
+    "rating": 4.0,
+    "review": "I run a growing agri-tech startup in East Africa and needed both an app and a strong digital presence. Adymire Agency handled our app development beautifully — the user interface was simple enough for rural users but powerful enough for enterprise clients. Their development team was technical but also practical, always keeping our end users in mind. The app performance has been excellent since launch. On the digital marketing side, Adymire helped us craft a content strategy and run targeted campaigns that reached the right investors and partners. The project manager kept everything on track and was always available to resolve issues quickly. What I value most about Adymire is their genuine interest in your success. They asked questions that made me think differently about my own product. For any African startup trying to scale with quality, Adymire Agency is the perfect partner. They understand building for emerging markets and doing it at world-class standards simultaneously."
+  },
+  {
+    "id": 23,
+    "clientName": "Hiroshi Yamamoto",
+    "country": "South Korea",
+    "countryFlag": "🇰🇷",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511546/23_xwegv5.jpg",
+    "rating": 4.0,
+    "review": "Our company selected Adymire Agency after evaluating multiple global agencies — and it was the right choice. We needed AI automation integrated into our customer support workflows alongside a complete UI/UX redesign of our SaaS dashboard. Adymire's team approached both with technical depth and design intelligence. The AI automation system they built reduced our support ticket response time by 60% — our customers immediately noticed the improvement. The dashboard redesign made complex data feel simple and accessible. The entire project was managed with a level of discipline and structure that matched our internal standards. The Adymire project manager maintained detailed sprint logs and ran tight reviews. Deliverables came on time, every time. I would comfortably recommend Adymire Agency to any enterprise or growth-stage company in Asia looking for a partner that combines design, tech, and automation at a genuinely high standard. We're planning our next project with them already."
+  },
+  {
+    "id": 24,
+    "clientName": "Nadia Kowalski",
+    "country": "Poland",
+    "countryFlag": "🇵🇱",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511545/24_f68y1e.jpg",
+    "rating": 5.0,
+    "review": "I was looking for an agency that could help us go from a basic WordPress site to a professional, conversion-driven digital presence — and Adymire Agency did exactly that. They rebuilt our website from scratch with a stunning UI/UX design, set up our Google and Meta ad campaigns, and also integrated some smart AI automation for our lead nurturing. The website now loads in under 2 seconds and our conversion rate improved significantly. The ads started performing profitably within the first three weeks — way faster than I expected. Throughout the project, my project manager at Adymire was professional, warm, and always one step ahead. They provided detailed reports and were genuinely transparent about what was working and what needed adjustment. Adymire Agency feels premium but accessible — they gave us big-agency quality at a price that made sense for our stage. Very happy and already working on our next project with them. Highly recommended!"
+  },
+  {
+    "id": 25,
+    "clientName": "Diego Valverde",
+    "country": "Colombia",
+    "countryFlag": "🇨🇴",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511545/25_vwet9g.jpg",
+    "rating": 4.5,
+    "review": "When I started my digital consulting brand, I knew I needed help with both the visual identity and the marketing engine. Adymire Agency was the answer to both. Their UI/UX and branding work gave my business a professional credibility I couldn't have achieved on my own. The website they designed and developed was clean, fast, and spoke directly to my target clients. On the marketing side, the Meta campaigns they managed brought in consistent qualified leads every week. The Adymire team also helped me set up automation for my email follow-ups and CRM — saving me hours of work. What I loved most was that my project manager genuinely cared about my results. They checked in without me asking, flagged issues early, and offered solutions proactively. Adymire Agency gave my solo venture the look and feel of a serious company — and the client inquiries followed. If you're a Latin American entrepreneur wanting global-quality agency work, Adymire is your answer."
+  },
+  {
+    "id": 26,
+    "clientName": "Danial Joe",
+    "country": "USA",
+    "countryFlag": "🇸🇳",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511544/26_jgidq0.jpg",
+    "rating": 4.5,
+    "review": "I discovered Adymire Agency through LinkedIn and booked a call the same day. From that first conversation, the professionalism was evident. We engaged them for UI/UX design and social media management for our fashion startup. The design work was creative, culturally aware, and beautifully modern. The Adymire team understood how to position our brand for both the African market and the international diaspora. Our Instagram grew from 800 to over 12,000 followers in four months — organically. The social content strategy they created was consistent, engaging, and true to our brand voice. The project manager checked in regularly and made the collaboration feel easy even across time zones. Adymire never over-promised — they gave realistic timelines and delivered every single time. For any African founder with global ambitions, Adymire Agency brings the tools, strategy, and talent to make those ambitions real. Truly grateful for this partnership."
+  },
+  {
+    "id": 27,
+    "clientName": "James",
+    "country": "United Kingdom",
+    "countryFlag": "🇬🇧",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511544/27_ubr3lw.jpg",
+    "rating": 4.0,
+    "review": "I hired Adymire Agency for a full UI/UX redesign of our fintech mobile app — and the results transformed our product entirely. The research phase they ran was thorough — user interviews, competitor benchmarking, and UX audits before they even opened Figma. The final design was clean, modern, and incredibly functional. Our beta users praised the new experience immediately. Adymire also helped us set up AI automation for our onboarding and notification workflows, which measurably reduced our churn in the first 60 days. Throughout the engagement, the project management was excellent — structured milestones, weekly update calls, and a PM who was proactive rather than reactive. I appreciated that Adymire challenged some of our assumptions in a respectful and data-backed way. That kind of honest partnership is rare and valuable. We're now in discussions with Adymire Agency for their app development services as well. Excellent team, excellent work."
+  },
+  {
+    "id": 28,
+    "clientName": "Sunita Thapa",
+    "country": "Nepal",
+    "countryFlag": "🇳🇵",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511545/28_jpd6z1.jpg",
+    "rating": 5.0,
+    "review": "As a small business owner in Nepal, I never imagined I could afford agency-level support — but Adymire Agency surprised me completely. They were professional, affordable, and incredibly patient with me throughout the process. They helped me build my first proper business website with a clean, mobile-friendly UI/UX design. They also ran a small Meta ads campaign for my service business and the results were beyond what I expected — I had more inquiries in two weeks than I'd had in the previous six months. The team at Adymire explained everything in simple language and never made me feel small for asking basic questions. My project point of contact was always responsive and kind. Adymire Agency made digital marketing feel accessible and human. For any small business or entrepreneur in South Asia who wants to grow their digital presence seriously — Adymire is the right partner. They genuinely want to see you succeed."
+  },
+  {
+    "id": 29,
+    "clientName": "Elias Bergstrom",
+    "country": "Norway",
+    "countryFlag": "🇳🇴",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511546/29_t4tm80.jpg",
+    "rating": 4.0,
+    "review": "We engaged Adymire Agency for a complex web application development project combined with an AI automation layer — and they handled it brilliantly. The development team was technically strong, communicated clearly, and asked the right questions before building anything. The final product was scalable, well-documented, and delivered with zero cutting of corners. The AI automation system they built for our internal operations reduced reporting time by nearly 70%. The UI/UX across the platform was intuitive and well-structured. What stood out most was the project management discipline at Adymire — clear sprint structures, transparent timelines, and a PM who managed stakeholders on both sides expertly. There were moments in the project where scope expanded unexpectedly and Adymire handled those situations with professionalism and flexibility. We're now in our second project together and the relationship only keeps getting stronger. Adymire Agency is a rare find — genuine expertise, genuine care."
+  },
+  {
+    "id": 30,
+    "clientName": "Pooja Agarwal",
+    "country": "India",
+    "countryFlag": "🇮🇳",
+    "imageUrl": "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771511545/30_fp2xwd.jpg",
+    "rating": 4.5,
+    "review": "Adymire Agency ne mera startup literally transform kar diya. Hum ek healthcare platform build kar rahe the aur humein UI/UX, web development, aur digital marketing — teeno ki ek saath zarurat thi. Adymire ne ek seamless package diya jisme sab kuch tha. The design they created for our platform was patient-friendly, clean, and trustworthy — exactly the right tone for healthcare. Development was smooth and delivered on time with no bugs at launch. The marketing campaigns they ran for us on Google brought in verified patient leads from day one. Jo cheez mujhe sabse zyada achi lagi woh thi Adymire ki honest communication. Kabhi bhi false expectations nahi diye — agar koi cheez adjust karni hoti thi, toh pehle bata dete the. My project manager was excellent — organized, proactive, aur genuinely invested in our success. Adymire Agency ke sath kaam karna ek premium experience hai. Highly recommended for every Indian founder building something serious!"
+  }
+]

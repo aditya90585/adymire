@@ -60,7 +60,7 @@ const PortfolioHero = () => {
                         {/* <button className="portfolio-hero-cta">
                          <img src={PhoneYellow} alt="call" />   Book a Strategy Call
                         </button> */}
-                        <BookCallButton text="Book a Strategy Call"   height="60px" textSize="base" rounded="xl" paddingX="5" className="bg-[#faddac] h-[60px] font-semibold border-2 border-[#575656]"/>
+                        <BookCallButton text="Book a Strategy Call"   height="60px" textSize="base" rounded="xl" paddingX="5" attention={true} className="hover:bg-[#faddac] h-15 px-5 rounded-xl font-semibold"/>
                     </div>
                 </div>
 

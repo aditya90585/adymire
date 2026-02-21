@@ -4,41 +4,10 @@ import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 import { SwiperSlide, Swiper } from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
+import clientReviewData from "./clientReviewData.json"
+import { MdStar, MdStarHalf } from "react-icons/md";
 
 const ClientReviews = () => {
-  const reviews = [
-    {
-      name: "Amit Bharadwaj",
-      role: "Architect",
-      rating: 4,
-      text: "Royaloak has a variety of recliner designs to fit any lifestyle and living room setup. Whether relaxing alone or on movie nights with the family, there is a recliner that will fit every requirement.",
-      avatar: "",
-    },
-    {
-      name: "Amit Bharadwaj",
-      role: "Architect",
-      rating: 4,
-      text: "Royaloak has a variety of recliner designs to fit any lifestyle and living room setup. Whether relaxing alone or on movie nights with the family, there is a recliner that will fit every requirement.",
-      avatar: "",
-    },
-    {
-      name: "Amit Bharadwaj",
-      role: "Architect",
-      rating: 4,
-      text: "Royaloak has a variety of recliner designs to fit any lifestyle and living room setup. Whether relaxing alone or on movie nights with the family, there is a recliner that will fit every requirement.",
-      avatar: "",
-    },
-    {
-      name: "Amit Bharadwaj",
-      role: "Architect",
-      rating: 4,
-      text: "Royaloak has a variety of recliner designs to fit any lifestyle and living room setup. Whether relaxing alone or on movie nights with the family, there is a recliner that will fit every requirement.",
-      avatar: "",
-    },
-  ];
-
-
-
   return (
     <section className="crv-section">
       <div className="crv-container">
@@ -96,7 +65,7 @@ const ClientReviews = () => {
           }}
           modules={[EffectCoverflow, Pagination, Navigation]}
           className="crv-grid MySwiper">
-          {reviews.map((item, index) => (
+          {clientReviewData?.map((item, index) => (
             <SwiperSlide key={index} className="crv-card">
               <div
                 className=" rounded-xl p-6 relative"
@@ -104,28 +73,45 @@ const ClientReviews = () => {
                 <div className="flex items-center gap-4 mb-4 ">
                   <div className="review-img-cont  absolute bg-amber-200  p-4 left-0 top-0 rounded-tl-2xl rounded-r-[90%]">
                     <img
-                      src={item.avatar}
-                      alt={item.name}
-                      className="h-16 w-16 rounded-full bg-gray-300"
+                      src={item?.imageUrl}
+                      alt={item?.clientName}
+                      className="h-16 w-16 rounded-full object-cover bg-gray-300"
                     />
                   </div>
                   <div className="pl-25" >
                     <h4 className="font-semibold text-gray-900">
-                      {item.name}
+                      {item.clientName}
                     </h4>
-                    <p className="text-sm text-gray-600">{item.role}</p>
-                    <div className="flex text-yellow-500 text-sm">
-                      {"★".repeat(item.rating)}
-                      {"☆".repeat(5 - item.rating)}
+                    <p className="text-sm text-gray-600">{item?.country} <span className="text-xs">{item?.countryFlag}</span></p>
+                    {/* <div className="flex text-gray-900 text-xl">
+                      {"★".repeat(item?.rating)}
+                      {"☆".repeat(5 - item?.rating)}
+                    </div> */}
+                    {/* <div className="flex text-yellow-400 text-xl">
+                      {[1, 2, 3, 4, 5].map((star) => (
+                        <span key={star} className={star <= item?.rating ? "text-yellow-400" : "text-gray-300"}>
+                          {star <= item?.rating ? "★" : "☆"}
+                        </span>
+                      ))}
+                    </div> */}
+                    <div className="flex text-base my-1">
+
+                      {[1, 2, 3, 4, 5].map((star) => (
+                        star <= item?.rating
+                          ? <MdStar key={star} className="text-gray-900" />
+                          : star - 0.5 <= item?.rating
+                            ? <MdStarHalf key={star} className="text-gray-900" />
+                            : <MdStar key={star} className="text-gray-300" />
+                      ))}
                     </div>
                   </div>
                 </div>
 
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  {item.text}
+                  {item.review}
                 </p>
 
-                <span className="absolute top-6 right-6 text-2xl text-gray-500">
+                <span className="absolute top-6 right-6 text-4xl text-gray-800">
                   “
                 </span>
               </div>

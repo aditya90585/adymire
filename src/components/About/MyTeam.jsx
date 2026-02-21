@@ -25,7 +25,7 @@ const MyTeam = () => {
 
 
     return (
-        <section className="bg-[#fff8ec] py-16 md:px-18 px-4 relative">
+        <section id="my-team" className="bg-[#fff8ec] py-16 md:px-18 px-4 relative">
             <div className="mx-auto max-w-7xl relative  myTeam-swiper md:px-14 px-0 overflow-x-hidden">
                 <div className="mb-14 text-center">
                     <h2 className="text-3xl font-semibold text-black">My Team</h2>

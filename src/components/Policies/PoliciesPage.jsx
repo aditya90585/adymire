@@ -15,14 +15,18 @@ export default function PoliciesPage() {
   const { policytype } = useParams()
   const [activePolicy, setActivePolicy] = useState()
 
+  const [loading, setloading] = useState(true)
   useEffect(() => {
-
+    setloading(true)
     setActivePolicy(policies.find((e) => e?.key === policytype))
   }, [policytype])
 
+  useEffect(() => {
+   setloading(false)
+  }, [activePolicy])
 
 
-
+  if(loading)return <div className="font-semibold text-xl text-center my-20">loading policy... </div>
 
   return (
     <PolicyLayout

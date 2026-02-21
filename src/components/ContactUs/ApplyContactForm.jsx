@@ -506,7 +506,7 @@ const ApplyContactForm = () => {
                 <input  {...register("acceptTerms", { required: true })} type="checkbox" className="accent-yellow-500 mt-1 h-5 w-5" />
                 <span className="text-xl font-semibold text-gray-500" >
                   Accept our{" "}
-                  <span onClick={() => navigate("/policy/terms-and-conditions")} className="text-blue-600 cursor-pointer">
+                  <span onClick={() => window.open("/policy/terms-and-conditions", '_blank', 'noopener,noreferrer')} className="text-blue-600 cursor-pointer">
                     terms and conditions
                   </span>
                 </span>
@@ -519,7 +519,7 @@ const ApplyContactForm = () => {
                 <input  {...register("dataPrivacy", { required: true })} type="checkbox" className="accent-yellow-500 mt-1  h-5 w-5" />
                 <span className="text-xl font-semibold text-gray-500">
                   Accept our{" "}
-                  <span className="text-blue-600 cursor-pointer">
+                  <span onClick={() => window.open("/policy/privacy-policy", '_blank', 'noopener,noreferrer')} className="text-blue-600 cursor-pointer">
                     Data Privacy Consent
                   </span>
                 </span>

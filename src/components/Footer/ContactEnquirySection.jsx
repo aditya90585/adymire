@@ -1,6 +1,6 @@
-import { WhatsappIcon,Phonecall, EmailAniIcon } from "@/assets";
+import { WhatsappIcon, Phonecall, EmailAniIcon } from "@/assets";
 import Lottie from "lottie-react";
-import { useNavigate } from "react-router-dom";
+
 
 const ContactEnquirySection = () => {
 
@@ -8,25 +8,25 @@ const ContactEnquirySection = () => {
         const phoneNumber = "917302356804";
         const message = "Hello, I want to know more about your services";
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-        window.location.href = url;
+        window.open(url, '_blank', 'noopener,noreferrer');
     }
-    const navigate = useNavigate()
+
     const navigateToBookingForm = () => {
-        navigate("/contact")
+       window.open('/contact', '_blank', 'noopener,noreferrer');
     }
-    const emaiMethod = ()=>{
-  const email = "helo@adymir.com";
-  const subject = encodeURIComponent("Hello Adymire");
-  const body = encodeURIComponent("Hello, I want to know more about your services");
+    const emaiMethod = () => {
+        const email = "helo@adymir.com";
+        const subject = encodeURIComponent("Hello Adymire");
+        const body = encodeURIComponent("Hello, I want to know more about your services");
 
-  const gmailAppURL = `googlegmail://co?to=${email}&subject=${subject}&body=${body}`;
-  const gmailWebURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
+        const gmailAppURL = `googlegmail://co?to=${email}&subject=${subject}&body=${body}`;
+        const gmailWebURL = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${subject}&body=${body}`;
 
-  window.location.href = gmailAppURL;
-  setTimeout(() => {
-    window.location.href = gmailWebURL;
-  }, 1500);
-}
+        window.open(gmailAppURL, '_blank', 'noopener,noreferrer');
+        setTimeout(() => {
+            window.open(gmailWebURL, '_blank', 'noopener,noreferrer');
+        }, 1500);
+    }
 
     const contactData = [
         {
@@ -71,7 +71,7 @@ const ContactEnquirySection = () => {
                                     hover:bg-[#FFF1C6] hover:border-yellow-400 hover:scale-105 ">
 
                             <div className="w-25 h-25 mb-6 flex items-center justify-center">
-                                <Lottie animationData={item.icon}  className="" />
+                                <Lottie animationData={item.icon} className="" />
                             </div>
 
                             <h4 className="font-bold text-lg uppercase mb-3">

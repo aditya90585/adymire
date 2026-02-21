@@ -30,7 +30,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from "swiper/modules";
-import { FaLessThanEqual } from 'react-icons/fa6';
+
 
 
 const WhatWeDo = ({ contentState = false }) => {

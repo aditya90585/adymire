@@ -1,19 +1,24 @@
 import {
-  // UI/UX Tools Icons
-  UIUXsvg,
   Figma,
   Xd,
   Sketch,
+  Flutter,
+  Jetpack,
+  Reactlogo,
+  Apple,
+  Android,
+  Browser,
+
 } from "@/assets"
 
 export const AllProjectsData = [
   {
-    "type": "UI & UX",
+    "type": "uiux",
     "slug": "andesign",
     "title": "AnDesign - Architectural Design Website",
     "description": "AnDesign is a multidisciplinary design and construction firm that specializes in architectural planning, construction execution, and interior design solutions. They needed a modern, professional website that would showcase their expertise and attract clients looking for high-quality architectural services. Our goal was to create a stunning website that reflects AnDesign's commitment to excellence, innovation, and sustainability.",
     "category1": "Architecture & Construction",
-    "category2": ["Website Design & Development", "Portfolio Website", "Corporate Website"],
+    "category2": ["Website UI", "Portfolio Website", "Corporate Website"],
     "duration": "5-6 months",
     technologies: [Figma, Xd, Sketch],
     "images": [
@@ -332,12 +337,12 @@ export const AllProjectsData = [
     ]
   },
   {
-    "type": "UI & UX",
+    "type": "uiux",
     "slug": "homewood",
     "title": "Homewood - Premium Furniture E-Commerce Platform",
     "description": "Homewood is a premium full-stack furniture e-commerce platform that we designed and developed to deliver a seamless digital shopping experience. This is not just a simple online store - it's a complete digital ecosystem that includes a responsive website, mobile applications for Android and iOS, and a powerful admin panel for managing everything behind the scenes. The platform allows customers to explore beautiful modern furniture collections, customize their interior designs, upload reference images for custom orders, manage their profiles, track their deliveries in real-time, and complete secure purchases.",
     "category1": "Furniture & Home Décor E-Commerce",
-    "category2": ["E-Commerce Platform", "Website + Mobile App", "Admin Panel"],
+    "category2": ["App & Website UI", "Website + Mobile App", "Admin Panel"],
     "duration": "3-6 months",
     "images": [
       "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771137603/1_orihjm.png",
@@ -353,6 +358,7 @@ export const AllProjectsData = [
     "link": "https://www.behance.net/gallery/243937861/Furniture-Store-Homewood-Ecomerce-Store",
     "linkText": "Behance Portfolio",
     "visitText": "Visit Behance",
+    technologies: [Figma, Xd, Sketch],
     "sections": [
       {
         "heading": "The Problem We Solved",
@@ -757,7 +763,7 @@ export const AllProjectsData = [
     ]
   },
   {
-    "type": "UI & UX",
+    "type": "uiux",
     "slug": "hugkro",
     "title": "HugKro - Modern Dating Application",
     technologies: [Figma, Xd, Sketch],
@@ -766,7 +772,7 @@ export const AllProjectsData = [
     "visitText": "Visit Behance",
     "description": "HugKro is a next-generation dating application that helps people create meaningful connections through smart matchmaking, easy swiping, and safe communication features. Our goal was to design a modern, engaging, and trustworthy dating platform that combines smooth user experience, strong safety features, and advanced personalization.",
     "category1": "UI/UX Design",
-    "category2": ["Mobile App", "Dating Platform", "Social Networking"],
+    "category2": ["App UI", "Dating Platform", "Social Networking"],
     "duration": "4-6 Months",
     "images": [
       "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771137658/1_wx3eqy.png",
@@ -1060,12 +1066,12 @@ export const AllProjectsData = [
     ]
   },
   {
-    "type": "UI & UX",
+    "type": "uiux",
     "slug": "interiospace",
     "title": "Interio Space - Interior Design App & Website",
     "description": "Interio Space is a modern interior design discovery and personalization platform that we designed for both mobile applications (Android and iOS) and responsive website. This is not just another home décor catalog - it's a comprehensive platform that helps users explore beautiful interior products, get inspiring design ideas, and personalize their living spaces through a smooth, intuitive, and delightful user experience. The platform bridges the gap between browsing inspiration and actually creating your dream space.",
     "category1": "Interior Design & Home Décor",
-    "category2": ["Mobile App", "Responsive Website", "E-Commerce Platform"],
+    "category2": ["App & Website UI", "Responsive Website", "E-Commerce Platform"],
     "duration": "8-12 weeks",
     "images": [
       "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771137839/1_dbgoxx.jpg",
@@ -1085,6 +1091,7 @@ export const AllProjectsData = [
     "link": "https://www.behance.net/gallery/243809027/Interio-Space-Interior-Design-App-Website",
     "linkText": "Behance Portfolio",
     "visitText": "Visit Behance",
+    technologies: [Figma, Xd, Sketch],
     "sections": [
       {
         "heading": "The Challenge",
@@ -1477,12 +1484,12 @@ export const AllProjectsData = [
     ]
   },
   {
-    "type": "UI & UX",
+    "type": "uiux",
     "slug": "kingxgaming",
     "title": "KingX Gaming Platform - Aviator Gaming Platform",
     "description": "KingX Gaming Company is a modern online gaming platform that we designed for both mobile applications (Android and iOS) and responsive website. This is not just another gaming app - it's a comprehensive platform that delivers a secure, high-performance, and immersive gaming experience with integrated wallet systems, real-time transactions, and multiple popular games all in one place. The platform combines skill-based games like Ludo and Chess with popular online titles like Aviator and Mines.",
     "category1": "Online Gaming & Entertainment",
-    "category2": ["Mobile App", "Responsive Website", "Gaming Platform"],
+    "category2": ["App UI", "Responsive Website", "Gaming Platform"],
     "duration": "12-16 weeks",
     "images": [
       "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771141388/1_rulinb.png",
@@ -1497,6 +1504,7 @@ export const AllProjectsData = [
     "link": "https://www.behance.net/gallery/243927401/Aviator-Gaming-Platform-KingX-Gaming",
     "linkText": "Behance Portfolio",
     "visitText": "Visit Behance",
+    technologies: [Figma, Xd, Sketch],
     "sections": [
       {
         "heading": "The Challenge",
@@ -1891,12 +1899,12 @@ export const AllProjectsData = [
     ]
   },
   {
-    "type": "UI & UX",
+    "type": "uiux",
     "slug": "moneybro",
     "title": "MoneyBro - Smart Digital Banking & Investment App",
     "description": "MoneyBro is a modern fintech mobile application that we designed to simplify daily banking, investments, and personal finance management all in one secure platform. This is not just another banking app - it's a comprehensive financial ecosystem that combines UPI payments, mutual fund investments, fixed deposits, loans, and complete portfolio management into a single, elegant, and easy-to-use application. The goal was to create a clean, intuitive, and trust-driven user experience that allows users to manage their money effortlessly while making informed financial decisions.",
     "category1": "Fintech, Banking, Investment",
-    "category2": ["Mobile Application", "Digital Banking", "Investment Platform"],
+    "category2": ["App UI", "Digital Banking", "Investment Platform"],
     "duration": "10-12 weeks",
     "images": [
       "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771173511/1_jkpc78.png",
@@ -1911,6 +1919,7 @@ export const AllProjectsData = [
     "link": "https://www.behance.net/gallery/243934631/UPI-Money-MoneyBro",
     "linkText": "Behance Portfolio",
     "visitText": "Visit Behance",
+    technologies: [Figma, Xd, Sketch],
     "sections": [
       {
         "heading": "The Problem We Solved",
@@ -2266,12 +2275,12 @@ export const AllProjectsData = [
     ]
   },
   {
-    "type": "UI & UX",
+    "type": "uiux",
     "slug": "qwik",
     "title": "Qwik E-Commerce - Fashion Store App & Website",
     "description": "Qwik E-Commerce is a modern quick-commerce fashion platform that we designed for both mobile applications (Android and iOS) and responsive website. This is not just another online clothing store - it's a complete quick-commerce ecosystem built specifically for fashion retail, focusing on speed, personalization, and seamless shopping experiences. The project covers the complete user journey from the moment someone discovers the app, through browsing and selecting products, to checkout, payment, order tracking, and last-mile delivery.",
     "category1": "Fashion E-Commerce, Quick Commerce",
-    "category2": ["Mobile Application", "Responsive Website", "Quick Commerce"],
+    "category2": ["Website & App UI", "Responsive Website", "Quick Commerce"],
     "duration": "12-14 weeks",
     "images": [
       "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771173685/1_xqzddy.png",
@@ -2289,6 +2298,7 @@ export const AllProjectsData = [
     "link": "https://www.behance.net/gallery/243805565/Qwik-E-Commerce-Fashion-Store-App-Website",
     "linkText": "Behance Portfolio",
     "visitText": "Visit Behance",
+    technologies: [Figma, Xd, Sketch],
     "sections": [
       {
         "heading": "The Challenge",
@@ -2661,12 +2671,12 @@ export const AllProjectsData = [
     ]
   },
   {
-    "type": "UI & UX",
+    "type": "uiux",
     "slug": "ticketbooking",
     "title": "TicketBooking - RailTicket Mobile App",
     "description": "TicketBooking is a modern rail ticket booking mobile application that we designed to completely simplify the train reservation experience. This is not just another booking app - it's a thoughtfully designed solution that makes booking train tickets as easy as ordering food online. The goal was to create a fast, intuitive, and reliable ticket booking system that allows users to search for trains, check seat availability, book tickets, and track their journeys seamlessly - all from their smartphone.",
     "category1": "Travel, Transportation, Ticket Booking",
-    "category2": ["Mobile Application", "Railway Booking", "Travel Tech"],
+    "category2": ["App UI", "Railway Booking", "Travel Tech"],
     "duration": "10-12 weeks",
     "images": [
       "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771173735/1_c6z8b9.png",
@@ -2674,6 +2684,7 @@ export const AllProjectsData = [
     "link": "https://www.behance.net/gallery/243993623/TicketBooking-RailTicket-App",
     "linkText": "Behance Portfolio",
     "visitText": "Visit Behance",
+    technologies: [Figma, Xd, Sketch],
     "sections": [
       {
         "heading": "The Problem We Solved",
@@ -3090,12 +3101,12 @@ export const AllProjectsData = [
     ]
   },
   {
-    "type": "UI & UX",
+    "type": "uiux",
     "slug": "snaptube",
     "title": "SnapTube - Video Downloader & Media Streaming App Redesign",
     "description": "SnapTube is a media downloading and streaming application that we completely redesigned to provide users with a fast, seamless, and user-friendly experience for discovering and saving online video content. This is not just a minor update - it's a complete reimagining of how people find, stream, and download videos from multiple platforms. The goal was to redesign and structure a clean, intuitive interface that allows users to easily browse, search, stream, and download videos in multiple formats and resolutions.",
     "category1": "Media, Entertainment, Video Downloading",
-    "category2": ["Mobile App Redesign", "Video Downloader", "Media Streaming"],
+    "category2": ["App UI", "Video Downloader", "Media Streaming"],
     "duration": "8-10 weeks",
     "images": [
       "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771176817/1_falc8a.png",
@@ -3113,6 +3124,7 @@ export const AllProjectsData = [
     "link": "https://www.behance.net/gallery/243928027/SnapTube-Redesign-Video-Downloader-App",
     "linkText": "Behance Portfolio",
     "visitText": "Visit Behance",
+    technologies: [Figma, Xd, Sketch],
     "sections": [
       {
         "heading": "The Problem We Solved",
@@ -3466,12 +3478,12 @@ export const AllProjectsData = [
     ]
   },
   {
-    "type": "UI & UX",
+    "type": "uiux",
     "slug": "spooky",
     "title": "Spooky - E-Commerce Fashion Store (App & Website)",
     "description": "Spooky is a modern fashion e-commerce platform that we designed for both mobile applications (Android and iOS) and responsive website. This is not just another online clothing store - it's a bold, visually engaging fashion destination that makes shopping exciting, fast, and personalized. The project focuses on delivering a complete shopping experience from the moment someone discovers the brand to receiving their fashion items at their doorstep. We designed every interaction to be smooth, intuitive, and delightful.",
     "category1": "Fashion E-Commerce, Online Retail",
-    "category2": ["Mobile Application", "Responsive Website", "Fashion Platform"],
+    "category2": ["Website & App UI", "Responsive Website", "Fashion Platform"],
     "duration": "12-14 weeks",
     "images": [
       "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771176875/1_ptqdhu.png",
@@ -3487,6 +3499,7 @@ export const AllProjectsData = [
     "link": "https://www.behance.net/gallery/243809719/Spooky-E-Commerce-Fashion-Store-(App-Website)",
     "linkText": "Behance Portfolio",
     "visitText": "Visit Behance",
+    technologies: [Figma, Xd, Sketch],
     "sections": [
       {
         "heading": "The Challenge",
@@ -3849,6 +3862,20 @@ export const AllProjectsData = [
         ]
       }
     ]
-  }
+  },
+  {
+    "type": "webdevelopment",
+    "slug": "beats",
+    "title": "Beats",
+    "category2": ["Website"],
+    "duration": "5-6 months",
+    technologies: [Flutter, Jetpack, Reactlogo, Apple, Android, Browser,],
+    "images": [
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771567962/beatsproject_rafpyz.png",
 
+    ],
+    "link": "https://beats-2ub8.onrender.com",
+    "linkText": "Visit Website",
+    "visitText": "Visit Website",
+  }
 ]
