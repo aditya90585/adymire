@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Footer.css";
 import {
   AppStore,
@@ -9,6 +9,7 @@ import OurStartups from "./OurStartups";
 import { BoyWithLaptop } from "@/assets";
 import SocialIcons from "../Common/SocialIcons";
 import { NavLink } from "react-router-dom";
+import AlertBox from "../UI/AlertBox";
 
 const followUsLinks = [
   {
@@ -134,6 +135,9 @@ const serviceLinks = [
 
 
 const Footer = () => {
+  const [alertOpen, setAlertOpen] = useState(false);
+
+
   return (
     <footer className="ad-footer">
       <div className="bf-img">
@@ -151,10 +155,15 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="ad-footer-store">
-            <img src={GooglePlay} alt="Google Play" />
+          <div onClick={()=>setAlertOpen(true)} className="ad-footer-store cursor-pointer">
+            <img   src={GooglePlay} alt="Google Play" />
             <img src={AppStore} alt="App Store" />
           </div>
+          <AlertBox 
+          message="We are working on it our Android & iOS App will release Soon , Thanks for your interest "
+          isOpen={alertOpen}
+          onClose={() => setAlertOpen(false)}
+          />
 
           <p className="ad-footer-follow-text">Follow us</p>
           <SocialIcons className="grid grid-cols-5 gap-2 w-fit  rounded-xl py-0.5 px-1" imgClass="h-[40px] w-[40px] bg-gray-200" />

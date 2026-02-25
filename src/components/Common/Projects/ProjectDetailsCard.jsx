@@ -6,7 +6,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from "swiper/modules";
-import UIUXLastSlide from './UIUXLastSlide';
+import UIUXLastSlide2 from './UIUXLastSlide2';
 
 
 
@@ -69,7 +69,7 @@ const ProjectDetailsCard = () => {
                             <SwiperSlide
                                 className={`bg-white `}
                             >
-                                <UIUXLastSlide className="md:h-100 h-60  overflow-y-scroll "  />
+                                <UIUXLastSlide2 className="md:h-100 h-60 bg-gray-800"  />
                             </SwiperSlide>
                         }
                     </Swiper>

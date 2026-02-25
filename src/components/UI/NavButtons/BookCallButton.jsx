@@ -42,7 +42,7 @@ const href = useHref("/contact");
       />
 
       <button onClick={navigateToBookingForm} className={` ${className} relative z-10 bg-[#fcd444]  py-${paddingY}  px-${paddingX}  gap-x-2 h-[${height}] flex justify-center items-center rounded-${rounded} text-${textSize} font-semibold cursor-pointer hover:shadow-[0px_2px_4px_#ba945d] hover:-translate-y-0.5 transition-transform ease-out`} >
-        <span className="h-[90%]">
+        <span className="h-full">
           <Lottie animationData={Phonecall} className="h-full" />
         </span>
         {text}

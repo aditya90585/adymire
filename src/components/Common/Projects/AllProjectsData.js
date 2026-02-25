@@ -3863,7 +3863,410 @@ export const AllProjectsData = [
       }
     ]
   },
-  {
+{
+  "type": "uiux",
+    "slug": "homesync",
+    "title": "HomeSync - Real Estate Property Buy & Sell App",
+    "description": "HomeSync is a comprehensive real estate platform that we designed to make property discovery and booking seamless and stress-free. This is not just another property listing app - it's a complete ecosystem that connects property seekers with owners instantly, making the entire process from browsing to booking incredibly simple. The goal was to create a platform where users can seamlessly discover properties, apply smart filters to find exactly what they need, book properties with confidence, and instantly connect with property owners via direct SMS and WhatsApp notifications.",
+    "category1": "Real Estate, Property Management",
+    "category2": ["App UI", "Property Platform", "Real Estate Tech"],
+    "duration": "10-11 weeks",
+    "images": [
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771841207/1_cpgd9h.png",
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771841207/2_giblid.png",
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771841207/3_tq2jnm.png",
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771841207/4_grmhe0.png",
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771841207/5_euxky7.png",
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771841161/6_bxtmge.png",
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771841161/7_dyrm5k.png",
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771841173/8_usdfis.png",
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771841206/9_eqg9p0.png",
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771841207/10_tw3obu.png",
+    ],
+    "link": "https://www.behance.net/gallery/243377105/HomeSync-Peoperty-Buy-Sell-app",
+      "linkText": "Behance Portfolio",
+    "visitText": "Visit Behance",
+    technologies: [Figma, Xd, Sketch],
+    "sections": [
+      {
+        "heading": "The Problem We Solved",
+        "content": [
+          "When we researched the real estate market, we identified several major problems that people face when looking for properties:"
+        ],
+        "bullets": [
+          "OVERWHELMING SEARCH EXPERIENCE - Finding the right property is frustrating with too many irrelevant listings shown, can't filter effectively by specific needs, search results don't match requirements, have to browse hundreds of properties, no way to save searches, can't compare properties easily, and location search is confusing. People waste hours looking through properties that don't fit their needs.",
+          "SLOW COMMUNICATION WITH OWNERS - Contacting property owners takes too long as you have to call during business hours, phone numbers not readily available, email responses take days, messages get lost, can't schedule visits easily, no instant way to ask questions, and miss opportunities due to slow responses. By the time you reach the owner, good properties are already taken.",
+          "LACK OF PROPERTY INFORMATION - Property details are often incomplete with poor quality photos, missing important details, no floor plans, unclear pricing, hidden costs not mentioned, property history unknown, and no neighborhood information. Users can't make informed decisions without complete information.",
+          "NO TRUST OR VERIFICATION - Fraud and scams are common concerns with fake listings, unverified owners, properties that don't exist, photos from different properties, prices don't match reality, duplicate listings everywhere, and no way to verify authenticity. People are afraid of being scammed when looking for properties.",
+          "COMPLICATED BOOKING PROCESS - Securing a property is unnecessarily complex with multiple steps and paperwork, unclear booking procedures, don't know if property is still available, can't book visits easily, negotiation is difficult, payment process unclear, and documentation confusing. Even when you find the right property, booking it is a hassle.",
+          "POOR MOBILE EXPERIENCE - Most real estate platforms are not mobile-friendly with desktop-focused designs, hard to use on phones, can't search on the go, photos don't load properly, forms difficult to fill, and can't communicate easily. In today's mobile world, property search must work perfectly on phones."
+        ]
+      },
+      {
+        "heading": "The Core Insight",
+        "content": [
+          "People want to find their perfect property quickly, get complete information clearly, and connect with owners instantly - all from their smartphone, anytime, anywhere."
+        ]
+      },
+      {
+        "heading": "Our Comprehensive Solution",
+        "content": [
+          "We designed HomeSync as a complete real estate ecosystem that solves all these problems."
+        ]
+      },
+      {
+        "heading": "Smart Property Discovery",
+        "bullets": [
+          "Intelligent search with autocomplete",
+          "Advanced filters (price, location, size, amenities, type)",
+          "Map-based search",
+          "Saved searches with alerts",
+          "Recently viewed properties",
+          "Similar property suggestions",
+          "Neighborhood insights",
+          "School and hospital proximity",
+          "Public transport access",
+          "Safety ratings"
+        ]
+      },
+      {
+        "heading": "Instant Owner Connection",
+        "bullets": [
+          "One-tap WhatsApp messaging",
+          "Direct SMS to owner",
+          "In-app messaging",
+          "Instant call button",
+          "Schedule property visits",
+          "Real-time notifications",
+          "Quick response system",
+          "Chat history saved",
+          "Multiple contact options"
+        ]
+      },
+      {
+        "heading": "Complete Property Information",
+        "bullets": [
+          "High-resolution photo galleries",
+          "360-degree virtual tours",
+          "Detailed descriptions",
+          "Floor plans and layouts",
+          "Exact pricing breakdown",
+          "All amenities listed",
+          "Property documents",
+          "Verification badges",
+          "Owner information",
+          "Property history",
+          "Neighborhood details"
+        ]
+      },
+      {
+        "heading": "Verified & Trustworthy",
+        "bullets": [
+          "Verified property listings",
+          "Owner verification process",
+          "Property document verification",
+          "Authentic photos guaranteed",
+          "Spam and duplicate detection",
+          "Report suspicious listings",
+          "Secure payment options",
+          "Legal compliance",
+          "Fraud prevention",
+          "User reviews and ratings"
+        ]
+      },
+      {
+        "heading": "Seamless Booking Flow",
+        "bullets": [
+          "Check real-time availability",
+          "Schedule visits instantly",
+          "Express interest with one tap",
+          "Secure booking deposits",
+          "Digital documentation",
+          "E-signature support",
+          "Payment tracking",
+          "Booking confirmation",
+          "Visit reminders",
+          "Cancellation management"
+        ]
+      },
+      {
+        "heading": "Mobile-First Experience",
+        "bullets": [
+          "Fast, responsive design",
+          "Touch-optimized interface",
+          "Works offline (saved properties)",
+          "Push notifications",
+          "Location services",
+          "Camera integration",
+          "Quick share options",
+          "Thumb-friendly navigation"
+        ]
+      },
+      {
+        "heading": "Key Features Breakdown",
+        "content": [
+          "Comprehensive features covering the entire property search and booking journey."
+        ]
+      },
+      {
+        "heading": "Login & Sign Up",
+        "content": [
+          "Easy account access with Registration Options (Phone number signup, email registration, Google account login, Facebook login, quick guest browsing, OTP verification, profile creation), User Types (Property seekers buyers/renters, property owners/dealers, real estate agents, property managers), and Benefits of Account (Save favorite properties, get personalized recommendations, track your searches, booking history, saved filters, instant notifications)."
+        ]
+      },
+      {
+        "heading": "Onboarding",
+        "content": [
+          "Welcome experience with Onboarding Screens (Welcome to HomeSync, browse properties easily, connect with owners instantly, book your dream property, get started tutorial) and Preference Setup (What are you looking for Buy/Rent, property type preference, budget range, preferred locations, must-have amenities, size requirements)."
+        ]
+      },
+      {
+        "heading": "Browse & Discover",
+        "content": [
+          "Property exploration featuring Home Feed (Featured properties, properties near you, recently added, popular in your area, recommended for you, price drops, virtual tour available, open house today) and Property Cards (Property images, property type and name, location with pin, price total or monthly, bedrooms and bathrooms, area in sq.ft, key features, verified badge, favorite button, share button)."
+        ]
+      },
+      {
+        "heading": "Property Search",
+        "content": [
+          "Find exactly what you need with Search Bar (Location search, property type search, keyword search, voice search, recent searches, popular searches, search suggestions, auto-complete) and Search Results (List view, grid view, map view, sort options, filter options, save this search, number of results)."
+        ]
+      },
+      {
+        "heading": "Search Filters",
+        "content": [
+          "Advanced filtering featuring:"
+        ],
+        "bullets": [
+          "BASIC FILTERS - Property type (Apartment, House, Villa, Plot, Office), Transaction type (Buy, Rent, Lease), Price range slider, Location/Area, Bedrooms (1, 2, 3, 4+), Bathrooms, Property size (sq.ft)",
+          "ADVANCED FILTERS - Furnished/Unfurnished, Parking available, Pet-friendly, Age of property, Floor number, Facing direction, Ownership type, Availability date",
+          "AMENITIES FILTER - Swimming pool, Gym/Fitness center, Garden/Park, Security, Power backup, Elevator/Lift, Club house, Children's play area, Community hall",
+          "NEARBY FACILITIES - Schools (distance), Hospitals (distance), Metro stations, Bus stops, Shopping centers, Parks & recreation",
+          "LOCATION FILTERS - City, Locality/Neighborhood, Specific landmark, Distance from center, Area type (residential/commercial)"
+        ]
+      },
+      {
+        "heading": "Property Details",
+        "content": [
+          "Complete property information featuring:"
+        ],
+        "bullets": [
+          "PROPERTY OVERVIEW - Property name and type, exact location with map, price and pricing details, property size, number of rooms, property age, possession date, available from date",
+          "IMAGE GALLERY - Multiple high-quality photos, exterior views, interior views, kitchen/bedrooms/bathrooms, common areas, view from property, swipe through gallery, full-screen view, zoom capability, 360-degree virtual tour",
+          "DETAILED DESCRIPTION - Full property description, unique selling points, property highlights, condition and maintenance, recent renovations, special features",
+          "FLOOR PLAN - Layout diagram, room dimensions, scale representation, download option",
+          "AMENITIES & FEATURES - Complete list of amenities, property features, building facilities, included appliances, utilities information",
+          "LOCATION INFORMATION - Exact address, interactive map, street view, distance to key locations, nearby landmarks, neighborhood overview, public transport, walkability score",
+          "PRICE BREAKDOWN - Base price, maintenance charges, other charges, tax details, total cost, price per sq.ft, negotiable indicator",
+          "LEGAL INFORMATION - Ownership type, legal documents, approval status, property papers, NOC status, compliance certificates"
+        ]
+      },
+      {
+        "heading": "Owner Information",
+        "content": [
+          "Connect with property owners featuring Owner Profile (Owner/Agent name, photo, contact verified badge, properties listed, member since date, average response time, reviews and ratings), Contact Options (WhatsApp message instant, SMS message instant, in-app messaging, direct call, schedule callback, email owner, request property visit), and Notification System (Owner receives instant alert, you receive response notification, visit confirmation alerts, SMS notifications, WhatsApp notifications, push notifications)."
+        ]
+      },
+      {
+        "heading": "Notifications",
+        "content": [
+          "Stay updated with Notification Types (New properties matching your search, price drops on saved properties, property owner responded, visit scheduled/confirmed, property visit reminder, booking status updates, document requests, payment reminders, property status changes, favorite property updates) and Notification Settings (Enable/disable notifications, notification preferences, sound and vibration, quiet hours, email notifications, SMS alerts)."
+        ]
+      },
+      {
+        "heading": "User Profile",
+        "content": [
+          "Manage your account with Profile Information (Profile photo, name, email, phone number, current location, preferred locations, edit profile), Preferences (Looking to buy or rent, property type preferences, budget range, size requirements, amenity preferences, notification settings), and Saved & Favorites (Saved properties, favorite listings, saved searches, compared properties, recently viewed)."
+        ]
+      },
+      {
+        "heading": "Messaging",
+        "content": [
+          "Direct communication with In-App Messaging (Chat with property owners, chat with agents, send text messages, share photos, share location, voice messages, message read receipts, online status, typing indicators) and Message Features (Message history, search conversations, delete conversations, block users, report spam, quick replies, templates for common questions)."
+        ]
+      },
+      {
+        "heading": "Direct Call",
+        "content": [
+          "Instant communication with Call Features (One-tap calling, owner's verified number, call history, callback requests, schedule calls, call recording with permission, add to contacts, call logs)."
+        ]
+      },
+      {
+        "heading": "Schedule Property Visit",
+        "content": [
+          "Book viewings with Visit Scheduling (Select date and time, available time slots, instant booking, owner confirmation, visit details, add to calendar, set reminders, location directions, visit checklist) and Visit Management (Upcoming visits, past visits, reschedule option, cancel visit, visit feedback)."
+        ]
+      },
+      {
+        "heading": "Property Comparison",
+        "content": [
+          "Compare multiple properties with Comparison Features (Select properties to compare, side-by-side comparison, price comparison, size comparison, amenities comparison, location comparison, pros and cons, distance comparison, score each property)."
+        ]
+      },
+      {
+        "heading": "Booking & Offers",
+        "content": [
+          "Secure your property with Express Interest (Show interest button, owner receives alert, start negotiation, make an offer, counter-offers, offer acceptance) and Booking Process (Check availability, book property, security deposit, token amount payment, booking confirmation, document submission, e-signature, agreement generation)."
+        ]
+      },
+      {
+        "heading": "AI-Powered Features",
+        "content": [
+          "Smart assistance featuring:"
+        ],
+        "bullets": [
+          "AI CAPABILITIES - Property recommendations based on behavior, smart price predictions, best time to buy suggestions, property value estimator, neighborhood analysis, market trends insights, chatbot for common questions, smart search refinement, similar property finder, automated property alerts",
+          "AI SEARCH ASSISTANT - Natural language search, 'Find me a 2BHK under 50 lakhs near metro', 'Show pet-friendly apartments in [area]', understands context and preferences, learns from your behavior"
+        ]
+      },
+      {
+        "heading": "Mortgage Calculator",
+        "content": [
+          "Financial planning with Calculator Features (Property price input, down payment, loan amount calculation, interest rate, loan tenure, monthly EMI calculation, total interest payable, total amount payable, amortization schedule, compare loan options)."
+        ]
+      },
+      {
+        "heading": "My Properties",
+        "content": [
+          "For property owners/dealers with List Your Property (Add property details, upload photos, set pricing, add amenities, property location, contact information, verification process, go live) and Manage Listings (Active listings, edit property details, mark as sold/rented, refresh listing, view analytics, leads received, interested buyers/renters)."
+        ]
+      },
+      {
+        "heading": "Settings & Preferences",
+        "content": [
+          "Customize experience with Account Settings (Edit profile, change password, email preferences, phone verification, privacy settings, account security), App Settings (Language selection, currency, measurement units, theme Light/Dark, notifications, location services, data usage), and Privacy & Security (Who can contact you, profile visibility, data sharing preferences, saved payment methods, login history, two-factor authentication)."
+        ]
+      },
+      {
+        "heading": "Help & Support",
+        "content": [
+          "Assistance when needed with Support Features (Help center, FAQs, how-to guides, video tutorials, contact support, live chat, call support, email support, report issues, feedback form)."
+        ]
+      },
+      {
+        "heading": "Design Approach",
+        "content": [
+          "Clean, Intuitive Interface with user-friendly design."
+        ]
+      },
+      {
+        "heading": "Visual Design",
+        "content": [
+          "Clean modern aesthetic with property photos as focus, clear typography, consistent layouts, intuitive icons, ample white space, organized information, and easy navigation. Color Palette features Primary professional blue (trust, reliability), Accent orange (call-to-action, urgency), Success green (verified, available), Neutral grays and whites, and Alert red (important information)."
+        ]
+      },
+      {
+        "heading": "Mobile-First Approach",
+        "content": [
+          "Optimized for smartphones with Mobile Optimization (Touch-friendly interface, large tappable buttons, thumb-zone navigation, swipe gestures, fast loading images, offline functionality, minimal data usage, battery efficient) and Responsive Design (Works on all screen sizes, portrait and landscape, tablet optimized, consistent experience)."
+        ]
+      },
+      {
+        "heading": "Trust-Building Design",
+        "content": [
+          "Inspire confidence with Trust Elements (Verification badges, security indicators, clear pricing, transparent information, user reviews, owner profiles, legal compliance, secure transactions)."
+        ]
+      },
+      {
+        "heading": "Speed & Performance",
+        "content": [
+          "Fast and responsive with Performance (Quick app launch, instant search results, fast image loading, smooth scrolling, responsive interactions, minimal lag, efficient caching)."
+        ]
+      },
+      {
+        "heading": "Our Role in This Project",
+        "content": [
+          "As the complete design partner, Adymire Technologies handled all aspects:"
+        ],
+        "bullets": [
+          "UI/UX DESIGN - Complete app design, 60+ screens designed, user interface design, visual design, icon design, animation specs, all user states, error states, empty states",
+          "USER FLOW DESIGN - User journey mapping, search and discovery flow, booking process flow, communication flow, profile management flow, property listing flow, navigation structure",
+          "INFORMATION ARCHITECTURE - Content organization, navigation hierarchy, feature prioritization, search structure, filter organization, data structure",
+          "DESIGN SYSTEM CREATION - Component library, color system, typography system, icon library (50+ icons), spacing system, design documentation"
+        ]
+      },
+      {
+        "heading": "AI Integration Possibilities",
+        "content": [
+          "HomeSync can be enhanced with AI automation including AI-Powered Search (Natural language queries, smart recommendations, predictive search, context-aware results), AI Chatbot (24/7 customer support, answer common questions, property recommendations, schedule assistance), AI Analytics (Property valuation, price predictions, market analysis, investment insights), and AI Matching (Buyer-property matching, automated notifications, preference learning, behavior prediction)."
+        ]
+      },
+      {
+        "heading": "Expected Outcomes & Benefits",
+        "bullets": [
+          "USER BENEFITS - Find properties easily, complete information, instant communication, book properties quickly, save time and effort, make informed decisions, trusted platform, mobile convenience",
+          "BUSINESS BENEFITS - More property listings, higher user engagement, faster transactions, better conversion rates, lower customer acquisition cost, competitive advantage, scalable platform, revenue growth",
+          "PROPERTY OWNER BENEFITS - Reach more buyers, instant lead notifications, easy property management, quick responses, better visibility, verified interested buyers"
+        ]
+      },
+      {
+        "heading": "Project Deliverables",
+        "bullets": [
+          "✓ Complete Mobile App Design - 60+ screens",
+          "✓ Design System",
+          "✓ Interactive Prototypes",
+          "✓ User Flow Diagrams",
+          "✓ Wireframes",
+          "✓ Icon Library",
+          "✓ Brand Guidelines",
+          "✓ Design System Documentation",
+          "✓ Style Guide",
+          "✓ Component Guidelines",
+          "✓ User Flow Documentation",
+          "✓ Developer Specifications",
+          "✓ Figma files",
+          "✓ Exported assets",
+          "✓ Source files"
+        ]
+      },
+      {
+        "heading": "Technical Specifications",
+        "content": [
+          "Design Tools: Figma, Adobe Illustrator, Principle. Recommended Tech Stack - Mobile App: React Native or Flutter, Native Swift (iOS), Native Kotlin (Android). Backend: Node.js, MongoDB, PostgreSQL. Integrations: Google Maps API, WhatsApp Business API, SMS Gateway, Payment Gateway, Cloud Storage."
+        ]
+      },
+      {
+        "heading": "Why This Project Matters",
+        "content": [
+          "HomeSync makes property search and booking as easy as ordering online, removing traditional barriers. Direct WhatsApp and SMS integration means property seekers and owners connect instantly, closing deals faster. With most property searches happening on mobile, HomeSync provides the perfect mobile experience. Verification and transparency build trust in an industry that needs it."
+        ]
+      },
+      {
+        "heading": "Services We Provide at Adymire Technologies",
+        "content": [
+          "We offer complete digital solutions including UI/UX Design (Real Estate App Design, Mobile App Design, Property Platform Design, Design System Creation), Web Development (Real Estate Platforms, Property Portals, Custom Web Applications), App Development (Native iOS Apps, Native Android Apps, Cross-Platform Apps, Real Estate Apps), and AI Automation (Property Recommendations, Chatbots, Price Prediction, Smart Search, Market Analysis, Lead Qualification)."
+        ]
+      },
+      {
+        "heading": "Why Choose Adymire Technologies?",
+        "bullets": [
+          "REAL ESTATE EXPERTISE - We understand the unique challenges of real estate platforms and property search experiences.",
+          "COMPLETE SOLUTION - From design to development to AI integration, we handle everything.",
+          "USER-CENTERED DESIGN - We design with real users in mind, making complex processes simple.",
+          "PROVEN RESULTS - Our portfolio demonstrates successful platforms that users love."
+        ]
+      },
+      {
+        "heading": "Project Timeline",
+        "content": [
+          "Typical timeline: Research & Discovery (2 weeks), Strategy & Planning (1 week), Wireframing (2 weeks), Visual Design (3 weeks), Prototyping (1 week), Refinement (1 week), Delivery (1 week). Total: 10-11 weeks."
+        ]
+      },
+      {
+        "heading": "Let's Build Your Real Estate Platform",
+        "content": [
+          "At Adymire Technologies Pvt Ltd, we create real estate platforms that connect buyers with properties effortlessly. Contact us today to discuss your property platform project!"
+        ]
+      },
+      {
+        "heading": "Project Credits",
+        "content": [
+          "Project: HomeSync - Real Estate Property Buy & Sell App | Platform: Mobile Application | Screens: 60+ screens | Features: Smart Search, Instant Messaging, Property Booking, AI Integration | View Project: https://www.behance.net/gallery/243377105/HomeSync-Peoperty-Buy-Sell-app"
+        ]
+      }
+    ]
+  },
+   {
     "type": "webdevelopment",
     "slug": "beats",
     "title": "Beats",
@@ -3875,6 +4278,21 @@ export const AllProjectsData = [
 
     ],
     "link": "https://beats-2ub8.onrender.com",
+    "linkText": "Visit Website",
+    "visitText": "Visit Website",
+  },
+  {
+    "type": "webdevelopment",
+    "slug": "music-academy",
+    "title": "Music Academy",
+    "category2": ["Website"],
+    "duration": "1 week",
+    technologies: [Flutter, Jetpack, Reactlogo, Apple, Android, Browser,],
+    "images": [
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771841650/Master_the_art_of_music_homepage_xkjkfy.png",
+
+    ],
+    "link": "https://music-academy-school-web.vercel.app",
     "linkText": "Visit Website",
     "visitText": "Visit Website",
   }

@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from "swiper/modules";
 import UIUXLastSlide from '../Common/Projects/UIUXLastSlide';
+import UIUXLastSlide2 from '../Common/Projects/UIUXLastSlide2';
 
 
 
@@ -15,7 +16,7 @@ const ProjectShowcaseCard = ({ project }) => {
 
     return (
         <div
-            className="bg-white rounded-2xl border shadow-sm p-10 grid grid-cols-1 lg:grid-cols-2 gap-10"
+            className="bg-white rounded-2xl border shadow-sm md:p-10 p-2 grid grid-cols-1 lg:grid-cols-2 gap-10"
         >
             <div>
                 <h2 className="text-2xl font-bold mb-1">
@@ -75,7 +76,7 @@ const ProjectShowcaseCard = ({ project }) => {
                         nextEl: `.project-showcase-next-${project?.slug}`,
                     }}
                     modules={[Pagination, Navigation]}
-                    className="relative mySwiper w-full md:h-90 h-60 rounded-xl border-2 bg-gray-800 border-yellow-400 overflow-hidden mb-6">
+                    className="relative mySwiper w-full md:h-100 h-60 rounded-xl border-2 bg-gray-800 border-yellow-400 overflow-hidden mb-6">
                     {project?.images?.map((image, i) => {
                         return <SwiperSlide key={i}>
                             <img
@@ -87,7 +88,7 @@ const ProjectShowcaseCard = ({ project }) => {
                     })}
                     {project?.type == "uiux" &&
                         <SwiperSlide className='bg-white' >
-                            <UIUXLastSlide className="w-full md:h-90 h-60 overflow-y-scroll" />
+                            <UIUXLastSlide2 className="w-full md:h-100 h-60 bg-gray-800" />
                         </SwiperSlide>
                     }
 

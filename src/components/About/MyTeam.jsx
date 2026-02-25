@@ -10,7 +10,7 @@ import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 export const teamMembers = [
     { name: "Rohan", role: "Co-Founder & CTO", image: rohan },
     { name: "Yashveer Giri Goswami", role: "Founder & CEO", image: YashveerGiri },
-    { name: "Abhisekh Giri", role: "COO", image: abhisekhgiri },
+    { name: "Abhishek Giri", role: "COO", image: abhisekhgiri },
     { name: "Ashish Kumar", role: "Full Stack MERN Developer", image: ashish },
     { name: "Aditya Rajput", role: "Full Stack MERN Developer", image: aditya },
     { name: "Abhisekh P", role: "Full Stack Web Developer", image: abhisekhmannu },

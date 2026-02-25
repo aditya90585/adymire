@@ -11,7 +11,7 @@ const TrustedBy = () => {
                   <p>Customer</p>
     
                   <div className="ty-avatars">
-                   <img className="w-[70%] mx-auto my-2"  src={FourCustomers} alt="customers" />
+                   <img className="w-[60%] mx-auto my-2"  src={FourCustomers} alt="customers" />
                   </div>
                 </div>
     
