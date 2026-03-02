@@ -11,6 +11,7 @@ import ServicesSelector from "./ServicesSelector";
 import SpecificServicesSelector from "./SpecificServicesSelector";
 import { Navigate, useNavigate } from "react-router-dom";
 import ThankYou from "./ThankYou";
+import CountriesTimezoneSelector from "./CountriesTimezoneSelector";
 
 
 const SERVICES = [
@@ -76,12 +77,13 @@ const ROLES = [
 
 const CONTACT_MODES = ["Call", "WhatsApp", "Email"];
 const Your_Budget = [
-  "Less than $1500",
-  "$1500 – $5000",
-  "$5000 – $10,000",
-  "$10,000 – $15,000",
-  "$15,000 – $20,000",
-  "More than $20,000",
+  "$5k-$10K",
+  "$10k-$20K",
+  "$20k-$50K",
+  "$50k-$100K",
+  "$100k-$150K",
+  "$150k-$200K",
+  "More than $200k"
 ]
 const SOURCES = [
   "Google",
@@ -115,6 +117,7 @@ const ApplyContactForm = () => {
   const [serviceOpen, setServiceOpen] = useState(false)
   const [specificserviceOpen, setSpecificServiceOpen] = useState(false)
   const [selected, setSelected] = useState(null)
+  const [openTimezone, setopenTimezone] = useState(false)
 
   const [submitState, setSubmitState] = useState(false)
 
@@ -182,6 +185,11 @@ const ApplyContactForm = () => {
     loadCountries();
   }, [reset, setValue]);
 
+  useEffect(() => {
+    setValue("timezone",null)
+  }, [selected])
+  
+
   const selectedServices = useWatch({ control, name: "service" });
   const selectedSpecificServices = useWatch({
     control,
@@ -201,6 +209,7 @@ const ApplyContactForm = () => {
       )
     );
   }, [selectedServices]);
+
   const formValues = watch();
 
 
@@ -222,6 +231,7 @@ const ApplyContactForm = () => {
       localStorage.removeItem(ADYMIRE_STORAGE_KEY);
     }
   })
+
   return (
     <section className="max-w-screen mx-auto py-14 px-4 md:px-0">
       <ContactHeader />
@@ -275,7 +285,8 @@ const ApplyContactForm = () => {
                     setOpen={setOpen}
                     COUNTRIES={COUNTRIES}
                     selected={selected}
-                    setSelected={setSelected} />
+                    setSelected={setSelected}
+                  />
 
                 )}
               />
@@ -355,6 +366,36 @@ const ApplyContactForm = () => {
               labelClass="font-semibold text-xl mb-4"
               className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 font-semibold focus:outline-none focus:border-amber-300 focus:shadow-[0px_1px_8px_yellow]"
             />
+            <div>
+              <Input
+                {...register("meetingDate", { required: "this field must be required" })}
+                onClick={(e) => e.target.showPicker()}
+                label="Meeting Date"
+                type="date"
+                placeholder="paste link here"
+                labelClass="font-semibold text-xl mb-4"
+                className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4  font-semibold focus:outline-none focus:border-amber-300 focus:shadow-[0px_1px_8px_yellow]"
+              />
+              {errors.meetingDate && <div className="text-xs pl-1 pt-1 text-red-600">{errors?.meetingDate?.message}</div>}
+
+            </div>
+            <div>
+              <Input
+                {...register("meetingTime", { required: "this field must be required" })}
+                onClick={(e) => e.target.showPicker()}
+                label="Meeting Time"
+                type="time"
+                placeholder="paste link here"
+                labelClass="font-semibold text-xl mb-4"
+                className="w-full  border-2 border-gray-300 rounded-lg py-4 px-4 pl-40 font-semibold focus:outline-none focus:border-amber-300 focus:shadow-[0px_1px_8px_yellow]"
+                element={<CountriesTimezoneSelector control={control} setValue={setValue} open={openTimezone} setOpen={setopenTimezone} COUNTRIES={COUNTRIES} selected={selected} setSelected={setSelected} />}
+
+              />
+              {errors.meetingTime && <div className="text-xs pl-1 pt-1 text-red-600">{errors?.meetingTime?.message}</div>}
+              {errors.timezone && <div className="text-xs pl-1 pt-1 text-red-600">{errors?.timezone?.message}</div>}
+
+            </div>
+
           </div>
         </div>
 

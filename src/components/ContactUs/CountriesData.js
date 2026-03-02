@@ -1,6 +1,6 @@
 export const getCountriesData = async () => {
 
-    const API_URL = "https://restcountries.com/v3.1/all?fields=name,cca2,idd"
+    const API_URL = "https://restcountries.com/v3.1/all?fields=name,cca2,idd,timezones"
 
     const res = await fetch(API_URL)
     const json = await res.json()
@@ -12,6 +12,7 @@ export const getCountriesData = async () => {
           name: c.name.common,
           code: c.cca2,
           phone: c.idd.root + (c.idd.suffixes?.[0] || ""),
+          timezones:c.timezones
         }
       })
        .filter(Boolean)

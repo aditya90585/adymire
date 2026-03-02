@@ -24,7 +24,7 @@
   position: absolute;
   inset: -15px;
   border-radius: 20px;
-  background: rgba(245, 180, 116, 0.4);
+  background: rgba(252, 227, 1, 0.582);
   animation: pulseRing 1.8s ease-out infinite;
   z-index: 0;
 }

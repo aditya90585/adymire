@@ -1,22 +1,29 @@
 import {AdymireLogo2} from "@/assets";
+import { staggerFadeInOnScroll } from "../../animations/stagger";
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
 
 
 const OurStory = () => {
+   const oscontref = useRef()
+  useGSAP(() => {
+    staggerFadeInOnScroll(".os-trigger-ani",{trigger:oscontref.current,y:70,stagger:0.2,delay:0.8})
+  },{scope:oscontref})
   return (
-    <section className="w-full bg-[#fffaf2] py-4 lg:py-6">
+    <section ref={oscontref} className="w-full bg-[#fffaf2] py-4 lg:py-6">
       <div className="text-center mb-6 px-4 lg:px-15">
-        <h2 className="text-2xl lg:text-3xl font-bold tracking-wide">
+        <h2 className="text-2xl lg:text-3xl font-bold tracking-wide os-trigger-ani">
           OUR STORY
         </h2>
         <div className="w-20 h-1 bg-yellow-400 mx-auto mt-3 rounded" />
       </div>
 
       <div className="lg:max-w-[50%] max-w-full">
-        <h3 className="text-xl lg:text-2xl font-bold mb-3 px-4 lg:px-15">
+        <h3 className="text-xl lg:text-2xl font-bold mb-3 px-4 lg:px-15 os-trigger-ani">
           Our Journey
         </h3>
 
-        <p className="text-gray-600 text-base lg:text-xl font-semibold w-full px-4 lg:px-15">
+        <p className="text-gray-600 text-base lg:text-xl font-semibold w-full px-4 lg:px-15 os-trigger-ani">
           We transform old or dull spaces into modern, efficient,
           and stylish environments with minimal disruption.
         </p>
@@ -24,7 +31,7 @@ const OurStory = () => {
 
       <div className="w-full h-auto lg:h-115 mx-auto pr-4 sm:pr-15 flex items-center relative mt-6 lg:mt-0">
         <div className="h-[80%] w-full lg:w-[80%]">
-          <div className="bg-[#fff0c2] px-4 lg:px-15 lg:pr-60 w-full h-full flex justify-center items-center py-6 lg:py-0">
+          <div className="bg-[#fff0c2] os-trigger-ani px-4 lg:px-15 lg:pr-60 w-full h-full flex justify-center items-center py-6 lg:py-0">
             <p className="text-[#311804c7] text-base lg:text-2xl font-semibold font-mono leading-relaxed">
               <span className="font-bold text-[#311804c7] text-xl lg:text-3xl">
                 At Adymire
@@ -38,8 +45,8 @@ const OurStory = () => {
           </div>
         </div>
 
-        <div className="hidden lg:flex justify-center lg:justify-end h-full aspect-square absolute right-10">
-          <div className="h-full w-full rounded-full bg-[#fcfcfc] flex items-center justify-center">
+        <div className="hidden os-trigger-ani lg:flex justify-center lg:justify-end h-full aspect-square absolute right-10">
+          <div className=" h-full w-full rounded-full bg-[#fcfcfc] flex items-center justify-center">
             <img
               src={AdymireLogo2}
               alt="Our Story"

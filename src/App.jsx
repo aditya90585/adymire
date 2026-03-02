@@ -2,20 +2,20 @@ import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { WhatsappIcon } from "@/assets"
 import Home from './pages/Home'
-import AdminLogin from './pages/AdminLogin'
-import OTPVerification from './pages/OTPVerification'
-import AdminDashboard from './pages/AdminDashboard'
-import PaymentSearch from './pages/PaymentSearch'
-import PaymentRedirect from './pages/PaymentRedirect'
-import PaymentProcess from './pages/PaymentProcess'
+// import AdminLogin from './pages/AdminLogin'
+// import OTPVerification from './pages/OTPVerification'
+// import AdminDashboard from './pages/AdminDashboard'
+// import PaymentSearch from './pages/PaymentSearch'
+// import PaymentRedirect from './pages/PaymentRedirect'
+// import PaymentProcess from './pages/PaymentProcess'
 import './App.css'
 import Services from './pages/Services'
 import About from './pages/About'
 import ScrollToTop from './components/ScrollToTop'
 import Portfolio from './pages/Portfolio'
-import Signup from './components/ClientArea/SignUp'
-import ClientLogin from './components/ClientArea/ClientLogin'
-import ClientOtpVerification from './components/ClientArea/ClientOtpVerification'
+// import Signup from './components/ClientArea/SignUp'
+// import ClientLogin from './components/ClientArea/ClientLogin'
+// import ClientOtpVerification from './components/ClientArea/ClientOtpVerification'
 import UIUXProcess from './pages/ProcessPages/ProcessPage'
 import ContactUs from './pages/ContactUs'
 import Footer from './components/Footer/Footer'
@@ -25,6 +25,7 @@ import PoliciesPage from './components/Policies/PoliciesPage'
 import { BiBot } from 'react-icons/bi'
 import Lottie from 'lottie-react'
 import ScrollToHash from './components/Common/ScrollToHash'
+import PricingPlans from './pages/PricingPlans'
 
 function App() {
   const navigateToWhatsapp = () => {
@@ -50,6 +51,7 @@ function App() {
           <Route path='/projectDetails/:projectname' element={<ProjectDetailsCard />} />
 
           <Route path="/policy/:policytype" element={<PoliciesPage />} />
+          <Route path="/pricing-plans" element={<PricingPlans />} />
           {/* <Route path="/user/signup" element={<Signup />} />
           <Route path="/client/login" element={<ClientLogin />} />
           <Route path="/client/otp" element={<ClientOtpVerification />} />
@@ -61,7 +63,7 @@ function App() {
           <Route path="/payment/process" element={<PaymentProcess />} /> */}
         </Routes>
         <Footer />
-        <div className="fixed max-w-10 right-8 bottom-10 z-100 flex flex-col items-center justify-center gap-y-2">
+        <div className="fixed max-w-12 right-8 bottom-10 z-100 flex flex-col items-center justify-center gap-y-2">
           <div onClick={navigateToWhatsapp} className="bg-white p-2 shadow-sm rounded-full hover:shadow-md cursor-pointer">
             <Lottie animationData={WhatsappIcon} alt="whatsapp" />
           </div>

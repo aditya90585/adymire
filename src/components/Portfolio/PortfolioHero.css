@@ -1,6 +1,6 @@
 .portfolio-hero {
   padding: 0px 0px;
-  padding-top: 80px;
+  padding-top: 60px;
   background: linear-gradient(
     135deg,
     #fff6e5 0%,
@@ -8,6 +8,7 @@
     #d6d6f5 55%,
     #ffe8c8 80%
   );
+  
 }
 
 .portfolio-hero-container {
@@ -19,7 +20,7 @@
 .portfolio-hero-left {
   width: 50%;
 
-  padding: 30px 80px 80px 80px;
+  padding: 0px 80px 80px 80px;
 }
 
 .portfolio-hero-title {

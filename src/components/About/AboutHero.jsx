@@ -47,7 +47,7 @@ const AboutHero = () => {
 
 
                 </div>
-                <div className="about-hero-social">
+                <div className="about-hero-social about-hero-ani">
                    <SocialIcons className="grid grid-cols-5 gap-2 " />
                     <div className="about-hero-follow">
                         <span>Follow Us</span>
@@ -55,7 +55,7 @@ const AboutHero = () => {
                     </div>
                 </div>
 
-                <div className="about-hero-image">
+                <div className="about-hero-image about-hero-ani">
                     <img src={Founder1} alt="founder" />
                     
                 </div>

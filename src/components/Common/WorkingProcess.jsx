@@ -7,7 +7,7 @@ import {
   WorkingProcessicons3, 
   WorkingProcessicons4, 
   WorkingProcessicons5, 
-  WorkingProcessicons6 
+  WorkingProcessicons6
 } from "@/assets";
 import { useGSAP } from "@gsap/react";
 import { staggerFadeInOnScroll } from "../../animations/stagger";
@@ -62,7 +62,7 @@ export default function WorkingProcess() {
   
     const wpcontref = useRef()
       useGSAP(() => {
-        staggerFadeInOnScroll(".wp-trigger-ani",{trigger:wpcontref.current,stagger:0.3,y:10,x:60})
+        staggerFadeInOnScroll(".wp-trigger-ani",{trigger:wpcontref.current,stagger:0.4,y:10,x:60})
       },{scope:wpcontref})
   
   

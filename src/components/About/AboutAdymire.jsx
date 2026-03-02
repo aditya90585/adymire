@@ -1,19 +1,26 @@
-import React from "react";
-import {Founder2} from "@/assets"
+import React, { useRef } from "react";
+import { Founder2 } from "@/assets"
+import { useGSAP } from "@gsap/react";
+import { staggerFadeInOnScroll } from "../../animations/stagger";
 
 const AboutAdymire = () => {
+  const aboutadycontref = useRef()
+  useGSAP(() => {
+    staggerFadeInOnScroll(".action-trigger-ani", { trigger: aboutadycontref.current,y:50,stagger : 0.2, })
+  }, { scope: aboutadycontref })
+
   return (
-    <section className="bg-[#FFF4D9] py-12 px-2">
+    <section ref={aboutadycontref} className="bg-[#FFF4D9] py-12 px-2">
       <div className=" md:mx-10 mx-2">
-        <h2 className="text-center text-3xl font-bold mb-16 relative w-fit mx-auto">
+        <h2 className="text-center text-3xl font-bold mb-16 relative w-fit mx-auto action-trigger-ani">
           About Adymire
           <span className="absolute left-0 -bottom-2 h-1 w-full bg-[#F7C600] rounded"></span>
         </h2>
 
         <div className="flex justify-center md:gap-16 gap-0 items-center md:flex-row flex-col-reverse">
 
-          <div className="bg-[#fffbf2] md:w-[60%] w-full rounded-3xl p-8  shadow-md border-2 border-[#a8a7a7]">
-            <p className="text-gray-900 font-semibold leading-relaxed md:text-2xl text-base">
+          <div className="bg-[#fffbf2] md:w-[60%] w-full rounded-3xl p-8  shadow-md border-2 border-[#a8a7a7] action-trigger-ani">
+            <p className="text-gray-900 font-semibold leading-relaxed md:text-2xl text-base ">
               <span className="font-bold text-black">Adymire</span> is a dynamic, all-in-one platform offering a wide
               range of services designed to empower digital entrepreneurs,
               creators, and businesses. Whether you're launching an online
@@ -31,7 +38,7 @@ const AboutAdymire = () => {
             <div className="w-[70%] mx-auto mb-10 aspect-square col-start-1 row-start-1 rounded-full bg-[#dfbd8c] flex items-center justify-center">
 
             </div>
-            <div className="w-full h-full flex justify-center items-end col-start-1 row-start-1 pr-4">
+            <div className="w-full h-full flex justify-center items-end col-start-1 row-start-1 pr-4 action-trigger-ani">
 
               <img
                 src={Founder2}

@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import "./WhatMakesUsDifferent.css";
 import {
     WhatMakesUsDifferentImages1,
@@ -7,16 +8,55 @@ import {
     Whatsapp,
     CurveArrow
 } from "@/assets";
+import { staggerFadeInOnScroll } from "../../animations/stagger";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const WhatMakesUsDifferent = () => {
-     const navigateToWhatsapp = () => {
+    const navigateToWhatsapp = () => {
         const phoneNumber = "917302356804";
         const message = "Hello, I want to know more about your services";
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-        window.location.href = url;
+        // window.location.href = url;
+           window.open(url, '_blank');
     }
+
+    const aboutadycontref = useRef()
+    useGSAP(() => {
+        const cards = gsap.utils.toArray(".wmd-card");
+
+        cards.forEach((card) => {
+            const image = card.querySelector(".wmd-image");
+            const content = card.querySelector(".wmd-content");
+
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: card,
+                    start: "top 80%",
+                    toggleActions: "play none none reverse",
+                }
+            });
+
+            tl.from(card, {
+                y: 100,
+                opacity: 0,
+                duration: 1,
+                ease: "power2.out",
+            })
+                .from(image, {
+                    x: 100,
+                    opacity: 0,
+                    duration: 0.8,
+                    ease: "power2.out",
+                }, "-=0.5");
+        });
+
+    }, { scope: aboutadycontref });
+
     return (
-        <section className="wmd-section">
+        <section ref={aboutadycontref} className="wmd-section">
             <div className="wmd-container">
 
                 <h2 className="wmd-title">What makes us different</h2>
@@ -34,7 +74,7 @@ const WhatMakesUsDifferent = () => {
                         </div>
                     </div>
 
-                    <div className="wmd-image">
+                    <div className="wmd-image ">
                         <img src={WhatMakesUsDifferentImages1} alt="End to End Design" />
                     </div>
                 </div>
@@ -63,7 +103,7 @@ const WhatMakesUsDifferent = () => {
                         </p>
                     </div>
 
-                    <div className="wmd-image">
+                    <div className="wmd-image ">
                         <img src={WhatMakesUsDifferentImages3} alt="Premium Focus" />
                     </div>
                 </div>
@@ -76,8 +116,8 @@ const WhatMakesUsDifferent = () => {
                                 Message Us on
                                 <img src={Whatsapp} alt="whatsapp" />
                             </div>
-                              <img className="absolute w-20 -rotate-130 left-70 -top-10 md:block  hidden" src={CurveArrow} alt="" />
-                         
+                            <img className="absolute w-20 -rotate-130 left-70 -top-10 md:block  hidden" src={CurveArrow} alt="" />
+
                             <span >24×7</span>
                         </div>
                     </div>

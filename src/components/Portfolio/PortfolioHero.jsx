@@ -22,7 +22,7 @@ const PortfolioHero = () => {
       })
   },{})
     return (
-        <section className="portfolio-hero">
+        <section className="portfolio-hero h-screen">
             <div className="portfolio-hero-container">
 
                 <div className="portfolio-hero-left">
@@ -42,21 +42,21 @@ const PortfolioHero = () => {
                             <p>Design</p>
                         </div>
 
-                        <span className="portfolio-step-arrow">➶</span>
+                        <span className="portfolio-step-arrow portfolio-hero-ani">➶</span>
 
                         <div className="portfolio-step portfolio-hero-ani">
                             <img src={Development} alt="Development" />
                             <p>Development</p>
                         </div>
 
-                        <span className="portfolio-step-arrow ">➶</span>
+                        <span className="portfolio-step-arrow portfolio-hero-ani">➶</span>
 
                         <div className="portfolio-step portfolio-hero-ani">
                             <img src={DigitalMarketing} alt="Grow" />
                             <p>Grow</p>
                         </div>
                     </div>
-                    <div className="portfolio-hero-cta-wrapper">
+                    <div className="portfolio-hero-cta-wrapper portfolio-hero-ani">
                         {/* <button className="portfolio-hero-cta">
                          <img src={PhoneYellow} alt="call" />   Book a Strategy Call
                         </button> */}
@@ -64,7 +64,7 @@ const PortfolioHero = () => {
                     </div>
                 </div>
 
-                <div className="portfolio-hero-right">
+                <div className="portfolio-hero-right portfolio-hero-ani">
                     <img src={PortfolioHeroimg} alt="Portfolio Visual" />
                 </div>
 

@@ -23,6 +23,10 @@ const Sidebar = ({ toggleSidebar }) => {
             text: "Portfolio",
             routeLink: "/portfolio"
         },
+        {
+            text: "Pricing Plans",
+            routeLink: "/pricing-plans"
+        },
     ]
     const navigate = useNavigate()
     const location = useLocation();
@@ -45,7 +49,7 @@ const Sidebar = ({ toggleSidebar }) => {
                     <ChatOnWhatsappButton className="h-8 font-bold" textSize='xs' />
                     <BookCallButton className='h-8 w-full font-bold font-sans' textSize='xs' paddingX='5' />
                 </div>
-             <SocialIcons className="grid grid-cols-5 gap-6 w-full mt-10" imgClass="bg-gray-200"/>
+                <SocialIcons className="grid grid-cols-5 gap-6 w-full mt-10" imgClass="bg-gray-200" />
             </div>
         </div>
     )

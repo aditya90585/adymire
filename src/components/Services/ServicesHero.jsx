@@ -40,11 +40,13 @@ const ServicesHero = () => {
             </span>
             Book a Strategy Call
           </button> */}
+          <div className="services-hero-ani">
           <BookCallButton text="Book a Strategy Call" height="60px" className=" h-15 mx-auto sm:mx-0 hover:bg-[#f8f1d5] text-xl py-1" attention={true}  textSize="xl" rounded="xl" paddingY="1"/> 
+          </div>
         </div>
 
         <div className="services-hero__image-wrapper">
-          <div className="services-hero__image-card">
+          <div className="services-hero__image-card services-hero-ani">
             <img
               src={GirlSittingWithLaptop}
               alt="Hero visual"

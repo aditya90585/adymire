@@ -4,17 +4,15 @@ import { UIUX, Development, DigitalMarketing } from "@/assets";
 import './AgencyHelps.css'
 import { useGSAP } from '@gsap/react';
 import { staggerFadeInOnScroll } from '../../animations/stagger';
-import gsap from 'gsap';
-import { ScrollTrigger } from 'gsap/all';
 
 const AgencyHelps = () => {
-  const contref = useRef()
+  const helpscontref = useRef()
   useGSAP(() => {
-    staggerFadeInOnScroll(".trigger-ani",{trigger:contref.current})
-  })
+    staggerFadeInOnScroll(".trigger-ani",{trigger:helpscontref.current})
+  },{scope:helpscontref})
   return (
     <section className="agency-helps">
-      <div ref={contref} className="ah-container">
+      <div ref={helpscontref} className="ah-container">
         <h2 className="ah-section-title trigger-ani">Adymire Agency helps you</h2>
         <div className="process-steps">
           <div className="step-card trigger-ani">

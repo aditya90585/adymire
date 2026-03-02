@@ -32,31 +32,99 @@ const industries = [
 ];
 
 const SpecializedIndustries = () => {
-   const itemsRef = useRef([])
-   const SIContRef = useRef()
+  const itemsRef = useRef([])
+  const SIContRef = useRef()
 
+  // useGSAP(() => {
+  //   const wrapperAnim = gsap.to(".industries-wrapper", {
+  //     rotate: 360,
+  //     repeat: -1,
+  //     duration: 12,
+  //     ease: "none",
+  //   });
+
+  //   const cardAnim = gsap.to(".industry-card", {
+  //     rotate: -360,
+  //     repeat: -1,
+  //     duration: 12,
+  //     ease: "none",
+  //   });
+
+  //   const centerAnim = gsap.to(".center-circle", {
+  //     rotate: -360,
+  //     repeat: -1,
+  //     duration: 12,
+  //     ease: "none",
+  //   });
+  //   const wrapper = document.querySelector(".industries-wrapper");
+  //   wrapper.addEventListener("mouseenter", () => {
+  //     wrapperAnim.pause();
+  //     cardAnim.pause();
+  //     centerAnim.pause();
+  //   });
+
+  //   wrapper.addEventListener("mouseleave", () => {
+  //     wrapperAnim.play();
+  //     cardAnim.play();
+  //     centerAnim.play();
+  //   });
+  //   staggerFadeInOnScroll(".SI-ani", { trigger: SIContRef.current })
+  // }, { scope: SIContRef })
   useGSAP(() => {
-    gsap.to(".industries-wrapper", {
+
+    // Scoped selector (VERY IMPORTANT in React)
+    const q = gsap.utils.selector(SIContRef);
+
+    // Create animations
+    const wrapperAnim = gsap.to(q(".industries-wrapper"), {
       rotate: 360,
       repeat: -1,
       duration: 12,
       ease: "none",
-    })
-     gsap.to(".industry-card", {
-      rotate: -360,
-      repeat: -1,
-      duration: 12,
-      ease: "none",
-    })
-     gsap.to(".center-circle", {
-      rotate: -360,
-      repeat: -1,
-      duration: 12,
-      ease: "none",
-    })
+    });
 
-    staggerFadeInOnScroll(".SI-ani",{trigger:SIContRef.current})
-  },{scope:SIContRef})
+    const cardAnim = gsap.to(q(".industry-card"), {
+      rotate: -360,
+      repeat: -1,
+      duration: 12,
+      ease: "none",
+    });
+
+    const centerAnim = gsap.to(q(".center-circle"), {
+      rotate: -360,
+      repeat: -1,
+      duration: 12,
+      ease: "none",
+    });
+
+    const wrapper = q(".industries-wrapper")[0];
+
+    const handleEnter = () => {
+      wrapperAnim.pause();
+      cardAnim.pause();
+      centerAnim.pause();
+    };
+
+    const handleLeave = () => {
+      wrapperAnim.play(); // play(), NOT resume()
+      cardAnim.play();
+      centerAnim.play();
+    };
+
+    wrapper.addEventListener("mouseenter", handleEnter);
+    wrapper.addEventListener("mouseleave", handleLeave);
+
+    // Your scroll animation
+    staggerFadeInOnScroll(".SI-ani", { trigger: SIContRef.current });
+
+    // Cleanup (VERY IMPORTANT)
+    return () => {
+      wrapper.removeEventListener("mouseenter", handleEnter);
+      wrapper.removeEventListener("mouseleave", handleLeave);
+    };
+
+  }, { scope: SIContRef });
+
   return (
     <section ref={SIContRef} className="industries-section">
       <h2 className="industries-title SI-ani">Our Specialized Industries</h2>
@@ -66,15 +134,20 @@ const SpecializedIndustries = () => {
 
       <div className="industries-wrapper">
 
-        <div className="center-circle">
-          <img className="center-inner" src={AdymireLogo} alt="adymire" />
+        <div className="center-circle rounded-full">
+          <div className="absolute inset-0 z-0 flex rounded-full items-center justify-center">
+            <div className="si-attention-ring-1 " />
+            <div className="si-attention-ring-2 " />
+            <div className="si-attention-ring-3 " />
+            <div className="si-attention-ring-4 " />
+          </div>
+          <img className="center-inner relative z-10" src={AdymireLogo} alt="adymire" />
         </div>
 
         {industries.map((item, index) => (
           <div key={index}
-          className={`industry-card ${item.position}`}>
+            className={`industry-card ${item.position}`}>
             <div className="card-inner">
-
               <img className="industry-icon-box animate-pulse" src={item.icon} alt={item.title} />
 
               <h4>{item.title}</h4>

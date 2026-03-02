@@ -1,6 +1,6 @@
 .why {
   background: #fff8ec;
-  padding: 80px 60px;
+  padding: 40px 60px;
   text-align: center;
 }
 
@@ -33,8 +33,8 @@
 
 .why-card {
   position: relative;
-  width: 250px;
-  height: 280px;
+  width: 220px;
+  height: 240px;
   background: #fff;
   border-radius: 40px;
     border: 2px solid rgb(141, 140, 140) ;

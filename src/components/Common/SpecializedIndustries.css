@@ -141,6 +141,46 @@
   right: 40px;
 }
 
+.si-attention-ring-1 {
+  position: absolute;
+  inset: -20px;
+  border-radius: 50%;
+  background: rgba(252, 227, 1, 0.4);
+  animation: pulseRing 3s ease-out infinite;
+
+  z-index: 0;
+}
+
+.si-attention-ring-2 {
+  position: absolute;
+  inset: -20px;
+  border-radius: 50%;
+  background: rgba(252, 227, 1, 0.4);
+  animation: pulseRing 3s ease-out infinite;
+  animation-delay: 0.8s;
+  z-index: 0;
+}
+
+.si-attention-ring-3 {
+  position: absolute;
+  inset: -20px;
+  border-radius: 50%;
+  background: rgba(252, 227, 1, 0.4);
+  animation: pulseRing 3s ease-out infinite;
+  animation-delay: 1.6s;
+  z-index: 0;
+}
+
+.si-attention-ring-4 {
+  position: absolute;
+  inset: -20px;
+  border-radius: 50%;
+  background: rgba(252, 227, 1, 0.4);
+  animation: pulseRing 3s ease-out infinite;
+  animation-delay: 2.4s;
+  z-index: 0;
+}
+
 @media (max-width: 768px) {
   .industries-wrapper {
     width: 85%;
@@ -177,7 +217,7 @@
 
   .top-left {
     top: 20px;
-    left:20px
+    left: 20px
   }
 
   .top-right {

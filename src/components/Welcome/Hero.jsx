@@ -65,7 +65,7 @@ const Hero = () => {
 
         </div>
 
-        <div className="hero-right">
+        <div className="hero-right hero-left-ani">
           <img className="hero-image" src={SittingDarkMan} alt="hero-cover" />
         </div>
 
@@ -74,7 +74,7 @@ const Hero = () => {
         <img src={MetaShopifyGoogle} alt="Meta_Shopify_Google_partners" />
       </div>
       */}
-      <div className="hero-btn">
+      <div className="hero-btn hero-left-ani">
         <BookCallButton attention={true} text="Book a Strategy Call" className=" hover:bg-[#FFF1C6] h-15 mx-auto sm:mx-0" borderstate={true} backgroundnumber={2} textSize="xl" rounded="xl" height="45px" />
       </div>
       

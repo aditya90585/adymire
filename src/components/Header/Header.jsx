@@ -12,6 +12,7 @@ import Sidebar from './Sidebar'
 import gsap from 'gsap'
 import { CgClose } from 'react-icons/cg'
 import SocialIcons from '../Common/SocialIcons'
+import { BiChevronDown } from 'react-icons/bi'
 
 
 const Header = () => {
@@ -32,6 +33,10 @@ const Header = () => {
     {
       text: "Portfolio",
       routeLink: "/portfolio"
+    },
+    {
+      text: "Pricing Plans",
+      routeLink: "/pricing-plans"
     },
   ]
 
@@ -97,15 +102,30 @@ const Header = () => {
           <BookCallButton className='h-10' />
           {/* <NavLink to={"/client/login"} className="btn-login hover:bg-gray-800 text-white">Login</NavLink>
           <NavLink to={"/user/signup"} className="btn-signup">SignUP</NavLink> */}
-          <SocialIcons className="grid grid-cols-5 gap-2 bg-gray-100 rounded-xl py-0.5 px-1" imgClass="h-[40px] w-[40px] animate-pulse "/>
+          <div className="hidden xl:flex relative group/social">
+            <button className="flex items-center gap-1.5 bg-white border-2 border-[#f8cd30] text-[#f8cd30] hover:bg-[#f8cd30] hover:text-white px-4 py-2 rounded-xl font-bold text-sm 2xl:text-base transition-all hover:scale-105 shadow-sm whitespace-nowrap">
+              Follow US
+              <BiChevronDown className="w-3.5 h-3.5 transition-transform duration-200 group-hover/social:rotate-180" />
+            </button>
+            <div className="absolute top-full right-0 mt-3 invisible opacity-0 translate-y-2 group-hover/social:visible group-hover/social:opacity-100 group-hover/social:translate-y-0 transition-all duration-200 ease-out z-50 pt-2">
+              <div className="bg-white rounded-2xl shadow-xl border border-gray-100 p-1 min-w-70">
+                <div className="flex items-center justify-center gap-3">
+                  <SocialIcons className="grid grid-cols-5 gap-2 bg-white rounded-xl py-0.5 px-1" imgClass="h-[40px] w-[40px] animate-pulse " />
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
         </div>
 
         {sidebarState ? <CgClose onClick={toggleSidebar} className='slidebar-buttons hidden' /> :
-          <MdMenu onClick={toggleSidebar} className='slidebar-buttons hidden'  />}
+          <MdMenu onClick={toggleSidebar} className='slidebar-buttons hidden' />}
 
 
       </div>
-      <div ref={sidebarRef}  className='slidebar-cont w-full h-screen  hidden absolute left-full '>
+      <div ref={sidebarRef} className='slidebar-cont w-full h-screen  hidden absolute left-full '>
         <Sidebar toggleSidebar={toggleSidebar} />
       </div>
     </header >

@@ -1,41 +1,48 @@
+import { useRef } from "react";
 import "./FounderVision.css";
 import { UIUX, Development, DigitalMarketing } from "@/assets";
+import { staggerFadeInOnScroll } from "../../animations/stagger";
+import { useGSAP } from "@gsap/react";
 
 const FounderVision = () => {
+  const visioncontref = useRef()
+    useGSAP(() => {
+      staggerFadeInOnScroll(".action-trigger-ani", { trigger: visioncontref.current,y:50,stagger : 0.2, })
+    }, { scope: visioncontref })
   return (
-    <section className="fv-section">
+    <section ref={visioncontref} className="fv-section">
       <div className="fv-container">
 
-        <h2 className="fv-title">
+        <h2 className="fv-title action-trigger-ani">
           Founder & Vision
           <span className="fv-underline"></span>
         </h2>
 
-        <p className="fv-subtitle">
+        <p className="fv-subtitle action-trigger-ani">
           I’m Yash Goswami, founder of <span>Adymire</span>
         </p>
 
         <div className="fv-steps">
 
-          <div className="fv-step-card">
+          <div className="fv-step-card action-trigger-ani">
             <div className="fv-icon">
               <img className="animate-pulse" src={UIUX} alt="Design" />
             </div>
             <p>Design</p>
           </div>
 
-          <div className="fv-arrow">➶</div>
+          <div className="fv-arrow action-trigger-ani">➶</div>
 
-          <div className="fv-step-card">
+          <div className="fv-step-card action-trigger-ani">
             <div className="fv-icon">
               <img className="animate-pulse" src={Development} alt="Development" />
             </div>
             <p>Development</p>
           </div>
 
-          <div className="fv-arrow">➶</div>
+          <div className="fv-arrow action-trigger-ani">➶</div>
 
-          <div className="fv-step-card">
+          <div className="fv-step-card action-trigger-ani">
             <div className="fv-icon">
               <img className="animate-pulse" src={DigitalMarketing} alt="Grow" />
             </div>
@@ -44,7 +51,7 @@ const FounderVision = () => {
 
         </div>
 
-        <div className="fv-description-box">
+        <div className="fv-description-box action-trigger-ani">
           <p>
             <strong>Adymire</strong> is a dynamic, all-in-one platform offering a
             wide range of services designed to empower digital entrepreneurs,

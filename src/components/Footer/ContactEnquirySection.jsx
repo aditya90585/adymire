@@ -1,8 +1,16 @@
 import { WhatsappIcon, Phonecall, EmailAniIcon } from "@/assets";
+import { useGSAP } from "@gsap/react";
 import Lottie from "lottie-react";
+import { useRef } from "react";
+import { staggerFadeInOnScroll } from "../../animations/stagger";
+import { MdSignalCellularConnectedNoInternet0Bar } from "react-icons/md";
 
 
 const ContactEnquirySection = () => {
+     const cecontref = useRef()
+        useGSAP(() => {
+          staggerFadeInOnScroll(".ce-trigger-ani",{trigger:cecontref.current,stagger:0.4,delay:0.8,y:40})
+        },{scope:cecontref})
 
     const navigateToWhatsapp = () => {
         const phoneNumber = "917302356804";
@@ -54,15 +62,15 @@ const ContactEnquirySection = () => {
 
 
     return (
-        <section className="bg-white py-4">
+        <section ref={cecontref} className="bg-white py-4">
             <div className="max-w-7xl mx-auto px-6 text-center">
-                <h2 className="text-5xl font-bold mb-3">
+                <h2 className="text-5xl font-bold mb-3 ce-trigger-ani">
                     Contact us for
                 </h2>
-                <h3 className="text-3xl font-bold text-[#2d8504] mb-16">
+                <h3 className="text-3xl font-bold text-[#2d8504] mb-16 ce-trigger-ani">
                     Project Enquiries
                 </h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 ce-trigger-ani">
                     {contactData.map((item, index) => (
                         <div
                             onClick={item?.method}

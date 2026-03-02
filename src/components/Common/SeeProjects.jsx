@@ -8,11 +8,11 @@ import { useEffect } from "react";
 
 
 const categories = [
-  { name: "UI & UX",type:"uiux", icon: CategoryUIUX },
-  { name: "Marketing",type:"marketing", icon: CategoryDigitalMarketing },
-  { name: "Web Development",type:"webdevelopment", icon: CategoryWebDevelopment },
-  { name: "App Development",type:"appdevelopmemt", icon: CategoryAppDevelopment },
-  { name: "AI Automation", type:"aiautomation",icon: CategoryAiAutomation },
+  { name: "UI & UX", type: "uiux", icon: CategoryUIUX },
+  { name: "Marketing", type: "marketing", icon: CategoryDigitalMarketing },
+  { name: "Web Development", type: "webdevelopment", icon: CategoryWebDevelopment },
+  { name: "App Development", type: "appdevelopmemt", icon: CategoryAppDevelopment },
+  { name: "AI Automation", type: "aiautomation", icon: CategoryAiAutomation },
 ];
 
 
@@ -23,9 +23,9 @@ const SeeProjects = () => {
   const [projects, setProjects] = useState([])
 
   useEffect(() => {
-  const filterProjects =   AllProjectsData.filter((projects)=> projects.type == activeCategory)
-  setProjects(filterProjects)
-}, [activeCategory])
+    const filterProjects = AllProjectsData.filter((projects) => projects.type == activeCategory)
+    setProjects(filterProjects)
+  }, [activeCategory])
 
 
   return (

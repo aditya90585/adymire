@@ -16,12 +16,12 @@ const TrustedBy = () => {
                 </div>
     
                 <div className="ty-stat">
-                  <strong>10k+</strong>
+                  <strong>40+</strong>
                   <p>Complete Projects</p>
                 </div>
     
                 <div className="ty-stat">
-                  <strong>50k+</strong>
+                  <strong>30+</strong>
                   <p>Satisfied Clients</p>
                 </div>
     

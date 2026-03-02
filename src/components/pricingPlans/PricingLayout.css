@@ -1,0 +1,57 @@
+.all-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.all-pagination .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #ccc;
+    opacity: 1;
+    margin: 0 6px;
+    transition: all 0.3s ease;
+}
+
+.all-pagination .swiper-pagination-bullet-active {
+    width: 18px;
+    border-radius: 999px;
+    background: #FDC274;
+}
+
+
+.pricingPlans-swiper{
+    padding: 0px 40px;
+}
+
+.pricingPlans-swiper .swiper-slide{
+   transition:
+    background-color 0.5s ease,
+    border 0.4s ease,
+    box-shadow 0.4s ease;
+    transform: scale(0.9);
+}
+.pricingPlans-swiper .swiper-slide:hover {
+    border: 2px solid rgb(252, 179, 44);
+    transform: scale(1.02);
+}
+
+.pricingPlans-swiper .swiper-slide:hover .seeproject-button{
+background-color: #fdc700;
+border: 2px solid black;
+}
+
+.pricingPlans-swiper .swiper-slide:hover .seeproject-projecttype{
+    background-color: white;
+}
+
+
+.seeprojects-swiper .swiper-wrapper {
+  align-items: flex-start !important;
+}
+
+.pricingPlans-swiper .swiper-slide {
+  height: auto !important;
+}
+
