@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 
 
 import {
@@ -30,6 +30,11 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Pagination, Navigation } from "swiper/modules";
+import { useGSAP } from '@gsap/react';
+import { staggerFadeInOnScroll } from '../../animations/stagger';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 
 
@@ -109,10 +114,22 @@ const WhatWeDo = ({ contentState = false }) => {
 
   ];
 
+   const wwdocontref = useRef()
+        useGSAP(() => {
+      
+            const elements = gsap.utils.toArray(".wwdo-ani-element");
+            elements.forEach((element) => {
+                staggerFadeInOnScroll(element,{trigger:element})
+            });
+             setTimeout(() => {
+                    ScrollTrigger.refresh()
+                }, 100)
+        }, { scope: wwdocontref });
+    
 
   return (
-    <section className="services-wrapper">
-      <h2 className="section-title-WhatWeDo">Our Services</h2>
+    <section ref={wwdocontref} className="services-wrapper">
+      <h2 className="section-title-WhatWeDo wwdo-ani-element">Our Services</h2>
 
       <Swiper
         spaceBetween={60}
@@ -148,12 +165,12 @@ const WhatWeDo = ({ contentState = false }) => {
           nextEl: ".services-next",
         }}
         modules={[Pagination, Navigation]}
-        className="services-row mySwiper services-swiper"
+        className="services-row mySwiper services-swiper wwdo-ani-element"
       >
         {services.map((service, index) => (
           <SwiperSlide
             key={index}
-            className="service-card"
+            className="service-card "
           >
             <div className="service-card-inner">
 

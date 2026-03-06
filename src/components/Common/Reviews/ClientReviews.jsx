@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./ClientReviews.css";
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 import { SwiperSlide, Swiper } from "swiper/react";
@@ -6,24 +6,43 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import clientReviewData from "./clientReviewData.json"
 import { MdStar, MdStarHalf } from "react-icons/md";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { staggerFadeInOnScroll } from "../../../animations/stagger";
+gsap.registerPlugin(ScrollTrigger);
 
 const ClientReviews = () => {
+  const clientreviewcontref = useRef()
+  useGSAP(() => {
+    const elements = gsap.utils.toArray(".clientreview-ani-element");
+
+
+    elements.forEach((element) => {
+      staggerFadeInOnScroll(element, { trigger: element })
+    });
+    setTimeout(() => {
+      ScrollTrigger.refresh()
+    }, 100)
+
+
+  }, { scope: clientreviewcontref });
   return (
-    <section className="crv-section">
+    <section  ref={clientreviewcontref} className="crv-section">
       <div className="crv-container">
 
-        <h2 className="crv-title">
+        <h2 className="crv-title clientreview-ani-element">
           Client Review
           <span className="crv-underline"></span>
         </h2>
 
-        <div className="crv-stars">
+        <div className="crv-stars clientreview-ani-element">
           {Array.from({ length: 5 }).map((_, i) => (
             <span key={i} className="crv-star">★</span>
           ))}
         </div>
 
-        <p className="crv-subtitle">
+        <p className="crv-subtitle clientreview-ani-element">
           See why thousands of business owners can’t stop talking about US
         </p>
 

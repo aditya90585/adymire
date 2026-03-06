@@ -10,6 +10,14 @@ import { BoyWithLaptop } from "@/assets";
 import SocialIcons from "../Common/SocialIcons";
 import { NavLink } from "react-router-dom";
 import AlertBox from "../UI/AlertBox";
+import { BiDownload } from "react-icons/bi";
+import { MdDownload } from "react-icons/md";
+import { useRef } from "react";
+import { staggerFadeInOnScroll } from "../../animations/stagger";
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(ScrollTrigger);
 
 const followUsLinks = [
   {
@@ -136,17 +144,29 @@ const serviceLinks = [
 
 const Footer = () => {
   const [alertOpen, setAlertOpen] = useState(false);
+  const footercontref = useRef()
+  useGSAP(() => {
+    const elements = gsap.utils.toArray(".footer-trigger-ani");
+
+
+    elements.forEach((element) => {
+      staggerFadeInOnScroll(element, { trigger: element })
+    });
+    setTimeout(() => {
+      ScrollTrigger.refresh()
+    }, 100)
+
+  }, { scope: footercontref })
+
 
 
   return (
-    <footer className="ad-footer">
-      <div className="bf-img">
+    <footer ref={footercontref} className="ad-footer">
+      <div className="bf-img footer-trigger-ani">
         <img src={BoyWithLaptop} alt="booking-form" />
       </div>
-      <div className="ad-footer-container">
-
-
-        <div className="ad-footer-brand">
+      <div className="ad-footer-container footer-trigger-ani">
+        <div className="ad-footer-brand flex flex-col justify-between">
           <div className="ad-footer-logo">
             <img src={AdymireLogo2} alt="Logo" />
             <div className="ad-footer-logo-text">
@@ -155,14 +175,14 @@ const Footer = () => {
             </div>
           </div>
 
-          <div onClick={()=>setAlertOpen(true)} className="ad-footer-store cursor-pointer">
-            <img   src={GooglePlay} alt="Google Play" />
+          <div onClick={() => setAlertOpen(true)} className="ad-footer-store cursor-pointer">
+            <img src={GooglePlay} alt="Google Play" />
             <img src={AppStore} alt="App Store" />
           </div>
-          <AlertBox 
-          message="We are working on it our Android & iOS App will release Soon , Thanks for your interest "
-          isOpen={alertOpen}
-          onClose={() => setAlertOpen(false)}
+          <AlertBox
+            message="We are working on it our Android & iOS App will release Soon , Thanks for your interest "
+            isOpen={alertOpen}
+            onClose={() => setAlertOpen(false)}
           />
 
           <p className="ad-footer-follow-text">Follow us</p>
@@ -181,6 +201,23 @@ const Footer = () => {
             <p>Compeny Helpline : +91 7056847526</p>
             <p>Email: support@ycomskills.com</p>
           </div>
+          <a
+            href="/company-deck.pdf"
+            download
+            className="flex items-center gap-4 my-2 group"
+          >
+            <div className="w-12 h-12 flex items-center justify-center rounded-full bg-yellow-400 text-black group-hover:scale-110 transition">
+              <MdDownload size={20} />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-black text-lg font-medium">
+                Company Deck
+              </span>
+              <span className="text-gray-400 text-sm">
+                PDF, 3 MB
+              </span>
+            </div>
+          </a>
         </div>
 
         <div className="ad-footer-links">
@@ -196,7 +233,7 @@ const Footer = () => {
           <h3>Company</h3>
           <ul>
             {companyLinks.map((item, index) => (
-              <li key={index}><NavLink  to={item?.redirectUrl}>{item?.name}</NavLink></li>
+              <li key={index}><NavLink to={item?.redirectUrl}>{item?.name}</NavLink></li>
             ))}
           </ul>
         </div>

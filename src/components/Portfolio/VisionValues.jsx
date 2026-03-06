@@ -2,11 +2,21 @@ import { Innovation ,Quality,Customer,Transparency} from "@/assets";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 import { staggerFadeInOnScroll } from "../../animations/stagger";
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 const VisionValues = () => {
     const vvcontref = useRef()
     useGSAP(() => {
-      staggerFadeInOnScroll(".vv-trigger-ani",{trigger:vvcontref.current,y:70,stagger:0.3,delay:0.8})
+      // staggerFadeInOnScroll(".vv-trigger-ani",{trigger:vvcontref.current,y:70,stagger:0.3,delay:0.8})
+     const elements = gsap.utils.toArray(".vv-trigger-ani");
+           elements.forEach((element) => {
+             staggerFadeInOnScroll(element, { trigger: element,y:100,scale:0 })
+           });
+           setTimeout(() => {
+             ScrollTrigger.refresh()
+           }, 100)
     },{scope:vvcontref})
   const values = [
     {
@@ -33,8 +43,8 @@ const VisionValues = () => {
 
   return (
     <section ref={vvcontref} className="w-full bg-[#fffaf2] py-4">
-      <div className="text-center mb-22">
-        <h2 className="text-3xl font-bold text-gray-900 tracking-wider vv-trigger-ani">
+      <div className="text-center mb-22 vv-trigger-ani">
+        <h2 className="text-3xl font-bold text-gray-900 tracking-wider ">
           Our Vision & Values
         </h2>
         <div className="w-38 h-0.75 bg-yellow-400 mx-auto mt-2 rounded" />

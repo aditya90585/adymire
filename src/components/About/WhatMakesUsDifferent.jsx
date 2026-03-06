@@ -14,13 +14,14 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
+
 const WhatMakesUsDifferent = () => {
     const navigateToWhatsapp = () => {
         const phoneNumber = "917302356804";
         const message = "Hello, I want to know more about your services";
         const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
         // window.location.href = url;
-           window.open(url, '_blank');
+        window.open(url, '_blank');
     }
 
     const aboutadycontref = useRef()
@@ -29,13 +30,13 @@ const WhatMakesUsDifferent = () => {
 
         cards.forEach((card) => {
             const image = card.querySelector(".wmd-image");
-            const content = card.querySelector(".wmd-content");
 
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: card,
                     start: "top 80%",
                     toggleActions: "play none none reverse",
+                    invalidateOnRefresh: true
                 }
             });
 
@@ -52,6 +53,9 @@ const WhatMakesUsDifferent = () => {
                     ease: "power2.out",
                 }, "-=0.5");
         });
+        setTimeout(() => {
+            ScrollTrigger.refresh()
+        }, 200)
 
     }, { scope: aboutadycontref });
 

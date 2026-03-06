@@ -18,7 +18,7 @@ const CountriesTimezoneSelector = ({ open, setOpen, selected, COUNTRIES, setSele
                             className="flex relative w-full  cursor-pointer  rounded-lg py-4 px-2 pr-8 font-semibold"
                         >
                             <div className="flex items-center gap-4 h-6">
-                                <span className="text-gray-500 test-xl font-semibold">
+                                <span className="text-gray-900 test-xl font-semibold">
                                     {field?.value || "Select "}
                                 </span>
 

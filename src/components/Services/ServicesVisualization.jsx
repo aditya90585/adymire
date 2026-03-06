@@ -5,6 +5,10 @@ import { Trophy, Hand, Verified, Boost } from "@/assets";
 import "./ServicesVisualization.css";
 import { useGSAP } from "@gsap/react";
 import { staggerFadeInOnScroll } from "../../animations/stagger";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 
 const ServicesVisualization = () => {
     const steps = [
@@ -38,12 +42,44 @@ const ServicesVisualization = () => {
         },
     ];
 
-     const svcontref = useRef()
-          useGSAP(() => {
-            staggerFadeInOnScroll(".sv-trigger-ani",{trigger:svcontref.current,stagger:0.3,y:10,x:60})
-              staggerFadeInOnScroll(".sv-circle-trigger-ani",{trigger:svcontref.current,stagger:0.3,y:40,delay:0.6})
-          },{scope:svcontref})
-      
+    const svcontref = useRef()
+    useGSAP(() => {
+        // staggerFadeInOnScroll(".sv-trigger-ani", { trigger: svcontref.current, stagger: 0.3, y: 10, x: 60 })
+        // staggerFadeInOnScroll(".sv-circle-trigger-ani", { trigger: svcontref.current, stagger: 0.3, y: 40, delay: 0.6 })
+   const cards = gsap.utils.toArray(".sv-trigger-ani");
+   
+           cards.forEach((card) => {
+               const image = card.querySelector(".sv-content-trigger-ani");
+   
+               const tl = gsap.timeline({
+                   scrollTrigger: {
+                       trigger: card,
+                       start: "top 80%",
+                       toggleActions: "play none none reverse",
+                       invalidateOnRefresh: true
+                   }
+               });
+   
+               tl.from(card, {
+                   y:100,
+                   opacity: 0,
+                   duration: 0.8,
+                   ease: "power2.out",
+               })
+                   .from(image, {
+                       x:60,
+                       opacity: 0,
+                       duration: 0.8,
+                       ease: "power2.out",
+                   }, "-=0.5");
+           });
+           setTimeout(() => {
+               ScrollTrigger.refresh()
+           }, 200)
+   
+   
+    }, { scope: svcontref })
+
 
     return (
         <section ref={svcontref} className="svz-section">
@@ -63,7 +99,7 @@ const ServicesVisualization = () => {
                             className={`svz-item sv-trigger-ani svz-${step.align}`}
                         >
                             {step.align === "left" && (
-                                <div className="svz-content">
+                                <div className="svz-content sv-content-trigger-ani">
                                     <h3>{step.title}</h3>
                                     <p>{step.description}</p>
                                     <button className="svz-btn">View More</button>
@@ -74,7 +110,7 @@ const ServicesVisualization = () => {
                                 <div className=" py-[1.5px] w-[5%] bg-[#bdbdbd] sm:block hidden"></div>
                             )}
 
-                            <div className="svz-icon sv-circle-trigger-ani">
+                            <div className="svz-icon ">
                                 <img src={step.icon} alt={step.title} />
                             </div>
 
@@ -84,7 +120,7 @@ const ServicesVisualization = () => {
 
 
                             {step.align === "right" && (
-                                <div className="svz-content">
+                                <div className="svz-content sv-content-trigger-ani">
                                     <h3>{step.title}</h3>
                                     <p>{step.description}</p>
                                     <button className="svz-btn">View More</button>

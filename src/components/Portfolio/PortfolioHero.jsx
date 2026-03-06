@@ -31,7 +31,7 @@ const PortfolioHero = () => {
                     </h2>
 
                     <p className="portfolio-hero-text portfolio-hero-ani">
-                        5+ years | 511+ Brands | 60+ Crore Ad spent <br />
+                        7+ years | 30+ Satistfyed clients | 40+ Completed proejcts <br />
                         A dedicated team of specialists, delivering remarkable work <br />
                         to our clients worldwide!
                     </p>

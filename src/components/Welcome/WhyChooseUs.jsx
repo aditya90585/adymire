@@ -3,6 +3,9 @@ import "./WhyChooseUs.css";
 import { Clock, Handshake, Shield } from "@/assets";
 import { staggerFadeInOnScroll } from "../../animations/stagger";
 import { useGSAP } from "@gsap/react";
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 const cards = [
   {
@@ -27,12 +30,22 @@ export default function WhyChooseUs() {
    
       const wcucontref = useRef()
         useGSAP(() => {
-          staggerFadeInOnScroll(".wcu-trigger-ani",{trigger:wcucontref.current,stagger:0.4,delay:0.8,y:40})
+          // staggerFadeInOnScroll(".wcu-trigger-ani",{trigger:wcucontref.current,stagger:0.4,delay:0.8,y:40})
+          const elements = gsap.utils.toArray(".wcu-trigger-ani");
+        
+        
+            elements.forEach((element) => {
+              staggerFadeInOnScroll(element, { trigger: element,y:200,scale:2 })
+            });
+            setTimeout(() => {
+              ScrollTrigger.refresh()
+            }, 100)
+        
         },{scope:wcucontref})
     
   return (
     <section ref={wcucontref} className="why">
-      <h2 className="why-title">
+      <h2 className="why-title wcu-trigger-ani">
         Why You Chose Us
         <span></span>
       </h2>

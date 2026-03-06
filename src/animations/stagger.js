@@ -1,5 +1,5 @@
 import gsap from "gsap";
-import { ScrollTrigger } from "gsap/all";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export const staggerFadeIn = (elements, options = {}) => {
@@ -24,30 +24,37 @@ export const staggerFadeIn = (elements, options = {}) => {
 
 //trigger
 export const staggerFadeInOnScroll = (elements, options = {}) => {
+
     const {
-        y = 40,
-        x=0,
+        y = 80,
+        x = 0,
+        scale=1,
         opacity = 0,
-        duration = 0.6,
+        duration = 0.8,
         stagger = 0.1,
         ease = "power3.out",
         trigger,
-        delay=0,
+        delay = 0,
         start = "top 80%",
     } = options;
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger,
+            start,
+            toggleActions: "play none none reverse",
+            invalidateOnRefresh: true
+        },
+    })
 
-    return gsap.from(elements, {
+    return tl.from(elements, {
         y,
         x,
+        scale,
         opacity,
         duration,
         stagger,
         ease,
         delay,
-        scrollTrigger: {
-            trigger,
-            start,
-            toggleActions: "play none none reverse",
-        },
+
     });
 };

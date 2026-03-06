@@ -1,10 +1,15 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./SeeProjects.css"
 import SeeProjectsSlider from "./SeeProjectsSlider";
 import { CategoryAiAutomation, CategoryWebDevelopment, CategoryAppDevelopment, CategoryDigitalMarketing, CategoryUIUX } from "@/assets";
 import Lottie from "lottie-react";
 import { AllProjectsData } from "./Projects/AllProjectsData";
 import { useEffect } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { staggerFadeInOnScroll } from "../../animations/stagger";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 
 const categories = [
@@ -27,17 +32,30 @@ const SeeProjects = () => {
     setProjects(filterProjects)
   }, [activeCategory])
 
+  const seeprojectcontref = useRef()
+  useGSAP(() => {
+    const elements = gsap.utils.toArray(".seeprojects-ani-element");
 
+
+    elements.forEach((element) => {
+      staggerFadeInOnScroll(element, { trigger: element })
+    });
+    setTimeout(() => {
+      ScrollTrigger.refresh()
+    }, 100)
+
+
+  }, { scope: seeprojectcontref });
   return (
-    <section className="bg-[#FFF9EE] py-4">
+    <section ref={seeprojectcontref} className="bg-[#FFF9EE] py-4">
       <div className="max-w-7xl mx-auto px-6">
 
-        <h2 className="text-3xl font-semibold text-center mb-10">
+        <h2 className="text-3xl font-semibold text-center mb-10 seeprojects-ani-element">
           See Projects
           <span className="block w-30 h-1 bg-yellow-500 mx-auto mt-1 rounded" />
         </h2>
 
-        <div className="md:hidden max-w-sm mx-auto mb-6 relative">
+        <div className="md:hidden max-w-sm mx-auto mb-6 relative seeprojects-ani-element">
           <button
             onClick={() => setDropdownisOpen(!dropdownisOpen)}
             className="w-full flex items-center justify-between bg-white border border-gray-300 rounded-lg px-4 py-3 shadow-sm"
@@ -78,7 +96,7 @@ const SeeProjects = () => {
           )}
         </div>
 
-        <div className="hidden md:grid  grid-cols-5 gap-1 max-w-5xl mx-auto bg-white rounded-xl p-2 shadow-sm border border-[#999797]">
+        <div className="seeprojects-ani-element hidden md:grid  grid-cols-5 gap-1 max-w-5xl mx-auto bg-white rounded-xl p-2 shadow-sm border border-[#999797]">
           {categories.map((category) => (
             <button
               key={category.name}
@@ -96,7 +114,10 @@ const SeeProjects = () => {
           ))}
         </div>
       </div>
-      <SeeProjectsSlider projects={projects} activeCategory={activeCategory} />
+      <div className="">
+
+        <SeeProjectsSlider projects={projects} activeCategory={activeCategory} />
+      </div>
     </section>
   );
 };

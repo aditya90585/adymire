@@ -18,7 +18,7 @@ const PricingPlansSlide = ({ plans }) => {
         }
     }, [plans])
 
-    if (plans?.length == 0) return <div className='text-xl font-bold my-8 text-center'>no project in this categoty</div>
+    if (plans?.length == 0) return <div className='text-xl font-bold my-8 text-center'>no project in this category</div>
     return (
         <div>
             <Swiper

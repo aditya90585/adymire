@@ -30,7 +30,7 @@ export { default as DigitalMarketing } from "./icons/DigitalMarketing.svg";
 // Illustrations
 export { default as BoyWithLaptop } from "./illustrations/BoyWithLaptop.svg";
 export { default as SittingDarkMan } from "./illustrations/SittingDarkMan.png";
-export { default as ManWithPhone_inYellowJacket } from "./illustrations/ManWithPhone_inYellowJacket.svg";
+export { default as ManWithPhone_inYellowJacket } from "./illustrations/ManWithPhone_inYellowJacket.png";
 export { default as BusinessManGroup } from "./illustrations/BusinessManGroup.svg";
 export { default as PaymentMethods } from "./illustrations/PaymentMethods.svg";
 export { default as PortfolioHeroimg } from "./illustrations/PortfolioHeroimg.svg";
@@ -198,6 +198,7 @@ export {default as AdymireThumbnailVideo} from "./illustrations/AdymireThumbnail
 export {default as Phonecall} from "./icons/Phonecall.json"
 export {default as WhatsappIcon} from "./icons/WhatsappIcon.json"
 export {default as EmailAniIcon} from "./icons/EmailAniIcon.json"
+export {default as AIchatboticon} from "./icons/AIchatboticon.json"
 
 
 export {default as uiuxLastslideBg} from "./illustrations/uiuxLastslideBg.jpeg"

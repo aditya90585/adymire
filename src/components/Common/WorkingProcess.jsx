@@ -12,6 +12,11 @@ import {
 import { useGSAP } from "@gsap/react";
 import { staggerFadeInOnScroll } from "../../animations/stagger";
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
+
 
 export default function WorkingProcess() {
   const processData = [
@@ -62,13 +67,22 @@ export default function WorkingProcess() {
   
     const wpcontref = useRef()
       useGSAP(() => {
-        staggerFadeInOnScroll(".wp-trigger-ani",{trigger:wpcontref.current,stagger:0.4,y:10,x:60})
+        // staggerFadeInOnScroll(".wp-trigger-ani",{trigger:wpcontref.current,stagger:0.4,y:10,x:60})
+          const elements = gsap.utils.toArray(".wp-trigger-ani");
+            
+            
+                elements.forEach((element) => {
+                  staggerFadeInOnScroll(element, { trigger: element,y:20,x:80,scale:1.02 })
+                });
+                setTimeout(() => {
+                  ScrollTrigger.refresh()
+                }, 100)
       },{scope:wpcontref})
   
   
   return (
     <section ref={wpcontref} className="process-section">
-      <h2 className="title">
+      <h2 className="title wp-trigger-ani">
         Working Process
         <span className="h-1 mx-auto w-40 bg-yellow-400 block rounded-full"></span>
       </h2>

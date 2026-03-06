@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { WhatsappIcon } from "@/assets"
+import { WhatsappIcon,AIchatboticon } from "@/assets"
+
 import Home from './pages/Home'
 // import AdminLogin from './pages/AdminLogin'
 // import OTPVerification from './pages/OTPVerification'
@@ -63,12 +64,15 @@ function App() {
           <Route path="/payment/process" element={<PaymentProcess />} /> */}
         </Routes>
         <Footer />
-        <div className="fixed max-w-12 right-8 bottom-10 z-100 flex flex-col items-center justify-center gap-y-2">
+        <div className="fixed max-w-12 md:max-w-14 right-8 bottom-10 z-100 flex flex-col items-center justify-center gap-y-2">
           <div onClick={navigateToWhatsapp} className="bg-white p-2 shadow-sm rounded-full hover:shadow-md cursor-pointer">
             <Lottie animationData={WhatsappIcon} alt="whatsapp" />
           </div>
-          <div className="w-full p-1 rounded-full hover:shadow-md shadow-sm cursor-pointer bg-white flex items-center justify-center aspect-square"><BiBot className="aspect-square w-full" /></div>
+          <div onClick={navigateToWhatsapp} className="bg-white aspect-square flex justify-center items-center shadow-sm rounded-full hover:shadow-md cursor-pointer">
+            <Lottie animationData={AIchatboticon} alt="chat bot" />
+          </div>
         </div>
+       
       </div>
     </Router>
   )

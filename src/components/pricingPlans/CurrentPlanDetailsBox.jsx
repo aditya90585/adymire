@@ -1,22 +1,19 @@
 
 import React, { useEffect, useState } from 'react'
-import { Swiper, SwiperSlide } from "swiper/react";
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import { Pagination, Navigation } from "swiper/modules";
 import { NavLink, useHref } from 'react-router-dom';
 import { RxCross1 } from 'react-icons/rx';
 import { FaClockRotateLeft } from 'react-icons/fa6';
 import { BsStarFill } from 'react-icons/bs';
+import { BackgroundGradientAnimation } from '../ui/background-gradient-animation';
 
 
 
 const CurrentPlanDetailsBox = ({ planId, allPlansData, detailBoxState, setDetailBoxState }) => {
     const href = useHref("/contact");
-      const navigateToBookingForm = () => {
+    const navigateToBookingForm = () => {
         window.open(href, '_blank', 'noopener,noreferrer');
-      }
+    }
     const [currentPlanData, setcurrentPlanData] = useState()
     const [loading, setLoading] = useState(false)
     useEffect(() => {
@@ -47,50 +44,18 @@ const CurrentPlanDetailsBox = ({ planId, allPlansData, detailBoxState, setDetail
                 <div className='grid grid-cols-1 lg:grid-cols-5 gap-10 pt-6 lg:pt-0'>
                     <div className="flex flex-col items-center lg:col-start-1 lg:col-span-2">
 
-                        <Swiper
-                            slidesPerView={1}
-                            slidesPerGroup={1}
-                            centeredSlides={true}
-                            watchOverflow={false}
+                        <div className="relative w-full md:h-70 h-60  rounded-xl border-2 border-gray-400 overflow-hidden mb-6">
 
-                            pagination={{
-                                el: ".project-details-pagination",
-                                clickable: true,
-                            }}
-                            navigation={{
-                                prevEl: ".project-details-prev",
-                                nextEl: ".project-details-next",
-                            }}
-                            modules={[Pagination, Navigation]}
-
-                            className="mySwiper relative w-full md:h-70 h-60  rounded-xl border-2 bg-gray-800 border-gray-400 overflow-hidden mb-6">
-                            {currentPlanData?.images?.map((image, i) => {
-                                return <SwiperSlide key={i} >
-                                    <img
-                                        src={image}
-                                        loading='lazy'
-                                        alt=""
-                                        className="w-full  h-full object-contain"
-                                    />
-                                </SwiperSlide>
-                            })}
-                        </Swiper>
-
-                        <div className="flex items-center gap-4 mb-8">
-                            {/* <button
-                            className="project-details-prev w-12 h-12 rotate-180 rounded-full bg-[#FFE4A3] flex items-center justify-center hover:bg-[#FFD36A]"
-                        >
-                            ➔
-                        </button> */}
-
-                            <div className='project-details-pagination'></div>
-
-                            {/* <button
-                            className="project-details-next w-12 h-12 rounded-full bg-[#FFE4A3] flex items-center justify-center hover:bg-[#FFD36A]"
-                        >
-                            ➔
-                        </button> */}
+                            <BackgroundGradientAnimation containerClassName="h-full w-full ">
+                                <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-xl text-center md:text-xl lg:text-2xl">
+                                    <p className=" px-7 bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white to-emerald-600 text-shadow-2xs">
+                                        {currentPlanData?.title}
+                                    </p>
+                                </div>
+                            </BackgroundGradientAnimation>
                         </div>
+
+
 
                     </div>
                     <div className=' p-4 pb-10 rounded-xl flex flex-col lg:gap-y-0 gap-y-4 justify-around max-h-[95%] lg:col-span-3 lg:col-start-3'>
@@ -127,7 +92,7 @@ const CurrentPlanDetailsBox = ({ planId, allPlansData, detailBoxState, setDetail
                                 </div>
                             </div>
                             <div className=''>
-                                <div  onClick={navigateToBookingForm} className="px-8 cursor-pointer py-2 w-fit block bg-[#FCD444] mx-auto  rounded-lg text-base font-semibold hover:bg-[#FFD36A]">
+                                <div onClick={navigateToBookingForm} className="px-8 cursor-pointer py-2 w-fit block bg-[#FCD444] mx-auto  rounded-lg text-base font-semibold hover:bg-[#FFD36A]">
                                     Contact us
                                 </div>
                             </div>

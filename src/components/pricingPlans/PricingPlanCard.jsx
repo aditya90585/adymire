@@ -1,33 +1,30 @@
 import React from 'react'
-import {  BsStarFill } from 'react-icons/bs'
+import { BsStarFill } from 'react-icons/bs'
 import { FaClockRotateLeft } from 'react-icons/fa6'
 import { useHref } from 'react-router-dom';
+import { BackgroundGradientAnimation } from '../ui/background-gradient-animation';
 
 const PricingPlanCard = ({ plan, setCurrentPlanId, setDetailBoxState }) => {
     const href = useHref("/contact");
-      const navigateToBookingForm = () => {
+    const navigateToBookingForm = () => {
         window.open(href, '_blank', 'noopener,noreferrer');
-      }
+    }
 
     return (
         <div
             className={`rounded-2xl h-full flex flex-col justify-between items-stretch overflow-hidden transition-all duration-300 ease-in-out`}
             style={{ fontFamily: "'Segoe UI', sans-serif" }}>
-            <div className="bg-gray-200 max-h-50 h-50 min-h-50 flex items-center justify-center  rounded-b-xl border-b border-gray-100">
-                <div className="text-center select-none">
-                    <h2
-                        className="text-4xl font-bold leading-tight"
-                        style={{ color: "#F59E0B" }}
-                    >
-                        Custom
-                    </h2>
-                    <h2 className="text-4xl font-black text-gray-900 leading-tight">
-                        Apps
-                    </h2>
-                </div>
+            <div className="bg-gray-200 max-h-50 h-50 min-h-50 relative flex items-center justify-center  rounded-b-xl  overflow-hidden">
+                <BackgroundGradientAnimation  containerClassName="h-full w-full ">
+                    <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-xl text-center md:text-xl lg:text-2xl">
+                        <p className=" px-7 bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white to-emerald-600 text-shadow-2xs">
+                            {plan?.title}
+                        </p>
+                    </div>
+                </BackgroundGradientAnimation>
             </div>
 
-            <div className="p-5  h-100 justify-between flex flex-col gap-4">
+            <div className="px-5 py-2  min-h-100 justify-between flex flex-col gap-4">
                 <div>
                     <h3 className="text-base font-bold text-gray-900 leading-6">
                         {plan?.title}
@@ -44,19 +41,25 @@ const PricingPlanCard = ({ plan, setCurrentPlanId, setDetailBoxState }) => {
                         </span>
                     </div>
                 </div>
+                <div className='relative'>
 
-                <p className="text-xs max-h-10 overflow-y-hidden font-semibold text-gray-800 leading-relaxed">
-                    {plan?.description}
-                    <span
-                        className="font-semibold cursor-pointer"
-                        style={{ color: "#F59E0B" }}
+                    <p className="text-xs h-10 overflow-y-hidden font-semibold text-gray-800 leading-relaxed">
+                        {plan?.description}
+                    </p>
+                    <div
+                        onClick={() => {
+                            setCurrentPlanId(plan?.id)
+                            setDetailBoxState(true)
+                        }}
+                        className=" text-blue-500 absolute bg-white right-0 bottom-0.5 px-2  text-xs font-semibold cursor-pointer text-right"
                     >
-                        more
-                    </span>
-                </p>
 
-                <p className="text-xs text-gray-900 font-semibold">
-                    <span className="font-semibold">Best For : </span>
+                        more
+                    </div>
+                </div>
+
+                <p className="text-xs text-gray-700 font-semibold">
+                    <span className="font-semibold text-black">Best For : </span>
                     {plan?.bestFor}
                 </p>
 
@@ -86,7 +89,7 @@ const PricingPlanCard = ({ plan, setCurrentPlanId, setDetailBoxState }) => {
                         About
                     </button>
                     <button
-                    onClick={navigateToBookingForm}
+                        onClick={navigateToBookingForm}
                         className="flex-1 cursor-pointer py-2.5 rounded-xl text-sm font-bold text-gray-900
                                              hover:brightness-90 transition-all duration-200"
                         style={{ backgroundColor: "#F59E0B" }}

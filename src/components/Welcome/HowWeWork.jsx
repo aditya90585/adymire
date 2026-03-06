@@ -5,20 +5,32 @@ import { ManWithPhone_inYellowJacket, PhoneYellow } from "@/assets";
 import { staggerFadeInOnScroll } from "../../animations/stagger";
 import { useRef } from "react";
 import BookCallButton from "../UI/NavButtons/BookCallButton";
-
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 export default function HowWeWork() {
 
   const hwwcontref = useRef()
   useGSAP(() => {
-    staggerFadeInOnScroll(".hww-trigger-ani", { trigger: hwwcontref.current, stagger: 0.3 })
+    // staggerFadeInOnScroll(".hww-trigger-ani", { trigger: hwwcontref.current, stagger: 0.3 })
+      const elements = gsap.utils.toArray(".hww-trigger-ani");
+    
+    
+        elements.forEach((element) => {
+          staggerFadeInOnScroll(element, { trigger: element,scale:1.8,y:100,x:20 })
+        });
+        setTimeout(() => {
+          ScrollTrigger.refresh()
+        }, 100)
+    
   }, { scope: hwwcontref })
 
 
   return (
     <section className="how-section">
 
-      <div className="how-title">
+      <div className="how-title ">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 320 120"
@@ -48,7 +60,7 @@ export default function HowWeWork() {
           </g>
         </svg>
 
-        <h2>How We Work</h2>
+        <h2 className="hww-trigger-ani">How We Work</h2>
       </div>
 
       <div ref={hwwcontref} className="how-wrapper">

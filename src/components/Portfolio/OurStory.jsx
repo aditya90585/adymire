@@ -2,17 +2,27 @@ import {AdymireLogo2} from "@/assets";
 import { staggerFadeInOnScroll } from "../../animations/stagger";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
 
 
 const OurStory = () => {
    const oscontref = useRef()
   useGSAP(() => {
-    staggerFadeInOnScroll(".os-trigger-ani",{trigger:oscontref.current,y:70,stagger:0.2,delay:0.8})
+    // staggerFadeInOnScroll(".os-trigger-ani",{trigger:oscontref.current,y:70,stagger:0.2,delay:0.8})
+     const elements = gsap.utils.toArray(".os-trigger-ani");
+        elements.forEach((element) => {
+          staggerFadeInOnScroll(element, { trigger: element,y:10,x:150 })
+        });
+        setTimeout(() => {
+          ScrollTrigger.refresh()
+        }, 100)
   },{scope:oscontref})
   return (
     <section ref={oscontref} className="w-full bg-[#fffaf2] py-4 lg:py-6">
-      <div className="text-center mb-6 px-4 lg:px-15">
-        <h2 className="text-2xl lg:text-3xl font-bold tracking-wide os-trigger-ani">
+      <div className="text-center mb-6 px-4 lg:px-15 os-trigger-ani">
+        <h2 className="text-2xl lg:text-3xl font-bold tracking-wide ">
           OUR STORY
         </h2>
         <div className="w-20 h-1 bg-yellow-400 mx-auto mt-3 rounded" />

@@ -3,14 +3,26 @@ import { useGSAP } from "@gsap/react";
 import Lottie from "lottie-react";
 import { useRef } from "react";
 import { staggerFadeInOnScroll } from "../../animations/stagger";
-import { MdSignalCellularConnectedNoInternet0Bar } from "react-icons/md";
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+
 
 
 const ContactEnquirySection = () => {
-     const cecontref = useRef()
-        useGSAP(() => {
-          staggerFadeInOnScroll(".ce-trigger-ani",{trigger:cecontref.current,stagger:0.4,delay:0.8,y:40})
-        },{scope:cecontref})
+    const cecontref = useRef()
+    useGSAP(() => {
+       const elements = gsap.utils.toArray(".cenq-trigger-ani");
+
+
+        elements.forEach((element) => {
+            staggerFadeInOnScroll(element, { trigger: element,y: 200, scale: 2 })
+        });
+        setTimeout(() => {
+            ScrollTrigger.refresh()
+        }, 100)
+
+    }, { scope: cecontref })
 
     const navigateToWhatsapp = () => {
         const phoneNumber = "917302356804";
@@ -20,7 +32,7 @@ const ContactEnquirySection = () => {
     }
 
     const navigateToBookingForm = () => {
-       window.open('/contact', '_blank', 'noopener,noreferrer');
+        window.open('/contact', '_blank', 'noopener,noreferrer');
     }
     const emaiMethod = () => {
         const email = "helo@adymir.com";
@@ -64,13 +76,13 @@ const ContactEnquirySection = () => {
     return (
         <section ref={cecontref} className="bg-white py-4">
             <div className="max-w-7xl mx-auto px-6 text-center">
-                <h2 className="text-5xl font-bold mb-3 ce-trigger-ani">
+                <h2 className="text-5xl font-bold mb-3 cenq-trigger-ani">
                     Contact us for
                 </h2>
-                <h3 className="text-3xl font-bold text-[#2d8504] mb-16 ce-trigger-ani">
+                <h3 className="text-3xl font-bold text-[#2d8504] mb-16 cenq-trigger-ani">
                     Project Enquiries
                 </h3>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 ce-trigger-ani">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 cenq-trigger-ani">
                     {contactData.map((item, index) => (
                         <div
                             onClick={item?.method}

@@ -3,46 +3,56 @@ import "./FounderVision.css";
 import { UIUX, Development, DigitalMarketing } from "@/assets";
 import { staggerFadeInOnScroll } from "../../animations/stagger";
 import { useGSAP } from "@gsap/react";
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+gsap.registerPlugin(ScrollTrigger);
+
 
 const FounderVision = () => {
   const visioncontref = useRef()
-    useGSAP(() => {
-      staggerFadeInOnScroll(".action-trigger-ani", { trigger: visioncontref.current,y:50,stagger : 0.2, })
-    }, { scope: visioncontref })
+  useGSAP(() => {
+  const elements = gsap.utils.toArray(".vision-trigger-ani");
+      elements.forEach((element) => {
+        staggerFadeInOnScroll(element, { trigger: element })
+      });
+      setTimeout(() => {
+        ScrollTrigger.refresh()
+      }, 100)
+  }, { scope: visioncontref })
   return (
     <section ref={visioncontref} className="fv-section">
       <div className="fv-container">
 
-        <h2 className="fv-title action-trigger-ani">
+        <h2 className="fv-title vision-trigger-ani">
           Founder & Vision
           <span className="fv-underline"></span>
         </h2>
 
-        <p className="fv-subtitle action-trigger-ani">
+        <p className="fv-subtitle vision-trigger-ani">
           I’m Yash Goswami, founder of <span>Adymire</span>
         </p>
 
         <div className="fv-steps">
 
-          <div className="fv-step-card action-trigger-ani">
+          <div className="fv-step-card vision-trigger-ani">
             <div className="fv-icon">
               <img className="animate-pulse" src={UIUX} alt="Design" />
             </div>
             <p>Design</p>
           </div>
 
-          <div className="fv-arrow action-trigger-ani">➶</div>
+          <div className="fv-arrow vision-trigger-ani">➶</div>
 
-          <div className="fv-step-card action-trigger-ani">
+          <div className="fv-step-card vision-trigger-ani">
             <div className="fv-icon">
               <img className="animate-pulse" src={Development} alt="Development" />
             </div>
             <p>Development</p>
           </div>
 
-          <div className="fv-arrow action-trigger-ani">➶</div>
+          <div className="fv-arrow vision-trigger-ani">➶</div>
 
-          <div className="fv-step-card action-trigger-ani">
+          <div className="fv-step-card vision-trigger-ani">
             <div className="fv-icon">
               <img className="animate-pulse" src={DigitalMarketing} alt="Grow" />
             </div>
@@ -51,14 +61,10 @@ const FounderVision = () => {
 
         </div>
 
-        <div className="fv-description-box action-trigger-ani">
+        <div className="fv-description-box vision-trigger-ani">
           <p>
-            <strong>Adymire</strong> is a dynamic, all-in-one platform offering a
-            wide range of services designed to empower digital entrepreneurs,
-            creators, and businesses. Whether you're launching an online store,
-            scaling your brand, or exploring new income streams, Adscy.io
-            provides the tools, expertise, and community support to help you
-            succeed.
+            <strong>Adymire</strong> was founded with a clear mission: to simplify digital growth for ambitious businesses. Our vision is to create a structured ecosystem where strategy, technology, and marketing work together seamlessly. We believe most businesses fail not because of lack of effort, but because of lack of clarity and systems. That is why we focus on building scalable digital foundations — strong branding, optimized platforms, automated workflows, and performance marketing strategies that compound over time 📈.
+            The goal is not just to deliver services, but to build long-term growth partnerships. We aim to help brands move from uncertainty to predictable growth by using research-driven decisions and smart automation. Adymire’s vision is to become a trusted global digital partner for founders who want clarity, control, and consistent expansion in the digital space.
           </p>
 
           <span className="fv-signature">-- YashGoswami</span>

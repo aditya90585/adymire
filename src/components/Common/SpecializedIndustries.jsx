@@ -17,6 +17,8 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { staggerFadeInOnScroll } from "../../animations/stagger";
 import { useRef } from "react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 
 
@@ -35,47 +37,10 @@ const SpecializedIndustries = () => {
   const itemsRef = useRef([])
   const SIContRef = useRef()
 
-  // useGSAP(() => {
-  //   const wrapperAnim = gsap.to(".industries-wrapper", {
-  //     rotate: 360,
-  //     repeat: -1,
-  //     duration: 12,
-  //     ease: "none",
-  //   });
-
-  //   const cardAnim = gsap.to(".industry-card", {
-  //     rotate: -360,
-  //     repeat: -1,
-  //     duration: 12,
-  //     ease: "none",
-  //   });
-
-  //   const centerAnim = gsap.to(".center-circle", {
-  //     rotate: -360,
-  //     repeat: -1,
-  //     duration: 12,
-  //     ease: "none",
-  //   });
-  //   const wrapper = document.querySelector(".industries-wrapper");
-  //   wrapper.addEventListener("mouseenter", () => {
-  //     wrapperAnim.pause();
-  //     cardAnim.pause();
-  //     centerAnim.pause();
-  //   });
-
-  //   wrapper.addEventListener("mouseleave", () => {
-  //     wrapperAnim.play();
-  //     cardAnim.play();
-  //     centerAnim.play();
-  //   });
-  //   staggerFadeInOnScroll(".SI-ani", { trigger: SIContRef.current })
-  // }, { scope: SIContRef })
   useGSAP(() => {
-
-    // Scoped selector (VERY IMPORTANT in React)
     const q = gsap.utils.selector(SIContRef);
 
-    // Create animations
+
     const wrapperAnim = gsap.to(q(".industries-wrapper"), {
       rotate: 360,
       repeat: -1,
@@ -106,7 +71,7 @@ const SpecializedIndustries = () => {
     };
 
     const handleLeave = () => {
-      wrapperAnim.play(); // play(), NOT resume()
+      wrapperAnim.play(); 
       cardAnim.play();
       centerAnim.play();
     };
@@ -115,7 +80,16 @@ const SpecializedIndustries = () => {
     wrapper.addEventListener("mouseleave", handleLeave);
 
     // Your scroll animation
-    staggerFadeInOnScroll(".SI-ani", { trigger: SIContRef.current });
+    // staggerFadeInOnScroll(".SI-ani", { trigger: SIContRef.current });
+    const elements = gsap.utils.toArray(".SI-ani");
+
+
+    elements.forEach((element) => {
+      staggerFadeInOnScroll(element, { trigger: element })
+    });
+    setTimeout(() => {
+      ScrollTrigger.refresh()
+    }, 100)
 
     // Cleanup (VERY IMPORTANT)
     return () => {
@@ -132,7 +106,7 @@ const SpecializedIndustries = () => {
         We help only Our Specialized Industries
       </p>
 
-      <div className="industries-wrapper">
+      <div className="industries-wrapper SI-ani">
 
         <div className="center-circle rounded-full">
           <div className="absolute inset-0 z-0 flex rounded-full items-center justify-center">
