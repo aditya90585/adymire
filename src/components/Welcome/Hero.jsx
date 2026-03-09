@@ -12,6 +12,7 @@ import gsap from "gsap";
 import { staggerFadeIn } from "../../animations/stagger";
 import BookCallButton from "../UI/NavButtons/BookCallButton";
 import { BiBot } from "react-icons/bi";
+import Magnet from "../ui/Magnet";
 
 
 const Hero = () => {
@@ -28,7 +29,6 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-container">
-
         <div className="hero-left">
           <h1 >
             <div className="hero-left-ani first" >Digital Agency</div>
@@ -75,7 +75,9 @@ const Hero = () => {
       </div>
       */}
       <div className="hero-btn hero-left-ani">
+    <Magnet padding={50} disabled={false} magnetStrength={6}>
         <BookCallButton attention={true} text="Book a Strategy Call" className=" hover:bg-[#FFF1C6] h-15 mx-auto sm:mx-0" borderstate={true} backgroundnumber={2} textSize="xl" rounded="xl" height="45px" />
+    </Magnet>
       </div>
       
     </section>

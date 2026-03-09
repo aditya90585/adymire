@@ -74,7 +74,7 @@ const MyTeam = () => {
                         <SwiperSlide
                             key={member.name}
                             className={`myteam-slidecard relative w-[320px] flex flex-col items-center transition-transform ease-in duration-300`}
-                        >
+                        >  
                             <div className={` myteam-slidecard-blob absolute bottom-20 w-full h-80 rounded-tl-4xl rounded-tr-[90%] transition-colors ease-out`}>
                             </div>
                             <div className={` myteam-slidecard-image relative z-10  h-full transition-all duration-200 delay-200 ease-in `}>

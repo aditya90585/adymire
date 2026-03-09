@@ -78,8 +78,10 @@ const PricingPlansSlide = ({ plans }) => {
                 <button className={`${plans[0]?.id}-prev rotate-180 bg-[#FDC274] h-11 w-11 text-2xl rounded-full cursor-pointer`} aria-label="Previous">
                     ➔
                 </button>
+                <div className='md:block hidden'>
 
-                <div className={`${plans[0]?.id}-pagination all-pagination flex justify-center items-center`}></div>
+                    <div className={`${plans[0]?.id}-pagination all-pagination flex justify-center items-center`}></div>
+                </div>
 
                 <button className={`${plans[0]?.id}-next  bg-[#FDC274] h-11 w-11 text-2xl rounded-full cursor-pointer`} aria-label="Next">
                     ➔

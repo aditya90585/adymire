@@ -5,17 +5,18 @@ import { GirlSittingWithLaptop, PhoneYellow } from "@/assets";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import BookCallButton from "../UI/NavButtons/BookCallButton";
+import Magnet from "../ui/Magnet";
 
 const ServicesHero = () => {
-    useGSAP(()=>{
-      gsap.from(".services-hero-ani",{
-       opacity:0,
-       y:40,
-       duration:0.6,
-       stagger:0.1,
-       delay:0.4
-      })
-  },{})
+  useGSAP(() => {
+    gsap.from(".services-hero-ani", {
+      opacity: 0,
+      y: 40,
+      duration: 0.6,
+      stagger: 0.1,
+      delay: 0.4
+    })
+  }, {})
   return (
     <section className="services-hero">
       <div className="services-hero__container">
@@ -33,15 +34,18 @@ const ServicesHero = () => {
           <p className="services-hero__subtitle services-hero-ani">
             Want to know how we can help?
           </p>
-{/* 
+          {/* 
           <button className="services-hero__btn ">
             <span className="services-hero__btn-icon">
               <img src={PhoneYellow} alt="call" />
             </span>
             Book a Strategy Call
           </button> */}
-          <div className="services-hero-ani">
-          <BookCallButton text="Book a Strategy Call" height="60px" className=" h-15 mx-auto sm:mx-0 hover:bg-[#f8f1d5] text-xl py-1" attention={true}  textSize="xl" rounded="xl" paddingY="1"/> 
+          <div className="services-hero-ani md:block flex justify-center items-center">
+            <Magnet padding={50} disabled={false} magnetStrength={6}>
+
+              <BookCallButton text="Book a Strategy Call" height="60px" className=" h-15 mx-auto sm:mx-0 hover:bg-[#f8f1d5] text-xl py-1" attention={true} textSize="xl" rounded="xl" paddingY="1" />
+            </Magnet>
           </div>
         </div>
 

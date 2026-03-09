@@ -111,8 +111,9 @@ const SeeProjectsSlider = ({ projects, activeCategory }) => {
                 <button className="seeProjects-prev rotate-180 bg-[#FDC274] h-11 w-11 text-2xl rounded-full cursor-pointer" aria-label="Previous">
                     ➔
                 </button>
-
-                <div className="seeProjects-pagination flex justify-center items-center"></div>
+                <div className='md:block hidden'>
+                    <div className="seeProjects-pagination flex justify-center items-center"></div>
+                </div>
 
                 <button className="seeProjects-next  bg-[#FDC274] h-11 w-11 text-2xl rounded-full cursor-pointer" aria-label="Next">
                     ➔

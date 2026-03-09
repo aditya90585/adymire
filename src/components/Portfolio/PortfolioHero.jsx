@@ -10,6 +10,7 @@ import {
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import BookCallButton from "../UI/NavButtons/BookCallButton";
+import Magnet from "../ui/Magnet";
 
 const PortfolioHero = () => {
     useGSAP(()=>{
@@ -22,7 +23,7 @@ const PortfolioHero = () => {
       })
   },{})
     return (
-        <section className="portfolio-hero h-screen">
+        <section className="portfolio-hero md:h-screen h-auto">
             <div className="portfolio-hero-container">
 
                 <div className="portfolio-hero-left">
@@ -60,7 +61,10 @@ const PortfolioHero = () => {
                         {/* <button className="portfolio-hero-cta">
                          <img src={PhoneYellow} alt="call" />   Book a Strategy Call
                         </button> */}
+                         <Magnet padding={50} disabled={false} magnetStrength={6}>
+
                         <BookCallButton text="Book a Strategy Call"   height="60px" textSize="base" rounded="xl" paddingX="5" attention={true} className="hover:bg-[#faddac] h-15 px-5 rounded-xl font-semibold"/>
+                         </Magnet>
                     </div>
                 </div>
 

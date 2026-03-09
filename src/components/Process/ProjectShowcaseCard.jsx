@@ -100,8 +100,10 @@ const ProjectShowcaseCard = ({ project }) => {
                     >
                         ➔
                     </button>
+<div className='md:block hidden'>
 
                     <div className={`project-showcase-pagination project-showcase-pagination-${project?.slug}`}></div>
+</div>
 
                     <button
                         className={`project-showcase-next-${project?.slug} w-12 h-12 rounded-full bg-[#FFE4A3] flex items-center justify-center hover:bg-[#FFD36A]`}

@@ -46,9 +46,9 @@ const CurrentPlanDetailsBox = ({ planId, allPlansData, detailBoxState, setDetail
 
                         <div className="relative w-full md:h-70 h-60  rounded-xl border-2 border-gray-400 overflow-hidden mb-6">
 
-                            <BackgroundGradientAnimation containerClassName="h-full w-full ">
+                            <BackgroundGradientAnimation gradientBackgroundStart="yellow" gradientBackgroundEnd="white" containerClassName="h-full w-full ">
                                 <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-xl text-center md:text-xl lg:text-2xl">
-                                    <p className=" px-7 bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white to-emerald-600 text-shadow-2xs">
+                                    <p className=" px-7 bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white to-emerald-950 text-shadow-2xs">
                                         {currentPlanData?.title}
                                     </p>
                                 </div>

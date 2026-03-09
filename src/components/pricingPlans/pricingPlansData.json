@@ -2354,6 +2354,834 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "ecommerce-ui-ux-design",
+            "category": "UI/UX Design",
+            "title": "E-COMMERCE UI/UX DESIGN (Mobile App + Website + Admin Panel)",
+            "pricing": "$18,997",
+            "description": "We design complete, conversion-optimized e-commerce experiences — mobile shopping app, website storefront, and admin/seller panel — built to turn browsers into buyers and buyers into repeat customers. E-commerce design is not just about looking good. Every screen, every button placement, every checkout step is a conversion decision. We design e-commerce platforms where the entire shopping journey — discovery, decision, checkout, and post-purchase — is engineered for conversion and retention.",
+            "bestFor": "D2C Branded Shopping App Brands, Physical To Digital Retail Businesses, Multi-Vendor Marketplace Founders, Shopify Migration Businesses, E-Commerce Launch Startups",
+            "timeline": "Within 5 Weeks",
+            "revisions": "Unlimited Revisions",
+            "sections": [
+                {
+                    "heading": "WHO THIS IS FOR:",
+                    "content": [
+                        "- D2C brands building their own branded shopping app and website",
+                        "- Retail businesses moving from physical to digital",
+                        "- Multi-vendor marketplace founders",
+                        "- Businesses migrating from Shopify to a custom platform",
+                        "- Startups launching an e-commerce product"
+                    ]
+                },
+                {
+                    "heading": "WHAT WE DESIGN:",
+                    "content": [
+                        "✔ MOBILE SHOPPING APP UI/UX",
+                        "- Onboarding and personalization flow",
+                        "- Home feed — banners, featured products, flash deals, recommendations",
+                        "- Product category and subcategory browsing",
+                        "- Product detail page — images, video, size guide, reviews, stock status",
+                        "- Search with filters, sorting, and smart suggestions",
+                        "- Wishlist and save for later",
+                        "- Cart and checkout — streamlined, minimal steps",
+                        "- Multiple payment method selection screens",
+                        "- Order confirmation and tracking screens",
+                        "- User account — orders, returns, addresses, saved cards",
+                        "- Loyalty points and rewards UI",
+                        "- Promo code and discount application",
+                        "- Rating and review submission flow",
+                        "- Dark mode and light mode",
+                        "✔ WEBSITE STOREFRONT UI/UX",
+                        "- Homepage — hero, collections, trending, promotional banners",
+                        "- Category and filter pages — grid and list views",
+                        "- Product detail page — gallery, description, variants, add to cart",
+                        "- Cart and multi-step checkout",
+                        "- Account registration, login, and profile management",
+                        "- Order history and tracking",
+                        "- Wishlist and comparison pages",
+                        "- Search results page",
+                        "- Promotional landing pages",
+                        "- Newsletter and loyalty signup",
+                        "- Returns and refund request flow",
+                        "- Mobile-responsive across all breakpoints",
+                        "✔ ADMIN / SELLER PANEL UI/UX",
+                        "- Seller dashboard — sales summary, pending orders, top products",
+                        "- Product listing and variant management",
+                        "- Inventory and stock management",
+                        "- Order management — processing, shipping, returns",
+                        "- Discount and promo code manager",
+                        "- Customer management",
+                        "- Analytics — revenue, conversion, traffic, top sellers",
+                        "- Payout and earnings dashboard (for marketplaces)",
+                        "- Notification and alert management"
+                    ]
+                },
+                {
+                    "heading": "WHAT YOU RECEIVE:",
+                    "content": [
+                        "- Figma source files for all three platforms (fully organized)",
+                        "- Complete design system — components, color, typography",
+                        "- Interactive prototype — shopping flow, checkout, and admin",
+                        "- Mobile app, web, and admin panel — all screens covered",
+                        "- Developer handoff with full specifications",
+                        "- Unlimited revisions throughout"
+                    ]
+                },
+                {
+                    "heading": "INVESTMENT:",
+                    "content": [
+                        "Starting from $18,997",
+                        "Unlimited Revisions | Within 5 Weeks Delivery"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "healthcare-ui-ux-design",
+            "category": "UI/UX Design",
+            "title": "HEALTHCARE UI/UX DESIGN (Patient App + Doctor Portal + Admin Dashboard)",
+            "pricing": "$21,997",
+            "description": "We design healthcare digital products — patient-facing apps, doctor and provider portals, and hospital or clinic admin dashboards — with a design language built on trust, clarity, and accessibility. Healthcare UX is fundamentally different from any other industry. Your users are often anxious, unwell, or making important decisions about their health. Every screen we design for healthcare is built on the principles of clinical clarity, emotional reassurance, and frictionless access to care — while meeting the compliance and accessibility standards your platform requires.",
+            "bestFor": "Telemedicine & Teleconsultation Startups, Hospital & Clinic Chain Digital Platforms, Mental Health & Therapy Booking Platforms, Healthtech SaaS Founders, Fitness & Wellness Platform Companies",
+            "timeline": "Within 6 Weeks",
+            "revisions": "Unlimited Revisions",
+            "sections": [
+                {
+                    "heading": "WHO THIS IS FOR:",
+                    "content": [
+                        "- Telemedicine and teleconsultation startups",
+                        "- Hospital and clinic chains building a digital platform",
+                        "- Mental health and therapy booking platforms",
+                        "- Healthtech SaaS founders",
+                        "- Fitness and wellness platform companies"
+                    ]
+                },
+                {
+                    "heading": "WHAT WE DESIGN:",
+                    "content": [
+                        "✔ PATIENT APP UI/UX",
+                        "- Onboarding — registration, health profile, insurance details",
+                        "- Doctor search and discovery — specialty, location, availability, ratings",
+                        "- Appointment booking flow — in-person and video consultation",
+                        "- Pre-appointment intake forms and symptom checker",
+                        "- Video consultation interface — waiting room, consultation, end screen",
+                        "- Prescription and medication tracker",
+                        "- Medical records and health history screens",
+                        "- Lab results viewer",
+                        "- Health vitals tracker — integrated with wearables",
+                        "- Medication reminders",
+                        "- Insurance card storage",
+                        "- Payment and billing screens",
+                        "- Emergency contact and SOS screen",
+                        "- Notification management",
+                        "- Dark mode and accessibility-optimized design",
+                        "✔ DOCTOR / PROVIDER PORTAL UI/UX",
+                        "- Doctor profile and availability management",
+                        "- Appointment calendar and scheduling",
+                        "- Patient profile and records access",
+                        "- Consultation interface — notes, prescriptions, referrals",
+                        "- Video consultation room",
+                        "- Prescription writing tool",
+                        "- Patient history and past visit log",
+                        "- Earnings and payout dashboard",
+                        "- Review and rating management",
+                        "✔ HOSPITAL / CLINIC ADMIN DASHBOARD UI/UX",
+                        "- Admin overview — appointments today, doctors online, revenue",
+                        "- Doctor onboarding and credential verification",
+                        "- Patient management",
+                        "- Appointment and scheduling management",
+                        "- Department and specialization management",
+                        "- Billing and insurance management",
+                        "- Analytics — consultations, revenue, patient retention",
+                        "- Support and escalation management",
+                        "- Staff and role management"
+                    ]
+                },
+                {
+                    "heading": "WHAT YOU RECEIVE:",
+                    "content": [
+                        "- Figma source files for all three platforms",
+                        "- Accessibility-first design (WCAG considerations)",
+                        "- Full interactive prototype for patient app and doctor portal",
+                        "- Complete design system — components, color, typography",
+                        "- Developer handoff package with full specifications",
+                        "- Unlimited revisions throughout"
+                    ]
+                },
+                {
+                    "heading": "INVESTMENT:",
+                    "content": [
+                        "Starting from $21,997",
+                        "Unlimited Revisions | Within 6 Weeks Delivery"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "fintech-ui-ux-design",
+            "category": "UI/UX Design",
+            "title": "FINTECH UI/UX DESIGN (Mobile App + Web Dashboard + Admin Panel)",
+            "pricing": "$23,997",
+            "description": "We design fintech and financial services digital products — banking apps, payment wallets, investment dashboards, lending platforms, and insurance tools — with a design language built on trust, security, and frictionless financial interaction. In financial products, design is trust. Users are handing you access to their money. Every screen, every micro-interaction, every error message is a signal of whether your product is safe, competent, and worth trusting. We design fintech products that feel like premium financial institutions — because that is the standard your users compare you to from the moment they open your app.",
+            "bestFor": "Neobank & Digital Banking Startups, Payment Wallet & Transfer Platform Founders, Lending & BNPL Product Teams, Personal Finance & Budgeting App Companies, Investment & Wealth Management Platforms, InsurTech Startups",
+            "timeline": "Within 6 Weeks",
+            "revisions": "Unlimited Revisions",
+            "sections": [
+                {
+                    "heading": "WHO THIS IS FOR:",
+                    "content": [
+                        "- Neobank and digital banking startups",
+                        "- Payment wallet and transfer platform founders",
+                        "- Lending and BNPL product teams",
+                        "- Personal finance and budgeting app companies",
+                        "- Investment and wealth management platforms",
+                        "- InsurTech startups"
+                    ]
+                },
+                {
+                    "heading": "WHAT WE DESIGN:",
+                    "content": [
+                        "✔ MOBILE BANKING / FINTECH APP UI/UX",
+                        "- Onboarding — KYC flow design, document upload, identity verification",
+                        "- Account setup and profile screens",
+                        "- Home dashboard — balance, transactions, quick actions",
+                        "- Fund transfer flow — domestic, international, contacts",
+                        "- Bill payments and mobile recharges",
+                        "- Transaction history and statements",
+                        "- Cards management — virtual and physical",
+                        "- Spending analytics — category breakdown, trends",
+                        "- Savings goals and budgeting tools",
+                        "- Investment portfolio view (if applicable)",
+                        "- Loan application and EMI management (if applicable)",
+                        "- Biometric and security settings",
+                        "- In-app customer support",
+                        "- Notification management",
+                        "- Dark mode and light mode",
+                        "✔ WEB BANKING / FINTECH DASHBOARD UI/UX",
+                        "- Desktop account overview",
+                        "- Detailed transaction history and filtering",
+                        "- Advanced analytics and financial reports",
+                        "- Fund transfer and payment screens",
+                        "- Document vault and statement downloads",
+                        "- Account settings and security management",
+                        "- Multi-account management",
+                        "- Business account features (if applicable)",
+                        "✔ ADMIN / OPERATIONS PANEL UI/UX",
+                        "- Operations overview — users, transactions, alerts",
+                        "- User lifecycle management — KYC status, account health",
+                        "- Transaction monitoring and investigation",
+                        "- Fraud alert and risk management interface",
+                        "- Compliance and audit log viewer",
+                        "- Revenue and fee management",
+                        "- Customer support and escalation queue",
+                        "- System settings and configuration"
+                    ]
+                },
+                {
+                    "heading": "WHAT YOU RECEIVE:",
+                    "content": [
+                        "- Figma source files for all three platforms",
+                        "- Trust-first, compliance-aware design language",
+                        "- Full interactive prototype for app and web flows",
+                        "- KYC and onboarding flow fully designed",
+                        "- Complete design system — components, color, typography",
+                        "- Developer handoff with full specifications",
+                        "- Unlimited revisions throughout"
+                    ]
+                },
+                {
+                    "heading": "INVESTMENT:",
+                    "content": [
+                        "Starting from $23,997",
+                        "Unlimited Revisions | Within 6 Weeks Delivery"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "education-lms-ui-ux-design",
+            "category": "UI/UX Design",
+            "title": "EDUCATION & LMS UI/UX DESIGN (Student App + Instructor Portal + Admin Dashboard)",
+            "pricing": "$17,997",
+            "description": "We design complete EdTech and Learning Management System (LMS) platforms — student-facing mobile and web experience, instructor course creation portal, and admin management dashboard — designed to make learning engaging, intuitive, and impossible to abandon. The highest-performing learning platforms are not the ones with the most features. They are the ones where learners feel progress, feel engaged, and feel that the experience was built for them. We design every screen with learner psychology at the center — reducing friction, surfacing progress, and making the act of learning feel rewarding.",
+            "bestFor": "EdTech Course Marketplace Startups, Digital Coaching Institutes, Corporate Training & L&D Platforms, Creator Educators, Universities & Schools, Skill Development Platform Founders",
+            "timeline": "Within 5 Weeks",
+            "revisions": "Unlimited Revisions",
+            "sections": [
+                {
+                    "heading": "WHO THIS IS FOR:",
+                    "content": [
+                        "- EdTech startups building course marketplaces",
+                        "- Coaching institutes going digital",
+                        "- Corporate training and L&D platform companies",
+                        "- Creator educators building their own platform",
+                        "- Universities and schools building custom LMS",
+                        "- Skill development and upskilling platform founders"
+                    ]
+                },
+                {
+                    "heading": "WHAT WE DESIGN:",
+                    "content": [
+                        "✔ STUDENT APP UI/UX (MOBILE + WEB)",
+                        "- Onboarding — interest selection, skill level, learning goals",
+                        "- Course discovery — categories, search, filters, recommendations",
+                        "- Course detail page — curriculum, instructor profile, reviews, preview",
+                        "- Lesson player — video, audio, PDF, interactive",
+                        "- Progress tracker — completion percentage, streaks, milestones",
+                        "- Quiz and assessment screens — question types, results, review",
+                        "- Certificate display and download screen",
+                        "- Bookmarks and notes",
+                        "- Discussion forum and Q&A threads",
+                        "- Live class joining and waiting room",
+                        "- Assignment submission flow",
+                        "- Gamification — badges, leaderboards, streaks, points",
+                        "- Subscription and course purchase flow",
+                        "- User profile and learning history",
+                        "- Notification management",
+                        "✔ INSTRUCTOR / EDUCATOR PORTAL UI/UX",
+                        "- Instructor dashboard — enrolled students, revenue, course performance",
+                        "- Course builder — section and lesson structure",
+                        "- Content upload — video, audio, PDF, quiz builder",
+                        "- Live class scheduling and management",
+                        "- Student progress monitoring",
+                        "- Assignment and submission review",
+                        "- Discussion and Q&A management",
+                        "- Earnings and payout dashboard",
+                        "- Course analytics — completion rates, drop-off points, ratings",
+                        "✔ ADMIN DASHBOARD UI/UX",
+                        "- Platform overview — total users, revenue, active courses, enrollments",
+                        "- User and instructor management",
+                        "- Course approval and moderation workflow",
+                        "- Revenue and commission management",
+                        "- Coupon and promotion management",
+                        "- Certificate template management",
+                        "- Platform analytics — traffic, enrollments, revenue trends",
+                        "- Support and escalation queue",
+                        "- Content moderation"
+                    ]
+                },
+                {
+                    "heading": "WHAT YOU RECEIVE:",
+                    "content": [
+                        "- Figma source files for all three platforms",
+                        "- Engagement-first design with gamification UI included",
+                        "- Full interactive prototype — student learning flow and course builder",
+                        "- Complete design system — components, color, typography",
+                        "- Mobile app and web versions for student platform",
+                        "- Developer handoff with full specifications",
+                        "- Unlimited revisions throughout"
+                    ]
+                },
+                {
+                    "heading": "INVESTMENT:",
+                    "content": [
+                        "Starting from $17,997",
+                        "Unlimited Revisions | Within 5 Weeks Delivery"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "real-estate-ui-ux-design",
+            "category": "UI/UX Design",
+            "title": "REAL ESTATE UI/UX DESIGN (Buyer App + Agent Portal + Admin Dashboard)",
+            "pricing": "$16,997",
+            "description": "We design complete real estate digital platforms — buyer and renter mobile apps, agent and broker portals, and admin dashboards — with a design language built to build confidence, simplify search, and convert property browsers into committed buyers. Real estate is one of the highest-stakes purchase decisions a person makes. We design real estate platforms where the property search feels intuitive, the listings feel premium, and the path from interest to inquiry is as short as possible.",
+            "bestFor": "Real Estate Agencies & Brokerages, Property Marketplace Founders, Luxury Real Estate Companies, Commercial Real Estate Platforms, Rental Management Platforms, Proptech Startups",
+            "timeline": "Within 5 Weeks",
+            "revisions": "Unlimited Revisions",
+            "sections": [
+                {
+                    "heading": "WHO THIS IS FOR:",
+                    "content": [
+                        "- Real estate agencies and brokerages building a digital platform",
+                        "- Property marketplace founders",
+                        "- Luxury real estate companies wanting a premium digital presence",
+                        "- Commercial real estate platforms",
+                        "- Rental management platforms",
+                        "- Proptech startups"
+                    ]
+                },
+                {
+                    "heading": "WHAT WE DESIGN:",
+                    "content": [
+                        "✔ BUYER / RENTER APP UI/UX (MOBILE + WEB)",
+                        "- Onboarding — property type preference, location, budget setup",
+                        "- Map-based property discovery interface",
+                        "- List and grid view for property listings",
+                        "- Advanced search — filters, price range, size, amenities, property type",
+                        "- Property detail page — photo gallery, video tour, virtual tour, floor plan, amenities, location",
+                        "- Property comparison screen",
+                        "- Saved and shortlisted properties",
+                        "- Schedule visit booking flow",
+                        "- Agent contact and inquiry flow",
+                        "- EMI calculator and mortgage estimator",
+                        "- Neighborhood insights screen — schools, transport, amenities nearby",
+                        "- Document checklist for buyers",
+                        "- Notification management — new listings, price drops, visit reminders",
+                        "- User account and search history",
+                        "✔ AGENT / BROKER PORTAL UI/UX",
+                        "- Agent dashboard — active listings, inquiries, scheduled visits, earnings",
+                        "- Property listing creation and management",
+                        "- Photo and video upload management",
+                        "- Lead and inquiry management — new, contacted, scheduled, closed",
+                        "- Client communication and notes",
+                        "- Appointment calendar and visit scheduling",
+                        "- Performance analytics — listing views, inquiries, conversion",
+                        "- Commission and earnings tracker",
+                        "- Verified badge and profile management",
+                        "✔ ADMIN DASHBOARD UI/UX",
+                        "- Platform overview — properties listed, active agents, daily inquiries",
+                        "- Property listing approval and moderation",
+                        "- Agent onboarding and verification management",
+                        "- User and buyer management",
+                        "- Featured listing and ad placement management",
+                        "- Revenue and subscription management",
+                        "- Analytics — traffic, searches, lead volume, conversion",
+                        "- Support and escalation queue"
+                    ]
+                },
+                {
+                    "heading": "WHAT YOU RECEIVE:",
+                    "content": [
+                        "- Figma source files for all three platforms",
+                        "- Map-based UI fully designed (Google Maps / Mapbox integration layout)",
+                        "- Full interactive prototype — property search and listing flow",
+                        "- Virtual tour and gallery UI designed",
+                        "- Complete design system — components, color, typography",
+                        "- Developer handoff with full specifications",
+                        "- Unlimited revisions throughout"
+                    ]
+                },
+                {
+                    "heading": "INVESTMENT:",
+                    "content": [
+                        "Starting from $16,997",
+                        "Unlimited Revisions | Within 5 Weeks Delivery"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "social-media-app-ui-ux-design",
+            "category": "UI/UX Design",
+            "title": "SOCIAL MEDIA APP UI/UX DESIGN (User App + Creator Dashboard + Admin Moderation Panel)",
+            "pricing": "$24,997",
+            "description": "We design complete social media platform experiences — user-facing mobile and web app, creator and influencer dashboard, and admin moderation panel — built around the psychology of engagement, connection, and retention. Social media apps live and die by one metric: do users come back tomorrow? The feed must feel fresh. The creation flow must be effortless. The discovery must surface content users didn't know they wanted. We design social platforms with behavioral engagement principles at the core — not just beautiful screens, but screens that are engineered to create habit.",
+            "bestFor": "Niche Community Social Network Founders, Creator Economy Platform Builders, Niche Social App Founders, Instagram/TikTok/Twitter Alternative Startups, Community-Driven Platform Companies",
+            "timeline": "Within 7 Weeks",
+            "revisions": "Unlimited Revisions",
+            "sections": [
+                {
+                    "heading": "WHO THIS IS FOR:",
+                    "content": [
+                        "- Social network founders targeting specific communities or niches",
+                        "- Creator economy platform builders",
+                        "- Niche social app founders (sports fans, professionals, local communities)",
+                        "- Startups building Instagram, TikTok, or Twitter alternatives for a specific audience",
+                        "- Community-driven platform companies"
+                    ]
+                },
+                {
+                    "heading": "WHAT WE DESIGN:",
+                    "content": [
+                        "✔ USER APP UI/UX (MOBILE + WEB)",
+                        "- Onboarding — interest selection, follow suggestions, profile setup",
+                        "- Home feed — algorithmic and chronological toggle",
+                        "- Short video feed (Reels / TikTok-style) with full swipe interface",
+                        "- Story and status UI — creation and viewing",
+                        "- Post creation flow — photo, video, text, carousel",
+                        "- Profile page — grid, highlights, bio, follow stats",
+                        "- Explore and discovery — trending, hashtags, suggested accounts",
+                        "- Search — people, hashtags, topics, audio",
+                        "- Notifications — likes, comments, mentions, follows",
+                        "- Direct messaging — text, media, voice notes, reactions",
+                        "- Live streaming interface — host and viewer views",
+                        "- Comment threads and replies",
+                        "- Save and collections",
+                        "- Settings and privacy controls",
+                        "- Dark mode and light mode",
+                        "✔ CREATOR / INFLUENCER DASHBOARD UI/UX",
+                        "- Creator overview — follower growth, reach, impressions, engagement rate",
+                        "- Content performance — top posts, reach per post, saves, shares",
+                        "- Audience insights — demographics, active times, locations",
+                        "- Monetization screens — tips, subscriptions, brand deals tracker",
+                        "- Exclusive content management — paywalled posts",
+                        "- Collaboration and brand partnership management",
+                        "- Scheduled posts and content calendar",
+                        "- Live analytics during streams",
+                        "✔ ADMIN / MODERATION PANEL UI/UX",
+                        "- Platform overview — DAU, content volume, reports, revenue",
+                        "- Content moderation queue — flagged posts, videos, comments",
+                        "- User management — suspend, verify, ban, appeal",
+                        "- Trending and algorithm control panel",
+                        "- Hashtag and topic management",
+                        "- Report investigation and resolution",
+                        "- Advertiser and brand safety controls",
+                        "- Revenue and monetization management",
+                        "- Platform health and system monitoring"
+                    ]
+                },
+                {
+                    "heading": "WHAT YOU RECEIVE:",
+                    "content": [
+                        "- Figma source files for all three platforms",
+                        "- Short video feed UI fully designed (swipe mechanics, interactions)",
+                        "- Full interactive prototype — feed, creation, and messaging flows",
+                        "- Engagement loop design documented",
+                        "- Complete design system — components, color, typography",
+                        "- Developer handoff with full specifications",
+                        "- Unlimited revisions throughout"
+                    ]
+                },
+                {
+                    "heading": "INVESTMENT:",
+                    "content": [
+                        "Starting from $24,997",
+                        "Unlimited Revisions | Within 7 Weeks Delivery"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "food-delivery-restaurant-ui-ux-design",
+            "category": "UI/UX Design",
+            "title": "FOOD DELIVERY & RESTAURANT APP UI/UX DESIGN (Customer App + Restaurant Portal + Delivery Partner App + Admin Panel)",
+            "pricing": "$22,997",
+            "description": "We design complete food delivery and restaurant platform experiences — customer ordering app, restaurant management portal, delivery partner app, and admin control panel — with a design language built for speed, appetite appeal, and frictionless ordering. Food apps compete on two things: how fast the order gets placed, and how good the food looks before it arrives. We design food platforms where the menu makes people hungry, the order flow takes under 60 seconds, and the experience from discovery to delivery is seamless across every touchpoint.",
+            "bestFor": "Food Delivery Startup Founders, Restaurant Chain App Builders, Dark & Cloud Kitchen Platforms, Hyperlocal Delivery Companies, Restaurant Aggregator Platform Builders",
+            "timeline": "Within 6 Weeks",
+            "revisions": "Unlimited Revisions",
+            "sections": [
+                {
+                    "heading": "WHO THIS IS FOR:",
+                    "content": [
+                        "- Food delivery startup founders",
+                        "- Restaurant chains building their own ordering app",
+                        "- Dark kitchen and cloud kitchen platforms",
+                        "- Hyperlocal delivery companies",
+                        "- Restaurant aggregator platform builders"
+                    ]
+                },
+                {
+                    "heading": "WHAT WE DESIGN:",
+                    "content": [
+                        "✔ CUSTOMER APP UI/UX (MOBILE + WEB)",
+                        "- Onboarding — location, preferences, dietary filters",
+                        "- Home screen — featured restaurants, cuisine categories, offers, reorders",
+                        "- Restaurant discovery — search, filters, distance, rating, delivery time",
+                        "- Restaurant page — menu sections, item images, prices, reviews",
+                        "- Food item detail — description, customizations, add-ons, allergens",
+                        "- Cart and order customization",
+                        "- Checkout — address, delivery time, payment selection",
+                        "- Order tracking — live map, driver location, ETA",
+                        "- Order history and reorder",
+                        "- Ratings and reviews — restaurant and delivery partner",
+                        "- Promotions, coupons, and loyalty rewards",
+                        "- Subscription and membership screens",
+                        "- Saved addresses and payment methods",
+                        "- Notifications — order status updates",
+                        "✔ RESTAURANT PORTAL UI/UX",
+                        "- Restaurant dashboard — today's orders, revenue, ratings",
+                        "- Menu management — categories, items, photos, pricing, availability",
+                        "- Order management — incoming, preparing, ready, dispatched",
+                        "- Operating hours and pause ordering",
+                        "- Promotions and discount management",
+                        "- Analytics — best sellers, revenue trends, peak hours",
+                        "- Customer reviews management",
+                        "- Payout and earnings dashboard",
+                        "✔ DELIVERY PARTNER APP UI/UX",
+                        "- Partner home — available, busy, offline toggle",
+                        "- New order notification and accept/decline",
+                        "- Order pickup — restaurant location, order details",
+                        "- Delivery navigation interface",
+                        "- Delivery confirmation and signature/photo",
+                        "- Earnings dashboard — daily, weekly, monthly",
+                        "- Incentives and bonus tracker",
+                        "- Support and issue reporting",
+                        "✔ ADMIN PANEL UI/UX",
+                        "- Platform overview — orders, restaurants, delivery partners, revenue",
+                        "- Restaurant onboarding and approval",
+                        "- Delivery partner onboarding and management",
+                        "- Order monitoring and issue resolution",
+                        "- Promotions and platform-wide campaign management",
+                        "- Revenue and commission management",
+                        "- Analytics — platform health, city-wise performance",
+                        "- Customer support queue"
+                    ]
+                },
+                {
+                    "heading": "WHAT YOU RECEIVE:",
+                    "content": [
+                        "- Figma source files for all four platforms",
+                        "- Food photography UI layouts optimized for appetite appeal",
+                        "- Full interactive prototype — ordering and tracking flow",
+                        "- Complete design system — components, color, typography",
+                        "- Developer handoff with full specifications",
+                        "- Unlimited revisions throughout"
+                    ]
+                },
+                {
+                    "heading": "INVESTMENT:",
+                    "content": [
+                        "Starting from $22,997",
+                        "Unlimited Revisions | Within 6 Weeks Delivery"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "travel-booking-app-ui-ux-design",
+            "category": "UI/UX Design",
+            "title": "TRAVEL & BOOKING APP UI/UX DESIGN (Customer App + Vendor/Host Portal + Admin Dashboard)",
+            "pricing": "$19,997",
+            "description": "We design complete travel, hospitality, and booking platform experiences — customer-facing app and website, vendor or host management portal, and admin control dashboard — with a design language built to inspire wanderlust, simplify decisions, and make booking effortless. Travel platforms sell experiences before they sell logistics. The design must make the user feel the destination, trust the service, and complete the booking — all within a single session. We design travel platforms where discovery is visually immersive, the booking flow is fast and reassuring, and every screen moves the user one step closer to confirming.",
+            "bestFor": "Travel Booking Platform Startups, Hotel & Resort Booking App Founders, Vacation Rental & Airbnb Alternative Companies, Tour & Experience Booking Platforms, Airline & Transport Booking Companies, Corporate Travel Management Platforms",
+            "timeline": "Within 5 Weeks",
+            "revisions": "Unlimited Revisions",
+            "sections": [
+                {
+                    "heading": "WHO THIS IS FOR:",
+                    "content": [
+                        "- Travel booking platform startups",
+                        "- Hotel and resort booking app founders",
+                        "- Vacation rental and Airbnb alternative companies",
+                        "- Tour and experience booking platforms",
+                        "- Airline and transport booking companies",
+                        "- Corporate travel management platforms"
+                    ]
+                },
+                {
+                    "heading": "WHAT WE DESIGN:",
+                    "content": [
+                        "✔ CUSTOMER APP UI/UX (MOBILE + WEB)",
+                        "- Onboarding — travel preferences, destinations of interest",
+                        "- Home — featured destinations, trending trips, personalized deals",
+                        "- Search — flights, hotels, experiences, packages — with flexible date UI",
+                        "- Search results — filters, sorting, map view, list view",
+                        "- Property or listing detail — photo gallery, amenities, reviews, map, pricing",
+                        "- Room and package selection",
+                        "- Booking flow — dates, guests, add-ons, payment",
+                        "- Booking confirmation and itinerary",
+                        "- Trip management — upcoming, past, saved",
+                        "- Reviews and rating submission",
+                        "- Wishlist and travel bucket list",
+                        "- Loyalty points and rewards",
+                        "- Notifications — booking reminders, check-in alerts, deals",
+                        "- Customer support chat interface",
+                        "✔ VENDOR / HOST PORTAL UI/UX",
+                        "- Host dashboard — active bookings, earnings, calendar view",
+                        "- Property or service listing creation",
+                        "- Photo and media upload management",
+                        "- Pricing and availability calendar",
+                        "- Booking management — confirmed, pending, cancelled",
+                        "- Guest communication",
+                        "- Review management",
+                        "- Analytics — views, bookings, revenue, occupancy rate",
+                        "- Payout and earnings dashboard",
+                        "✔ ADMIN DASHBOARD UI/UX",
+                        "- Platform overview — bookings today, active listings, revenue, new users",
+                        "- Vendor and host onboarding and verification",
+                        "- Listing review and approval workflow",
+                        "- Booking monitoring and dispute resolution",
+                        "- Promotions and featured listing management",
+                        "- Revenue and commission management",
+                        "- Analytics — destination trends, booking patterns, user behavior",
+                        "- Customer support escalation queue"
+                    ]
+                },
+                {
+                    "heading": "WHAT YOU RECEIVE:",
+                    "content": [
+                        "- Figma source files for all three platforms",
+                        "- Immersive destination UI with visual storytelling layouts",
+                        "- Full interactive prototype — search, booking, and host portal flows",
+                        "- Flexible date picker and availability calendar UI fully designed",
+                        "- Complete design system — components, color, typography",
+                        "- Developer handoff with full specifications",
+                        "- Unlimited revisions throughout"
+                    ]
+                },
+                {
+                    "heading": "INVESTMENT:",
+                    "content": [
+                        "Starting from $19,997",
+                        "Unlimited Revisions | Within 5 Weeks Delivery"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "on-demand-services-app-ui-ux-design",
+            "category": "UI/UX Design",
+            "title": "ON-DEMAND SERVICES APP UI/UX DESIGN (Customer App + Service Provider App + Admin Dashboard)",
+            "pricing": "$20,997",
+            "description": "We design complete on-demand service marketplace platforms — customer booking app, service provider app, and admin management dashboard — for any category of hyperlocal or scheduled service delivery. On-demand platforms succeed when booking feels instant and trust feels guaranteed. We design on-demand platforms where the service is found in seconds, the provider feels verified and credible, and the booking takes less than a minute.",
+            "bestFor": "Home Services Marketplace Founders, Freelancer & Gig Economy Platform Companies, Hyperlocal Service Booking Startups, Logistics & Delivery Platform Founders, Service Provider Marketplace Builders",
+            "timeline": "Within 6 Weeks",
+            "revisions": "Unlimited Revisions",
+            "sections": [
+                {
+                    "heading": "WHO THIS IS FOR:",
+                    "content": [
+                        "- Home services marketplace founders (cleaning, repairs, beauty, etc.)",
+                        "- Freelancer and gig economy platform companies",
+                        "- Hyperlocal service booking startups",
+                        "- Logistics and delivery platform founders",
+                        "- Any business building a marketplace that connects service providers with customers"
+                    ]
+                },
+                {
+                    "heading": "WHAT WE DESIGN:",
+                    "content": [
+                        "✔ CUSTOMER APP UI/UX (MOBILE + WEB)",
+                        "- Onboarding — location, service preferences",
+                        "- Home — service categories, featured providers, nearby pros, promotions",
+                        "- Service category browsing — cleaning, plumbing, beauty, tutoring, etc.",
+                        "- Service detail — description, what's included, pricing",
+                        "- Provider profile — photo, rating, reviews, verified badges, experience",
+                        "- Provider selection — availability, proximity, rating-based sort",
+                        "- Booking flow — date and time selection, address, special instructions",
+                        "- Real-time tracking — provider en route, live map",
+                        "- In-app communication — chat with provider",
+                        "- Booking confirmation and receipt",
+                        "- Ratings and reviews post-service",
+                        "- Booking history and rebooking",
+                        "- Saved providers and favorites",
+                        "- Promotions, coupons, and loyalty rewards",
+                        "- Payment methods — card, wallet, cash",
+                        "✔ SERVICE PROVIDER APP UI/UX",
+                        "- Provider onboarding — registration, document upload, skill selection",
+                        "- Home — available jobs, scheduled bookings, earnings summary",
+                        "- New job request — accept / decline with job details",
+                        "- Job navigation — customer address, map, ETA",
+                        "- Job in-progress flow — start, update, complete",
+                        "- Before and after photo upload (for certain service types)",
+                        "- Earnings dashboard — daily, weekly, monthly breakdown",
+                        "- Availability management — on/off, scheduled hours",
+                        "- Ratings and review management",
+                        "- Support and issue reporting",
+                        "✔ ADMIN DASHBOARD UI/UX",
+                        "- Platform overview — bookings today, active providers, revenue",
+                        "- Service provider onboarding and background verification status",
+                        "- Customer management",
+                        "- Booking monitoring and dispute resolution",
+                        "- Service category and pricing management",
+                        "- Promotions and campaign management",
+                        "- Revenue and commission management",
+                        "- Analytics — peak hours, popular services, city performance",
+                        "- Customer and provider support queue"
+                    ]
+                },
+                {
+                    "heading": "WHAT YOU RECEIVE:",
+                    "content": [
+                        "- Figma source files for all three platforms",
+                        "- Real-time tracking and map UI fully designed",
+                        "- Full interactive prototype — booking and provider flow",
+                        "- Verified provider trust UI fully designed",
+                        "- Complete design system — components, color, typography",
+                        "- Developer handoff with full specifications",
+                        "- Unlimited revisions throughout"
+                    ]
+                },
+                {
+                    "heading": "INVESTMENT:",
+                    "content": [
+                        "Starting from $20,997",
+                        "Unlimited Revisions | Within 6 Weeks Delivery"
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "news-media-app-ui-ux-design",
+            "category": "UI/UX Design",
+            "title": "NEWS & MEDIA APP UI/UX DESIGN (Reader App + Web Platform + Editorial Admin Panel)",
+            "pricing": "$18,997",
+            "description": "We design complete news and media platform experiences — mobile reader app, web news platform, and editorial admin panel — built for content clarity, reader engagement, and editorial control at scale. News platforms compete for the most valuable resource in the world: human attention. We design news platforms that respect the reader's attention and empower the journalist's workflow — both in equal measure.",
+            "bestFor": "Media Companies Building Digital Platforms, Independent Editorial Teams, Regional & Local News Networks, Niche Vertical Publications, Podcast & Audio Journalism Platforms, AI-Curated News Platform Founders",
+            "timeline": "Within 5 Weeks",
+            "revisions": "Unlimited Revisions",
+            "sections": [
+                {
+                    "heading": "WHO THIS IS FOR:",
+                    "content": [
+                        "- Media companies building or rebuilding a digital platform",
+                        "- Independent journalists and editorial teams going digital",
+                        "- Regional and local news networks",
+                        "- Niche vertical publications — sports, finance, tech, entertainment",
+                        "- Podcast and audio journalism platforms",
+                        "- AI-curated or aggregated news platform founders"
+                    ]
+                },
+                {
+                    "heading": "WHAT WE DESIGN:",
+                    "content": [
+                        "✔ READER APP UI/UX (MOBILE)",
+                        "- Onboarding — topic and interest selection, notification preferences",
+                        "- Personalized home feed — top stories, breaking news, recommended articles",
+                        "- Category navigation — politics, business, sports, tech, entertainment, world",
+                        "- Article detail page — typography-first reading experience, share, bookmark",
+                        "- Breaking news notification and live update screens",
+                        "- Live blog and real-time event coverage UI",
+                        "- Audio news player — text-to-speech and podcast",
+                        "- Video news player — fullscreen, autoplay, captions",
+                        "- Bookmarks and offline reading",
+                        "- Search — keyword, author, topic, date filter",
+                        "- User profile — reading history, preferences, subscription status",
+                        "- Comment and discussion section",
+                        "- Trending and editor's picks",
+                        "- Dark mode and light mode — both fully designed",
+                        "- Paywall and subscription screens",
+                        "✔ WEB NEWS PLATFORM UI/UX",
+                        "- Homepage — hero story, section layouts, breaking news bar, trending",
+                        "- Category and topic pages",
+                        "- Article page — immersive reading layout, related articles, share",
+                        "- Live blog page — real-time update UI",
+                        "- Video and podcast pages",
+                        "- Author profile pages",
+                        "- Search results page",
+                        "- Subscription and paywall screens",
+                        "- Newsletter signup",
+                        "- Mobile responsive — desktop, tablet, mobile web",
+                        "✔ EDITORIAL ADMIN PANEL UI/UX",
+                        "- Editor dashboard — stories in pipeline, live, scheduled, drafts",
+                        "- Article editor — rich text, media, SEO fields, categories, tags",
+                        "- Breaking news publisher — one click push to app and web",
+                        "- Push notification composer and sender",
+                        "- Media library — images, video, audio",
+                        "- Author and contributor management",
+                        "- Homepage and section layout manager",
+                        "- Comment moderation queue",
+                        "- Analytics dashboard — real-time traffic, article performance, reader behavior",
+                        "- Subscription and revenue dashboard",
+                        "- Ad placement and zone management"
+                    ]
+                },
+                {
+                    "heading": "WHAT YOU RECEIVE:",
+                    "content": [
+                        "- Figma source files for all three platforms",
+                        "- Typography-first reading experience designed for long-form and short-form content",
+                        "- Breaking news and live blog UI fully designed",
+                        "- Full interactive prototype — reading flow and editorial workflow",
+                        "- Dark and light mode both fully designed",
+                        "- Complete design system — components, color, typography",
+                        "- Developer handoff with full specifications",
+                        "- Unlimited revisions throughout"
+                    ]
+                },
+                {
+                    "heading": "INVESTMENT:",
+                    "content": [
+                        "Starting from $18,997",
+                        "Unlimited Revisions | Within 5 Weeks Delivery"
+                    ]
+                }
+            ]
         }
     ],
     "marketing": [

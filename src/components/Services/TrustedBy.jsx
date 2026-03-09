@@ -21,7 +21,7 @@ const TrustedBy = () => {
 
   return (
     <div ref={trustedbycontref} className="ty-container">
-      <div className="ty-hero-stats trustedby-trigger-ani">
+      <div className="ty-hero-stats  trustedby-trigger-ani">
         <div className="ty-stat">
           <p>Trusted By Our</p>
           <p>Customer</p>

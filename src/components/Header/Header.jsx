@@ -13,6 +13,7 @@ import gsap from 'gsap'
 import { CgClose } from 'react-icons/cg'
 import SocialIcons from '../Common/SocialIcons'
 import { BiChevronDown } from 'react-icons/bi'
+import Magnet from '../ui/Magnet'
 
 
 const Header = () => {
@@ -94,7 +95,9 @@ const Header = () => {
         </Link>
         <nav className="nav">
           {links?.map((link) => (
-            <NavLink key={link.text} className={({ isActive }) => isActive ? `bg-[#ffe2bc] header-text-ani -translate-y-0.5 hover:font-semibold rounded py-1 px-3 text-sm` : "hover:text-gray-700 hover:text-shadow-lg text-base hover:text-shadow-gray-300  header-text-ani"} to={link.routeLink ? `${link.routeLink}` : "/"}>{link.text}</NavLink>
+             <Magnet key={link.text}  padding={15} disabled={false} magnetStrength={6}>
+            <NavLink className={({ isActive }) => isActive ? `bg-[#ffe2bc] header-text-ani -translate-y-0.5 hover:font-semibold rounded py-1 px-3 text-sm` : "hover:text-gray-700 hover:text-shadow-lg text-base hover:text-shadow-gray-300  header-text-ani"} to={link.routeLink ? `${link.routeLink}` : "/"}>{link.text}</NavLink>
+             </Magnet>
           ))}
         </nav>
         <div className="header-actions">

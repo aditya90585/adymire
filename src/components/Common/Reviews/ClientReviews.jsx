@@ -28,7 +28,7 @@ const ClientReviews = () => {
 
   }, { scope: clientreviewcontref });
   return (
-    <section  ref={clientreviewcontref} className="crv-section">
+    <section ref={clientreviewcontref} className="crv-section">
       <div className="crv-container">
 
         <h2 className="crv-title clientreview-ani-element">
@@ -142,8 +142,9 @@ const ClientReviews = () => {
           <button className="clientReview-prev rotate-180 bg-[#FDC274] h-11 w-11 text-2xl rounded-full cursor-pointer" aria-label="Previous">
             ➔
           </button>
-
-          <div className="clientReview-pagination flex justify-center items-center"></div>
+          <div className='lg:block hidden'>
+            <div className="clientReview-pagination flex justify-center items-center"></div>
+          </div>
 
           <button className="clientReview-next  bg-[#FDC274] h-11 w-11 text-2xl rounded-full cursor-pointer" aria-label="Next">
             ➔
