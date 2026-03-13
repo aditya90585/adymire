@@ -15,10 +15,10 @@ const PricingPlanCard = ({ plan, setCurrentPlanId, setDetailBoxState }) => {
             className={`rounded-2xl h-full flex flex-col justify-between items-stretch overflow-hidden transition-all duration-300 ease-in-out`}
             style={{ fontFamily: "'Segoe UI', sans-serif" }}>
             <div className="bg-gray-200 max-h-50 h-50 min-h-50 relative flex items-center justify-center  rounded-b-xl  overflow-hidden">
-                <BackgroundGradientAnimation gradientBackgroundStart="yellow" gradientBackgroundEnd="white"  containerClassName="h-full w-full ">
+                <BackgroundGradientAnimation gradientBackgroundStart="rgb(252, 193, 45)" gradientBackgroundEnd="rgb(252, 231, 204)" containerClassName="h-full w-full ">
                     <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-xl text-center md:text-xl lg:text-2xl">
-                        <p className=" px-7 bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white to-emerald-950 text-shadow-2xs">
-                            {plan?.title}
+                        <p className=" px-7  text-gray-900 text-shadow-gray-400 text-shadow-2xs">
+                            {plan.thumbnailText ? plan.thumbnailText : plan?.title}
                         </p>
                     </div>
                 </BackgroundGradientAnimation>

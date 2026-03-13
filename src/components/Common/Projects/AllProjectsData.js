@@ -3863,8 +3863,8 @@ export const AllProjectsData = [
       }
     ]
   },
-{
-  "type": "uiux",
+  {
+    "type": "uiux",
     "slug": "homesync",
     "title": "HomeSync - Real Estate Property Buy & Sell App",
     "description": "HomeSync is a comprehensive real estate platform that we designed to make property discovery and booking seamless and stress-free. This is not just another property listing app - it's a complete ecosystem that connects property seekers with owners instantly, making the entire process from browsing to booking incredibly simple. The goal was to create a platform where users can seamlessly discover properties, apply smart filters to find exactly what they need, book properties with confidence, and instantly connect with property owners via direct SMS and WhatsApp notifications.",
@@ -3884,7 +3884,7 @@ export const AllProjectsData = [
       "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771841207/10_tw3obu.png",
     ],
     "link": "https://www.behance.net/gallery/243377105/HomeSync-Peoperty-Buy-Sell-app",
-      "linkText": "Behance Portfolio",
+    "linkText": "Behance Portfolio",
     "visitText": "Visit Behance",
     technologies: [Figma, Xd, Sketch],
     "sections": [
@@ -4266,7 +4266,7 @@ export const AllProjectsData = [
       }
     ]
   },
-   {
+  {
     "type": "webdevelopment",
     "slug": "beats",
     "title": "Beats",
@@ -4283,16 +4283,57 @@ export const AllProjectsData = [
   },
   {
     "type": "webdevelopment",
-    "slug": "music-academy",
-    "title": "Music Academy",
+    "slug": "forever-ecommerse",
+    "title": "Forever e-commerse website",
+    "category2": ["Website", "e-commerse website"],
+    "duration": "1 week",
+    technologies: [Flutter, Jetpack, Reactlogo, Apple, Android, Browser,],
+    "images": [
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1773250041/Screenshot_2026-03-11_224643_am2hhd.png"
+    ],
+    "link": "https://e-commerce-agy4.vercel.app",
+    "linkText": "Visit Website",
+    "visitText": "Visit Website",
+  },
+  {
+    "type": "webdevelopment",
+    "slug": "surevaancy",
+    "title": "SureVacancy",
     "category2": ["Website"],
     "duration": "1 week",
     technologies: [Flutter, Jetpack, Reactlogo, Apple, Android, Browser,],
     "images": [
-      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1771841650/Master_the_art_of_music_homepage_xkjkfy.png",
-
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1773250043/Screenshot_2026-03-11_224258_btr7ip.png"
     ],
-    "link": "https://music-academy-school-web.vercel.app",
+    "link": "https://surevacancy.in",
+    "linkText": "Visit Website",
+    "visitText": "Visit Website",
+  },
+  {
+    "type": "webdevelopment",
+    "slug": "quickchat",
+    "title": "QuickChat",
+    "category2": ["Website"],
+    "duration": "1 week",
+    technologies: [Flutter, Jetpack, Reactlogo, Apple, Android, Browser,],
+    "images": [
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1773250041/Screenshot_2026-03-11_224934_mitavc.png"
+    ],
+    "link": "https://chat-app-main-psi.vercel.app/login",
+    "linkText": "Visit Website",
+    "visitText": "Visit Website",
+  },
+  {
+    "type": "webdevelopment",
+    "slug": "jobshub",
+    "title": "Jobshub",
+    "category2": ["Website"],
+    "duration": "1 week",
+    technologies: [Flutter, Jetpack, Reactlogo, Apple, Android, Browser,],
+    "images": [
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1773250544/620f8399-8ca2-4138-8da5-eec59c93e1e6_jjgw5w.jpg"
+    ],
+    "link": "https://jobs-hub-op6u.vercel.app/auth/login",
     "linkText": "Visit Website",
     "visitText": "Visit Website",
   }
