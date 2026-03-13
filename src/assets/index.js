@@ -115,7 +115,7 @@ export { default as WhatMakesUsDifferentImages3 } from "./illustrations/WhatMake
 export { default as WhatMakesUsDifferentImages4 } from "./illustrations/WhatMakesUsDifferentImages/WhatMakesUsDifferentImages4.svg";
 
 // Whiteboard / Tool Icons
-export { default as Whiteboardsvg } from "./icons/WhiteboardToolIcons/WhiteBoard.svg";
+export { default as Whiteboardsvg } from "./icons/WhiteboardToolIcons/Whiteboard.svg";
 export { default as AToolIcon } from "./icons/AToolIcon.svg";
 export { default as FireBallToolIcon } from "./icons/FireBallToolIcon.svg";
 export { default as BlueArrowIcon } from "./icons/BlueArrowIcon.svg";
