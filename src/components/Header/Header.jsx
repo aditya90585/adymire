@@ -13,7 +13,7 @@ import gsap from 'gsap'
 import { CgClose } from 'react-icons/cg'
 import SocialIcons from '../Common/SocialIcons'
 import { BiChevronDown } from 'react-icons/bi'
-import Magnet from '../ui/Magnet'
+import Magnet from '../UI/Magnet'
 
 
 const Header = () => {

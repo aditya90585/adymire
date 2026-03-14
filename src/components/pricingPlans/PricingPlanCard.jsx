@@ -2,7 +2,7 @@ import React from 'react'
 import { BsStarFill } from 'react-icons/bs'
 import { FaClockRotateLeft } from 'react-icons/fa6'
 import { useHref } from 'react-router-dom';
-import { BackgroundGradientAnimation } from '../ui/background-gradient-animation';
+import { BackgroundGradientAnimation } from '../UI/background-gradient-animation';
 
 const PricingPlanCard = ({ plan, setCurrentPlanId, setDetailBoxState }) => {
     const href = useHref("/contact");

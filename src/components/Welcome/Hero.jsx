@@ -12,7 +12,7 @@ import gsap from "gsap";
 import { staggerFadeIn } from "../../animations/stagger";
 import BookCallButton from "../UI/NavButtons/BookCallButton";
 import { BiBot } from "react-icons/bi";
-import Magnet from "../ui/Magnet";
+import Magnet from "../UI/Magnet";
 
 
 const Hero = () => {

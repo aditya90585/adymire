@@ -5,7 +5,7 @@ import { NavLink, useHref } from 'react-router-dom';
 import { RxCross1 } from 'react-icons/rx';
 import { FaClockRotateLeft } from 'react-icons/fa6';
 import { BsStarFill } from 'react-icons/bs';
-import { BackgroundGradientAnimation } from '../ui/background-gradient-animation';
+import { BackgroundGradientAnimation } from '../UI/background-gradient-animation';
 
 
 

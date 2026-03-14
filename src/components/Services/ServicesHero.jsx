@@ -5,7 +5,7 @@ import { GirlSittingWithLaptop, PhoneYellow } from "@/assets";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import BookCallButton from "../UI/NavButtons/BookCallButton";
-import Magnet from "../ui/Magnet";
+import Magnet from "../UI/Magnet";
 
 const ServicesHero = () => {
   useGSAP(() => {
