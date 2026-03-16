@@ -35,7 +35,7 @@ const ContactEnquirySection = () => {
         window.open('/contact', '_blank', 'noopener,noreferrer');
     }
     const emaiMethod = () => {
-        const email = "helo@adymir.com";
+        const email = "helloadymire.com@gmail.com";
         const subject = encodeURIComponent("Hello Adymire");
         const body = encodeURIComponent("Hello, I want to know more about your services");
 
@@ -51,21 +51,21 @@ const ContactEnquirySection = () => {
     const contactData = [
         {
             title: "Send a Email",
-            subtitle: "hello@adylity.com",
+            subtitle: "helloadymire.com@gmail.com",
             buttonText: "Send Email",
             icon: EmailAniIcon,
             method: emaiMethod
         },
         {
-            title: "Call Back",
+            title: " Call Us",
             subtitle: "+91 7302356804",
-            buttonText: "Request Call Back",
+            buttonText: "Call Now",
             icon: Phonecall,
             method: navigateToBookingForm
         },
         {
             title: "Chat on Whatsapp",
-            subtitle: "hello@adylity.com",
+            subtitle: "Say Hii on whatsaap",
             buttonText: "Chat Now",
             icon: WhatsappIcon,
             method: navigateToWhatsapp

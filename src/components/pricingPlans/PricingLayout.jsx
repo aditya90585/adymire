@@ -4,6 +4,12 @@ import ServiceTypeSelector from './ServiceTypeSelector';
 import PricingPlansSlide from './PricingPlansSlide';
 import plansData from "./pricingPlansData.json"
 import  "./PricingLayout.css"
+import { useRef } from "react";
+import { staggerFadeInOnScroll } from "../../animations/stagger";
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { useGSAP } from "@gsap/react";
+gsap.registerPlugin(ScrollTrigger);
 
 
 const PricingLayout = () => {
@@ -22,12 +28,24 @@ const PricingLayout = () => {
     setPlans(plansData[activeCategory])
   }, [activeCategory])
   
+    const pricingplanscontref = useRef()
+    useGSAP(() => {
+      const elements = gsap.utils.toArray(".pricing-trigger-ani");
+
+      elements.forEach((element) => {
+        staggerFadeInOnScroll(element, { trigger: element })
+      });
+      setTimeout(() => {
+        ScrollTrigger.refresh()
+      }, 200)
+  
+    }, { scope:pricingplanscontref })
 
 
 
   return (
-    <div className='mt-20 relative'>
-      <h2 className='font-bold text-xl text-center'>Choose a service - to work with US</h2>
+    <div ref={pricingplanscontref} className='mt-20 relative'>
+      <h2 className='font-bold text-xl text-center pricing-trigger-ani'>Choose a service - to work with US</h2>
       <ServiceTypeSelector
         categories={categories}
         activeCategory={activeCategory}

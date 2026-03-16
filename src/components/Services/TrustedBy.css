@@ -60,8 +60,8 @@
 @media (max-width: 992px) {
     .ty-hero-stats {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        padding: 10px 30px;
+        grid-template-columns: 1fr ;
+        padding: 10px 80px;
     }
 
     .ty-stat {

@@ -140,6 +140,9 @@
 }
 
 @media (max-width: 768px) {
+   .portfolio-hero-container {
+    flex-direction: column-reverse;
+  }
   .portfolio-hero {
     padding-top: 60px;
   }

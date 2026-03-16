@@ -33,17 +33,18 @@
 .wmd-card {
     display: flex;
     justify-content: space-between;
-     align-items: center;
+    align-items: center;
     border-radius: 18px;
     padding: 0px 40px;
     margin-bottom: 28px;
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
     border: 2px solid rgb(211, 209, 209);
 }
-.wmd-content{
+
+.wmd-content {
     display: flex;
     flex-direction: column;
-   row-gap: 30px;
+    row-gap: 30px;
 }
 
 .wmd-content h3 {
@@ -157,11 +158,13 @@
     border: 1px solid rgb(197, 195, 195);
     transition: all ease-in 0.1s;
 }
-.wmd-support-btn:hover{
+
+.wmd-support-btn:hover {
     box-shadow: 2px 2px 4px rgb(80, 146, 64);
     transform: translateY(-2px);
 }
-.wmd-support-btn img{
+
+.wmd-support-btn img {
     height: 40px;
 }
 
@@ -189,31 +192,40 @@
 
     .wmd-content {
         max-width: 100%;
+         padding-top: 20px;
+    }
+    .wmd-content h3 {
+    font-size: 30px;
     }
 
     .wmd-image {
         width: 100%;
-        height:auto
+        height: auto
     }
 
     .wmd-tags {
         justify-content: center;
     }
+
     .wmd-tag {
         font-size: 14px;
         height: 70px;
         width: 70px;
     }
-    .wmd-title{
+
+    .wmd-title {
         font-size: 18px;
     }
-    .wmd-section{
+
+    .wmd-section {
         padding: 10px 6px;
 
     }
+
     .wmd-content p {
         font-size: 22px;
     }
+
     .wmd-support .wmd-content span {
         display: flex;
         margin-top: 20px;

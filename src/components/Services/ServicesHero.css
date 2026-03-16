@@ -17,11 +17,13 @@
   grid-template-columns: 1.1fr 1fr;
   align-items: center;
   gap: 60px;
+  grid-template-areas: "left right";
 }
 
 
 .services-hero__content {
   position: relative;
+   grid-area: left;
 }
 
 .services-hero__badge {
@@ -88,6 +90,7 @@
 .services-hero__image-wrapper {
   display: flex;
   justify-content: center;
+   grid-area: right;
 }
 
 .services-hero__image-card {
@@ -114,7 +117,11 @@
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
+     grid-template-areas:
+      "right"
+      "left";
   }
+
   .services-hero__image-card {
    width: 90%;
    height: auto;

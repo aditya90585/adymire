@@ -64,7 +64,7 @@ function App() {
           <Route path="/payment/process" element={<PaymentProcess />} /> */}
         </Routes>
         <Footer />
-        <div className="fixed max-w-12 md:max-w-14 right-8 bottom-10 z-100 flex flex-col items-center justify-center gap-y-2">
+        <div className="fixed max-w-14 md:max-w-14 right-8 bottom-10 z-100 flex flex-col items-center justify-center gap-y-2">
           <div onClick={navigateToWhatsapp} className="bg-white p-2 shadow-sm rounded-full hover:shadow-md cursor-pointer">
             <Lottie animationData={WhatsappIcon} alt="whatsapp" />
           </div>

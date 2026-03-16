@@ -1,6 +1,6 @@
 
 import "./MyTeam.css"
-import { YashveerGiri, rohan, ashish, abhisekhgiri, abhisekhmannu, aditya, neeraj, rakesh, santosh, ritugupta, ravikumar } from "@/assets";
+import { YashveerGiri, ashish, abhisekhgiri, abhisekhmannu, aditya, neeraj, rakesh, santosh, ritugupta, ravikumar } from "@/assets";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -8,16 +8,14 @@ import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 
 
 export const teamMembers = [
-    { name: "Rohan", role: "Co-Founder & CTO", image: rohan },
+    { name: "Abhishek Giri", role: "Co-Founder", image: abhisekhgiri },
     { name: "Yashveer Giri Goswami", role: "Founder & CEO", image: YashveerGiri },
-    { name: "Abhishek Giri", role: "COO", image: abhisekhgiri },
     { name: "Ashish Kumar", role: "Full Stack MERN Developer", image: ashish },
     { name: "Aditya Rajput", role: "Full Stack MERN Developer", image: aditya },
     { name: "Abhisekh P", role: "Full Stack Web Developer", image: abhisekhmannu },
     { name: "Rakesh Giri", role: "Flutter Developer", image: rakesh },
     { name: "Neeraj Dahit", role: "Flutter Developer", image: neeraj },
     { name: "Santosh Patel", role: "Flutter Developer", image: santosh },
-    { name: "Ritu Gupta", role: "Android Developer", image: ritugupta },
     { name: "Ravi Kumar", role: "Backend Developer", image: ravikumar },
 ];
 
@@ -50,11 +48,11 @@ const MyTeam = () => {
                     breakpoints={{
                         0: {
                             slidesPerView: 1,
-                        
+
                         },
                         768: {
                             slidesPerView: 2,
-              
+
                         },
                         1024: {
                             slidesPerView: 3,
@@ -74,7 +72,7 @@ const MyTeam = () => {
                         <SwiperSlide
                             key={member.name}
                             className={`myteam-slidecard relative w-[320px] flex flex-col items-center transition-transform ease-in duration-300`}
-                        >  
+                        >
                             <div className={` myteam-slidecard-blob absolute bottom-20 w-full h-80 rounded-tl-4xl rounded-tr-[90%] transition-colors ease-out`}>
                             </div>
                             <div className={` myteam-slidecard-image relative z-10  h-full transition-all duration-200 delay-200 ease-in `}>

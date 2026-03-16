@@ -154,7 +154,7 @@ const Footer = () => {
     });
     setTimeout(() => {
       ScrollTrigger.refresh()
-    }, 100)
+    }, 200)
 
   }, { scope: footercontref })
 
@@ -198,8 +198,8 @@ const Footer = () => {
 
           <div className="ad-footer-block">
             <h4>Contact</h4>
-            <p>Compeny Helpline : +91 7056847526</p>
-            <p>Email: support@ycomskills.com</p>
+            <p>Compeny Helpline :  +91 7302356804</p>
+            <p>Email: helloadymire.com@gmail.com</p>
           </div>
           <a
             href="/company-deck.pdf"

@@ -55,7 +55,7 @@ const SeeProjects = () => {
           <span className="block w-30 h-1 bg-yellow-500 mx-auto mt-1 rounded" />
         </h2>
 
-        <div className="md:hidden max-w-sm mx-auto mb-6 relative seeprojects-ani-element">
+        <div className="md:hidden max-w-sm mx-auto mb-6 z-20 relative seeprojects-ani-element">
           <button
             onClick={() => setDropdownisOpen(!dropdownisOpen)}
             className="w-full flex items-center justify-between bg-white border border-gray-300 rounded-lg px-4 py-3 shadow-sm"

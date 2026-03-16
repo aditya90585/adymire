@@ -29,7 +29,7 @@ const VideoWalkthrough = () => {
         <div className="video-player-container vwt-ani-element">
           <div className="video-player relative rounded-full border-2 border-yellow-400">
             <img src={AdymireThumbnailVideo} alt="video_thumbnail" />
-            <button className='absolute top-[41%]  rounded-full p-2 bg-amber-400 hover:bg-amber-300 transition-all ease-in cursor-pointer hover:scale-110 flex justify-center items-center'><BiPlay className='fill-black size-15' /> </button>
+            <a href='https://youtu.be/jnMbrOF0dXM?si=0c9-9p4yUCKzDLiF' target='_blank' className='absolute top-[41%]  rounded-full p-2 bg-amber-400 hover:bg-amber-300 transition-all ease-in cursor-pointer hover:scale-110 flex justify-center items-center'><BiPlay className='fill-black size-15' /> </a>
           </div>
         </div>
       </div>

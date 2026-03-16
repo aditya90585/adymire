@@ -141,6 +141,11 @@
   .hero-left h1 {
     font-size: 38px;
   }
+  .hero-btn{
+    bottom: 0px;
+    margin-bottom: 5px;
+    margin-top: 30px;
+  }
 
   .hero-left .first,
   .hero-left h1 span {
