@@ -1,25 +1,28 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import './VideoWalkthrough.css'
 import { AdymireThumbnailVideo, CurveArrow } from "@/assets"
 import { BiPlay } from 'react-icons/bi'
 import { useGSAP } from '@gsap/react'
 import { staggerFadeInOnScroll } from '../animations/stagger'
 import gsap from 'gsap'
+import VideoModal from './Common/VideoModal'
 
 const VideoWalkthrough = () => {
 
-   const vwtcontref = useRef()
-      useGSAP(() => {
-          const elements = gsap.utils.toArray(".vwt-ani-element");
-          elements.forEach((element) => {
-              staggerFadeInOnScroll(element,{trigger:element})
-          });
-  
-      }, { scope: vwtcontref });
-  
+  const vwtcontref = useRef()
+  useGSAP(() => {
+    const elements = gsap.utils.toArray(".vwt-ani-element");
+    elements.forEach((element) => {
+      staggerFadeInOnScroll(element, { trigger: element })
+    });
+
+  }, { scope: vwtcontref });
+  const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <section ref={vwtcontref} className="video-walkthrough">
+        <VideoModal isOpen={modalOpen} onClose={() => setModalOpen(false)} videoId={"jnMbrOF0dXM"} />
+      
       <div className="container">
         <div className='relative w-fit mx-auto vwt-ani-element'>
           <h2 className="section-title ">Video Walkthrough</h2>
@@ -29,7 +32,7 @@ const VideoWalkthrough = () => {
         <div className="video-player-container vwt-ani-element">
           <div className="video-player relative rounded-full border-2 border-yellow-400">
             <img src={AdymireThumbnailVideo} alt="video_thumbnail" />
-            <a href='https://youtu.be/jnMbrOF0dXM?si=0c9-9p4yUCKzDLiF' target='_blank' className='absolute top-[41%]  rounded-full p-2 bg-amber-400 hover:bg-amber-300 transition-all ease-in cursor-pointer hover:scale-110 flex justify-center items-center'><BiPlay className='fill-black size-15' /> </a>
+            <button onClick={() => setModalOpen(true)} className='absolute top-[41%]  rounded-full p-2 bg-amber-400 hover:bg-amber-300 transition-all ease-in cursor-pointer hover:scale-110 flex justify-center items-center'><BiPlay className='fill-black size-15' /> </button>
           </div>
         </div>
       </div>

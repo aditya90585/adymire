@@ -106,16 +106,16 @@ const companyLinks = [
   },
   {
     name: "Plans",
-    redirectUrl: "/plans",
+    redirectUrl: "/pricing-plans",
   },
-  {
-    name: "Careers & Jobs",
-    redirectUrl: "/company/careers",
-  },
-  {
-    name: "Blogs",
-    redirectUrl: "/blogs",
-  },
+  // {
+  //   name: "Careers & Jobs",
+  //   redirectUrl: "/company/careers",
+  // },
+  // {
+  //   name: "Blogs",
+  //   redirectUrl: "/blogs",
+  // },
   {
     name: "FAQs",
     redirectUrl: "/#faqs",
@@ -202,8 +202,7 @@ const Footer = () => {
             <p>Email: helloadymire.com@gmail.com</p>
           </div>
           <a
-            href="/company-deck.pdf"
-            download
+            href="https://drive.google.com/uc?export=download&id=18GtKfLtaBLXLTsB3LL1aqVYammmSwQ0_"
             className="flex items-center gap-4 my-2 group"
           >
             <div className="w-12 h-12 flex items-center justify-center rounded-full bg-yellow-400 text-black group-hover:scale-110 transition">
@@ -214,7 +213,7 @@ const Footer = () => {
                 Company Deck
               </span>
               <span className="text-gray-400 text-sm">
-                PDF, 3 MB
+                PDF, 12 MB
               </span>
             </div>
           </a>

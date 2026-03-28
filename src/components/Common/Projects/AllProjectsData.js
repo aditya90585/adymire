@@ -8,7 +8,9 @@ import {
   Apple,
   Android,
   Browser,
-
+  Aitool1,
+  Aitool2,
+  Aitool3,
 } from "@/assets"
 
 export const AllProjectsData = [
@@ -4329,12 +4331,172 @@ export const AllProjectsData = [
     "title": "Jobshub",
     "category2": ["Website"],
     "duration": "1 week",
-    technologies: [Flutter, Jetpack, Reactlogo, Apple, Android, Browser,],
+    technologies: [Reactlogo, Apple, Android, Browser,],
     "images": [
       "https://res.cloudinary.com/dm3xoqps6/image/upload/v1773250544/620f8399-8ca2-4138-8da5-eec59c93e1e6_jjgw5w.jpg"
     ],
     "link": "https://jobs-hub-op6u.vercel.app/auth/login",
     "linkText": "Visit Website",
     "visitText": "Visit Website",
-  }
+  },
+  {
+    "type": "aiautomation",
+    "slug": "instagramleadgenerator",
+    "title": "Instagram Lead Generator",
+    "category2": ["n8n automation"],
+    "duration": "1 week",
+    technologies: [Aitool1, Aitool2, Aitool3],
+    "images": [
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1774163463/black-background_nv7gt3.png"
+    ],
+    "link": "https://youtu.be/j455s34vn8o?si=DYXvp_tnVi2YfKJS",
+    "iframeVideoId": "j455s34vn8o",
+    "jsonFileLink": "/aiautomationjsonfiles/instagramleadgenerator.json",
+    "linkText": "Download Json",
+    "visitText": "View Workflow",
+  },
+  {
+    "type": "aiautomation",
+    "slug": "jobhuntingautomation",
+    "title": "Job Hunting Automation",
+    "category2": ["n8n automation"],
+    "duration": "1 week",
+    technologies: [Aitool1, Aitool2, Aitool3],
+    "images": [
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1774163463/n8n_teligram_job_hunting_vai_teligram_melkic.png"
+    ],
+    "link": "https://youtu.be/nrjeqMmUkto?si=qktSqaaKIaluT6rx",
+    "iframeVideoId": "nrjeqMmUkto",
+    "jsonFileLink": "/aiautomationjsonfiles/jobhuntingautomation.json",
+    "linkText": "Download Json",
+    "visitText": "View Workflow",
+  },
+  {
+    "type": "aiautomation",
+    "slug": "shlokafashionchatbot",
+    "title": "Shloka Fashion Chatbot",
+    "category2": ["n8n automation"],
+    "duration": "1 week",
+    technologies: [Aitool1, Aitool2, Aitool3],
+    "images": [
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1774163463/shlok_fashon_zbynxr.png"
+    ],
+    "link": "https://www.youtube.com/watch?v=ohs2n2x5VnY",
+    "iframeVideoId": "ohs2n2x5VnY",
+    "jsonFileLink": "/aiautomationjsonfiles/shlokafashionchatbot.json",
+    "linkText": "Download Json",
+    "visitText": "View Workflow",
+  },
+  {
+    "type": "appdevelopment",
+    "slug": "curreyheaven",
+    "title": "Currey Heaven - Food Delivery App",
+    "category2": ["Android App"],
+    "duration": "1 week",
+    technologies: [Flutter, Jetpack, Apple, Android],
+    "images": [
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1774173899/Currey_Hevean_-_Food_Delevry_App_dgnbfz.png"
+    ],
+    "link": "https://github.com/adymireclients/apk/releases/download/V1-App1/CurreyHeaven.apk",
+    "linkText": "Download",
+    "visitText": "Download App",
+  },
+  {
+    "type": "appdevelopment",
+    "slug": "meropasal",
+    "title": "MeroPasal - Inventory Management",
+    "category2": ["Android App"],
+    "duration": "1 week",
+    technologies: [Flutter, Jetpack, Apple, Android],
+    "images": [
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1774173900/MeroPasal_-_Inventory_Management_c3vk4p.png"
+    ],
+    "link": "https://github.com/adymireclients/apk/releases/download/Meropasalv1/MeroPasal.apk",
+    "linkText": "Download",
+    "visitText": "Download App",
+  },
+  {
+    "type": "appdevelopment",
+    "slug": "nectorgrocery",
+    "title": "Nector Online Grocery App",
+    "category2": ["Android App"],
+    "duration": "1 week",
+    technologies: [Flutter, Jetpack, Apple, Android],
+    "images": [
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1774173900/Nector_Online_Grocery_App_evnuhp.png"
+    ],
+    "link": "https://github.com/adymireclients/apk/releases/download/V1GroceryApp/NectorOnline.apk",
+    "linkText": "Download",
+    "visitText": "Download App",
+  },
+  {
+    "type": "appdevelopment",
+    "slug": "medireminder",
+    "title": "MediReminder -  medicine Reminder app",
+    "category2": ["Android App"],
+    "duration": "1 week",
+    technologies: [Flutter, Jetpack, Apple, Android],
+    "images": [
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1774173900/MediReminder_-_medicine_Reminder_app_zyzoxs.png"
+    ],
+    "link": "https://github.com/adymireclients/apk/releases/download/MediReminderV1/MediReminder.apk",
+    "linkText": "Download",
+    "visitText": "Download App",
+  },
+  {
+    "type": "appdevelopment",
+    "slug": "radiosargam",
+    "title": "Radio Sargam",
+    "category2": ["Android App"],
+    "duration": "1 week",
+    technologies: [Flutter, Jetpack, Apple, Android],
+    "images": [
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1774173898/SargamFM_o2jzj0.png"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.radio.sargamfm",
+    "linkText": "Playstore",
+    "visitText": "Download App",
+  },
+  {
+    "type": "appdevelopment",
+    "slug": "necxexamprep",
+    "title": "NECX - NEC Exam Preparation",
+    "category2": ["Android App"],
+    "duration": "1 week",
+    technologies: [Flutter, Jetpack, Apple, Android],
+    "images": [
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1774173899/NECX-_NEC_Exam_Prepration_lef6ol.png"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=app.rakesh.NecX",
+    "linkText": "Playstore",
+    "visitText": "Download App",
+  },
+  {
+    "type": "appdevelopment",
+    "slug": "bainabatta",
+    "title": "BainaBatta - Buy & Sell Nearby",
+    "category2": ["Android App"],
+    "duration": "1 week",
+    technologies: [Flutter, Jetpack, Apple, Android],
+    "images": [
+      "https://res.cloudinary.com/dm3xoqps6/image/upload/v1774173902/BainaBatta_-_Buy_Sell_Online_u8p235.png"
+    ],
+    "link": "https://play.google.com/store/apps/details?id=com.bainabatta.app",
+    "linkText": "Playstore",
+    "visitText": "Download App",
+  },
+  {
+    "type": "appdevelopment",
+    "slug": "shoeecommerceapp",
+    "title": "Shoe E-commerce App",
+    "category2": ["Android App"],
+    "duration": "1 week",
+    technologies: [Flutter, Jetpack, Apple, Android],
+    "images": [
+    "https://res.cloudinary.com/dm3xoqps6/image/upload/v1774713995/ShoeEcommerce_App_sc2a6r.png"
+    ],
+    "link": "https://github.com/adymireclients/apk/releases/download/ShoeAppV!/ShoeEcomApp.apk",
+    "linkText": "Download",
+    "visitText": "Download App",
+  },
 ]

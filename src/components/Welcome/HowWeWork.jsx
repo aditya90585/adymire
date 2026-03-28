@@ -14,16 +14,16 @@ export default function HowWeWork() {
   const hwwcontref = useRef()
   useGSAP(() => {
     // staggerFadeInOnScroll(".hww-trigger-ani", { trigger: hwwcontref.current, stagger: 0.3 })
-      const elements = gsap.utils.toArray(".hww-trigger-ani");
-    
-    
-        elements.forEach((element) => {
-          staggerFadeInOnScroll(element, { trigger: element,scale:1.8,y:100,x:20 })
-        });
-        setTimeout(() => {
-          ScrollTrigger.refresh()
-        }, 100)
-    
+    const elements = gsap.utils.toArray(".hww-trigger-ani");
+
+
+    elements.forEach((element) => {
+      staggerFadeInOnScroll(element, { trigger: element, scale: 1.8, y: 100, x: 20 })
+    });
+    setTimeout(() => {
+      ScrollTrigger.refresh()
+    }, 100)
+
   }, { scope: hwwcontref })
 
 
@@ -90,7 +90,7 @@ export default function HowWeWork() {
             <span className="tag big">Marketing</span>
 
             <div className="cta ml-auto">
-              <BookCallButton className=" text-sm md:text-base h-10 md:h-15 font-bold  rounded-xl" textSize="base" paddingX="4" rounded="xl" />
+              <BookCallButton className=" text-sm md:text-base h-10 md:h-15 font-bold  rounded-xl md:px-4 px-1" textSize="base" rounded="xl" />
             </div>
           </div>
         </div>

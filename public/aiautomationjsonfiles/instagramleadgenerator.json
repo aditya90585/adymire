@@ -1,0 +1,462 @@
+{
+  "name": "lead gen instagram scrapper",
+  "nodes": [
+    {
+      "parameters": {
+        "formTitle": "Instagram lead Scrapper",
+        "formFields": {
+          "values": [
+            {
+              "fieldLabel": "who are you looking for"
+            },
+            {
+              "fieldLabel": "Location"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.formTrigger",
+      "typeVersion": 2.5,
+      "position": [
+        0,
+        0
+      ],
+      "id": "8ccdcbb6-7810-4bfb-be90-8df5f11b1bd3",
+      "name": "On form submission",
+      "webhookId": "5e8fe1d0-e88a-4833-b135-fa72df560558"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://api.apify.com/v2/acts/apify~google-search-scraper/run-sync-get-dataset-items?token=apify_api_NHIMQwvpNqU1npsGaioJQjjRIo04VM3ZDVJs",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n    \"chatGptSearch\": {\n        \"enableChatGpt\": false\n    },\n    \"disableGoogleSearchResults\": false,\n    \"focusOnPaidAds\": false,\n    \"forceExactMatch\": false,\n    \"includeIcons\": false,\n    \"includeUnfilteredResults\": false,\n    \"maxPagesPerQuery\": 1,\n    \"maximumLeadsEnrichmentRecords\": 0,\n    \"mobileResults\": false,\n    \"perplexitySearch\": {\n        \"enablePerplexity\": false,\n        \"returnImages\": false,\n        \"returnRelatedQuestions\": false\n    },\n    \"queries\": \"site:instagram.com + {{ $json['who are you looking for'] }} {{ $json.Location }}\",\n    \"resultsPerPage\": 100,\n    \"saveHtml\": false,\n    \"saveHtmlToKeyValueStore\": true\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        224,
+        0
+      ],
+      "id": "acf72ab5-d47b-4853-9e5e-f735d86d7cae",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        448,
+        0
+      ],
+      "id": "87f03e47-9886-46ad-8e2c-41ed9cd3ab46",
+      "name": "Wait",
+      "webhookId": "43de3aa5-e892-4df1-ba7a-6d5f31880734"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Input: Apify Google SERP JSON (array)\nconst items = $input.all();\n\nconst results = [];\n\nfor (const item of items) {\n  const data = item.json;\n  \n  // Handle both array wrapper and direct object\n  const payload = Array.isArray(data) ? data[0] : data;\n  \n  const organicResults = payload?.organicResults || [];\n  \n  for (const result of organicResults) {\n    results.push({\n      position: result.position ?? null,\n      name: result.title ?? null,\n      instagram_url: result.url ?? null,\n      username: result.channelName ?? null,\n      followers: result.followersAmount ?? null,\n      description: result.description ?? null,\n      display_url: result.displayedUrl ?? null,\n      likes: result.likes ?? null,\n      last_updated: result.lastUpdated ?? null,\n    });\n  }\n}\n\nreturn results.map(r => ({ json: r }));"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        672,
+        0
+      ],
+      "id": "ec99db29-f1b5-41a7-b875-219f42874ed2",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "1qZ1NAiVuyQlUtAeQopteMtWKWJYbxQbM_0A04Hwl9N8",
+          "mode": "list",
+          "cachedResultName": "leads",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1qZ1NAiVuyQlUtAeQopteMtWKWJYbxQbM_0A04Hwl9N8/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1qZ1NAiVuyQlUtAeQopteMtWKWJYbxQbM_0A04Hwl9N8/edit#gid=0"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "position": "={{ $json.position }}",
+            "name": "={{ $json.name }}",
+            "instagram_url": "={{ $json.instagram_url }}",
+            "username": "={{ $json.username }}",
+            "description": "={{ $json.description }}",
+            "followers": "={{ $json.followers }}",
+            "display_url": "={{ $json.display_url }}",
+            "likes": "={{ $json.likes }}",
+            "last_updated": "={{ $json.last_updated }}"
+          },
+          "matchingColumns": [],
+          "schema": [
+            {
+              "id": "position",
+              "displayName": "position",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "name",
+              "displayName": "name",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "instagram_url",
+              "displayName": "instagram_url",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "username",
+              "displayName": "username",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "followers",
+              "displayName": "followers",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "description",
+              "displayName": "description",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "display_url",
+              "displayName": "display_url",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "likes",
+              "displayName": "likes",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "last_updated",
+              "displayName": "last_updated",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        896,
+        0
+      ],
+      "id": "1c291d13-3823-40d5-91f2-15fa72177a65",
+      "name": "Append row in sheet",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "OEiK2BePR3sa2g9b",
+          "name": "Google Sheets account"
+        }
+      }
+    }
+  ],
+  "pinData": {
+    "Wait": [
+      {
+        "json": {
+          "#debug": {
+            "requestId": "jcEaNp0GOQeJd9N",
+            "url": "http://www.google.com/search?q=site%3Ainstagram.com+%2B+dentist+delhi",
+            "loadedUrl": "http://www.google.com/search?q=site%3Ainstagram.com+%2B+dentist+delhi",
+            "method": "GET",
+            "retryCount": 0,
+            "errorMessages": [],
+            "statusCode": 200
+          },
+          "#error": false,
+          "searchQuery": {
+            "term": "site:instagram.com + dentist delhi",
+            "url": "http://www.google.com/search?q=site%3Ainstagram.com+%2B+dentist+delhi",
+            "device": "DESKTOP",
+            "page": 1,
+            "type": "SEARCH",
+            "domain": "google.com",
+            "countryCode": "US",
+            "languageCode": null,
+            "locationUule": null,
+            "resultsPerPage": 10
+          },
+          "url": "http://www.google.com/search?q=site%3Ainstagram.com+%2B+dentist+delhi",
+          "hasNextPage": true,
+          "serpProviderCode": "N",
+          "resultsTotal": null,
+          "relatedQueries": [],
+          "paidResults": [],
+          "paidProducts": [],
+          "organicResults": [
+            {
+              "title": "meraki.dental.studio - Dr. Harleen Gandhi Kalsi || Dentist",
+              "url": "https://www.instagram.com/meraki.dental.studio/",
+              "displayedUrl": "Instagram › meraki.dental.studio",
+              "description": "Responsible Aesthetics | Invisalign Educator | Smile Designing | Veneers | Implants | Revision Dentistry | CEREC | NYU alumni  ‍       South Delhi · I started this ...Read more",
+              "emphasizedKeywords": [
+                "Responsible Aesthetics"
+              ],
+              "siteLinks": [],
+              "productInfo": {},
+              "followersAmount": "20.3K+ followers",
+              "channelName": "meraki.dental.studio",
+              "type": "organic",
+              "position": 1
+            },
+            {
+              "title": "Delhi Dental (@delhidentalcincinnati) · Cincinnati, OH",
+              "url": "https://www.instagram.com/delhidentalcincinnati/",
+              "displayedUrl": "Instagram › delhidentalcincinnati",
+              "description": "At Delhi Dental, we're committed to providing a better kind of dentistry. \"Dentistry is about people.\"     Dr. Mariah Gray shares what fuels ...",
+              "emphasizedKeywords": [
+                "committed to providing a better kind of dentistry"
+              ],
+              "siteLinks": [],
+              "productInfo": {},
+              "followersAmount": "420+ followers",
+              "channelName": "delhidentalcincinnati",
+              "type": "organic",
+              "position": 2
+            },
+            {
+              "title": "Implants and Smile Makeover Delhi (@vedadentistry)",
+              "url": "https://www.instagram.com/vedadentistry/",
+              "displayedUrl": "Instagram › vedadentistry",
+              "description": "Restoring Smiles.Rebuilding Function FMR | Aligners | Implants | Smile Design ✨ Functional.Digital.Sedation AIIMS &Maulana Azad,15+ yrs xp Consult ...Read more",
+              "emphasizedKeywords": [
+                "Restoring Smiles.Rebuilding Function"
+              ],
+              "siteLinks": [],
+              "productInfo": {},
+              "followersAmount": "22.1K+ followers",
+              "channelName": "vedadentistry",
+              "type": "organic",
+              "position": 3
+            },
+            {
+              "title": "Rajat Sachdeva (@drrajatdentist) · Delhi",
+              "url": "https://www.instagram.com/drrajatdentist/",
+              "displayedUrl": "Instagram › drrajatdentist",
+              "description": "Dr Rajat Sachdeva || Dentist || Delhi MDS MBA 22+ years of experience, Surgeon TMJ Specialist, Passionate Cricketer. DM for collaboration ...Read more",
+              "emphasizedKeywords": [
+                "Dr Rajat Sachdeva || Dentist || Delhi"
+              ],
+              "siteLinks": [],
+              "productInfo": {},
+              "followersAmount": "122.7K+ followers",
+              "channelName": "drrajatdentist",
+              "type": "organic",
+              "position": 4
+            },
+            {
+              "title": "DR PANDEY'S DENTAL HOSPITAL ...",
+              "url": "https://www.instagram.com/dr_pandey_dental_hospital/",
+              "displayedUrl": "Instagram › dr_pandey_dental_hospital",
+              "description": "Dr pandey's Dental hospital and implant centre   NABH ACCREDITED HOSPITAL Delhi govt approved. Iso 9001:2015 certified dental hospital 8595866434 · Sanatana ...Read more",
+              "emphasizedKeywords": [
+                "Dr pandey's Dental hospital and implant centre"
+              ],
+              "siteLinks": [],
+              "productInfo": {},
+              "followersAmount": "14.6K+ followers",
+              "channelName": "dr_pandey_dental_hospital",
+              "type": "organic",
+              "position": 5
+            },
+            {
+              "title": "DR. KRITI'S DENTAL STUDIO (@dr.kritii.banerjee) · Delhi",
+              "url": "https://www.instagram.com/dr.kritii.banerjee/",
+              "displayedUrl": "Instagram › dr.kritii.banerjee",
+              "description": "Avail an added 10% discount on services above 3000/- before 31st December Call on 84480 78466 or Dm for more information #dentalclinic #dentistnearme # ...",
+              "emphasizedKeywords": [
+                "Call on 84480 78466"
+              ],
+              "siteLinks": [],
+              "productInfo": {},
+              "followersAmount": "750+ followers",
+              "channelName": "dr.kritii.banerjee",
+              "type": "organic",
+              "position": 6
+            },
+            {
+              "title": "Floss dental studio Delhi™ (@flossdentalstudiodelhi)",
+              "url": "https://www.instagram.com/flossdentalstudiodelhi/",
+              "displayedUrl": "Instagram › flossdentalstudiodelhi",
+              "description": "Dr. Aashwiin Miglani & Dr. Smruti Lulla Miglani LASER, IMPLANTS & AESTHETIC DENTISTRY. 099107 27555. FEDA Best new practice · Laser Dentistry, Painless ...Read more",
+              "emphasizedKeywords": [
+                "Dr. Aashwiin Miglani & Dr. Smruti Lulla Miglani"
+              ],
+              "siteLinks": [],
+              "productInfo": {},
+              "followersAmount": "8.5K+ followers",
+              "channelName": "flossdentalstudiodelhi",
+              "type": "organic",
+              "position": 7
+            },
+            {
+              "title": "Dr. Soni Dental Clinic (@drsonidentalclinicdelhi) · Delhi",
+              "url": "https://www.instagram.com/drsonidentalclinicdelhi/",
+              "displayedUrl": "Instagram › drsonidentalclinicdelhi",
+              "description": "Book your appointment today at +91-9873177700 / +91-98731 80583 and smile with confidence! #DrSoniDentalClinicDelhi Celebrity dentist Delhi, trusted dental ...",
+              "emphasizedKeywords": [
+                "Book your appointment today at +91-9873177700 / +91-98731 80583"
+              ],
+              "siteLinks": [],
+              "productInfo": {},
+              "followersAmount": "3.1K+ followers",
+              "channelName": "drsonidentalclinicdelhi",
+              "type": "organic",
+              "position": 8
+            },
+            {
+              "title": "Many people search “Dentist Near Me” or “Best ...",
+              "url": "https://www.instagram.com/p/DVvSqKTkyzH/",
+              "displayedUrl": "Instagram › anshtechpro",
+              "description": "1 likes, 0 comments - anshtechpro on March 11, 2026: \"Many people search “Dentist Near Me” or “Best Dentist in Delhi” on Google every day.",
+              "emphasizedKeywords": [
+                "Dentist",
+                "Dentist",
+                "Delhi"
+              ],
+              "siteLinks": [],
+              "productInfo": {},
+              "likes": "1 like",
+              "lastUpdated": "1 week ago",
+              "channelName": "p",
+              "type": "organic",
+              "position": 9
+            },
+            {
+              "title": "Dr. Srishti Punjani | Cosmetic Dentist Delhi",
+              "url": "https://www.instagram.com/coraldentalclinic/",
+              "displayedUrl": "Instagram › coraldentalclinic",
+              "description": "‍⚕️Veneers and Implants MFD(Royal College of Surgeons, UK) Restorative Series: 20 April onwards. Call :9810047210 ...Read more",
+              "emphasizedKeywords": [
+                "Call :9810047210"
+              ],
+              "siteLinks": [],
+              "productInfo": {},
+              "followersAmount": "32.4K+ followers",
+              "channelName": "coraldentalclinic",
+              "type": "organic",
+              "position": 10
+            }
+          ],
+          "suggestedResults": [],
+          "peopleAlsoAsk": [],
+          "customData": null,
+          "htmlSnapshotUrl": "https://api.apify.com/v2/key-value-stores/ddlGBxsioO2vMEfb3/records/jcEaNp0GOQeJd9N-0.html?signature=J8vpALG6mc11JaAU9Lwj"
+        }
+      }
+    ]
+  },
+  "connections": {
+    "On form submission": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Wait",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Append row in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "6d0acd36-7974-4344-bd28-24851a85e8df",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "641217f7faee7c131eccc08d10e342cda2a3ec1e68dcc7bf5bc4f4b59150c78a"
+  },
+  "id": "jYygMcJRmuXENYPJ",
+  "tags": []
+}

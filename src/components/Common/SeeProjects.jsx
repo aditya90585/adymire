@@ -16,7 +16,7 @@ const categories = [
   { name: "UI & UX", type: "uiux", icon: CategoryUIUX },
   { name: "Marketing", type: "marketing", icon: CategoryDigitalMarketing },
   { name: "Web Development", type: "webdevelopment", icon: CategoryWebDevelopment },
-  { name: "App Development", type: "appdevelopmemt", icon: CategoryAppDevelopment },
+  { name: "App Development", type: "appdevelopment", icon: CategoryAppDevelopment },
   { name: "AI Automation", type: "aiautomation", icon: CategoryAiAutomation },
 ];
 

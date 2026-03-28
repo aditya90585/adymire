@@ -138,6 +138,9 @@
 }
 
 @media (max-width: 600px) {
+  .hero-left{
+    padding-left: 0px;
+  }
   .hero-left h1 {
     font-size: 38px;
   }

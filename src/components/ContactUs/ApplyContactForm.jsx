@@ -12,6 +12,8 @@ import SpecificServicesSelector from "./SpecificServicesSelector";
 import { Navigate, useNavigate } from "react-router-dom";
 import ThankYou from "./ThankYou";
 import CountriesTimezoneSelector from "./CountriesTimezoneSelector";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+import { db } from "../../firebase/firebase";
 
 
 const SERVICES = [
@@ -126,6 +128,8 @@ const ApplyContactForm = () => {
 
 
   const [isLoaded, setIsLoaded] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
 
   // useEffect(() => {
@@ -186,9 +190,9 @@ const ApplyContactForm = () => {
   }, [reset, setValue]);
 
   useEffect(() => {
-    setValue("timezone",null)
+    setValue("timezone", null)
   }, [selected])
-  
+
 
   const selectedServices = useWatch({ control, name: "service" });
   const selectedSpecificServices = useWatch({
@@ -214,7 +218,7 @@ const ApplyContactForm = () => {
 
 
   useEffect(() => {
-    if (!isLoaded) return;
+    if (!isLoaded  || isSubmitted) return;
     localStorage.setItem(ADYMIRE_STORAGE_KEY, JSON.stringify(formValues));
   }, [formValues]);
 
@@ -223,15 +227,32 @@ const ApplyContactForm = () => {
   const decision = watch("decisionMaker");
 
 
-  const submitContactForm = (async (data) => {
-    const formData = await data
-    console.log(formData)
-    if (formData) {
-      setSubmitState(true)
-      localStorage.removeItem(ADYMIRE_STORAGE_KEY);
-    }
-  })
+  const submitContactForm = async (data) => {
+    if (isSubmitting) return;
 
+    try {
+      setIsSubmitting(true);
+
+      const docRef = await addDoc(
+        collection(db, "adymire-client-data"),
+        {
+          ...data,
+          createdAt: serverTimestamp(),
+        }
+      );
+
+      console.log("✅ form submitted");
+
+      localStorage.removeItem(ADYMIRE_STORAGE_KEY);
+      reset();
+      setIsSubmitted(true);
+    } catch (error) {
+      console.error("❌ Error:", error);
+      alert("some error occured , please try again")
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
   return (
     <section className="max-w-screen mx-auto py-14 px-4 md:px-0">
       <ContactHeader />
@@ -533,12 +554,12 @@ const ApplyContactForm = () => {
 
           <div className="mt-8 space-y-4 ">
             <label className=" gap-3 flex  items-center">
-              <input  {...register("aggrements", { required: true })} type="checkbox" className="accent-yellow-500  mt-1 h-5 w-5" />
+              <input  {...register("aggreements", { required: true })} type="checkbox" className="accent-yellow-500  mt-1 h-5 w-5" />
               <span className="text-xl font-semibold text-gray-500">
                 "I confirm that all information provided is accurate and I agree to
                 Adymire’s hiring terms."
               </span>
-              {errors.aggrements && <span className="text-xl  text-red-600">*</span>}
+              {errors.aggreements && <span className="text-xl  text-red-600">*</span>}
 
             </label>
             <div>
@@ -568,10 +589,16 @@ const ApplyContactForm = () => {
               </label>
             </div>
           </div>
-          <button className="w-full mt-10 py-4 rounded-xl bg-yellow-100 border border-yellow-400 font-semibold text-lg hover:bg-yellow-200 transition">
-            Submit
+          <button disabled={isSubmitting} className="cursor-pointer w-full mt-10 py-4 rounded-xl bg-yellow-100 border border-yellow-400 font-semibold text-lg hover:bg-yellow-200 transition">
+             {isSubmitting ? "Submitting..." : "Submit"}
           </button>
-          <ThankYou submitState={submitState} setSubmitState={setSubmitState} />
+          {/* <ThankYou submitState={submitState} setSubmitState={setSubmitState} /> */}
+          {isSubmitted && (
+            <ThankYou
+              submitState={isSubmitted}
+              setSubmitState={setIsSubmitted}
+            />
+          )}
         </div>
       </form>
     </section >
