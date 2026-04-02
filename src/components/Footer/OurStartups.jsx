@@ -63,9 +63,6 @@ const OurStartups = () => {
                 <button className="px-10 py-3 bg-black text-white rounded-xl font-medium hover:bg-gray-900 transition">
                     See All Startups
                 </button>
-                <p className="mt-8 text-base text-gray-900 font-semibold">
-                    © Copyright <span className="font-bold">Adymire.com</span> 2025 All right Reserved
-                </p>
             </div>
         </section>
     );

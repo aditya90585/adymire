@@ -18,6 +18,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from "@gsap/react";
 import RunningStartups from "./RunningStartups";
+import CopyrightSection from "./CopyrightSection";
 gsap.registerPlugin(ScrollTrigger);
 
 const followUsLinks = [
@@ -252,6 +253,7 @@ const Footer = () => {
       </div>
       <RunningStartups/>
       <OurStartups />
+      <CopyrightSection/>
     </footer>
   );
 };
