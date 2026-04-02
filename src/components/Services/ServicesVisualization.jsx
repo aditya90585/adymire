@@ -17,28 +17,28 @@ const ServicesVisualization = () => {
             align: "right",
             icon: Trophy,
             description:
-                "Founded with vison with interior design industry in our local industry",
+                "We create modern UI UX designs with smooth user experience, clean layouts, and engaging interfaces for web and mobile apps.",
         },
         {
             title: "Development",
             align: "left",
             icon: Hand,
             description:
-                "Founded with vison with interior design industry in our local industry",
+                "We build fast, secure websites and mobile apps using modern technologies to deliver scalable and high-performance solutions.",
         },
         {
             title: "Boost Your Business",
             align: "right",
             icon: Boost,
             description:
-                "Founded with vison with interior design industry in our local industry",
+                "We grow your business with SEO, social media marketing, and paid ads to increase traffic, leads, and customer conversions.",
         },
         {
             title: "Enjoy Profits",
             align: "left",
             icon: Verified,
             description:
-                "Founded with vison with interior design industry in our local industry",
+                "We optimize performance and automate processes using AI tools to boost efficiency, reduce costs, and maximize your revenue.",
         },
     ];
 
@@ -46,38 +46,38 @@ const ServicesVisualization = () => {
     useGSAP(() => {
         // staggerFadeInOnScroll(".sv-trigger-ani", { trigger: svcontref.current, stagger: 0.3, y: 10, x: 60 })
         // staggerFadeInOnScroll(".sv-circle-trigger-ani", { trigger: svcontref.current, stagger: 0.3, y: 40, delay: 0.6 })
-   const cards = gsap.utils.toArray(".sv-trigger-ani");
-   
-           cards.forEach((card) => {
-               const image = card.querySelector(".sv-content-trigger-ani");
-   
-               const tl = gsap.timeline({
-                   scrollTrigger: {
-                       trigger: card,
-                       start: "top 80%",
-                       toggleActions: "play none none reverse",
-                       invalidateOnRefresh: true
-                   }
-               });
-   
-               tl.from(card, {
-                   y:100,
-                   opacity: 0,
-                   duration: 0.8,
-                   ease: "power2.out",
-               })
-                   .from(image, {
-                       x:60,
-                       opacity: 0,
-                       duration: 0.8,
-                       ease: "power2.out",
-                   }, "-=0.5");
-           });
-           setTimeout(() => {
-               ScrollTrigger.refresh()
-           }, 200)
-   
-   
+        const cards = gsap.utils.toArray(".sv-trigger-ani");
+
+        cards.forEach((card) => {
+            const image = card.querySelector(".sv-content-trigger-ani");
+
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: card,
+                    start: "top 80%",
+                    toggleActions: "play none none reverse",
+                    invalidateOnRefresh: true
+                }
+            });
+
+            tl.from(card, {
+                y: 100,
+                opacity: 0,
+                duration: 0.8,
+                ease: "power2.out",
+            })
+                .from(image, {
+                    x: 60,
+                    opacity: 0,
+                    duration: 0.8,
+                    ease: "power2.out",
+                }, "-=0.5");
+        });
+        setTimeout(() => {
+            ScrollTrigger.refresh()
+        }, 200)
+
+
     }, { scope: svcontref })
 
 

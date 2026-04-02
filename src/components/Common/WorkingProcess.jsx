@@ -23,42 +23,42 @@ export default function WorkingProcess() {
     {
       id: 1,
       title: "Business understanding",
-      desc: "We create smart, functional, and stylish plans that match your needs,lifestyles and design vision perfectly.",
+      desc: "We understand your business goals, target audience, and market needs to build a strong digital strategy for long-term growth.",
       position: "wp-top-left",
       icon:WorkingProcessicons1
     },
     {
       id: 2,
       title: "RND",
-      desc: "Quality construction with trusted materials,skilled workmanship, and smooth executionto deliver durable and beautiful spaces.",
+      desc: "We research your industry, competitors, and latest trends to create smart solutions using modern technology and proven strategies.",
       position: "wp-top-right",
       icon:WorkingProcessicons2
     },
     {
       id: 3,
       title: "Weekly 1:1 Update",
-      desc: "We transform old or dull spaces intomodern, efficient, and stylishenvironments with minimal disruption.",
+      desc: "We provide weekly updates, clear reports, and quick feedback calls to keep you informed and your project moving smoothly.",
       position: "wp-left",
       icon:WorkingProcessicons3
     },
     {
       id: 4,
       title: "Design UI & UX",
-      desc: "Unique design concepts crafted creatively to reflect your personality and enhancethe overall beauty of your space.",
+      desc: "We design clean, user-friendly interfaces that improve user experience, increase engagement, and boost conversions across web and apps.",
       position: "wp-right",
       icon:WorkingProcessicons4
     },
     {
       id: 5,
       title: "Clean Architecture",
-      desc: "Clean, thoughtful architecture focusingon smart layouts, functionality, andtimeless design aesthetics..",
+      desc: "We create scalable and secure system architecture for web and mobile apps, ensuring fast performance and easy future upgrades.",
       position: "wp-bottom-left",
       icon:WorkingProcessicons5
     },
     {
       id: 6,
       title: "Development",
-      desc: "Designs that blend natural light,greenery,and eco-friendly materialsto create calm,refreshing, nature-connected spaces.",
+      desc: "We build high-quality websites, mobile apps, and AI-powered solutions with strong performance, security, and seamless functionality.",
       position: "wp-bottom-right",
       icon:WorkingProcessicons6
     },
