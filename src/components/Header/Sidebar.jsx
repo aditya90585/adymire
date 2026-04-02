@@ -8,15 +8,15 @@ const Sidebar = ({ toggleSidebar }) => {
 
     const links = [
         {
-            text: "Welcome",
+            text: "Home",
             routeLink: "/"
         },
         {
-            text: "About me",
+            text: "About Us",
             routeLink: "/about"
         },
         {
-            text: "My services",
+            text: "Our Services",
             routeLink: "/services"
         },
         {

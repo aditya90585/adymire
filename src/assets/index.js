@@ -10,7 +10,7 @@ export { default as Youtube3dLogo } from "./logo/Youtube3dLogo.svg";
 // Startup Icons
 export { default as CalcyIcon } from "./icons/StartupsIcons/CalcyIcon.svg";
 export { default as AdscyIcon } from "./icons/StartupsIcons/AdscyIcon.svg";
-export { default as CybertronIcon } from "./icons/StartupsIcons/CybertronIcon.svg";
+export { default as CybertronIcon } from "./icons/StartupsIcons/CybertronIcon.png";
 export { default as GiglerIcon } from "./icons/StartupsIcons/GiglerIcon.svg";
 export { default as OrbitBrowsIcon } from "./icons/StartupsIcons/OrbitBrowsIcon.svg";
 export { default as SpaceIcon } from "./icons/StartupsIcons/SpaceIcon.svg";
@@ -204,3 +204,11 @@ export {default as AIchatboticon} from "./icons/AIchatboticon.json"
 export {default as uiuxLastslideBg} from "./illustrations/uiuxLastslideBg.jpeg"
 export {default as Founder3} from "./illustrations/Founder3.png"
 export {default as dribbble } from "./icons/dribbble.png"
+
+//running startups icons  
+
+export {default as adylabsai} from "./icons/RunningStartupsIcons/adylabsai.png"
+export {default as adytlymedia} from "./icons/RunningStartupsIcons/adytlymedia.png"
+export {default as apporra} from "./icons/RunningStartupsIcons/apporra.png"
+export {default as yreelz} from "./icons/RunningStartupsIcons/yreelz.png"
+export {default as zylobit} from "./icons/RunningStartupsIcons/zylobit.png"

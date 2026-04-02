@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import Logo from '../Logo'
 import './Header.css'
@@ -17,18 +17,32 @@ import Magnet from '../UI/Magnet'
 
 
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false)
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true)
+      } else {
+        setIsScrolled(false)
+      }
+    }
+
+    window.addEventListener("scroll", handleScroll)
+
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
   const links = [
     {
-      text: "Welcome",
+      text: "Home",
       routeLink: "/"
     },
     {
-      text: "About me",
+      text: "About Us",
       routeLink: "/about"
     },
     {
-      text: "My services",
+      text: "Our Services",
       routeLink: "/services"
     },
     {
@@ -88,16 +102,19 @@ const Header = () => {
 
 
   return (
-    <header ref={headerRef} className="header">
+    <header ref={headerRef}
+      className={`header ${isScrolled ? "header-scrolled" : ""}`}
+
+    >
       <div className="header-container">
         <Link to="/" className="logo-link logo-ani" >
-          <Logo className="h-10 md:h-18" imgClass="h-full " />
+          <Logo className="h-12 md:h-18" imgClass="h-full " />
         </Link>
         <nav className="nav">
           {links?.map((link) => (
-             <Magnet key={link.text}  padding={15} disabled={false} magnetStrength={6}>
-            <NavLink className={({ isActive }) => isActive ? `bg-[#ffe2bc] header-text-ani -translate-y-0.5 hover:font-semibold rounded py-1 px-3 text-sm` : "hover:text-gray-700 hover:text-shadow-lg text-base hover:text-shadow-gray-300  header-text-ani"} to={link.routeLink ? `${link.routeLink}` : "/"}>{link.text}</NavLink>
-             </Magnet>
+            <Magnet key={link.text} padding={15} disabled={false} magnetStrength={6}>
+              <NavLink className={({ isActive }) => isActive ? `bg-[#ffe2bc] header-text-ani -translate-y-0.5 hover:font-semibold rounded py-1 px-3 text-sm` : "hover:text-gray-700 hover:text-shadow-lg text-base hover:text-shadow-gray-300  header-text-ani"} to={link.routeLink ? `${link.routeLink}` : "/"}>{link.text}</NavLink>
+            </Magnet>
           ))}
         </nav>
         <div className="header-actions">
@@ -124,7 +141,7 @@ const Header = () => {
         </div>
 
         {sidebarState ? <CgClose onClick={toggleSidebar} className='slidebar-buttons hidden' /> :
-          <MdMenu onClick={toggleSidebar} className='slidebar-buttons hidden' />}
+          <MdMenu onClick={toggleSidebar} className='slidebar-buttons size-6 hidden' />}
 
 
       </div>

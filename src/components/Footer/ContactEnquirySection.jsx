@@ -35,7 +35,7 @@ const ContactEnquirySection = () => {
         window.open('/contact', '_blank', 'noopener,noreferrer');
     }
     const emaiMethod = () => {
-        const email = "helloadymire.com@gmail.com";
+        const email = "infoadymire.com@gmail.com";
         const subject = encodeURIComponent("Hello Adymire");
         const body = encodeURIComponent("Hello, I want to know more about your services");
 
@@ -51,7 +51,7 @@ const ContactEnquirySection = () => {
     const contactData = [
         {
             title: "Send a Email",
-            subtitle: "helloadymire.com@gmail.com",
+            subtitle: "infoadymire.com@gmail.com",
             buttonText: "Send Email",
             icon: EmailAniIcon,
             method: emaiMethod

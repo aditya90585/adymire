@@ -1,45 +1,35 @@
-import {
-  CalcyIcon,
-  AdscyIcon,
-  CybertronIcon,
-  GiglerIcon,
-  OrbitBrowsIcon,
-  SpaceIcon,
-} from "@/assets";
+import { adytlymedia, adylabsai, apporra, yreelz, zylobit } from "@/assets";
 
-const OurStartups = () => {
-  const startups = [
-  {
-    name: "Adscy.io",
-    icon: AdscyIcon,
-  },
-  {
-    name: "Calcy.ai",
-    icon: CalcyIcon,
-  },
-  {
-    name: "Cybertron.ai",
-    icon: CybertronIcon,
-  },
-  {
-    name: "Space research",
-    icon: SpaceIcon,
-  },
-  {
-    name: "orbit Brows",
-    icon: OrbitBrowsIcon,
-  },
-  {
-    name: "gigler.io",
-    icon: GiglerIcon,
-  },
-];
+const RunningStartups = () => {
+    const startups = [
+        {
+            name: "Adytly Media",
+            icon: adytlymedia,
+        },
+        {
+            name: "AdyLabs  AI",
+            icon: adylabsai,
+        },
+        {
+            name: "Zylobit",
+            icon: zylobit,
+        },
+        {
+            name: "Apporaa.com",
+            icon: apporra,
+        },
+        {
+            name: "Yreelz.com",
+            icon: yreelz,
+        },
+    ];
 
     return (
         <section className="w-full bg-white py-4">
+            <div className="h-0.5 w-full px-10 bg-gray-300 mb-5"></div>
             <div className="max-w-7xl mx-auto px-6 text-center">
                 <h2 className="text-3xl font-bold text-gray-900 mb-10">
-                    Launching Soon
+                    Our Running Startups
                 </h2>
 
                 <div className="flex flex-wrap justify-center gap-6 mb-10">
@@ -60,15 +50,10 @@ const OurStartups = () => {
                     ))}
                 </div>
 
-                <button className="px-10 py-3 bg-black text-white rounded-xl font-medium hover:bg-gray-900 transition">
-                    See All Startups
-                </button>
-                <p className="mt-8 text-base text-gray-900 font-semibold">
-                    © Copyright <span className="font-bold">Adymire.com</span> 2025 All right Reserved
-                </p>
+
             </div>
         </section>
     );
 };
 
-export default OurStartups;
+export default RunningStartups;

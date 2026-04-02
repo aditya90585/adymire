@@ -62,7 +62,7 @@
 }
 
 .ad-footer-block h4 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: 700;
   margin-bottom: 8px;
 }
@@ -70,6 +70,8 @@
 .ad-footer-block p {
   color: #555;
   line-height: 1.6;
+  margin-bottom: 10px;
+  font-size: 17px;
 }
 
 .ad-footer-links h3 {
@@ -116,6 +118,13 @@
 }
 
 @media (max-width: 600px) {
+  .ad-footer-block h4 {
+  font-size: 18px;
+}
+
+.ad-footer-block p {
+  font-size: 15px;
+}
   .ad-footer {
     padding: 50px 20px;
   }

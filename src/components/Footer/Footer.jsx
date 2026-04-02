@@ -17,6 +17,7 @@ import { staggerFadeInOnScroll } from "../../animations/stagger";
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from "@gsap/react";
+import RunningStartups from "./RunningStartups";
 gsap.registerPlugin(ScrollTrigger);
 
 const followUsLinks = [
@@ -189,17 +190,19 @@ const Footer = () => {
           <SocialIcons className="grid grid-cols-5 gap-2 w-fit  rounded-xl py-0.5 px-1" imgClass="h-[40px] w-[40px] bg-gray-200" />
 
           <div className="ad-footer-block">
-            <h4>Address</h4>
+            <h4>Office Address</h4>
             <p>
-              City Gajraula , District Amroha , uttarpradesh<br />
-              244242 , India
+              Gajraula District Amroha Uttar Pradesh <br />
+              244242 India
             </p>
           </div>
 
-          <div className="ad-footer-block">
+          <div className="ad-footer-block ">
             <h4>Contact</h4>
-            <p>Compeny Helpline :  +91 7302356804</p>
-            <p>Email: helloadymire.com@gmail.com</p>
+            <p> <span className="text-black font-semibold">Support Helpline :</span> +91 7302356804</p>
+            <p> <span className="text-black font-semibold">Contact No :</span> +91 7081436483<br/> +91 7017475420</p>
+            <p><span className="text-black font-semibold"> Email :</span> infoadymire.com@gmail.com</p>
+            <p><span className="text-black font-semibold"> Support Helpline :</span><br/> helpadymire.com@gmail.com</p>
           </div>
           <a
             href="https://drive.google.com/uc?export=download&id=18GtKfLtaBLXLTsB3LL1aqVYammmSwQ0_"
@@ -247,6 +250,7 @@ const Footer = () => {
         </div>
 
       </div>
+      <RunningStartups/>
       <OurStartups />
     </footer>
   );
