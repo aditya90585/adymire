@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { memo, useEffect, useRef, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -8,6 +8,7 @@ import UIUXLastSlide from './Projects/UIUXLastSlide';
 import { BiPlay } from 'react-icons/bi';
 import VideoModal from './VideoModal';
 import { LuLoaderCircle } from "react-icons/lu";
+import { Virtual } from 'swiper/modules';
 
 const SeeProjectsSlider = ({ projects, activeCategory }) => {
     const [modalOpen, setModalOpen] = useState(false);
@@ -21,6 +22,21 @@ const SeeProjectsSlider = ({ projects, activeCategory }) => {
             swiperRef.current.slideTo(0)
         }
     }, [projects])
+
+    const [visibleProjects, setVisibleProjects] = useState([]);
+
+    useEffect(() => {
+        if (!projects) return;
+
+        setVisibleProjects(projects.slice(0, 6));
+
+        const timer = setTimeout(() => {
+            setVisibleProjects(projects);
+        }, 1000);
+
+        return () => clearTimeout(timer);
+    }, [projects]);
+
     if (projects?.length == 0) return <div className='text-xl font-bold my-8 flex justify-center items-center mt-20'><div className='animate-spin '><LuLoaderCircle className='size-20 text-gray-700' /></div></div>
     return (
         <div>
@@ -28,7 +44,7 @@ const SeeProjectsSlider = ({ projects, activeCategory }) => {
 
             <Swiper
                 onSwiper={(swiper) => (swiperRef.current = swiper)}
-                effect={'coverflow'}
+                effect={"coverflow"}
                 watchOverflow={true}
                 centeredSlides={false}
                 spaceBetween={30}
@@ -63,18 +79,20 @@ const SeeProjectsSlider = ({ projects, activeCategory }) => {
                     prevEl: ".seeProjects-prev",
                     nextEl: ".seeProjects-next",
                 }}
-                modules={[EffectCoverflow, Pagination, Navigation]}
+                modules={[EffectCoverflow, Pagination, Navigation, Virtual]}
+                virtual
                 style={{ '--swiper-wrapper-align-items': 'flex-start' }}
                 className="mt-6 mySwiper seeprojects-swiper">
 
-                {projects?.map((project) => (
+                {visibleProjects?.map((project, index) => (
                     <SwiperSlide
+                        virtualIndex={index}
                         style={{ width: '340px' }}
                         key={project?.title}
                         className={`rounded-2xl border-2 overflow-hidden p-2 transition-all ease-out duration-200 border-gray-200   bg-white z-10`}
                     >
                         <div className="relative max-h-60 h-60 min-h-60 overflow-hidden bg-gray-800 rounded-xl flex items-center justify-center text-gray-400 text-sm">
-                            <img className='h-full w-full object-cover ' loading='lazy' src={project?.images[0]} alt="image-thumbnail" />
+                            <img className='h-full w-full object-cover ' decoding="async" loading='lazy' src={project?.images[0].replace("/upload/", "/upload/w_600,q_auto,f_auto/")} alt="image-thumbnail" />
                             {activeCategory == "aiautomation" &&
                                 <button onClick={() => {
                                     setModalOpen(true)
@@ -156,4 +174,4 @@ const SeeProjectsSlider = ({ projects, activeCategory }) => {
     )
 }
 
-export default SeeProjectsSlider
+export default memo(SeeProjectsSlider)

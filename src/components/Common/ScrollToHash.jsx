@@ -1,3 +1,5 @@
+
+
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
@@ -7,8 +9,13 @@ const ScrollToHash = () => {
   useEffect(() => {
     if (hash) {
       const element = document.querySelector(hash);
-      if (element) {
-        element.scrollIntoView({ behavior: "smooth" });
+
+      if (element && window.lenis) {
+        window.lenis.scrollTo(element, {
+          offset: 0,
+          duration: 1,
+          easing: (t) => 1 - Math.pow(1 - t, 3), 
+        });
       }
     }
   }, [hash]);

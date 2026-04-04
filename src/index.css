@@ -55,3 +55,15 @@ img {
     }
   }
 }
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+body {
+  overflow-x: hidden;
+}

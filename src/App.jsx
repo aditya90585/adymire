@@ -1,6 +1,6 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { WhatsappIcon,AIchatboticon } from "@/assets"
+import { WhatsappIcon, AIchatboticon } from "@/assets"
 
 import Home from './pages/Home'
 // import AdminLogin from './pages/AdminLogin'
@@ -12,7 +12,6 @@ import Home from './pages/Home'
 import './App.css'
 import Services from './pages/Services'
 import About from './pages/About'
-import ScrollToTop from './components/ScrollToTop'
 import Portfolio from './pages/Portfolio'
 // import Signup from './components/ClientArea/SignUp'
 // import ClientLogin from './components/ClientArea/ClientLogin'
@@ -27,6 +26,7 @@ import { BiBot } from 'react-icons/bi'
 import Lottie from 'lottie-react'
 import ScrollToHash from './components/Common/ScrollToHash'
 import PricingPlans from './pages/PricingPlans'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   const navigateToWhatsapp = () => {
@@ -39,7 +39,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <ScrollToTop />
+        <ScrollToTop/>
         <ScrollToHash />
         <Header />
         <Routes>
@@ -72,7 +72,7 @@ function App() {
             <Lottie animationData={AIchatboticon} alt="chat bot" />
           </div>
         </div>
-       
+
       </div>
     </Router>
   )

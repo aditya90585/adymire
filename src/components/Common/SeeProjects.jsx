@@ -1,16 +1,12 @@
-import React, { useRef, useState } from "react";
+import React, { Suspense, useMemo, useRef, useState } from "react";
 import "./SeeProjects.css"
-import SeeProjectsSlider from "./SeeProjectsSlider";
+// import SeeProjectsSlider from "./SeeProjectsSlider";
 import { CategoryAiAutomation, CategoryWebDevelopment, CategoryAppDevelopment, CategoryDigitalMarketing, CategoryUIUX } from "@/assets";
 import Lottie from "lottie-react";
 import { AllProjectsData } from "./Projects/AllProjectsData";
-import { useEffect } from "react";
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import { staggerFadeInOnScroll } from "../../animations/stagger";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
+import { LuLoaderCircle } from "react-icons/lu";
 
+const SeeProjectsSlider = React.lazy(() => import('./SeeProjectsSlider'));
 
 const categories = [
   { name: "UI & UX", type: "uiux", icon: CategoryUIUX },
@@ -25,37 +21,29 @@ const categories = [
 const SeeProjects = () => {
   const [activeCategory, setActiveCategory] = useState("uiux");
   const [dropdownisOpen, setDropdownisOpen] = useState(false);
-  const [projects, setProjects] = useState([])
+  // const [projects, setProjects] = useState([])
 
-  useEffect(() => {
-    const filterProjects = AllProjectsData.filter((projects) => projects.type == activeCategory)
-    setProjects(filterProjects)
-  }, [activeCategory])
-
-  const seeprojectcontref = useRef()
-  useGSAP(() => {
-    const elements = gsap.utils.toArray(".seeprojects-ani-element");
+  // useEffect(() => {
+  //   const filterProjects = AllProjectsData.filter((projects) => projects.type == activeCategory)
+  //   setProjects(filterProjects)
+  // }, [activeCategory])
 
 
-    elements.forEach((element) => {
-      staggerFadeInOnScroll(element, { trigger: element })
-    });
-    setTimeout(() => {
-      ScrollTrigger.refresh()
-    }, 100)
 
+  const projects = useMemo(() => {
+    return AllProjectsData.filter(p => p.type === activeCategory);
+  }, [activeCategory]);
 
-  }, { scope: seeprojectcontref });
   return (
-    <section ref={seeprojectcontref} className="bg-[#FFF9EE] py-4">
+    <section className="bg-[#FFF9EE] py-4">
       <div className="max-w-7xl mx-auto px-6">
 
-        <h2 className="text-3xl font-semibold text-center mb-10 seeprojects-ani-element">
+        <h2 className="text-3xl font-semibold text-center mb-10 ">
           See Projects
           <span className="block w-30 h-1 bg-yellow-500 mx-auto mt-1 rounded" />
         </h2>
 
-        <div className="md:hidden max-w-sm mx-auto mb-6 z-20 relative seeprojects-ani-element">
+        <div className="md:hidden max-w-sm mx-auto mb-6 z-20 relative">
           <button
             onClick={() => setDropdownisOpen(!dropdownisOpen)}
             className="w-full flex items-center justify-between bg-white border border-gray-300 rounded-lg px-4 py-3 shadow-sm"
@@ -96,7 +84,7 @@ const SeeProjects = () => {
           )}
         </div>
 
-        <div className="seeprojects-ani-element hidden md:grid  grid-cols-5 gap-1 max-w-5xl mx-auto bg-white rounded-xl p-2 shadow-sm border border-[#999797]">
+        <div className="hidden md:grid  grid-cols-5 gap-1 max-w-5xl mx-auto bg-white rounded-xl p-2 shadow-sm border border-[#999797]">
           {categories.map((category) => (
             <button
               key={category.name}
@@ -116,7 +104,13 @@ const SeeProjects = () => {
       </div>
       <div className="">
 
-        <SeeProjectsSlider projects={projects} activeCategory={activeCategory} />
+        {/* <SeeProjectsSlider projects={projects} activeCategory={activeCategory} /> */}
+
+        <Suspense fallback={<div className="h-[300px] flex justify-center items-center">
+          <LuLoaderCircle className="animate-spin size-8" />
+        </div>}>
+          <SeeProjectsSlider projects={projects} activeCategory={activeCategory} />
+        </Suspense>
       </div>
     </section>
   );
