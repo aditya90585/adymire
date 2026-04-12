@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { WhatsappIcon, AIchatboticon } from "@/assets"
 
@@ -22,11 +22,11 @@ import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
 import ProjectDetailsCard from './components/Common/Projects/ProjectDetailsCard'
 import PoliciesPage from './components/Policies/PoliciesPage'
-import { BiBot } from 'react-icons/bi'
 import Lottie from 'lottie-react'
 import ScrollToHash from './components/Common/ScrollToHash'
 import PricingPlans from './pages/PricingPlans'
 import ScrollToTop from './components/ScrollToTop'
+
 
 function App() {
   const navigateToWhatsapp = () => {
@@ -39,7 +39,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <ScrollToTop/>
+        <ScrollToTop />
         <ScrollToHash />
         <Header />
         <Routes>

@@ -9,6 +9,7 @@ import { BiPlay } from 'react-icons/bi';
 import VideoModal from './VideoModal';
 import { LuLoaderCircle } from "react-icons/lu";
 import { Virtual } from 'swiper/modules';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 const SeeProjectsSlider = ({ projects, activeCategory }) => {
     const [modalOpen, setModalOpen] = useState(false);
@@ -32,6 +33,9 @@ const SeeProjectsSlider = ({ projects, activeCategory }) => {
 
         const timer = setTimeout(() => {
             setVisibleProjects(projects);
+                requestAnimationFrame(() => {
+            ScrollTrigger.refresh();
+        });
         }, 1000);
 
         return () => clearTimeout(timer);

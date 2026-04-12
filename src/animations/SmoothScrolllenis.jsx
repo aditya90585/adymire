@@ -6,31 +6,32 @@ import ScrollTrigger from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function SmoothScroll({ children }) {
-    useEffect(() => {
-        const lenis = new Lenis({
-            duration: 1.8,
-            smoothWheel: true,
-            smoothTouch: true,
-            prevent: (node) => {
-                return node.closest(".scrollable") || node.hasAttribute("data-lenis-prevent");
-            }
-        });
-        window.lenis = lenis;
+  useEffect(() => {
+  const lenis = new Lenis({
+    lerp: 0.08,
+    smoothWheel: true,
+    smoothTouch: true,
+  });
 
-        lenis.on("scroll", ScrollTrigger.update);
+  window.lenis = lenis;
 
-        const update = (time) => {
-            lenis.raf(time * 1000);
-        };
+  lenis.on("scroll", ScrollTrigger.update);
 
-        gsap.ticker.add(update);
-        gsap.ticker.lagSmoothing(0);
+  const update = (time) => {
+    lenis.raf(time * 1000);
+  };
 
-        return () => {
-            gsap.ticker.remove(update);
-            lenis.destroy();
-        };
-    }, []);
+  gsap.ticker.add(update);
 
+  // 🔥 KEY FIX
+  requestAnimationFrame(() => {
+    ScrollTrigger.refresh();
+  });
+
+  return () => {
+    gsap.ticker.remove(update);
+    lenis.destroy();
+  };
+}, []);
     return children;
 }

@@ -6,6 +6,7 @@ import { useGSAP } from '@gsap/react'
 import { staggerFadeInOnScroll } from '../animations/stagger'
 import gsap from 'gsap'
 import VideoModal from './Common/VideoModal'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const VideoWalkthrough = () => {
 
@@ -15,14 +16,17 @@ const VideoWalkthrough = () => {
     elements.forEach((element) => {
       staggerFadeInOnScroll(element, { trigger: element })
     });
+    requestAnimationFrame(() => {
+      ScrollTrigger.refresh();
+    });
 
   }, { scope: vwtcontref });
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
     <section ref={vwtcontref} className="video-walkthrough">
-        <VideoModal isOpen={modalOpen} onClose={() => setModalOpen(false)} videoId={"jnMbrOF0dXM"} />
-      
+      <VideoModal isOpen={modalOpen} onClose={() => setModalOpen(false)} videoId={"jnMbrOF0dXM"} />
+
       <div className="container">
         <div className='relative w-fit mx-auto vwt-ani-element'>
           <h2 className="section-title ">Video Walkthrough</h2>
