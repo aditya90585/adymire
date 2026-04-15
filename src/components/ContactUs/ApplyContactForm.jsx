@@ -77,7 +77,15 @@ const ROLES = [
   "Other",
 ];
 
-const CONTACT_MODES = ["Call", "WhatsApp", "Email"];
+const CONTACT_MODES = [
+  "Google Meet (Recommended)",
+  "Whatsapp Call & Chat (Recommended)",
+  "Zoom Call",
+  "Microsoft Teams",
+  "Email",
+  "Google Chat",
+  "Instsgram Chat"
+];
 const Your_Budget = [
   "$5k-$10K",
   "$10k-$20K",
@@ -218,7 +226,7 @@ const ApplyContactForm = () => {
 
 
   useEffect(() => {
-    if (!isLoaded  || isSubmitted) return;
+    if (!isLoaded || isSubmitted) return;
     localStorage.setItem(ADYMIRE_STORAGE_KEY, JSON.stringify(formValues));
   }, [formValues]);
 
@@ -590,7 +598,7 @@ const ApplyContactForm = () => {
             </div>
           </div>
           <button disabled={isSubmitting} className="cursor-pointer w-full mt-10 py-4 rounded-xl bg-yellow-100 border border-yellow-400 font-semibold text-lg hover:bg-yellow-200 transition">
-             {isSubmitting ? "Submitting..." : "Submit"}
+            {isSubmitting ? "Submitting..." : "Submit"}
           </button>
           {/* <ThankYou submitState={submitState} setSubmitState={setSubmitState} /> */}
           {isSubmitted && (

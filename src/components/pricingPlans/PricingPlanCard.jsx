@@ -94,7 +94,7 @@ const PricingPlanCard = ({ plan, setCurrentPlanId, setDetailBoxState }) => {
                                              hover:brightness-90 transition-all duration-200"
                         style={{ backgroundColor: "#F59E0B" }}
                     >
-                        Contect us
+                        Contact us
                     </button>
                 </div>
             </div>
