@@ -19,8 +19,8 @@ import {
   Aitool2,
   Aitool3,
 } from "@/assets";
-import  Development from "@/assets/icons/Development.webp";
-import DigitalMarketing  from "@/assets/icons/DigitalMarketing.webp";
+import Development from "@/assets/icons/Development.webp";
+import DigitalMarketing from "@/assets/icons/DigitalMarketing.webp";
 import UIUX from "@/assets/icons/UIUX.webp";
 import './WhatWeDo.css'
 import { NavLink } from 'react-router-dom';
@@ -113,18 +113,18 @@ const WhatWeDo = ({ contentState = false }) => {
 
   ];
 
-   const wwdocontref = useRef()
-        useGSAP(() => {
-      
-            const elements = gsap.utils.toArray(".wwdo-ani-element");
-            elements.forEach((element) => {
-                staggerFadeInOnScroll(element,{trigger:element})
-            });
-             setTimeout(() => {
-                    ScrollTrigger.refresh()
-                }, 100)
-        }, { scope: wwdocontref });
-    
+  const wwdocontref = useRef()
+  useGSAP(() => {
+
+    const elements = gsap.utils.toArray(".wwdo-ani-element");
+    elements.forEach((element) => {
+      staggerFadeInOnScroll(element, { trigger: element })
+    });
+    setTimeout(() => {
+      ScrollTrigger.refresh()
+    }, 100)
+  }, { scope: wwdocontref });
+
 
   return (
     <section ref={wwdocontref} className="services-wrapper">
@@ -135,26 +135,26 @@ const WhatWeDo = ({ contentState = false }) => {
         slideToClickedSlide
 
         breakpoints={{
-            0: {
-              slidesPerView: 1,
-              slidesPerGroup: 1,
-              centeredSlides:true,
-               watchOverflow:false
-            },
-            768: {
-              slidesPerView: 2,
-              slidesPerGroup: 2,
-              centeredSlides:false,
-               watchOverflow:false
-            },
-            1024: {
-              slidesPerView: 3,
-              slidesPerGroup: 3,
-              centeredSlides:false,
-               watchOverflow:false
-            },
-          }}
-         
+          0: {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            centeredSlides: true,
+            watchOverflow: false
+          },
+          768: {
+            slidesPerView: 2,
+            slidesPerGroup: 2,
+            centeredSlides: false,
+            watchOverflow: false
+          },
+          1024: {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            centeredSlides: false,
+            watchOverflow: false
+          },
+        }}
+
         pagination={{
           el: ".services-pagination",
           clickable: true,
