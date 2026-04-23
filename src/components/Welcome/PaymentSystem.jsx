@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import './PaymentSystem.css'
-import { PaymentMethods } from "@/assets";
+import PaymentMethods from "@/assets/illustrations/PaymentMethods.webp";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

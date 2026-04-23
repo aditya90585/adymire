@@ -1,5 +1,6 @@
 import React from "react";
-import { ContactFormHeaderImage } from "@/assets"
+import ContactFormHeaderImage from "@/assets/largeicons/CantactEnquiryicons/ContactFormHeaderImage.webp"
+
 import Logo from "../Logo";
 
 const ContactHeader = () => {

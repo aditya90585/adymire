@@ -1,6 +1,6 @@
 import React from "react";
 import { CgClose } from "react-icons/cg";
-import { AdymireLogo2 } from "../../assets";
+import AdymireLogo2  from "@/assets/logo/AdymireLogo2.webp";
 
 const AlertBox = ({ message, isOpen, onClose }) => {
   if (!isOpen) return null;

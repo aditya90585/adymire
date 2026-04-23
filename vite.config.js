@@ -14,5 +14,19 @@ export default defineConfig({
       assets: path.resolve(__dirname, "src/assets"),
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor': ['react', 'react-dom', 'react-router-dom'],
+          'gsap': ['gsap', '@gsap/react'],
+          'swiper': ['swiper'],
+          'firebase': ['firebase/app', 'firebase/firestore'],
+          'forms': ['react-hook-form'],
+          'lottie': ['lottie-react'],
+        }
+      }
+    }
+  }
 })
 

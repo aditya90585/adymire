@@ -1,4 +1,4 @@
-import { AdymireLogo2 } from "@/assets";
+import AdymireLogo2  from "@/assets/logo/AdymireLogo2.webp";
 import { staggerFadeInOnScroll } from "../../animations/stagger";
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";

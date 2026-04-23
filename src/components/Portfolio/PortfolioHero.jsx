@@ -1,11 +1,9 @@
 import "./PortfolioHero.css";
-import {
-  PortfolioHeroimg,
-  UIUX,
-  Development,
-  DigitalMarketing,
-  PhoneYellow,
-} from "@/assets";
+
+import  Development from "@/assets/icons/Development.webp";
+import DigitalMarketing  from "@/assets/icons/DigitalMarketing.webp";
+import PortfolioHeroimg  from "@/assets/illustrations/PortfolioHeroimg.webp";
+import UIUX from "@/assets/icons/UIUX.webp";
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -58,9 +56,7 @@ const PortfolioHero = () => {
                         </div>
                     </div>
                     <div className="portfolio-hero-cta-wrapper portfolio-hero-ani">
-                        {/* <button className="portfolio-hero-cta">
-                         <img src={PhoneYellow} alt="call" />   Book a Strategy Call
-                        </button> */}
+                      
                          <Magnet padding={50} disabled={false} magnetStrength={6}>
 
                         <BookCallButton text="Book a Strategy Call"   height="60px" textSize="base" rounded="xl" paddingX="5" attention={true} className="hover:bg-[#faddac] h-15 px-5 rounded-xl font-semibold"/>

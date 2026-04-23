@@ -1,13 +1,12 @@
 import React from "react";
 import {
-    Founder1,
-    Facebook3dLogo,
-    Instagram3dLogo,
-    Linkedin3dLogo,
-    X3dLogo,
-    Youtube3dLogo,
     CurveArrow,
 } from "@/assets";
+import Facebook3dLogo  from "@/assets/logo/Facebook3dLogo.webp";
+import Instagram3dLogo  from "@/assets/logo/Instagram3dLogo.webp";
+import Linkedin3dLogo from "@/assets/logo/Linkedin3dLogo.webp";
+import X3dLogo from "@/assets/logo/X3dLogo.webp";
+import Youtube3dLogo from "@/assets/logo/Youtube3dLogo.webp";
 
 import "./AboutHero.css";
 import { useGSAP } from "@gsap/react";
@@ -56,7 +55,8 @@ const AboutHero = () => {
                 </div>
 
                 <div className="about-hero-image about-hero-ani">
-                    <img src={Founder1} alt="founder" />
+                    <img src="https://res.cloudinary.com/dm3xoqps6/image/upload/v1776852702/Founder1_fjskpg.png"
+                     alt="founder" />
                     
                 </div>
             </div>

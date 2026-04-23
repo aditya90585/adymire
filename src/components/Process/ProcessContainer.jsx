@@ -1,10 +1,10 @@
 import { useRef } from "react";
 import { UIUXSecond } from "@/assets";
 import "./ProcessContainer.css"
-import { UIUXsvg } from "@/assets"
+import UIUX from "@/assets/icons/UIUX.webp";
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
 import { SwiperSlide, Swiper } from "swiper/react";
-import { useParams } from "react-router-dom";
+
 
 const ProcessContainer = ({ processStepsData }) => {
   return (
@@ -79,7 +79,7 @@ const ProcessContainer = ({ processStepsData }) => {
                     {item.step}
                   </span>
                   <div className="w-full h-30 bg-[white] rounded-xl flex items-center justify-center mb-4">
-                    <img src={UIUXsvg} alt="ui-ux" className="" />
+                    <img src={UIUX} alt="ui-ux" className="" />
                   </div>
 
                   <h3 className="text-lg font-semibold mb-4">

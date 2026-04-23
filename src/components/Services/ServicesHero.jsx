@@ -1,6 +1,6 @@
 import React from "react";
 import "./ServicesHero.css";
-import { GirlSittingWithLaptop, PhoneYellow } from "@/assets";
+import GirlSittingWithLaptop from "@/assets/illustrations/GirlSittingWithLaptop.webp";
 
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
@@ -34,13 +34,7 @@ const ServicesHero = () => {
           <p className="services-hero__subtitle services-hero-ani">
             Want to know how we can help?
           </p>
-          {/* 
-          <button className="services-hero__btn ">
-            <span className="services-hero__btn-icon">
-              <img src={PhoneYellow} alt="call" />
-            </span>
-            Book a Strategy Call
-          </button> */}
+      
           <div className="services-hero-ani md:block flex justify-center items-center">
             <Magnet padding={50} disabled={false} magnetStrength={6}>
 

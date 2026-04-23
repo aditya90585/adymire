@@ -1,7 +1,6 @@
 import { useGSAP } from "@gsap/react";
 import "./HowWeWork.css";
 
-import { ManWithPhone_inYellowJacket, PhoneYellow } from "@/assets";
 import { staggerFadeInOnScroll } from "../../animations/stagger";
 import { useRef } from "react";
 import BookCallButton from "../UI/NavButtons/BookCallButton";
@@ -97,7 +96,8 @@ export default function HowWeWork() {
 
         <div className="how-right hww-trigger-ani">
 
-          <img className="img-box" src={ManWithPhone_inYellowJacket} alt="Advertisement" />
+          <img className="img-box" src="https://res.cloudinary.com/dm3xoqps6/image/upload/v1776852592/ManWithPhone_inYellowJacket_q8b2gf.png"
+          alt="Advertisement" />
 
 
         </div>

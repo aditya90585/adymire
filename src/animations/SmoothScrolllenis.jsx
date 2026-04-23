@@ -23,7 +23,7 @@ export default function SmoothScroll({ children }) {
 
   gsap.ticker.add(update);
 
-  // 🔥 KEY FIX
+
   requestAnimationFrame(() => {
     ScrollTrigger.refresh();
   });

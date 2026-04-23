@@ -1,6 +1,9 @@
 import { useRef } from "react";
 import "./FounderVision.css";
-import { UIUX, Development, DigitalMarketing } from "@/assets";
+import DigitalMarketing  from "@/assets/icons/DigitalMarketing.webp";
+import UIUX from "@/assets/icons/UIUX.webp";
+
+import  Development from "@/assets/icons/Development.webp";
 import { staggerFadeInOnScroll } from "../../animations/stagger";
 import { useGSAP } from "@gsap/react";
 import gsap from 'gsap';

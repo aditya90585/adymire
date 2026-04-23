@@ -1,45 +1,21 @@
 export {default as AppStore } from "./largeicons/AppStore.svg";
 export { default as GooglePlay } from "./largeicons/GooglePlay.svg";
-export { default as AdymireLogo2 } from "./logo/AdymireLogo2.svg";
-export { default as Facebook3dLogo } from "./logo/Facebook3dLogo.svg";
-export { default as Instagram3dLogo } from "./logo/Instagram3dLogo.svg";
-export { default as Linkedin3dLogo } from "./logo/Linkedin3dLogo.svg";
-export { default as X3dLogo } from "./logo/X3dLogo.svg";
-export { default as Youtube3dLogo } from "./logo/Youtube3dLogo.svg";
 
 // Startup Icons
 export { default as CalcyIcon } from "./icons/StartupsIcons/CalcyIcon.svg";
-export { default as AdscyIcon } from "./icons/StartupsIcons/AdscyIcon.svg";
-export { default as CybertronIcon } from "./icons/StartupsIcons/CybertronIcon.png";
-export { default as GiglerIcon } from "./icons/StartupsIcons/GiglerIcon.svg";
 export { default as OrbitBrowsIcon } from "./icons/StartupsIcons/OrbitBrowsIcon.svg";
-export { default as SpaceIcon } from "./icons/StartupsIcons/SpaceIcon.svg";
 
-export { default as PhoneYellow } from "./icons/PhoneYellow.svg";
+
 export { default as Whatsapp } from "./icons/Whatsapp.svg";
 
-export { default as Founder1 } from "./illustrations/Founder1.png";
-export { default as Founder2 } from "./illustrations/Founder2.png";
 export { default as CurveArrow } from "./icons/CurveArrow.svg";
 
-// Service Icons
-export { default as UIUX } from "./icons/UIUX.svg";
-export { default as Development } from "./icons/Development.svg";
-export { default as DigitalMarketing } from "./icons/DigitalMarketing.svg";
-
 // Illustrations
-export { default as BoyWithLaptop } from "./illustrations/BoyWithLaptop.svg";
-export { default as SittingDarkMan } from "./illustrations/SittingDarkMan.png";
-export { default as ManWithPhone_inYellowJacket } from "./illustrations/ManWithPhone_inYellowJacket.png";
-export { default as BusinessManGroup } from "./illustrations/BusinessManGroup.svg";
-export { default as PaymentMethods } from "./illustrations/PaymentMethods.svg";
-export { default as PortfolioHeroimg } from "./illustrations/PortfolioHeroimg.svg";
-export { default as GirlSittingWithLaptop } from "./illustrations/GirlSittingWithLaptop.svg";
-export { default as TwoPeopleSitting } from "./illustrations/TwoPeopleSitting.png";
 
+export { default as BusinessManGroup } from "./illustrations/BusinessManGroup.svg";
 
 export { default as FourCustomers } from "./icons/FourCustomers.svg";
-export { default as MetaShopifyGoogle } from "./largeicons/MetaShopifyGoogle.svg";
+
 
 // Visualization Icons
 export { default as Trophy } from "./icons/VisualizationIcons/Trophy.svg";
@@ -48,7 +24,6 @@ export { default as Verified } from "./icons/VisualizationIcons/Verified.svg";
 export { default as Boost } from "./icons/VisualizationIcons/Boost.svg";
 
 // Specialized Industry Icons
-export { default as SpecializedIndustryIcon1 } from "./icons/SpecializedIndustryicons/SpecializedIndustryIcon1.svg";
 export { default as SpecializedIndustryIcon2 } from "./icons/SpecializedIndustryicons/SpecializedIndustryIcon2.svg";
 export { default as SpecializedIndustryIcon3 } from "./icons/SpecializedIndustryicons/SpecializedIndustryIcon3.svg";
 export { default as SpecializedIndustryIcon4 } from "./icons/SpecializedIndustryicons/SpecializedIndustryIcon4.svg";
@@ -57,11 +32,9 @@ export { default as SpecializedIndustryIcon6 } from "./icons/SpecializedIndustry
 export { default as SpecializedIndustryIcon7 } from "./icons/SpecializedIndustryicons/SpecializedIndustryIcon7.svg";
 export { default as SpecializedIndustryIcon8 } from "./icons/SpecializedIndustryicons/SpecializedIndustryIcon8.svg";
 
-// General Icons  in ToolsUsed.jsx
-export { default as UIUXsvg } from "./icons/UIUX.svg";
+
 export { default as Aisvg } from "./icons/Ai.svg";
-export { default as Developmentsvg } from "./icons/Development.svg";
-export { default as DigitalMarketingsvg } from "./icons/DigitalMarketing.svg";
+
 // UI/UX Tools Icons
 export { default as Figma } from "./icons/UIUXToolsIcons/Figma.svg";
 export { default as Xd } from "./icons/UIUXToolsIcons/Xd.svg";
@@ -107,26 +80,16 @@ export { default as DigitalmarketingToolsIcons16 } from "./icons/Digitalmarketin
 export { default as DigitalmarketingToolsIcons17 } from "./icons/DigitalmarketingToolsIcons/DigitalmarketingToolsIcons17.svg";
 export { default as DigitalmarketingToolsIcons18 } from "./icons/DigitalmarketingToolsIcons/DigitalmarketingToolsIcons18.svg";
 
-
-// What Makes Us Different Illustrations
-export { default as WhatMakesUsDifferentImages1 } from "./illustrations/WhatMakesUsDifferentImages/WhatMakesUsDifferentImages1.svg";
-export { default as WhatMakesUsDifferentImages2 } from "./illustrations/WhatMakesUsDifferentImages/WhatMakesUsDifferentImages2.svg";
-export { default as WhatMakesUsDifferentImages3 } from "./illustrations/WhatMakesUsDifferentImages/WhatMakesUsDifferentImages3.svg";
-export { default as WhatMakesUsDifferentImages4 } from "./illustrations/WhatMakesUsDifferentImages/WhatMakesUsDifferentImages4.svg";
-
 // Whiteboard / Tool Icons
-export { default as Whiteboardsvg } from "./icons/WhiteboardToolIcons/Whiteboard.svg";
+
 export { default as AToolIcon } from "./icons/AToolIcon.svg";
 export { default as FireBallToolIcon } from "./icons/FireBallToolIcon.svg";
 export { default as BlueArrowIcon } from "./icons/BlueArrowIcon.svg";
 export { default as Aitool3 } from "./icons/AutomationToolsIcons/Aitool3.svg";
-export { default as WhiteboardTool1 } from "./icons/WhiteboardToolIcons/WhiteboardTool1.svg";
-export { default as WhiteboardTool2 } from "./icons/WhiteboardToolIcons/WhiteboardTool2.svg";
-export { default as WhiteboardTool3 } from "./icons/WhiteboardToolIcons/WhiteboardTool3.svg";
 
-export { default as Clock } from "./icons/Clock.svg";
+
 export { default as Handshake } from "./icons/Handshake.svg";
-export { default as Shield } from "./icons/Shield.svg";
+
 
 
 // Working Process Icons
@@ -137,49 +100,17 @@ export { default as WorkingProcessicons4 } from "./icons/WorkingProcessicons/Wor
 export { default as WorkingProcessicons5 } from "./icons/WorkingProcessicons/WorkingProcessicons5.svg";
 export { default as WorkingProcessicons6 } from "./icons/WorkingProcessicons/WorkingProcessicons6.svg";
 
-
-
-//logo
-
-export {default as AdymireLogo} from "./logo/AdymireLogo.png"
-
 //portfolio icons
 
-export {default as Budget} from "./icons/PortfolioIcons/Budget.svg"
 export {default as OnTime } from "./icons/PortfolioIcons/OnTime.svg"
-export {default as Quality} from "./icons/PortfolioIcons/Quality.svg"
 export {default as Quality2} from "./icons/PortfolioIcons/Quality2.svg"
-export {default as Innovation} from "./icons/PortfolioIcons/Innovation.svg"
 export {default as Transparency} from "./icons/PortfolioIcons/Transparency.svg"
 export {default as Customer} from "./icons/PortfolioIcons/Customer.svg"
 export {default as ExpertTeam} from "./icons/PortfolioIcons/ExpertTeam.svg"
 
-export {default as UIUXFirst} from "./illustrations/UIUXprocessImages/UIUXFirst.svg"
 export {default as UIUXSecond} from "./illustrations/UIUXprocessImages/UIUXSecond.svg"
 
-
 export {default as CallContact} from "./largeicons/CantactEnquiryicons/CallContact.svg"
-export {default as EmailContact} from "./largeicons/CantactEnquiryicons/EmailContact.svg"
-
-export {default as WhyChooseAdymireImage} from "./illustrations/WhyChooseAdymireImage.png"
-
-export {default as ContactFormHeaderImage} from "./largeicons/CantactEnquiryicons/ContactFormHeaderImage.svg"
-
-
-//team members images
-
-export {default as abhisekhgiri} from "./illustrations/TeamMembersImages/abhisekhgiri.png"
-export {default as abhisekhmannu} from "./illustrations/TeamMembersImages/abhisekhmannu.png"
-export {default as aditya} from "./illustrations/TeamMembersImages/aditya.png"
-export {default as ashish} from "./illustrations/TeamMembersImages/ashish.png"
-export {default as neeraj} from "./illustrations/TeamMembersImages/neeraj.png"
-export {default as rakesh} from "./illustrations/TeamMembersImages/rakesh.png"
-export {default as rohan} from "./illustrations/TeamMembersImages/rohan.png"
-export {default as santosh} from "./illustrations/TeamMembersImages/santosh.png"
-export {default as YashveerGiri} from "./illustrations/TeamMembersImages/YashveerGiri.png"
-export {default as ritugupta} from "./illustrations/TeamMembersImages/ritugupta.png"
-export {default as ravikumar} from "./illustrations/TeamMembersImages/ravikumar.png"
-
 
 //project categories
 
@@ -189,26 +120,9 @@ export {default as CategoryAppDevelopment} from "./icons/ProjectsCategory/Catego
 export {default as CategoryDigitalMarketing} from "./icons/ProjectsCategory/CategoryDigitalMarketing.json"
 export {default as CategoryUIUX} from "./icons/ProjectsCategory/CategoryUIUX.json"
 
-//thumbnail 
-
-export {default as AdymireThumbnailVideo} from "./illustrations/AdymireThumbnailVideo.png"
-
 //animated icons 
 
 export {default as Phonecall} from "./icons/Phonecall.json"
 export {default as WhatsappIcon} from "./icons/WhatsappIcon.json"
 export {default as EmailAniIcon} from "./icons/EmailAniIcon.json"
 export {default as AIchatboticon} from "./icons/AIchatboticon.json"
-
-
-export {default as uiuxLastslideBg} from "./illustrations/uiuxLastslideBg.jpeg"
-export {default as Founder3} from "./illustrations/Founder3.png"
-export {default as dribbble } from "./icons/dribbble.png"
-
-//running startups icons  
-
-export {default as adylabsai} from "./icons/RunningStartupsIcons/adylabsai.png"
-export {default as adytlymedia} from "./icons/RunningStartupsIcons/adytlymedia.png"
-export {default as apporra} from "./icons/RunningStartupsIcons/apporra.png"
-export {default as yreelz} from "./icons/RunningStartupsIcons/yreelz.png"
-export {default as zylobit} from "./icons/RunningStartupsIcons/zylobit.png"

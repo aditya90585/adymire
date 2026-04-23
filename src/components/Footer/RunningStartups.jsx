@@ -1,4 +1,9 @@
-import { adytlymedia, adylabsai, apporra, yreelz, zylobit } from "@/assets";
+
+import apporra from "@/assets/icons/RunningStartupsIcons/apporra.webp"
+import adytlymedia from "@/assets/icons/RunningStartupsIcons/adytlymedia.webp"
+import adylabsai from "@/assets/icons/RunningStartupsIcons/adylabsai.webp"
+import yreelz from "@/assets/icons/RunningStartupsIcons/yreelz.webp"
+import zylobit from "@/assets/icons/RunningStartupsIcons/zylobit.webp"
 
 const RunningStartups = () => {
     const startups = [

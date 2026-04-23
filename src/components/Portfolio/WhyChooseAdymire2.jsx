@@ -1,5 +1,6 @@
 import React, { useRef } from 'react'
-import { ExpertTeam, Quality2, OnTime, Budget } from '@/assets';
+import { ExpertTeam, Quality2, OnTime} from '@/assets';
+import Budget from "@/assets/icons/PortfolioIcons/Budget.webp"
 import { useGSAP } from '@gsap/react';
 import { staggerFadeInOnScroll } from '../../animations/stagger';
 import gsap from 'gsap';

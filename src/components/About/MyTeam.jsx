@@ -1,6 +1,5 @@
 
 import "./MyTeam.css"
-import { YashveerGiri, ashish, abhisekhgiri, abhisekhmannu, aditya, neeraj, rakesh, santosh, ritugupta, ravikumar } from "@/assets";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -8,15 +7,42 @@ import { EffectCoverflow, Navigation, Pagination } from 'swiper/modules';
 
 
 export const teamMembers = [
-    { name: "Abhishek Giri", role: "Co-Founder", image: abhisekhgiri },
-    { name: "Yashveer Giri Goswami", role: "Founder & CEO", image: YashveerGiri },
-    { name: "Ashish Kumar", role: "Full Stack MERN Developer", image: ashish },
-    { name: "Aditya Rajput", role: "Full Stack MERN Developer", image: aditya },
-    { name: "Abhisekh P", role: "Full Stack Web Developer", image: abhisekhmannu },
-    { name: "Rakesh Giri", role: "Flutter Developer", image: rakesh },
-    { name: "Neeraj Dahit", role: "Flutter Developer", image: neeraj },
-    { name: "Santosh Patel", role: "Flutter Developer", image: santosh },
-    { name: "Ravi Kumar", role: "Backend Developer", image: ravikumar },
+    {
+        name: "Abhishek Giri", role: "Co-Founder",
+        image: "https://res.cloudinary.com/dm3xoqps6/image/upload/v1776852180/abhisekhgiri_jtqmlp.png"
+    },
+    {
+        name: "Yashveer Giri Goswami", role: "Founder & CEO",
+        image: "https://res.cloudinary.com/dm3xoqps6/image/upload/v1776852180/YashveerGiri_ckfp3f.png"
+    },
+    {
+        name: "Ashish Kumar", role: "Full Stack MERN Developer",
+        image: "https://res.cloudinary.com/dm3xoqps6/image/upload/v1776852180/ashish_axobhu.png"
+    },
+    {
+        name: "Aditya Rajput", role: "Full Stack MERN Developer",
+        image: "https://res.cloudinary.com/dm3xoqps6/image/upload/v1776852180/aditya_lsf21g.png"
+    },
+    {
+        name: "Abhisekh P", role: "Full Stack Web Developer",
+        image: "https://res.cloudinary.com/dm3xoqps6/image/upload/v1776852180/abhisekhmannu_pgbnsr.png"
+    },
+    {
+        name: "Rakesh Giri", role: "Flutter Developer",
+        image: "https://res.cloudinary.com/dm3xoqps6/image/upload/v1776852181/rakesh_ppbuli.png"
+    },
+    {
+        name: "Neeraj Dahit", role: "Flutter Developer",
+        image: "https://res.cloudinary.com/dm3xoqps6/image/upload/v1776852181/neeraj_uz66od.png"
+    },
+    {
+        name: "Santosh Patel", role: "Flutter Developer",
+        image: "https://res.cloudinary.com/dm3xoqps6/image/upload/v1776852180/santosh_sqn3u6.png"
+    },
+    {
+        name: "Ravi Kumar", role: "Backend Developer",
+        image: "https://res.cloudinary.com/dm3xoqps6/image/upload/v1776852181/ravikumar_djo3eh.png"
+    },
 ];
 
 const MyTeam = () => {

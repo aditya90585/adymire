@@ -1,7 +1,7 @@
 import React from "react";
 import Input from "../UI/Input";
 import Button from "../UI/Button";
-import {AdymireLogo} from "@/assets"
+import AdymireLogo from "@/assets/logo/AdymireLogo.webp"
 import { NavLink, useNavigate } from "react-router-dom";
 
 const Signup = () => {

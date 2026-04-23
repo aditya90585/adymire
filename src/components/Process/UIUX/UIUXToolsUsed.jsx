@@ -2,7 +2,6 @@ import React from 'react'
 import ToolsUsedContainer from '../../Common/ToolsUsedContainer'
 import {
     // UI/UX Tools Icons
-    UIUXsvg,
     Figma,
     Xd,
     Sketch,
@@ -11,12 +10,13 @@ import {
     UIUXToolsIcons6,
     UIUXToolsIcons7
 } from "@/assets"
+import UIUX from "@/assets/icons/UIUX.webp";
 
 const toolsData = [
     {
         title: "UI & UX",
         subtitle: "Design",
-        icon: UIUXsvg,
+        icon: UIUX,
         tools: [
             { name: "Figma", icon: Figma, percentage: "100%" },
             { name: "Adobe XD", icon: Xd, percentage: "100%" },

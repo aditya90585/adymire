@@ -1,5 +1,7 @@
 import React, { useRef } from 'react'
-import { UIUX, Development, DigitalMarketing } from "@/assets";
+import UIUX from "@/assets/icons/UIUX.webp";
+import  Development from "@/assets/icons/Development.webp";
+import DigitalMarketing  from "@/assets/icons/DigitalMarketing.webp";
 
 import './AgencyHelps.css'
 import { useGSAP } from '@gsap/react';

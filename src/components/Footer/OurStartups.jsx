@@ -1,11 +1,10 @@
 import {
   CalcyIcon,
-  AdscyIcon,
-  CybertronIcon,
-  GiglerIcon,
   OrbitBrowsIcon,
-  SpaceIcon,
 } from "@/assets";
+import AdscyIcon from "@/assets/icons/StartupsIcons/AdscyIcon.webp";
+import GiglerIcon from "@/assets/icons/StartupsIcons/GiglerIcon.webp";
+import SpaceIcon from "@/assets/icons/StartupsIcons/SpaceIcon.webp";
 
 const OurStartups = () => {
   const startups = [
@@ -19,7 +18,7 @@ const OurStartups = () => {
   },
   {
     name: "Cybertron.ai",
-    icon: CybertronIcon,
+    icon: "https://res.cloudinary.com/dm3xoqps6/image/upload/v1776852783/CybertronIcon_cz8tyd.png",
   },
   {
     name: "Space research",

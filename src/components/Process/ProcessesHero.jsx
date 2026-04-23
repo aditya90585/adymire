@@ -1,4 +1,4 @@
-import { UIUXFirst } from "@/assets"
+import UIUXFirst from "@/assets/illustrations/UIUXprocessImages/UIUXFirst.webp"
 
 const ProcessesHero = ({heroData}) => {
  

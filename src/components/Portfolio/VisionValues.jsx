@@ -1,4 +1,6 @@
-import { Innovation ,Quality,Customer,Transparency} from "@/assets";
+import {Customer,Transparency} from "@/assets";
+import Quality from "@/assets/icons/PortfolioIcons/Quality.webp"
+import Innovation from "@/assets/icons/PortfolioIcons/Innovation.webp"
 import { useGSAP } from "@gsap/react";
 import { useRef } from "react";
 import { staggerFadeInOnScroll } from "../../animations/stagger";

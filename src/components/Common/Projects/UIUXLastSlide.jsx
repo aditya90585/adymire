@@ -1,5 +1,8 @@
 import { useState } from "react";
-import { Figma, Xd, Founder3, AdymireLogo2, dribbble } from "../../../assets";
+import { Figma, Xd } from "../../../assets";
+import AdymireLogo2  from "@/assets/logo/AdymireLogo2.webp";
+import dribbble from "../../../assets/icons/dribbble.webp"
+
 
 export default function UIUXLastSlide({ className }) {
 
@@ -10,7 +13,7 @@ export default function UIUXLastSlide({ className }) {
 
                 <div
                     className="px-6 sm:px-8 py-8 text-center  w-full
-                 bg-[url('/src/assets/illustrations/uiuxLastslideBg.jpeg')] 
+                 bg-[url('/src/assets/illustrations/uiuxLastslideBg.webp')] 
                  bg-center bg-cover bg-no-repeat"
                 >
 
@@ -18,7 +21,8 @@ export default function UIUXLastSlide({ className }) {
                         <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 
                         overflow-hidden rounded-full shadow-lg 
                         shadow-green-400/30 flex items-center justify-center">
-                            <img src={Founder3} alt="founder" className="w-full h-full" />
+                            <img src="https://res.cloudinary.com/dm3xoqps6/image/upload/v1776852693/Founder3_n2gix9.png"
+                                alt="founder" className="w-full h-full" />
                         </div>
                     </div>
 

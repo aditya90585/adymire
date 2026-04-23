@@ -2,9 +2,6 @@ import React, { useRef, useState } from 'react'
 
 
 import {
-  UIUXsvg,
-  Developmentsvg,
-  DigitalMarketingsvg,
   Aisvg,
   Figma,
   Xd,
@@ -22,7 +19,9 @@ import {
   Aitool2,
   Aitool3,
 } from "@/assets";
-
+import  Development from "@/assets/icons/Development.webp";
+import DigitalMarketing  from "@/assets/icons/DigitalMarketing.webp";
+import UIUX from "@/assets/icons/UIUX.webp";
 import './WhatWeDo.css'
 import { NavLink } from 'react-router-dom';
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -44,7 +43,7 @@ const WhatWeDo = ({ contentState = false }) => {
     {
       title: "UI & UX",
       subtitle: "Design",
-      icon: UIUXsvg,
+      icon: UIUX,
       tools: [Figma, Xd, Sketch],
       button_link: "/process/uiux",
       items: [
@@ -62,7 +61,7 @@ const WhatWeDo = ({ contentState = false }) => {
     {
       title: "App & Web",
       subtitle: "Development",
-      icon: Developmentsvg,
+      icon: Development,
       button_link: "/process/development",
       tools: [Flutter, Jetpack, Reactlogo, Android, Apple, Browser],
       items: [
@@ -78,7 +77,7 @@ const WhatWeDo = ({ contentState = false }) => {
     {
       title: "Digital",
       subtitle: "Marketing",
-      icon: DigitalMarketingsvg,
+      icon: DigitalMarketing,
       button_link: "/process/digitalmarketing",
       tools: [AToolIcon, FireBallToolIcon, BlueArrowIcon],
       items: [

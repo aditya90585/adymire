@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./WhyChooseAdymire.css";
-import { WhyChooseAdymireImage } from "@/assets"
+
 const faqData = [
   {
     "category": "SECTION 1: GENERAL & SERVICE-RELATED FAQs",
@@ -370,7 +370,8 @@ export default function WhyChooseAdymire() {
 
       <div data-lenis-prevent className="adymire-why-content h-screen scrollable">
         <div className="adymire-why-image">
-          <img src={WhyChooseAdymireImage} alt="Why Choose Us" />
+          <img src="https://res.cloudinary.com/dm3xoqps6/image/upload/v1776852651/WhyChooseAdymireImage_vbdyfm.png"
+           alt="Why Choose Us" />
         </div>
 
         <div className="adymire-why-faq">

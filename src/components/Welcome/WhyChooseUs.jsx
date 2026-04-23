@@ -1,6 +1,9 @@
 import { useRef } from "react";
 import "./WhyChooseUs.css";
-import { Clock, Handshake, Shield } from "@/assets";
+import { Handshake} from "@/assets";
+
+import Clock from "@/assets/icons/Clock.webp";
+import Shield from "@/assets/icons/Shield.webp";
 import { staggerFadeInOnScroll } from "../../animations/stagger";
 import { useGSAP } from "@gsap/react";
 import gsap from 'gsap';

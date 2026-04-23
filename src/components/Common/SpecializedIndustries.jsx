@@ -1,5 +1,5 @@
 import {
-  SpecializedIndustryIcon1,
+
   SpecializedIndustryIcon2,
   SpecializedIndustryIcon3,
   SpecializedIndustryIcon4,
@@ -10,7 +10,9 @@ import {
 } from "@/assets";
 
 
-import AdymireLogo from "@/assets/logo/AdymireLogo.png"
+import SpecializedIndustryIcon1 from "@/assets/icons/SpecializedIndustryicons/SpecializedIndustryIcon1.webp";
+
+import AdymireLogo from "@/assets/logo/AdymireLogo.webp"
 
 import "./SpecializedIndustries.css";
 import { useGSAP } from "@gsap/react";

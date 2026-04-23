@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import { Founder2 } from "@/assets"
 import { useGSAP } from "@gsap/react";
 import { staggerFadeInOnScroll } from "../../animations/stagger";
 import gsap from 'gsap';
@@ -49,7 +48,7 @@ const AboutAdymire = () => {
             <div className="w-full h-full flex justify-center items-end col-start-1 row-start-1 pr-4 aboutady-trigger-ani">
 
               <img
-                src={Founder2}
+                src="https://res.cloudinary.com/dm3xoqps6/image/upload/v1776852694/Founder2_hufkwr.png"
                 alt="Founder"
                 className="w-full object-contain"
               />

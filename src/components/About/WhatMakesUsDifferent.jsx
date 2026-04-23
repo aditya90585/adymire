@@ -1,14 +1,13 @@
 import { useRef } from "react";
 import "./WhatMakesUsDifferent.css";
 import {
-    WhatMakesUsDifferentImages1,
-    WhatMakesUsDifferentImages2,
-    WhatMakesUsDifferentImages3,
-    WhatMakesUsDifferentImages4,
     Whatsapp,
     CurveArrow
 } from "@/assets";
-import { staggerFadeInOnScroll } from "../../animations/stagger";
+import WhatMakesUsDifferentImages1  from "@/assets/illustrations/WhatMakesUsDifferentImages/WhatMakesUsDifferentImages1.webp";
+import WhatMakesUsDifferentImages2  from "@/assets/illustrations/WhatMakesUsDifferentImages/WhatMakesUsDifferentImages2.webp";
+import WhatMakesUsDifferentImages3  from "@/assets/illustrations/WhatMakesUsDifferentImages/WhatMakesUsDifferentImages3.webp";
+import WhatMakesUsDifferentImages4  from "@/assets/illustrations/WhatMakesUsDifferentImages/WhatMakesUsDifferentImages4.webp";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

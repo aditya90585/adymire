@@ -1,11 +1,10 @@
 import React from 'react'
-import {
-  Facebook3dLogo,
-  Instagram3dLogo,
-  Linkedin3dLogo,
-  X3dLogo,
-  Youtube3dLogo,
-} from "@/assets";
+
+import Facebook3dLogo  from "@/assets/logo/Facebook3dLogo.webp";
+import Instagram3dLogo  from "@/assets/logo/Instagram3dLogo.webp";
+import Linkedin3dLogo from "@/assets/logo/Linkedin3dLogo.webp";
+import X3dLogo from "@/assets/logo/X3dLogo.webp";
+import Youtube3dLogo from "@/assets/logo/Youtube3dLogo.webp";
 
 const SocialIcons = ({className,imgClass}) => {
       const socialIcons = [

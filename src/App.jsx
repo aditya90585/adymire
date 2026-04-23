@@ -1,8 +1,6 @@
-import React, { useEffect } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { WhatsappIcon, AIchatboticon } from "@/assets"
+import { lazy, Suspense } from 'react'
 
-import Home from './pages/Home'
 // import AdminLogin from './pages/AdminLogin'
 // import OTPVerification from './pages/OTPVerification'
 // import AdminDashboard from './pages/AdminDashboard'
@@ -10,23 +8,25 @@ import Home from './pages/Home'
 // import PaymentRedirect from './pages/PaymentRedirect'
 // import PaymentProcess from './pages/PaymentProcess'
 import './App.css'
-import Services from './pages/Services'
-import About from './pages/About'
-import Portfolio from './pages/Portfolio'
 // import Signup from './components/ClientArea/SignUp'
 // import ClientLogin from './components/ClientArea/ClientLogin'
 // import ClientOtpVerification from './components/ClientArea/ClientOtpVerification'
-import UIUXProcess from './pages/ProcessPages/ProcessPage'
-import ContactUs from './pages/ContactUs'
 import Footer from './components/Footer/Footer'
 import Header from './components/Header/Header'
-import ProjectDetailsCard from './components/Common/Projects/ProjectDetailsCard'
-import PoliciesPage from './components/Policies/PoliciesPage'
-import Lottie from 'lottie-react'
 import ScrollToHash from './components/Common/ScrollToHash'
-import PricingPlans from './pages/PricingPlans'
 import ScrollToTop from './components/ScrollToTop'
+import PageLoader from './components/PageLoader'
 
+const Home = lazy(() => import('./pages/Home'))
+const About = lazy(() => import('./pages/About'))
+const Services = lazy(() => import('./pages/Services'))
+const Portfolio = lazy(() => import('./pages/Portfolio'))
+const UIUXProcess = lazy(() => import('./pages/ProcessPages/ProcessPage'))
+const ContactUs = lazy(() => import('./pages/ContactUs'))
+const ProjectDetailsCard = lazy(() => import('./components/Common/Projects/ProjectDetailsCard'))
+const PoliciesPage = lazy(() => import('./components/Policies/PoliciesPage'))
+const PricingPlans = lazy(() => import('./pages/PricingPlans'))
+const FloatingButtons = lazy(() => import('./components/FloatingButtons'))
 
 function App() {
   const navigateToWhatsapp = () => {
@@ -42,18 +42,19 @@ function App() {
         <ScrollToTop />
         <ScrollToHash />
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/process/:service" element={<UIUXProcess />} />
-          <Route path="/contact" element={<ContactUs />} />
-          <Route path='/projectDetails/:projectname' element={<ProjectDetailsCard />} />
+        <Suspense  fallback={<PageLoader />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/services" element={<Services />} />
+            <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/process/:service" element={<UIUXProcess />} />
+            <Route path="/contact" element={<ContactUs />} />
+            <Route path='/projectDetails/:projectname' element={<ProjectDetailsCard />} />
 
-          <Route path="/policy/:policytype" element={<PoliciesPage />} />
-          <Route path="/pricing-plans" element={<PricingPlans />} />
-          {/* <Route path="/user/signup" element={<Signup />} />
+            <Route path="/policy/:policytype" element={<PoliciesPage />} />
+            <Route path="/pricing-plans" element={<PricingPlans />} />
+            {/* <Route path="/user/signup" element={<Signup />} />
           <Route path="/client/login" element={<ClientLogin />} />
           <Route path="/client/otp" element={<ClientOtpVerification />} />
           <Route path="/admin/login" element={<AdminLogin />} />
@@ -62,17 +63,12 @@ function App() {
           <Route path="/payment/search" element={<PaymentSearch />} />
           <Route path="/payment/redirect" element={<PaymentRedirect />} />
           <Route path="/payment/process" element={<PaymentProcess />} /> */}
-        </Routes>
+          </Routes>
+        </Suspense>
         <Footer />
-        <div className="fixed max-w-14 md:max-w-14 right-8 bottom-10 z-100 flex flex-col items-center justify-center gap-y-2">
-          <div onClick={navigateToWhatsapp} className="bg-white p-2 shadow-sm rounded-full hover:shadow-md cursor-pointer">
-            <Lottie animationData={WhatsappIcon} alt="whatsapp" />
-          </div>
-          <div onClick={navigateToWhatsapp} className="bg-white aspect-square flex justify-center items-center shadow-sm rounded-full hover:shadow-md cursor-pointer">
-            <Lottie animationData={AIchatboticon} alt="chat bot" />
-          </div>
-        </div>
-
+        <Suspense fallback={null}>
+          <FloatingButtons />
+        </Suspense>
       </div>
     </Router>
   )

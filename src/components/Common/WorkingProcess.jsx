@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import "./WorkingProcess.css";
 import { 
-  TwoPeopleSitting, 
   WorkingProcessicons1, 
   WorkingProcessicons2, 
   WorkingProcessicons3, 
@@ -90,7 +89,8 @@ export default function WorkingProcess() {
       <div className="wpprocess-wrapper">
 
         <div className="wpcenter-box">
-          <div className="wpcenter-image"><img src={TwoPeopleSitting} alt="TwoPeopleSitting-with-laptop-illustration" /></div>
+          <div className="wpcenter-image"><img src="https://res.cloudinary.com/dm3xoqps6/image/upload/v1776852641/TwoPeopleSitting_dd6w2h.png"
+           alt="TwoPeopleSitting-with-laptop-illustration" /></div>
         </div>
 
         {processData.map((item) => (

@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import './VideoWalkthrough.css'
-import { AdymireThumbnailVideo, CurveArrow } from "@/assets"
+import { CurveArrow } from "@/assets"
 import { BiPlay } from 'react-icons/bi'
 import { useGSAP } from '@gsap/react'
 import { staggerFadeInOnScroll } from '../animations/stagger'
@@ -35,7 +35,8 @@ const VideoWalkthrough = () => {
         <p className="section-subtitle vwt-ani-element">See Our Work in just 90 Seconds</p>
         <div className="video-player-container vwt-ani-element">
           <div className="video-player relative rounded-full border-2 border-yellow-400">
-            <img src={AdymireThumbnailVideo} alt="video_thumbnail" />
+            <img src="https://res.cloudinary.com/dm3xoqps6/image/upload/v1776852569/AdymireThumbnailVideo_qlxs6b.png"
+             alt="video_thumbnail" />
             <button onClick={() => setModalOpen(true)} className='absolute top-[41%]  rounded-full p-2 bg-amber-400 hover:bg-amber-300 transition-all ease-in cursor-pointer hover:scale-110 flex justify-center items-center'><BiPlay className='fill-black size-10 md:size-15' /> </button>
           </div>
         </div>

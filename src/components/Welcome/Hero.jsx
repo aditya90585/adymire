@@ -1,9 +1,5 @@
 import {
-  SittingDarkMan,
   FourCustomers,
-  MetaShopifyGoogle,
-  PhoneYellow,
-  Whatsapp
 } from "@/assets";
 
 import "./Hero.css";
@@ -11,6 +7,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { staggerFadeIn } from "../../animations/stagger";
 import BookCallButton from "../UI/NavButtons/BookCallButton";
+
 import { BiBot } from "react-icons/bi";
 import Magnet from "../UI/Magnet";
 
@@ -66,14 +63,12 @@ const Hero = () => {
         </div>
 
         <div className="hero-right hero-left-ani">
-          <img className="hero-image" src={SittingDarkMan} alt="hero-cover" />
+          <img className="hero-image" src="https://res.cloudinary.com/dm3xoqps6/image/upload/v1776852602/SittingDarkMan_roqt3z.png"
+           alt="hero-cover" />
         </div>
 
       </div>
-      {/* <div className="hero-partners hero-left-ani">
-        <img src={MetaShopifyGoogle} alt="Meta_Shopify_Google_partners" />
-      </div>
-      */}
+
       <div className="hero-btn hero-left-ani">
     <Magnet padding={50} disabled={false} magnetStrength={6}>
         <BookCallButton attention={true} text="Book a Strategy Call" className=" hover:bg-[#FFF1C6] h-15 mx-auto sm:mx-0" borderstate={true} backgroundnumber={2} textSize="xl" rounded="xl" height="45px" />

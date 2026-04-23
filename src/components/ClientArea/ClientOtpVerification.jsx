@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import { AdymireLogo } from "@/assets"
+import AdymireLogo from "@/assets/logo/AdymireLogo.webp"
 import { NavLink, useNavigate } from 'react-router-dom';
 import Input from "../UI/Input";
 import Button from "../UI/Button";

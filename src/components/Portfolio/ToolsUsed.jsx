@@ -1,9 +1,7 @@
 import React, { useRef } from "react";
 import "./ToolsUsed.css";
 import {
-  UIUXsvg,
-  Developmentsvg,
-  DigitalMarketingsvg,
+  
   Aisvg,
   // UI/UX Tools Icons
   Figma,
@@ -47,12 +45,14 @@ import {
   DigitalmarketingToolsIcons18
 } from "@/assets";
 import ToolsUsedContainer from "../Common/ToolsUsedContainer";
-
+import Development from "@/assets/icons/Development.webp";
+import DigitalMarketing  from "@/assets/icons/DigitalMarketing.webp";
+import UIUX from "@/assets/icons/UIUX.webp";
 const toolsData = [
   {
     title: "UI & UX",
     subtitle: "Design",
-    icon: UIUXsvg,
+    icon: UIUX,
     tools: [
       { name: "Figma", icon: Figma, percentage: "100%" },
       { name: "Adobe XD", icon: Xd, percentage: "100%" },
@@ -66,7 +66,7 @@ const toolsData = [
   {
     title: "App & Web",
     subtitle: "Development",
-    icon: Developmentsvg,
+    icon: Development,
     tools: [
       { name: "Flutter", icon: Flutter, percentage: "100%" },
       { name: "React Native", icon: Reactlogo, percentage: "100%" },
@@ -79,7 +79,7 @@ const toolsData = [
   {
     title: "Digital",
     subtitle: "Marketing",
-    icon: DigitalMarketingsvg,
+    icon: DigitalMarketing,
     tools: [
       { name: "Google Ads", icon: DigitalmarketingToolsIcons14, percentage: "100%" },
       { name: "Meta Ads", icon: DigitalmarketingToolsIcons2, percentage: "100%" },

@@ -3,11 +3,13 @@ import "./Footer.css";
 import {
   AppStore,
   GooglePlay,
-  AdymireLogo2,
 } from "@/assets";
+import AdymireLogo2 from "@/assets/logo/AdymireLogo2.webp";
 import OurStartups from "./OurStartups";
-import { BoyWithLaptop } from "@/assets";
+import BoyWithLaptop from "@/assets/illustrations/BoyWithLaptop.webp";
+
 import SocialIcons from "../Common/SocialIcons";
+
 import { NavLink } from "react-router-dom";
 import AlertBox from "../UI/AlertBox";
 import { BiDownload } from "react-icons/bi";
@@ -201,9 +203,9 @@ const Footer = () => {
           <div className="ad-footer-block ">
             <h4>Contact</h4>
             <p> <span className="text-black font-semibold">Support Helpline :</span> +91 7302356804</p>
-            <p> <span className="text-black font-semibold">Contact No :</span> +91 7081436483<br/> +91 7017475420</p>
+            <p> <span className="text-black font-semibold">Contact No :</span> +91 7081436483<br /> +91 7017475420</p>
             <p><span className="text-black font-semibold"> Email :</span> infoadymire.com@gmail.com</p>
-            <p><span className="text-black font-semibold"> Support Helpline :</span><br/> helpadymire.com@gmail.com</p>
+            <p><span className="text-black font-semibold"> Support Helpline :</span><br /> helpadymire.com@gmail.com</p>
           </div>
           <a
             href="https://drive.google.com/uc?export=download&id=18GtKfLtaBLXLTsB3LL1aqVYammmSwQ0_"
@@ -251,9 +253,9 @@ const Footer = () => {
         </div>
 
       </div>
-      <RunningStartups/>
+      <RunningStartups />
       <OurStartups />
-      <CopyrightSection/>
+      <CopyrightSection />
     </footer>
   );
 };
