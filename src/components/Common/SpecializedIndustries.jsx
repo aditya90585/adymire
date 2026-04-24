@@ -1,16 +1,13 @@
-import {
-
-  SpecializedIndustryIcon2,
-  SpecializedIndustryIcon3,
-  SpecializedIndustryIcon4,
-  SpecializedIndustryIcon5,
-  SpecializedIndustryIcon6,
-  SpecializedIndustryIcon7,
-  SpecializedIndustryIcon8,
-} from "@/assets";
 
 
 import SpecializedIndustryIcon1 from "@/assets/icons/SpecializedIndustryicons/SpecializedIndustryIcon1.webp";
+import SpecializedIndustryIcon2 from '@/assets/icons/SpecializedIndustryicons/SpecializedIndustryIcon2.svg'
+import SpecializedIndustryIcon3 from '@/assets/icons/SpecializedIndustryicons/SpecializedIndustryIcon3.svg'
+import SpecializedIndustryIcon4 from '@/assets/icons/SpecializedIndustryicons/SpecializedIndustryIcon4.svg'
+import SpecializedIndustryIcon5 from '@/assets/icons/SpecializedIndustryicons/SpecializedIndustryIcon5.svg'
+import SpecializedIndustryIcon6 from '@/assets/icons/SpecializedIndustryicons/SpecializedIndustryIcon6.svg'
+import SpecializedIndustryIcon7 from '@/assets/icons/SpecializedIndustryicons/SpecializedIndustryIcon7.svg'
+import SpecializedIndustryIcon8 from '@/assets/icons/SpecializedIndustryicons/SpecializedIndustryIcon8.svg'
 
 import AdymireLogo from "@/assets/logo/AdymireLogo.webp"
 

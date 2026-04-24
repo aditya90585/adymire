@@ -1,7 +1,4 @@
-import {
-  FourCustomers,
-} from "@/assets";
-
+import FourCustomers from '@/assets/icons/FourCustomers.svg'
 import "./Hero.css";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";

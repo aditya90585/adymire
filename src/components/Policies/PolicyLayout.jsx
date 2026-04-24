@@ -13,7 +13,7 @@ const PolicyLayout = ({ policies, activePolicy }) => {
 
   if(!activePolicy?.sections) return <div className="font-semibold text-xl text-center my-20">no policy found of this type</div>
   return (
-    <div ref={scrollRef} className=" mx-auto pt-20 h-screen overflow-y-scroll  overflow-x-hidden [&::-webkit-scrollbar]:hidden">
+    <div data-lenis-prevent ref={scrollRef} className=" mx-auto pt-20 h-screen overflow-y-scroll  overflow-x-hidden [&::-webkit-scrollbar]:hidden">
       <PolicyHeader activePolicytitle={activePolicy?.title} lastUpdateDate={activePolicy?.lastUpdated} />
       <PolicyTabs
         policies={policies}

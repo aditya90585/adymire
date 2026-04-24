@@ -1,4 +1,4 @@
-import { WhatsappIcon } from "@/assets";
+import WhatsappIcon from '@/assets/icons/WhatsappIcon.json'
 import Lottie from "lottie-react";
 
 const ChatOnWhatsappButton = ({

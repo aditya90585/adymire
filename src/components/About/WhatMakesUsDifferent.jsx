@@ -1,9 +1,7 @@
 import { useRef } from "react";
 import "./WhatMakesUsDifferent.css";
-import {
-    Whatsapp,
-    CurveArrow
-} from "@/assets";
+import CurveArrow from '@/assets/icons/CurveArrow.svg'
+import Whatsapp from '@/assets/icons/Whatsapp.svg'
 import WhatMakesUsDifferentImages1  from "@/assets/illustrations/WhatMakesUsDifferentImages/WhatMakesUsDifferentImages1.webp";
 import WhatMakesUsDifferentImages2  from "@/assets/illustrations/WhatMakesUsDifferentImages/WhatMakesUsDifferentImages2.webp";
 import WhatMakesUsDifferentImages3  from "@/assets/illustrations/WhatMakesUsDifferentImages/WhatMakesUsDifferentImages3.webp";

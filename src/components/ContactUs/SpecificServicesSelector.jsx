@@ -34,6 +34,7 @@ const SpecificServicesSelector = ({ onChange, value, selectedServices, SPECIFIC_
                 Select Specific Service <span className='text-red-700'>*</span>
             </h2>
             <button
+            data-lenis-prevent
                 type="button"
                 onClick={(e) => {
                      e.stopPropagation();
@@ -65,7 +66,7 @@ const SpecificServicesSelector = ({ onChange, value, selectedServices, SPECIFIC_
                 </div>
             </button>
             {specificserviceOpen &&
-                <div className=" space-y-4 absolute z-20 mt-1 overflow-y-scroll max-h-60 w-full rounded-md border border-gray-200 bg-white shadow-lg">
+                <div data-lenis-prevent className=" space-y-4 absolute z-20 mt-1 overflow-y-scroll max-h-60 w-full rounded-md border border-gray-200 bg-white shadow-lg">
                     {selectedServices?.length > 0 ?
                         (selectedServices?.map(service => (
                             <div

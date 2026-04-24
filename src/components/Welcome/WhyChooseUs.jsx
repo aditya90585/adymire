@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import "./WhyChooseUs.css";
-import { Handshake} from "@/assets";
+import Handshake from '@/assets/icons/Handshake.svg'
 
 import Clock from "@/assets/icons/Clock.webp";
 import Shield from "@/assets/icons/Shield.webp";

@@ -1,4 +1,5 @@
-import {Customer,Transparency} from "@/assets";
+import Transparency from '@/assets/icons/PortfolioIcons/Transparency.svg'
+import Customer from '@/assets/icons/PortfolioIcons/Customer.svg'
 import Quality from "@/assets/icons/PortfolioIcons/Quality.webp"
 import Innovation from "@/assets/icons/PortfolioIcons/Innovation.webp"
 import { useGSAP } from "@gsap/react";

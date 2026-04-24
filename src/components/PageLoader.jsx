@@ -72,7 +72,7 @@ export default function PageLoader() {
                 textTransform: 'uppercase',
                 animation: 'fadeIn 0.6s ease 0.2s both',
             }}>
-                Digital Agency &amp; Solutions
+                AI-Powered App Development & Digital IT Solutions
             </p>
 
             <style>{`

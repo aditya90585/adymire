@@ -35,6 +35,7 @@ const ServicesSelector = ({ selectedServices, SERVICES, serviceOpen, setServiceO
                 What service are you looking for? <span className='text-red-700'>*</span>
             </h2>
             <button
+            data-lenis-prevent
                 type="button"
                 onClick={(e) => {
                     e.stopPropagation();

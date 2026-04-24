@@ -43,7 +43,7 @@ const PricingPlanCard = ({ plan, setCurrentPlanId, setDetailBoxState }) => {
                 </div>
                 <div className='relative'>
 
-                    <p className="text-xs h-10 overflow-y-hidden font-semibold text-gray-800 leading-relaxed">
+                    <p data-lenis-prevent className="text-xs h-10 overflow-y-hidden font-semibold text-gray-800 leading-relaxed">
                         {plan?.description}
                     </p>
                     <div

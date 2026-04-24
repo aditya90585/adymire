@@ -17,7 +17,7 @@ const PolicySidebar = ({ sections, activeSection, activeSubSection, setActiveSec
   }, [activeSection, activeSubSection]);
   return (
     <div className="col-span-3 hidden lg:block h-full relative">
-      <div className="sticky top-18 max-h-[calc(100vh-170px)] overflow-y-scroll">
+      <div data-lenis-prevent className="sticky top-18 max-h-[calc(100vh-170px)] overflow-y-scroll">
         <h3 className="text-xl font-bold text-gray-900 mb-4 border-b border-gray-200 px-4 py-2">
           Table of content
         </h3>

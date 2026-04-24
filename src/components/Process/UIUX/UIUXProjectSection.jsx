@@ -1,14 +1,12 @@
 import ProjectShowcaseTemplate from "../ProjectShowcaseTemplate";
-import {
-    // UI/UX Tools Icons
-    Figma,
-    Xd,
-    Sketch,
-    UIUXToolsIcons4,
-    UIUXToolsIcons5,
-    UIUXToolsIcons6,
-    UIUXToolsIcons7
-} from "@/assets"
+import UIUXToolsIcons4 from '@/assets/icons/UIUXToolsIcons/UIUXToolsIcons4.svg'
+import UIUXToolsIcons5 from '@/assets/icons/UIUXToolsIcons/UIUXToolsIcons5.svg'
+import UIUXToolsIcons6 from '@/assets/icons/UIUXToolsIcons/UIUXToolsIcons6.svg'
+import UIUXToolsIcons7 from '@/assets/icons/UIUXToolsIcons/UIUXToolsIcons7.svg'
+
+import Figma from '@/assets/icons/UIUXToolsIcons/Figma.svg'
+import Xd from '@/assets/icons/UIUXToolsIcons/Xd.svg'
+import Sketch from '@/assets/icons/UIUXToolsIcons/Sketch.svg'
 import UIUX from "@/assets/icons/UIUX.webp";
 export const projectData = [
   {

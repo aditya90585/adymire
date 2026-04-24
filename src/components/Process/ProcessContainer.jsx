@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { UIUXSecond } from "@/assets";
+import UIUXSecond from '@/assets/illustrations/UIUXprocessImages/UIUXSecond.svg'
 import "./ProcessContainer.css"
 import UIUX from "@/assets/icons/UIUX.webp";
 import { EffectCoverflow, Navigation, Pagination } from "swiper/modules";
@@ -67,7 +67,7 @@ const ProcessContainer = ({ processStepsData }) => {
                 nextEl: ".process-next",
               }}
               modules={[Pagination, Navigation, EffectCoverflow]}
-
+                 
               className=" mySwiper flex gap-6 pt-7 pl-7 overflow-y-visible overflow-x-auto "
             >
               {processStepsData?.steps.map((item, index) => (

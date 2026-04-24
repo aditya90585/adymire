@@ -1,5 +1,5 @@
 import React, { useRef } from 'react'
-import { FourCustomers } from "@/assets"
+import FourCustomers from '@/assets/icons/FourCustomers.svg'
 import "./TrustedBy.css"
 import { staggerFadeInOnScroll } from "../../animations/stagger";
 import { useGSAP } from "@gsap/react";

@@ -1,7 +1,5 @@
 import React from "react";
-import {
-    CurveArrow,
-} from "@/assets";
+import CurveArrow from '@/assets/icons/CurveArrow.svg'
 import Facebook3dLogo  from "@/assets/logo/Facebook3dLogo.webp";
 import Instagram3dLogo  from "@/assets/logo/Instagram3dLogo.webp";
 import Linkedin3dLogo from "@/assets/logo/Linkedin3dLogo.webp";

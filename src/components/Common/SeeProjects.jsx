@@ -1,48 +1,180 @@
-import React, { Suspense, useMemo, useRef, useState } from "react";
+// import React, { Suspense, useMemo, useRef, useState } from "react";
+// import "./SeeProjects.css"
+// // import SeeProjectsSlider from "./SeeProjectsSlider";
+// import CategoryAiAutomation from '@/assets/icons/ProjectsCategory/CategoryAiAutomation.json'
+// import CategoryWebDevelopment from '@/assets/icons/ProjectsCategory/CategoryWebDevelopment.json'
+// import CategoryAppDevelopment from '@/assets/icons/ProjectsCategory/CategoryAppDevelopment.json'
+// import CategoryDigitalMarketing from '@/assets/icons/ProjectsCategory/CategoryDigitalMarketing.json'
+// import CategoryUIUX from '@/assets/icons/ProjectsCategory/CategoryUIUX.json'
+// import Lottie from "lottie-react";
+// import { AllProjectsData } from "./Projects/AllProjectsData";
+// import { LuLoaderCircle } from "react-icons/lu";
+
+// const SeeProjectsSlider = React.lazy(() => import('./SeeProjectsSlider'));
+
+// const categories = [
+//   { name: "UI & UX", type: "uiux", icon: CategoryUIUX },
+//   { name: "Marketing", type: "marketing", icon: CategoryDigitalMarketing },
+//   { name: "Web Development", type: "webdevelopment", icon: CategoryWebDevelopment },
+//   { name: "App Development", type: "appdevelopment", icon: CategoryAppDevelopment },
+//   { name: "AI Automation", type: "aiautomation", icon: CategoryAiAutomation },
+// ];
+
+
+
+// const SeeProjects = () => {
+//   const [activeCategory, setActiveCategory] = useState("uiux");
+//   const [dropdownisOpen, setDropdownisOpen] = useState(false);
+//   // const [projects, setProjects] = useState([])
+
+//   // useEffect(() => {
+//   //   const filterProjects = AllProjectsData.filter((projects) => projects.type == activeCategory)
+//   //   setProjects(filterProjects)
+//   // }, [activeCategory])
+
+
+
+//   const projects = useMemo(() => {
+//     return AllProjectsData.filter(p => p.type === activeCategory);
+//   }, [activeCategory]);
+
+//   return (
+//     <section className="bg-[#FFF9EE] py-4">
+//       <div className="max-w-7xl mx-auto px-6">
+
+//         <h2 className="text-3xl font-semibold text-center mb-10 ">
+//           See Projects
+//           <span className="block w-30 h-1 bg-yellow-500 mx-auto mt-1 rounded" />
+//         </h2>
+
+//         <div className="md:hidden max-w-sm mx-auto mb-6 z-20 relative">
+//           <button
+//             onClick={() => setDropdownisOpen(!dropdownisOpen)}
+//             className="w-full flex items-center justify-between bg-white border border-gray-300 rounded-lg px-4 py-3 shadow-sm"
+//           >
+//             <div className="flex items-center gap-2">
+//               <Lottie
+//                 className="h-8"
+//                 animationData={
+//                   categories.find(c => c.type === activeCategory)?.icon
+//                 }
+//               />
+//               <span className="font-medium">{categories.find(c => c.type === activeCategory)?.name}</span>
+//             </div>
+//             <span className="text-gray-600">▼</span>
+//           </button>
+
+//           {dropdownisOpen && (
+//             <div className="absolute z-20 mt-2 w-full bg-white border rounded-lg shadow-lg">
+//               {categories.map((category) => (
+//                 <button
+//                   key={category.name}
+//                   onClick={() => {
+//                     setActiveCategory(category.type);
+//                     setDropdownisOpen(false);
+//                   }}
+//                   className={`w-full flex items-center gap-3 px-4 py-3  text-left
+//                       ${activeCategory === category.type
+//                       ? "bg-[#FFE7B3] text-black"
+//                       : "text-gray-600 hover:bg-gray-100"
+//                     }
+//                     `}
+//                 >
+//                   <Lottie className="h-8" animationData={category.icon} />
+//                   <span>{category.name}</span>
+//                 </button>
+//               ))}
+//             </div>
+//           )}
+//         </div>
+
+//         <div className="hidden md:grid  grid-cols-5 gap-1 max-w-5xl mx-auto bg-white rounded-xl p-2 shadow-sm border border-[#999797]">
+//           {categories.map((category) => (
+//             <button
+//               key={category.name}
+//               onClick={() => setActiveCategory(category.type)}
+//               className={`flex items-center justify-center px-4 py-1.5 cursor-pointer rounded-lg text-sm font-medium transition
+//                 ${activeCategory === category.type
+//                   ? "bg-[#FFE7B3] text-black"
+//                   : "text-gray-600 hover:bg-gray-100"
+//                 }
+//               `}
+//             >
+//               <span> <Lottie className="h-10" animationData={category.icon} /> </span>
+//               {category.name}
+//             </button>
+//           ))}
+//         </div>
+//       </div>
+//       <div className="">
+
+//         {/* <SeeProjectsSlider projects={projects} activeCategory={activeCategory} /> */}
+
+//         <Suspense fallback={<div className="h-[300px] flex justify-center items-center">
+//           <LuLoaderCircle className="animate-spin size-8" />
+//         </div>}>
+//           <SeeProjectsSlider projects={projects} activeCategory={activeCategory} />
+//         </Suspense>
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default SeeProjects;
+
+
+import React, { Suspense, useMemo, useRef, useState, useEffect } from "react";
 import "./SeeProjects.css"
-// import SeeProjectsSlider from "./SeeProjectsSlider";
-import { CategoryAiAutomation, CategoryWebDevelopment, CategoryAppDevelopment, CategoryDigitalMarketing, CategoryUIUX } from "@/assets";
 import Lottie from "lottie-react";
 import { AllProjectsData } from "./Projects/AllProjectsData";
 import { LuLoaderCircle } from "react-icons/lu";
 
 const SeeProjectsSlider = React.lazy(() => import('./SeeProjectsSlider'));
 
-const categories = [
-  { name: "UI & UX", type: "uiux", icon: CategoryUIUX },
-  { name: "Marketing", type: "marketing", icon: CategoryDigitalMarketing },
-  { name: "Web Development", type: "webdevelopment", icon: CategoryWebDevelopment },
-  { name: "App Development", type: "appdevelopment", icon: CategoryAppDevelopment },
-  { name: "AI Automation", type: "aiautomation", icon: CategoryAiAutomation },
-];
-
-
-
 const SeeProjects = () => {
   const [activeCategory, setActiveCategory] = useState("uiux");
   const [dropdownisOpen, setDropdownisOpen] = useState(false);
-  // const [projects, setProjects] = useState([])
+  const [categories, setCategories] = useState([])
 
-  // useEffect(() => {
-  //   const filterProjects = AllProjectsData.filter((projects) => projects.type == activeCategory)
-  //   setProjects(filterProjects)
-  // }, [activeCategory])
-
-
+  useEffect(() => {
+    Promise.all([
+      import('@/assets/icons/ProjectsCategory/CategoryUIUX.json'),
+      import('@/assets/icons/ProjectsCategory/CategoryDigitalMarketing.json'),
+      import('@/assets/icons/ProjectsCategory/CategoryWebDevelopment.json'),
+      import('@/assets/icons/ProjectsCategory/CategoryAppDevelopment.json'),
+      import('@/assets/icons/ProjectsCategory/CategoryAiAutomation.json'),
+    ]).then(([uiux, dm, web, app, ai]) => {
+      setCategories([
+        { name: "UI & UX",          type: "uiux",            icon: uiux.default },
+        { name: "Marketing",        type: "marketing",       icon: dm.default },
+        { name: "Web Development",  type: "webdevelopment",  icon: web.default },
+        { name: "App Development",  type: "appdevelopment",  icon: app.default },
+        { name: "AI Automation",    type: "aiautomation",    icon: ai.default },
+      ])
+    })
+  }, [])
 
   const projects = useMemo(() => {
     return AllProjectsData.filter(p => p.type === activeCategory);
   }, [activeCategory]);
 
+  if (categories.length === 0) return (
+    <section className="bg-[#FFF9EE] py-4">
+      <div className="h-[200px] flex justify-center items-center">
+        <LuLoaderCircle className="animate-spin size-8" />
+      </div>
+    </section>
+  )
+
   return (
     <section className="bg-[#FFF9EE] py-4">
       <div className="max-w-7xl mx-auto px-6">
-
-        <h2 className="text-3xl font-semibold text-center mb-10 ">
+        <h2 className="text-3xl font-semibold text-center mb-10">
           See Projects
           <span className="block w-30 h-1 bg-yellow-500 mx-auto mt-1 rounded" />
         </h2>
 
+        {/* Mobile dropdown */}
         <div className="md:hidden max-w-sm mx-auto mb-6 z-20 relative">
           <button
             onClick={() => setDropdownisOpen(!dropdownisOpen)}
@@ -51,11 +183,11 @@ const SeeProjects = () => {
             <div className="flex items-center gap-2">
               <Lottie
                 className="h-8"
-                animationData={
-                  categories.find(c => c.type === activeCategory)?.icon
-                }
+                animationData={categories.find(c => c.type === activeCategory)?.icon}
               />
-              <span className="font-medium">{categories.find(c => c.type === activeCategory)?.name}</span>
+              <span className="font-medium">
+                {categories.find(c => c.type === activeCategory)?.name}
+              </span>
             </div>
             <span className="text-gray-600">▼</span>
           </button>
@@ -65,16 +197,12 @@ const SeeProjects = () => {
               {categories.map((category) => (
                 <button
                   key={category.name}
-                  onClick={() => {
-                    setActiveCategory(category.type);
-                    setDropdownisOpen(false);
-                  }}
-                  className={`w-full flex items-center gap-3 px-4 py-3  text-left
-                      ${activeCategory === category.type
+                  onClick={() => { setActiveCategory(category.type); setDropdownisOpen(false) }}
+                  className={`w-full flex items-center gap-3 px-4 py-3 text-left
+                    ${activeCategory === category.type
                       ? "bg-[#FFE7B3] text-black"
                       : "text-gray-600 hover:bg-gray-100"
-                    }
-                    `}
+                    }`}
                 >
                   <Lottie className="h-8" animationData={category.icon} />
                   <span>{category.name}</span>
@@ -84,7 +212,8 @@ const SeeProjects = () => {
           )}
         </div>
 
-        <div className="hidden md:grid  grid-cols-5 gap-1 max-w-5xl mx-auto bg-white rounded-xl p-2 shadow-sm border border-[#999797]">
+        {/* Desktop tabs */}
+        <div className="hidden md:grid grid-cols-5 gap-1 max-w-5xl mx-auto bg-white rounded-xl p-2 shadow-sm border border-[#999797]">
           {categories.map((category) => (
             <button
               key={category.name}
@@ -93,22 +222,21 @@ const SeeProjects = () => {
                 ${activeCategory === category.type
                   ? "bg-[#FFE7B3] text-black"
                   : "text-gray-600 hover:bg-gray-100"
-                }
-              `}
+                }`}
             >
-              <span> <Lottie className="h-10" animationData={category.icon} /> </span>
+              <span><Lottie className="h-10" animationData={category.icon} /></span>
               {category.name}
             </button>
           ))}
         </div>
       </div>
-      <div className="">
 
-        {/* <SeeProjectsSlider projects={projects} activeCategory={activeCategory} /> */}
-
-        <Suspense fallback={<div className="h-[300px] flex justify-center items-center">
-          <LuLoaderCircle className="animate-spin size-8" />
-        </div>}>
+      <div>
+        <Suspense fallback={
+          <div className="h-[300px] flex justify-center items-center">
+            <LuLoaderCircle className="animate-spin size-8" />
+          </div>
+        }>
           <SeeProjectsSlider projects={projects} activeCategory={activeCategory} />
         </Suspense>
       </div>

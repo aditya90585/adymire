@@ -1,13 +1,12 @@
 import { useRef } from "react";
 import "./WorkingProcess.css";
-import { 
-  WorkingProcessicons1, 
-  WorkingProcessicons2, 
-  WorkingProcessicons3, 
-  WorkingProcessicons4, 
-  WorkingProcessicons5, 
-  WorkingProcessicons6
-} from "@/assets";
+import WorkingProcessicons1 from '@/assets/icons/WorkingProcessicons/WorkingProcessicons1.svg'
+import WorkingProcessicons2 from '@/assets/icons/WorkingProcessicons/WorkingProcessicons2.svg'
+import WorkingProcessicons3 from '@/assets/icons/WorkingProcessicons/WorkingProcessicons3.svg'
+import WorkingProcessicons4 from '@/assets/icons/WorkingProcessicons/WorkingProcessicons4.svg'
+import WorkingProcessicons5 from '@/assets/icons/WorkingProcessicons/WorkingProcessicons5.svg'
+import WorkingProcessicons6 from '@/assets/icons/WorkingProcessicons/WorkingProcessicons6.svg'
+
 import { useGSAP } from "@gsap/react";
 import { staggerFadeInOnScroll } from "../../animations/stagger";
 

@@ -1,7 +1,5 @@
-import {
-  CalcyIcon,
-  OrbitBrowsIcon,
-} from "@/assets";
+import CalcyIcon from '@/assets/icons/StartupsIcons/CalcyIcon.svg'
+import OrbitBrowsIcon from '@/assets/icons/StartupsIcons/OrbitBrowsIcon.svg'
 import AdscyIcon from "@/assets/icons/StartupsIcons/AdscyIcon.webp";
 import GiglerIcon from "@/assets/icons/StartupsIcons/GiglerIcon.webp";
 import SpaceIcon from "@/assets/icons/StartupsIcons/SpaceIcon.webp";

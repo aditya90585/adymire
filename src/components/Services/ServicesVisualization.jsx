@@ -1,5 +1,8 @@
 import React, { useRef } from "react";
-import { Trophy, Hand, Verified, Boost } from "@/assets";
+import Trophy from '@/assets/icons/VisualizationIcons/Trophy.svg'
+import Hand from '@/assets/icons/VisualizationIcons/Hand.svg'
+import Verified from '@/assets/icons/VisualizationIcons/Verified.svg'
+import Boost from '@/assets/icons/VisualizationIcons/Boost.svg'
 
 
 import "./ServicesVisualization.css";

@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react'
 import './VideoWalkthrough.css'
-import { CurveArrow } from "@/assets"
+import CurveArrow from '@/assets/icons/CurveArrow.svg'
 import { BiPlay } from 'react-icons/bi'
 import { useGSAP } from '@gsap/react'
 import { staggerFadeInOnScroll } from '../animations/stagger'

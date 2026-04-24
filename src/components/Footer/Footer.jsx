@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import "./Footer.css";
-import {
-  AppStore,
-  GooglePlay,
-} from "@/assets";
+import AppStore from '@/assets/largeicons/AppStore.svg'
+import GooglePlay from '@/assets/largeicons/GooglePlay.svg'
 import AdymireLogo2 from "@/assets/logo/AdymireLogo2.webp";
 import OurStartups from "./OurStartups";
 import BoyWithLaptop from "@/assets/illustrations/BoyWithLaptop.webp";

@@ -1,4 +1,6 @@
-import { WhatsappIcon, Phonecall, EmailAniIcon } from "@/assets";
+import Phonecall from '@/assets/icons/Phonecall.json'
+import EmailAniIcon from '@/assets/icons/EmailAniIcon.json'
+import WhatsappIcon from '@/assets/icons/WhatsappIcon.json'
 import { useGSAP } from "@gsap/react";
 import Lottie from "lottie-react";
 import { useRef } from "react";

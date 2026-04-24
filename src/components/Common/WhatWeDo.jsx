@@ -1,24 +1,22 @@
 import React, { useRef, useState } from 'react'
 
+import Aitool1 from '@/assets/icons/AutomationToolsIcons/Aitool1.svg'
+import Aitool2 from '@/assets/icons/AutomationToolsIcons/Aitool2.svg'
+import Aitool3 from '@/assets/icons/AutomationToolsIcons/Aitool3.svg'
 
-import {
-  Aisvg,
-  Figma,
-  Xd,
-  Sketch,
-  Flutter,
-  Jetpack,
-  Reactlogo,
-  Apple,
-  Android,
-  Browser,
-  AToolIcon,
-  FireBallToolIcon,
-  BlueArrowIcon,
-  Aitool1,
-  Aitool2,
-  Aitool3,
-} from "@/assets";
+import Flutter from '@/assets/icons/DevelopmentToolsIcons/Flutter.svg'
+import Jetpack from '@/assets/icons/DevelopmentToolsIcons/Jetpack.svg'
+import Reactlogo from '@/assets/icons/DevelopmentToolsIcons/Reactlogo.svg'
+import Apple from '@/assets/icons/DevelopmentToolsIcons/Apple.svg'
+import Android from '@/assets/icons/DevelopmentToolsIcons/Android.svg'
+import Browser from '@/assets/icons/DevelopmentToolsIcons/Browser.svg'
+import Figma from '@/assets/icons/UIUXToolsIcons/Figma.svg'
+import Xd from '@/assets/icons/UIUXToolsIcons/Xd.svg'
+import Sketch from '@/assets/icons/UIUXToolsIcons/Sketch.svg'
+import BlueArrowIcon from '@/assets/icons/BlueArrowIcon.svg'
+import FireBallToolIcon from '@/assets/icons/FireBallToolIcon.svg'
+import AToolIcon from '@/assets/icons/AToolIcon.svg'
+import Aisvg from '@/assets/icons/Ai.svg'
 import Development from "@/assets/icons/Development.webp";
 import DigitalMarketing from "@/assets/icons/DigitalMarketing.webp";
 import UIUX from "@/assets/icons/UIUX.webp";

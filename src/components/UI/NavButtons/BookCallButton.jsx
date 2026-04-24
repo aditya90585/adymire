@@ -1,4 +1,4 @@
-import { Phonecall } from "@/assets";
+import Phonecall from '@/assets/icons/Phonecall.json'
 import Lottie from "lottie-react";
 import "./BookCallButton.css"
 import { useHref } from 'react-router-dom';

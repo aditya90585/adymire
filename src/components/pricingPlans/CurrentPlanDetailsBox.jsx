@@ -32,7 +32,7 @@ const CurrentPlanDetailsBox = ({ planId, allPlansData, detailBoxState, setDetail
 
     if (!currentPlanData) return <div className=' text-center text-xl font-semibold my-4 mt-20'>unable to find project</div>
     return (
-        <div
+        <div data-lenis-prevent
             className="bg-[#d3d3d3] mt-10  lg:mt-18 lg:p-10 p-0 lg:pt-6 pt-0 overflow-y-scroll [&::-webkit-scrollbar]:hidden fixed inset-0 z-40 top-0"
         >
             <div className='p-4 bg-white rounded-lg relative'>

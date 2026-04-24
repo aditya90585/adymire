@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Figma, Xd } from "../../../assets";
+import Figma from '@/assets/icons/UIUXToolsIcons/Figma.svg'
+import Xd from '@/assets/icons/UIUXToolsIcons/Xd.svg'
 import AdymireLogo2  from "@/assets/logo/AdymireLogo2.webp";
 import dribbble from "../../../assets/icons/dribbble.webp"
 

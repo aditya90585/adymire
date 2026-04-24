@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import {FourCustomers} from "@/assets"
+import FourCustomers from '@/assets/icons/FourCustomers.svg'
 
 const testimonials = [
     {
