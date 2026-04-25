@@ -146,28 +146,15 @@ const serviceLinks = [
 
 const Footer = () => {
   const [alertOpen, setAlertOpen] = useState(false);
-  const footercontref = useRef()
-  useGSAP(() => {
-    const elements = gsap.utils.toArray(".footer-trigger-ani");
-
-
-    elements.forEach((element) => {
-      staggerFadeInOnScroll(element, { trigger: element })
-    });
-    setTimeout(() => {
-      ScrollTrigger.refresh()
-    }, 200)
-
-  }, { scope: footercontref })
 
 
 
   return (
-    <footer ref={footercontref} className="ad-footer">
-      <div className="bf-img footer-trigger-ani">
+    <footer className="ad-footer">
+      <div className="bf-img ">
         <img src={BoyWithLaptop} alt="booking-form" />
       </div>
-      <div className="ad-footer-container footer-trigger-ani">
+      <div className="ad-footer-container ">
         <div className="ad-footer-brand flex flex-col justify-between">
           <div className="ad-footer-logo">
             <img src={AdymireLogo2} alt="Logo" />
