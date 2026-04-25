@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import { lazy, Suspense } from 'react'
+import { lazy, Suspense, useState } from 'react'
 
 // import AdminLogin from './pages/AdminLogin'
 // import OTPVerification from './pages/OTPVerification'
@@ -29,20 +29,14 @@ const PricingPlans = lazy(() => import('./pages/PricingPlans'))
 const FloatingButtons = lazy(() => import('./components/FloatingButtons'))
 
 function App() {
-  const navigateToWhatsapp = () => {
-    const phoneNumber = "917302356804";
-    const message = "Hello, I want to know more about your services";
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.location.href = url;
-  }
-
+  const [scrollContainer, setScrollContainer] = useState(null);
   return (
     <Router>
       <div className="App">
         <ScrollToTop />
         <ScrollToHash />
-        <Header />
-        <Suspense  fallback={<PageLoader />}>
+        <Header scrollContainerRef={scrollContainer} />
+        <Suspense fallback={<PageLoader />}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -52,7 +46,12 @@ function App() {
             <Route path="/contact" element={<ContactUs />} />
             <Route path='/projectDetails/:projectname' element={<ProjectDetailsCard />} />
 
-            <Route path="/policy/:policytype" element={<PoliciesPage />} />
+            <Route
+              path="/policy/:policytype"
+              element={
+                <PoliciesPage setScrollContainer={setScrollContainer} />
+              }
+            />
             <Route path="/pricing-plans" element={<PricingPlans />} />
             {/* <Route path="/user/signup" element={<Signup />} />
           <Route path="/client/login" element={<ClientLogin />} />

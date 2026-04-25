@@ -25,6 +25,8 @@ export default function FloatingButtons() {
       </div>
       <div onClick={navigateToWhatsapp} className="bg-white aspect-square flex justify-center items-center shadow-sm rounded-full hover:shadow-md cursor-pointer">
         {chatbotData && <Lottie animationData={chatbotData} alt="chat bot" />}
+
+
       </div>
     </div>
   )

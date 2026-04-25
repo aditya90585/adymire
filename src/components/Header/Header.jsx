@@ -16,22 +16,35 @@ import { BiChevronDown } from 'react-icons/bi'
 import Magnet from '../UI/Magnet'
 
 
-const Header = () => {
+const Header = ({ scrollContainerRef }) => {
   const [isScrolled, setIsScrolled] = useState(false)
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setIsScrolled(true)
-      } else {
-        setIsScrolled(false)
-      }
-    }
+useEffect(() => {
 
-    window.addEventListener("scroll", handleScroll)
+ const scrollTarget = scrollContainerRef || window;
 
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+ const handleScroll = () => {
+
+   const scrollTop =
+     scrollTarget === window
+      ? window.scrollY
+      : scrollTarget.scrollTop;
+
+   if(scrollTop > 50){
+      setIsScrolled(true);
+   } else{
+      setIsScrolled(false);
+   }
+
+ };
+
+ scrollTarget.addEventListener("scroll", handleScroll);
+
+ return () => {
+   scrollTarget.removeEventListener("scroll", handleScroll);
+ };
+
+}, [scrollContainerRef]);
   const links = [
     {
       text: "Home",

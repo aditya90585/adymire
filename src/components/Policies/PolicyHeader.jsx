@@ -3,7 +3,7 @@ import Logo from '../Logo'
 
 const PolicyHeader = ({ activePolicytitle, lastUpdateDate }) => {
     return (
-        <section className="w-full px-6 py-2">
+        <section className="w-full px-20 md:px-6 py-2">
             <div className="mx-auto max-w-7xl">
                 <div className="flex items-center h-full md:items-start flex-col md:flex-row justify-between">
 

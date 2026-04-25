@@ -1,37 +1,57 @@
-import { useEffect, useState } from "react";
-import PolicyLayout from "./PolicyLayout";
-import privacyPolicy from "./privacyPolicy.json"
-import refundPolicy from "./refundPolicy.json"
-import cancellationPolicy from "./cancellationPolicy.json"
-import termAndConditions from "./termsAndConditions.json"
-import companyRulesGuidelines from "./companyRulesGuidelines.json"
-import taxInformationCompliances from "./taxInformationCompliances.json"
-import KYCMandates from "./KYCMandates.json"
-import { useParams } from "react-router-dom";
+import { useEffect, useState } from "react"
+import PolicyLayout from "./PolicyLayout"
+import { useParams } from "react-router-dom"
 
-const policies = [privacyPolicy, refundPolicy, cancellationPolicy, termAndConditions, companyRulesGuidelines, taxInformationCompliances, KYCMandates];
+export default function PoliciesPage({ setScrollContainer }) {
+    const { policytype } = useParams()
+    const [policies, setPolicies] = useState([])
+    const [activePolicy, setActivePolicy] = useState(null)
+    const [loading, setLoading] = useState(true)
 
-export default function PoliciesPage() {
-  const { policytype } = useParams()
-  const [activePolicy, setActivePolicy] = useState()
+    useEffect(() => {
+        Promise.all([
+            import('./privacyPolicy.json'),
+            import('./refundPolicy.json'),
+            import('./cancellationPolicy.json'),
+            import('./termsAndConditions.json'),
+            import('./companyRulesGuidelines.json'),
+            import('./taxInformationCompliances.json'),
+            import('./KYCMandates.json'),
+        ]).then(([privacy, refund, cancel, terms, rules, tax, kyc]) => {
+            const all = [
+                privacy.default,
+                refund.default,
+                cancel.default,
+                terms.default,
+                rules.default,
+                tax.default,
+                kyc.default,
+            ]
+            setPolicies(all)
+            setActivePolicy(all.find(e => e?.key === policytype))
+            setLoading(false)
+        })
+    }, [])
 
-  const [loading, setloading] = useState(true)
-  useEffect(() => {
-    setloading(true)
-    setActivePolicy(policies.find((e) => e?.key === policytype))
-  }, [policytype])
 
-  useEffect(() => {
-   setloading(false)
-  }, [activePolicy])
+    useEffect(() => {
+        if (policies.length === 0) return
+        setLoading(true)
+        setActivePolicy(policies.find(e => e?.key === policytype))
+        setLoading(false)
+    }, [policytype, policies])
 
+    if (loading) return (
+        <div className="font-semibold text-xl text-center my-20">
+            Loading policy...
+        </div>
+    )
 
-  if(loading)return <div className="font-semibold text-xl text-center my-20">loading policy... </div>
-
-  return (
-    <PolicyLayout
-      policies={policies}
-      activePolicy={activePolicy}
-    />
-  );
+    return (
+        <PolicyLayout
+            policies={policies}
+            activePolicy={activePolicy}
+            setScrollContainer={setScrollContainer}
+        />
+    )
 }

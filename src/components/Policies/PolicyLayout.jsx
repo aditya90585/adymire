@@ -4,12 +4,23 @@ import PolicyContent from "./PolicyContent";
 import PolicyHeader from "./PolicyHeader";
 import { useEffect, useRef, useState } from "react";
 
-const PolicyLayout = ({ policies, activePolicy }) => {
+const PolicyLayout = ({ policies, activePolicy,setScrollContainer }) => {
   const [activeSection, setActiveSection] = useState(null);
   const [activeSubSection, setActiveSubSection] = useState(null);
 
   
   const scrollRef = useRef(null);
+  useEffect(() => {
+
+ if(scrollRef.current){
+   setScrollContainer(scrollRef.current);
+ }
+
+ return () => {
+   setScrollContainer(null);
+ };
+
+}, []);
 
   if(!activePolicy?.sections) return <div className="font-semibold text-xl text-center my-20">no policy found of this type</div>
   return (

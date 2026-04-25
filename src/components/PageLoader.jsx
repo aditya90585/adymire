@@ -64,9 +64,9 @@ export default function PageLoader() {
             </div>
 
             {/* Subtle tagline */}
-            <p style={{
+            <p className="text-center" style={{
                 marginTop: '24px',
-                fontSize: '0.78rem',
+                fontSize: '0.70rem',
                 color: '#888',
                 letterSpacing: '0.1em',
                 textTransform: 'uppercase',
