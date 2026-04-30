@@ -33,7 +33,7 @@ const ProjectDetailsCard = () => {
     if (!currentProjectCard) return <div className=' text-center text-xl font-semibold my-4 mt-20'>unable to find project</div>
     return (
         <div
-            className="bg-white mt-22 p-10 "
+            className="bg-white mt-22 p-2 md:p-10 "
         >
             <div className='grid grid-cols-1 lg:grid-cols-2 gap-10'>
                 <div className="flex flex-col items-center">

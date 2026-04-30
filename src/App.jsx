@@ -16,6 +16,7 @@ import Header from './components/Header/Header'
 import ScrollToHash from './components/Common/ScrollToHash'
 import ScrollToTop from './components/ScrollToTop'
 import PageLoader from './components/PageLoader'
+import TrackPageViews from './components/TrackPageViews'
 
 const Home = lazy(() => import('./pages/Home'))
 const About = lazy(() => import('./pages/About'))
@@ -32,6 +33,7 @@ function App() {
   const [scrollContainer, setScrollContainer] = useState(null);
   return (
     <Router>
+    <TrackPageViews />
       <div className="App">
         <ScrollToTop />
         <ScrollToHash />

@@ -86,7 +86,7 @@ const CONTACT_MODES = [
   "Google Chat",
   "Instsgram Chat"
 ];
-const Your_Budget = [
+const GLOBAL_BUDGET = [
   "$5k-$10K",
   "$10k-$20K",
   "$20k-$50K",
@@ -94,7 +94,20 @@ const Your_Budget = [
   "$100k-$150K",
   "$150k-$200K",
   "More than $200k"
-]
+];
+
+const INDIA_BUDGET = [
+  "₹100k - ₹250K",
+  "₹250k - ₹500K",
+  "₹500k - ₹10L",
+  "₹10L - ₹15L",
+  "₹15L - ₹20L",
+  "₹20L - ₹25L",
+  "₹25L - ₹30L",
+  "₹30L - ₹40L",
+  "₹40L - ₹50L",
+  "More Than ₹50L"
+];
 const SOURCES = [
   "Google",
   "LinkedIn",
@@ -233,7 +246,11 @@ const ApplyContactForm = () => {
 
 
   const decision = watch("decisionMaker");
+  const selectedCountry = watch("country");
 
+  const Your_Budget = selectedCountry?.code === "IN"
+    ? INDIA_BUDGET
+    : GLOBAL_BUDGET;
 
   const submitContactForm = async (data) => {
     if (isSubmitting) return;

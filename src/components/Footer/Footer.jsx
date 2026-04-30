@@ -188,7 +188,7 @@ const Footer = () => {
           <div className="ad-footer-block ">
             <h4>Contact</h4>
             <p> <span className="text-black font-semibold">Support Helpline :</span> +91 7302356804</p>
-            <p> <span className="text-black font-semibold">Contact No :</span> +91 7081436483<br /> +91 7017475420</p>
+            <p> <span className="text-black font-semibold">Contact No :</span> +91 7302356804<br /> +91 7017475420</p>
             <p><span className="text-black font-semibold"> Email :</span> infoadymire.com@gmail.com</p>
             <p><span className="text-black font-semibold"> Support Helpline :</span><br /> helpadymire.com@gmail.com</p>
           </div>

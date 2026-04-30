@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import Logo from '../Logo'
 import './Header.css'
 import { NavLink } from 'react-router-dom'
@@ -14,37 +14,38 @@ import { CgClose } from 'react-icons/cg'
 import SocialIcons from '../Common/SocialIcons'
 import { BiChevronDown } from 'react-icons/bi'
 import Magnet from '../UI/Magnet'
+import AlertBox from '../UI/AlertBox'
 
 
 const Header = ({ scrollContainerRef }) => {
   const [isScrolled, setIsScrolled] = useState(false)
 
-useEffect(() => {
+  useEffect(() => {
 
- const scrollTarget = scrollContainerRef || window;
+    const scrollTarget = scrollContainerRef || window;
 
- const handleScroll = () => {
+    const handleScroll = () => {
 
-   const scrollTop =
-     scrollTarget === window
-      ? window.scrollY
-      : scrollTarget.scrollTop;
+      const scrollTop =
+        scrollTarget === window
+          ? window.scrollY
+          : scrollTarget.scrollTop;
 
-   if(scrollTop > 50){
-      setIsScrolled(true);
-   } else{
-      setIsScrolled(false);
-   }
+      if (scrollTop > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
 
- };
+    };
 
- scrollTarget.addEventListener("scroll", handleScroll);
+    scrollTarget.addEventListener("scroll", handleScroll);
 
- return () => {
-   scrollTarget.removeEventListener("scroll", handleScroll);
- };
+    return () => {
+      scrollTarget.removeEventListener("scroll", handleScroll);
+    };
 
-}, [scrollContainerRef]);
+  }, [scrollContainerRef]);
   const links = [
     {
       text: "Home",
@@ -62,17 +63,45 @@ useEffect(() => {
       text: "Portfolio",
       routeLink: "/portfolio"
     },
-    {
-      text: "Pricing Plans",
-      routeLink: "/pricing-plans"
-    },
   ]
+
+  const exploreLinks = {
+    left: [
+      { icon: "📝", text: "Blog", routeLink: "/blog", highlighted: true },
+      { icon: "🚀", text: "Startups", routeLink: "/startups" },
+      { icon: "🖼️", text: "Gallery", routeLink: "/gallery" },
+      { icon: "📚", text: "Courses & E - books", routeLink: "/courses" },
+      { icon: "🏆", text: "Awards & Recognition", routeLink: "/awards" },
+    ],
+    right: [
+      { icon: "📰", text: "News & Media", routeLink: "/news" },
+      { icon: "💰", text: "Pricing", routeLink: "/pricing-plans" },
+      { icon: "💼", text: "Jobs", routeLink: "/jobs" },
+      { icon: "💡", text: "How to start Startups", routeLink: "/how-to-start" },
+    ]
+  }
+
 
   const headerRef = useRef()
   const sidebarRef = useRef()
   const [sidebarState, setSidebarState] = useState(false)
   const tlRef = useRef()
+  const location = useLocation()
 
+  const exploreRoutes = exploreLinks.left.map(l => l.routeLink)
+    .concat(exploreLinks.right.map(l => l.routeLink))
+
+  const isExploreActive = exploreRoutes.includes(location.pathname)
+
+  const availableRoutes = ['/', '/about', '/services', '/portfolio', '/pricing-plans']
+  const [alertOpen, setAlertOpen] = useState(false);
+
+  const handleExploreClick = (e, routeLink) => {
+    if (!availableRoutes.includes(routeLink)) {
+      e.preventDefault()
+      setAlertOpen(true)
+    }
+  }
 
   const { contextSafe } = useGSAP(() => {
     staggerFadeIn(".header-text-ani", {
@@ -129,6 +158,51 @@ useEffect(() => {
               <NavLink className={({ isActive }) => isActive ? `bg-[#ffe2bc] header-text-ani -translate-y-0.5 hover:font-semibold rounded py-1 px-3 text-sm` : "hover:text-gray-700 hover:text-shadow-lg text-base hover:text-shadow-gray-300  header-text-ani"} to={link.routeLink ? `${link.routeLink}` : "/"}>{link.text}</NavLink>
             </Magnet>
           ))}
+
+          <div className="explore-wrap group/explore header-text-ani">
+            <Magnet padding={15} disabled={false} magnetStrength={6}>
+              <button className={`explore-btn cursor-pointer hover:text-gray-700 hover:text-shadow-lg text-base hover:text-shadow-gray-300  header-text-ani ${isExploreActive ? "explore-btn--active  bg-[#ffe2bc] header-text-ani -translate-y-0.5 hover:font-semibold rounded py-1 px-3 text-sm" : ""}`}>
+                Explore <BiChevronDown className="explore-chevron group-hover/explore:rotate-180" />
+              </button>
+            </Magnet>
+
+            <div className="explore-dropdown">
+              <div className="explore-col">
+                {exploreLinks.left.map((item) => (
+                  <NavLink
+                    key={item.text}
+                    to={item.routeLink}
+                    onClick={(e) => handleExploreClick(e, item.routeLink)}
+                    className={({ isActive }) =>
+                      `explore-item ${isActive ? "explore-item--active" : ""}`
+                    }
+                  >
+                    <span className="explore-icon">{item.icon}</span>
+                    {item.text}
+                  </NavLink>
+                ))}
+
+              </div>
+              <div className="explore-col">
+                {exploreLinks.right.map((item) => (
+                  <NavLink
+                    key={item.text}
+                    to={item.routeLink}
+                    onClick={(e) => handleExploreClick(e, item.routeLink)}
+                    className={({ isActive }) =>
+                      `explore-item ${isActive ? "explore-item--active" : ""}`
+                    }
+                  >
+                    <span className="explore-icon">{item.icon}</span>
+                    {item.text}
+                  </NavLink>
+                ))}
+                <NavLink to="/contact" target='_blank' className="explore-cta">
+                  Get Free Consultation
+                </NavLink>
+              </div>
+            </div>
+          </div>
         </nav>
         <div className="header-actions">
           <ChatOnWhatsappButton className="h-10" />
@@ -159,8 +233,14 @@ useEffect(() => {
 
       </div>
       <div ref={sidebarRef} className='slidebar-cont w-full h-screen  hidden absolute left-full '>
-        <Sidebar toggleSidebar={toggleSidebar} />
+        <Sidebar toggleSidebar={toggleSidebar} exploreLinks={exploreLinks} />
       </div>
+      <AlertBox
+        message="We are working on it, Thanks for your interest "
+        isOpen={alertOpen}
+        onClose={() => setAlertOpen(false)}
+      />
+
     </header >
 
   )

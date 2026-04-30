@@ -10,22 +10,27 @@ const RunningStartups = () => {
         {
             name: "Adytly Media",
             icon: adytlymedia,
+            redirectUrl:"adytly.com"
         },
         {
             name: "AdyLabs  AI",
             icon: adylabsai,
+             redirectUrl:"adylabsai.com"
         },
         {
             name: "Zylobit",
             icon: zylobit,
+             redirectUrl:"zylobit.com"
         },
         {
             name: "Apporaa.com",
             icon: apporra,
+             redirectUrl:"apporaa.com"
         },
         {
             name: "Yreelz.com",
             icon: yreelz,
+             redirectUrl:"yreelz.com"
         },
     ];
 
@@ -40,8 +45,9 @@ const RunningStartups = () => {
                 <div className="flex flex-wrap justify-center gap-6 mb-10">
                     {startups.map((startup, index) => (
                         <div
+                        onClick={()=>   window.open(`https://${startup.redirectUrl}`, '_blank')}
                             key={index}
-                            className="flex items-center gap-3 px-6 py-3 bg-[#fcf1f1] border border-gray-200 rounded-lg shadow-sm min-w-40"
+                            className="flex items-center gap-3 cursor-pointer hover:shadow-lg hover:bg-[#faf1f17e] hover:border-gray-250 px-6 py-3 bg-[#faf1f1] border border-gray-200 rounded-lg shadow-sm min-w-40"
                         >
                             <img
                                 src={startup.icon}

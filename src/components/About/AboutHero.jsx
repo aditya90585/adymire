@@ -1,7 +1,7 @@
 import React from "react";
 import CurveArrow from '@/assets/icons/CurveArrow.svg'
-import Facebook3dLogo  from "@/assets/logo/Facebook3dLogo.webp";
-import Instagram3dLogo  from "@/assets/logo/Instagram3dLogo.webp";
+import Facebook3dLogo from "@/assets/logo/Facebook3dLogo.webp";
+import Instagram3dLogo from "@/assets/logo/Instagram3dLogo.webp";
 import Linkedin3dLogo from "@/assets/logo/Linkedin3dLogo.webp";
 import X3dLogo from "@/assets/logo/X3dLogo.webp";
 import Youtube3dLogo from "@/assets/logo/Youtube3dLogo.webp";
@@ -35,27 +35,31 @@ const AboutHero = () => {
 
             <div className="about-hero-container">
                 <div className="about-hero-content">
-                    <h4 className="about-hero-small about-hero-ani">Hey! I'm</h4>
-
                     <h1 className="about-hero-title">
-                        <div className="about-hero-ani about-hero-title-1">Yash Goswami</div>
-                        <div className="about-hero-ani">From Ady<span>mire</span></div>
+                        <div className="about-hero-ani">
+                            We help you <span className="text-accent text-bold">Build</span> And <span className="text-accent text-bold">Grow</span>
+                        </div>
+                    
+                        <div className="about-hero-ani mt-8">
+                            Your <span className="text-accent text-bold">Startup</span>
+                        </div>
                     </h1>
 
-
-                </div>
-                <div className="about-hero-social about-hero-ani">
-                   <SocialIcons className="grid grid-cols-5 gap-2 " />
-                    <div className="about-hero-follow">
-                        <span>Follow Us</span>
-                        <div className="about-hero-arrow"><img src={CurveArrow} alt="arrow" /></div>
+                    <div className="hero-desc about-hero-ani">
+                        <p>
+                            <span className="text-accent font-semibold">Adymire</span> is a Full Stack digital Company specializing{" "}
+                            <span className="text-accent">Software Development</span> ,{" "}
+                            <span className="text-accent">UI/UX Design</span> , and Performance{" "}
+                            <span className="text-accent">Marketing</span> to{" "}
+                            <span className="text-accent">help startups</span> and businesses scale efficiently.
+                        </p>
                     </div>
                 </div>
 
                 <div className="about-hero-image about-hero-ani">
-                    <img src="https://res.cloudinary.com/dm3xoqps6/image/upload/v1776852702/Founder1_fjskpg.png"
-                     alt="founder" />
-                    
+                    <img src="https://res.cloudinary.com/dm3xoqps6/image/upload/v1777563698/yashabout_1_r8wnoz.png"
+                        alt="founder" />
+
                 </div>
             </div>
         </section>
