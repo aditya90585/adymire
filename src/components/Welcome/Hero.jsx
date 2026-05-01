@@ -30,33 +30,6 @@ const Hero = () => {
             <span className="dot hero-left-ani">.</span>
           </h1>
 
-          {/* <div className="hero-stats">
-            <div className="stat trusted hero-left-ani">
-              <p>Trusted By Our</p>
-              <p>Customer</p>
-
-              <div className="avatars">
-                <img className="w-[70%] mx-auto my-2" src={FourCustomers} alt="" />
-              </div>
-            </div>
-
-            <div className="stat hero-left-ani">
-              <strong>40+</strong>
-              <p>Complete Projects</p>
-            </div>
-
-            <div className="stat hero-left-ani">
-              <strong>30+</strong>
-              <p>Satisfied Clients</p>
-            </div>
-
-            <div className="stat hero-left-ani">
-              <strong>07+</strong>
-              <p>Years Experience</p>
-            </div>
-          </div> */}
-
-
           <div className="hero-desc hero-left-ani">
             <p>
               We Help <span className="text-orange-400">Startups</span> and{" "}

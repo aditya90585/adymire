@@ -37,14 +37,16 @@ const AboutHero = () => {
                 <div className="about-hero-content">
                     <h1 className="about-hero-title">
                         <div className="about-hero-ani">
-                            We help you <span className="text-accent text-bold">Build</span> And <span className="text-accent text-bold">Grow</span>
+                            We help you <span className="text-accent text-bold">Build</span> And <span className="text-accent text-bold">Grow </span>
+                         {/* <br className=""/> */}
+                          Your <span className="text-accent text-bold">Startup</span>
                         </div>
                     
-                        <div className="about-hero-ani mt-8">
+                        {/* <div className="about-hero-ani mt-6">
                             Your <span className="text-accent text-bold">Startup</span>
-                        </div>
+                        </div> */}
                     </h1>
-
+                
                     <div className="hero-desc about-hero-ani">
                         <p>
                             <span className="text-accent font-semibold">Adymire</span> is a Full Stack digital Company specializing{" "}

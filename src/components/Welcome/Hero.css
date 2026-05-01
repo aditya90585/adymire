@@ -25,7 +25,7 @@
 .hero-left .first,
 .hero-left h1 span {
   font-size: 58px;
-  font-weight: 800;
+  font-weight: 700;
 }
 
 
@@ -90,10 +90,6 @@
 }
   .hero-stats {
     display: none;
-  }
-
-  .hero-right {
-    margin-top: 40px;
   }
   .hero-partners{
     position: static;

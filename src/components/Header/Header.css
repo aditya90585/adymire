@@ -191,7 +191,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
-  min-width: 520px;
+  min-width: 20px;
   height: 14px;
   background: transparent;
 }
