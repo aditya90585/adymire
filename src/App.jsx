@@ -17,6 +17,7 @@ import ScrollToHash from './components/Common/ScrollToHash'
 import ScrollToTop from './components/ScrollToTop'
 import PageLoader from './components/PageLoader'
 import TrackPageViews from './components/TrackPageViews'
+import DigitalMarkrtingPortfolio from './pages/DigitalMarkrtingPortfolio'
 
 const Home = lazy(() => import('./pages/Home'))
 const About = lazy(() => import('./pages/About'))
@@ -44,6 +45,7 @@ function App() {
             <Route path="/about" element={<About />} />
             <Route path="/services" element={<Services />} />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/digital-marketing-portfolio" element={<DigitalMarkrtingPortfolio />} />
             <Route path="/process/:service" element={<UIUXProcess />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path='/projectDetails/:projectname' element={<ProjectDetailsCard />} />
