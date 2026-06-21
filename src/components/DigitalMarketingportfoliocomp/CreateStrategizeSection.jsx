@@ -66,7 +66,11 @@ export default function CreateStrategizeSection() {
               <p className="text-[#6f7071] text-sm sm:text-[15px] leading-relaxed flex-1">{s.desc}</p>
 
               {/* View button */}
-              <button className="w-full border-2 border-[#fcc719] text-[#070707] font-semibold text-sm sm:text-[15px] py-3 rounded-full hover:bg-[#fcc719] transition-colors duration-200">
+              <button
+              onClick={() => {
+                window.open("/contact", '_blank', 'noopener,noreferrer');
+              }}
+              className="w-full border-2 border-[#fcc719] text-[#070707] font-semibold text-sm sm:text-[15px] py-3 rounded-full hover:bg-[#fcc719] transition-colors duration-200">
                 View
               </button>
             </div>

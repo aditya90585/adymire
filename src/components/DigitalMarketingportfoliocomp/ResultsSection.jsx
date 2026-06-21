@@ -27,14 +27,14 @@ export default function ResultsSection() {
         </div>
 
 
-        <div className="flex flex-wrap border-0 lg:border-2 p-1 border-gray-300 rounded-full w-fit mx-auto items-center justify-center gap-2 mb-8 sm:mb-10">
+        {/* <div className="flex flex-wrap border-0 lg:border-2 p-1 border-gray-300 rounded-full w-fit mx-auto items-center justify-center gap-2 mb-8 sm:mb-10">
           {tabs.map(tab => (
             <button key={tab.id} onClick={() => setActiveTab(tab.id)}
               className={`flex items-center gap-2 cursor-pointer px-4 sm:px-10 py-2.5 sm:py-4 rounded-full font-semibold text-sm sm:text-[15px] transition-all duration-200  ${activeTab === tab.id ? "bg-[#fff0c4] text-[#070707] border-[#fff0c4] shadow-sm" : "text-[#3a3a3a]  hover:bg-gray-200"}`}>
               <span className="font-bold">{tab.icon}</span>{tab.label}
             </button>
           ))}
-        </div>
+        </div> */}
 
         <div className="rounded-3xl overflow-hidden border-2 border-[#fcc719]/40 shadow-xl bg-[#f8dca3] p-2 sm:p-3">
           <img src={adsresult} alt="Dashboard" className="w-full h-auto rounded-2xl" />

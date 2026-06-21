@@ -27,6 +27,48 @@ const certs = [
     imgPlaceholder: "1695281987943.svg\n(LinkedIn Learning\nAdvanced Google Ads cert)",
     iconBg: "bg-blue-900/5",
   },
+  {
+    id: "linkedin-advanced",
+    title: "Meta Ads Marketing Certification",
+    imgSrc: "https://res.cloudinary.com/dm3xoqps6/image/upload/v1782023197/certificate-04-F21fam8o_qz2fyy.svg",
+    imgPlaceholder: "1695281987943.svg\n(LinkedIn Learning\nAdvanced Google Ads cert)",
+    iconBg: "bg-blue-900/5",
+  },
+  {
+    id: "linkedin-advanced",
+    title: "LinkedIn Ads marketing",
+    imgSrc: "https://res.cloudinary.com/dm3xoqps6/image/upload/v1782023248/certificate-01-D2SC-aLd_xxhnw1.svg",
+    imgPlaceholder: "1695281987943.svg\n(LinkedIn Learning\nAdvanced Google Ads cert)",
+    iconBg: "bg-blue-900/5",
+  },
+  {
+    id: "linkedin-advanced",
+    title: "MOZ SEO Certification",
+    imgSrc: "https://res.cloudinary.com/dm3xoqps6/image/upload/v1782023300/certificate-08-BcDp_QBa_ko0ed4.svg",
+    imgPlaceholder: "1695281987943.svg\n(LinkedIn Learning\nAdvanced Google Ads cert)",
+    iconBg: "bg-blue-900/5",
+  },
+  {
+    id: "linkedin-advanced",
+    title: "HubSpot Marketing Certification",
+    imgSrc: "https://res.cloudinary.com/dm3xoqps6/image/upload/v1782023361/certificate-09-Dz8lTW58_gcvrwa.svg",
+    imgPlaceholder: "1695281987943.svg\n(LinkedIn Learning\nAdvanced Google Ads cert)",
+    iconBg: "bg-blue-900/5",
+  },
+  {
+    id: "linkedin-advanced",
+    title: "Digital marketing Professional",
+    imgSrc: "https://res.cloudinary.com/dm3xoqps6/image/upload/v1782023527/certificate-07-CFcCEVWs_gnwqbp.svg",
+    imgPlaceholder: "1695281987943.svg\n(LinkedIn Learning\nAdvanced Google Ads cert)",
+    iconBg: "bg-blue-900/5",
+  },
+  {
+    id: "linkedin-advanced",
+    title: "Fundamental of Digital marketing",
+    imgSrc: "https://res.cloudinary.com/dm3xoqps6/image/upload/v1782023556/certificate-02-eJZwd8lx_q2a2fz.svg",
+    imgPlaceholder: "1695281987943.svg\n(LinkedIn Learning\nAdvanced Google Ads cert)",
+    iconBg: "bg-blue-900/5",
+  },
 ];
 
 export default function CertificationSection() {

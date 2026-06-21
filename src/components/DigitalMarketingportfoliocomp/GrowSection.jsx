@@ -28,39 +28,12 @@ export default function GrowSection() {
           <div className="flex-1 relative flex justify-center lg:justify-end">
             {/* Chart card */}
             <div className="bg-white rounded-2xl sm:rounded-3xl shadow-xl border border-gray-100 w-full max-w-[480px] sm:max-w-[560px] h-[200px] sm:h-[240px] lg:h-[220px] overflow-hidden relative">
-              {/*
-                Replace with:
-                <img src="/src/assets/google-analytics.svg" alt="Growth Chart" className="w-full h-full object-contain p-4" />
-              */}
+
+
+              <img loading="lazy" src="https://res.cloudinary.com/dm3xoqps6/image/upload/v1782022472/growthGraph_dwb4vy.svg" alt="Growth Chart" className="w-full h-full object-contain p-4" />
+
               {/* Mimicking the line chart */}
               <div className="w-full h-full p-3 sm:p-4 flex flex-col justify-between">
-                <div className="flex-1 relative">
-                  <svg viewBox="0 0 500 160" className="w-full h-full" preserveAspectRatio="none">
-                    {/* Grid lines */}
-                    {[0,40,80,120,160].map(y=>(
-                      <line key={y} x1="0" y1={y} x2="500" y2={y} stroke="#f0f0f0" strokeWidth="1"/>
-                    ))}
-                    {/* Chart line — spiky then sharp rise at end */}
-                    <polyline
-                      points="0,140 30,130 60,125 90,135 120,120 150,128 180,115 210,122 240,110 270,118 300,105 330,112 360,100 390,108 420,80 450,50 480,20 500,10"
-                      fill="none" stroke="#6366f1" strokeWidth="2.5" strokeLinejoin="round"
-                    />
-                    {/* Fill gradient under line */}
-                    <defs>
-                      <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stopColor="#6366f1" stopOpacity="0.15"/>
-                        <stop offset="100%" stopColor="#6366f1" stopOpacity="0.01"/>
-                      </linearGradient>
-                    </defs>
-                    <polygon
-                      points="0,140 30,130 60,125 90,135 120,120 150,128 180,115 210,122 240,110 270,118 300,105 330,112 360,100 390,108 420,80 450,50 480,20 500,10 500,160 0,160"
-                      fill="url(#chartGrad)"
-                    />
-                    {/* Green dot at peak */}
-                    <circle cx="490" cy="12" r="7" fill="#22c55e"/>
-                    <circle cx="490" cy="12" r="12" fill="#22c55e" fillOpacity="0.2"/>
-                  </svg>
-                </div>
                 {/* <p className="text-gray-400 text-[10px] text-center mt-1">📁 Replace: google-analytics.svg (growth line chart)</p> */}
               </div>
 

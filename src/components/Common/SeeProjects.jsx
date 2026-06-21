@@ -128,6 +128,7 @@ import "./SeeProjects.css"
 import Lottie from "lottie-react";
 import { AllProjectsData } from "./Projects/AllProjectsData";
 import { LuLoaderCircle } from "react-icons/lu";
+import { useNavigate } from "react-router-dom";
 
 const SeeProjectsSlider = React.lazy(() => import('./SeeProjectsSlider'));
 
@@ -135,6 +136,7 @@ const SeeProjects = () => {
   const [activeCategory, setActiveCategory] = useState("uiux");
   const [dropdownisOpen, setDropdownisOpen] = useState(false);
   const [categories, setCategories] = useState([])
+  const navigate = useNavigate()
 
   useEffect(() => {
     Promise.all([
@@ -145,11 +147,11 @@ const SeeProjects = () => {
       import('@/assets/icons/ProjectsCategory/CategoryAiAutomation.json'),
     ]).then(([uiux, dm, web, app, ai]) => {
       setCategories([
-        { name: "UI & UX",          type: "uiux",            icon: uiux.default },
-        { name: "Marketing",        type: "marketing",       icon: dm.default },
-        { name: "Web Development",  type: "webdevelopment",  icon: web.default },
-        { name: "App Development",  type: "appdevelopment",  icon: app.default },
-        { name: "AI Automation",    type: "aiautomation",    icon: ai.default },
+        { name: "UI & UX", type: "uiux", icon: uiux.default },
+        { name: "Marketing", type: "marketing", icon: dm.default },
+        { name: "Web Development", type: "webdevelopment", icon: web.default },
+        { name: "App Development", type: "appdevelopment", icon: app.default },
+        { name: "AI Automation", type: "aiautomation", icon: ai.default },
       ])
     })
   }, [])
@@ -195,18 +197,32 @@ const SeeProjects = () => {
           {dropdownisOpen && (
             <div className="absolute z-20 mt-2 w-full bg-white border rounded-lg shadow-lg">
               {categories.map((category) => (
-                <button
-                  key={category.name}
-                  onClick={() => { setActiveCategory(category.type); setDropdownisOpen(false) }}
-                  className={`w-full flex items-center gap-3 px-4 py-3 text-left
+
+                category.type == "marketing" ?
+                  <button
+                    key={category.name}
+                    onClick={() => navigate("/digital-marketing-portfolio")}
+                    className={`w-full flex items-center gap-3 px-4 py-3 text-left
                     ${activeCategory === category.type
-                      ? "bg-[#FFE7B3] text-black"
-                      : "text-gray-600 hover:bg-gray-100"
-                    }`}
-                >
-                  <Lottie className="h-8" animationData={category.icon} />
-                  <span>{category.name}</span>
-                </button>
+                        ? "bg-[#FFE7B3] text-black"
+                        : "text-gray-600 hover:bg-gray-100"
+                      }`}
+                  >
+                    <Lottie className="h-8" animationData={category.icon} />
+                    <span>{category.name}</span>
+                  </button> :
+                  <button
+                    key={category.name}
+                    onClick={() => { setActiveCategory(category.type); setDropdownisOpen(false) }}
+                    className={`w-full flex items-center gap-3 px-4 py-3 text-left
+                    ${activeCategory === category.type
+                        ? "bg-[#FFE7B3] text-black"
+                        : "text-gray-600 hover:bg-gray-100"
+                      }`}
+                  >
+                    <Lottie className="h-8" animationData={category.icon} />
+                    <span>{category.name}</span>
+                  </button>
               ))}
             </div>
           )}
@@ -215,18 +231,31 @@ const SeeProjects = () => {
         {/* Desktop tabs */}
         <div className="hidden md:grid grid-cols-5 gap-1 max-w-5xl mx-auto bg-white rounded-xl p-2 shadow-sm border border-[#999797]">
           {categories.map((category) => (
-            <button
-              key={category.name}
-              onClick={() => setActiveCategory(category.type)}
-              className={`flex items-center justify-center px-4 py-1.5 cursor-pointer rounded-lg text-sm font-medium transition
+            category.type == "marketing" ?
+              <button
+                key={category.name}
+                onClick={() => navigate("/digital-marketing-portfolio")}
+                className={`flex items-center justify-center px-4 py-1.5 cursor-pointer rounded-lg text-sm font-medium transition
                 ${activeCategory === category.type
-                  ? "bg-[#FFE7B3] text-black"
-                  : "text-gray-600 hover:bg-gray-100"
-                }`}
-            >
-              <span><Lottie className="h-10" animationData={category.icon} /></span>
-              {category.name}
-            </button>
+                    ? "bg-[#FFE7B3] text-black"
+                    : "text-gray-600 hover:bg-gray-100"
+                  }`}
+              >
+                <span><Lottie className="h-10" animationData={category.icon} /></span>
+                {category.name}
+              </button> :
+              <button
+                key={category.name}
+                onClick={() => setActiveCategory(category.type)}
+                className={`flex items-center justify-center px-4 py-1.5 cursor-pointer rounded-lg text-sm font-medium transition
+                ${activeCategory === category.type
+                    ? "bg-[#FFE7B3] text-black"
+                    : "text-gray-600 hover:bg-gray-100"
+                  }`}
+              >
+                <span><Lottie className="h-10" animationData={category.icon} /></span>
+                {category.name}
+              </button>
           ))}
         </div>
       </div>

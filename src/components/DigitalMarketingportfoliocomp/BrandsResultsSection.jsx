@@ -49,7 +49,7 @@ export default function BrandsResultsSection() {
             {/* Right — dashboard */}
             <div className="flex-1 p-4 sm:p-6 bg-gray-50 flex items-center justify-center">
               {/* Replace: <img src="/src/assets/Untitled-design-2.svg" className="w-full h-full object-contain rounded-2xl" /> */}
-              <div className="w-full h-[300px] sm:h-[400px] lg:h-[480px] bg-white rounded-2xl border border-gray-200 shadow-inner p-4 sm:p-5 overflow-hidden">
+              <div className="w-full pointer-events-none h-[300px] sm:h-[400px] lg:h-[480px] bg-white rounded-2xl border border-gray-200 shadow-inner p-4 sm:p-5 overflow-hidden">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {["Campaign status: Enabled, Paused","Ad group status: Enabled, Paused"].map(t=>(
                     <span key={t} className="bg-gray-100 text-gray-600 text-[10px] sm:text-[11px] px-2 sm:px-3 py-1.5 rounded-full border border-gray-200">{t}</span>
@@ -68,7 +68,7 @@ export default function BrandsResultsSection() {
                     </div>
                   ))}
                 </div>
-                <p className="text-center text-xs text-gray-300 mt-2">📁 Untitled-design-2.svg</p>
+                {/* <p className="text-center text-xs text-gray-300 mt-2">📁 Untitled-design-2.svg</p> */}
               </div>
             </div>
           </div>

@@ -1,4 +1,8 @@
 import React from "react";
+import DigitalmarketingToolsIcons4 from '@/assets/icons/DigitalmarketingToolsIcons/DigitalmarketingToolsIcons4.svg'
+import DigitalmarketingToolsIcons2 from '@/assets/icons/DigitalmarketingToolsIcons/DigitalmarketingToolsIcons2.svg'
+import DigitalmarketingToolsIcons14 from '@/assets/icons/DigitalmarketingToolsIcons/DigitalmarketingToolsIcons14.svg'
+import DigitalmarketingToolsIcons17 from '@/assets/icons/DigitalmarketingToolsIcons/DigitalmarketingToolsIcons17.svg'
 
 const projects = [
   {
@@ -15,27 +19,27 @@ const projects = [
       { label: "CTR", value: "5.20%" },
     ],
   },
-  {
-    id: 2,
-    title: "Brand Campaign",
-    website: "www.brand.com",
-    category: "Performance Marketing",
-    description:
-      "Strategic ad optimization with conversion-focused creatives and audience segmentation for maximum ROI and scalable growth.",
-    metrics: [
-      { label: "SPEND", value: "₹200k+" },
-      { label: "ROAS", value: "4.5x" },
-      { label: "CTR", value: "6.8%" },
-      { label: "CPA", value: "₹90" },
-    ],
-  },
+  // {
+  //   id: 2,
+  //   title: "Brand Campaign",
+  //   website: "www.brand.com",
+  //   category: "Performance Marketing",
+  //   description:
+  //     "Strategic ad optimization with conversion-focused creatives and audience segmentation for maximum ROI and scalable growth.",
+  //   metrics: [
+  //     { label: "SPEND", value: "₹200k+" },
+  //     { label: "ROAS", value: "4.5x" },
+  //     { label: "CTR", value: "6.8%" },
+  //     { label: "CPA", value: "₹90" },
+  //   ],
+  // },
 ];
 
 const logos = [
-  "Google Ads",
-  "Tag Manager",
-  "Meta",
-  "Analytics",
+DigitalmarketingToolsIcons14,
+
+DigitalmarketingToolsIcons2 ,
+DigitalmarketingToolsIcons4,
 ];
 
 export default function GoogleAdsProjects() {
@@ -127,12 +131,8 @@ export default function GoogleAdsProjects() {
                       key={index}
                       className="h-20 w-20 rounded-2xl border border-gray-200 bg-white flex items-center justify-center"
                     >
-                      {/* ADD TOOL ICON HERE */}
-                      {/* <img src="" alt="" /> */}
-
-                      <span className="text-xs text-center text-gray-500 px-2">
-                        {item}
-                      </span>
+                    
+                       <img src={item} alt="logo" />
                     </div>
                   ))}
                 </div>

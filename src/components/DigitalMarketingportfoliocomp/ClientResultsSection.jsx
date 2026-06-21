@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const clients = [
   { id: 1, company: "Adymire Tecnologies Pvt Ltd.", desc: "We Run Google Ads And Meta Ads For Adymire Technologies And Campaign Type Is Google Search And Meta Sales And We Convert The Growth", highlight: "5X ROAS", highlightColor: "text-[#ff8c00]", types: ["meta", "google"], metrics: [{ v: "350K+", l: "SPEND" }, { v: "5X", l: "ROAS" }, { v: "$0.60", l: "CPC" }, { v: "3.5%", l: "CTR" }], imgPlaceholder: "https://res.cloudinary.com/dm3xoqps6/image/upload/v1780221716/665fe400848921f3e8cce2c9_meta-ad_tx3nnd.webp" },
-  { id: 2, company: "Sietsfoods", website: "www.Sietsfoods.com", desc: "We run highly targeted Search campaigns to capture high-intent users actively looking for your services.", highlight: "Google Search (Lead Gen)", highlightColor: "text-[#ff8c00]", types: ["google"], metrics: [{ v: "₹350k+", l: "SPEND" }, { v: "₹35", l: "CPL" }, { v: "₹45", l: "CPC" }, { v: "5.20%", l: "CTR" }], imgPlaceholder: "https://res.cloudinary.com/dm3xoqps6/image/upload/v1780221716/665fe400848921f3e8cce2c9_meta-ad_tx3nnd.webp", logo: "🦅", logoBg: "bg-[#1a1a3a]" },
+  // { id: 2, company: "Sietsfoods", website: "www.Sietsfoods.com", desc: "We run highly targeted Search campaigns to capture high-intent users actively looking for your services.", highlight: "Google Search (Lead Gen)", highlightColor: "text-[#ff8c00]", types: ["google"], metrics: [{ v: "₹350k+", l: "SPEND" }, { v: "₹35", l: "CPL" }, { v: "₹45", l: "CPC" }, { v: "5.20%", l: "CTR" }], imgPlaceholder: "https://res.cloudinary.com/dm3xoqps6/image/upload/v1780221716/665fe400848921f3e8cce2c9_meta-ad_tx3nnd.webp", logo: "🦅", logoBg: "bg-[#1a1a3a]" },
 ];
 
 export default function ClientResultsSection() {
@@ -55,7 +55,9 @@ export default function ClientResultsSection() {
                 </div>
               ))}
             </div>
-            <button className=" bg-[#fcc719] px-6 text-[#070707] font-bold text-base sm:text-[17px] py-3.5 sm:py-4 rounded-full hover:bg-[#e6b300] transition-colors">Talk to Our Marketing Expert</button>
+            <button onClick={() => {
+                window.open("/contact", '_blank', 'noopener,noreferrer');
+              }}  className=" bg-[#fcc719] px-6 text-[#070707] font-bold text-base sm:text-[17px] py-3.5 sm:py-4 rounded-full hover:bg-[#e6b300] transition-colors">Talk to Our Marketing Expert</button>
           </div>
         </div>
         {/* Pagination */}

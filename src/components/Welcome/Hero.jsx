@@ -7,6 +7,7 @@ import BookCallButton from "../UI/NavButtons/BookCallButton";
 
 import { BiBot } from "react-icons/bi";
 import Magnet from "../UI/Magnet";
+import Aurora from '../UI/Aurora';
 
 
 const Hero = () => {
@@ -21,8 +22,15 @@ const Hero = () => {
   }, {})
 
   return (
-    <section className="hero">
+    <section style={{ background: "#fff6df" }} className="hero relative w-full h-full overflow-hidden">
+          <Aurora
+        colorStops={["#FCD444", "#FCD444", "#FCD444"]}
+        blend={1}
+        amplitude={0.6}
+        speed={1}
+      />
       <div className="hero-container">
+     
         <div className="hero-left">
           <h1 >
             <div className="hero-left-ani first" >Launch Your Startups</div>
